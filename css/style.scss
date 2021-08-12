@@ -1,0 +1,96 @@
+@import url(fonts.css);
+.wrapper-outer {
+    max-width: 1600px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    margin: 0 auto;
+    .wrapper-inner {
+        margin: 0 auto;
+        width: 69.375%;
+    }
+}
+
+.main-content {}
+
+.section-header {}
+
+.header-wrapper {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-logo {
+        flex-grow: 1;
+    }
+    .header-contact {
+        display: flex;
+        align-items: center;
+        .contact-data {
+            margin-right: 4px;
+            color: #cc6600;
+            .contact-data__phone {
+                font-family: ArialNarrow, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+            .contact-data__email {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+    }
+    .header-login {
+        margin-left: 33px;
+        a {
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #bbbdbe;
+            text-decoration: none;
+            border: 3.15px solid #3c96c8;
+            border-radius: 10px;
+        }
+    }
+}
+
+.section-first-screen {
+    margin-top: -93px;
+    height: 906px;
+    background: url(../image/main_bg.png) center center;
+    background-size: cover;
+}
+
+.first-screen {
+    .menu-core {
+        display: flex;
+        justify-content: center;
+        .menu-core__logo {
+            position: absolute;
+            width: 157px;
+            height: 133px;
+            margin-top: 420px;
+            background: url(/image/core-menu-logo.png) center center no-repeat;
+        }
+        svg {
+            margin-top: 260px;
+        }
+    }
+    .swap-button {
+        margin-top: 123px;
+        display: flex;
+        justify-content: flex-end;
+        .swap-button__item {
+            width: 56px;
+            height: 56px;
+            background: url(/image/swap-button-item-passive.png) center center no-repeat;
+            &:hover {
+                background: url(/image/swap-button-item-active.png) center center no-repeat;
+                transition: 0.9;
+            }
+        }
+    }
+}
