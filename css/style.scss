@@ -1,5 +1,10 @@
 @import url(fonts.css);
+body {
+    border: none;
+}
+
 .wrapper-outer {
+    margin-top: -2px;
     max-width: 1600px;
     // display: flex;
     // flex-direction: column;
@@ -97,9 +102,13 @@
 
 .section-hot-offers {
     background-color: #0e1f27;
+    padding-bottom: 50px;
 }
 
 .hot-offers {
+    padding-bottom: 50px;
+    height: 450px;
+    max-width: 100%;
     .hot-offers__title {
         padding-top: 82px;
         color: #bbbdbe;
@@ -108,5 +117,83 @@
         font-size: 36px;
         text-align: center;
     }
-    .hot-offers__slider {}
+    .hot-offers__slider {
+        display: flex;
+        justify-content: center;
+        .swiper-container {
+            width: 1115px;
+            height: 270px;
+        }
+    }
+}
+
+.section-all-control {
+    height: 900px;
+    background: url(/image/all-controll-bg-v1.png) center right 15px no-repeat #0e1f27;
+    .wrapper-inner {
+        .all-controll-wrapper {
+            .all-control__title {
+                padding-top: 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 24px;
+                text-align: center;
+                color: #3584b0;
+            }
+            .all-control__content {
+                margin: 50px auto 0 auto;
+                height: 543px;
+                width: 944px;
+                background: url(/image/all-controll-PC.png) center center no-repeat;
+                text-align: center;
+                img {
+                    margin-top: 30px;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+
+.section-referent {
+    height: 1050px;
+    background-color: #0e1f27;
+    .wrapper-inner {
+        .referent-wrapper {
+            color: #bbbdbe;
+            .referent__title {
+                padding-top: 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 36px;
+                text-align: center;
+            }
+            .referent-content {
+                height: 830px;
+                background: url(/image/referen-bg.png) center center no-repeat;
+                .referent-content-wrapper {
+                    padding-top: 230px;
+                    padding-left: 50px;
+                    .referent-content__button-title {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        font-size: 24px;
+                        text-align: left;
+                    }
+                    .referent-content__button {
+                        margin-top: 47px;
+                        height: 320px;
+                        width: 310px;
+                        text-align: center;
+                        background: url(/image/referen-button-bg.png) center left 20px no-repeat;
+                        a {
+                            img {
+                                padding-top: 75px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
