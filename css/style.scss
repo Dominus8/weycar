@@ -19,7 +19,10 @@ body {
 
 .main-content {}
 
-.section-header {}
+.section-header {
+    position: relative;
+    z-index: 999999;
+}
 
 .header-wrapper {
     margin: 0 auto;
@@ -62,12 +65,24 @@ body {
         }
     }
 }
-
+.bgtop{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    background-color: #0a1215;
+    
+    height: 903px;
+}
 .section-first-screen {
+    position: relative;
+    z-index: 9000;
     margin-top: -93px;
     height: 906px;
-    background: url(../image/main_bg.png) center center;
-    background-size: cover;
+    background: url(../image/main_bg.png) center center no-repeat ;
+    // background-size: cover;      
+    .wrapper-inner{
+       
+    }
 }
 
 .first-screen {
@@ -75,6 +90,12 @@ body {
         display: flex;
         justify-content: center;
         .menu-core__logo {
+            svg{
+                #tahograf-img{
+                    transition: visibility 1s;  
+                }
+                }
+            
             position: absolute;
             width: 157px;
             height: 133px;
@@ -277,9 +298,19 @@ body {
         }
     }
 }
-
+.footer-bg{
+    border-top: 2px solid #255b78;
+    z-index: 1;
+    background: linear-gradient(to top, #424e54, rgba(16, 37, 47, 0.3));
+    width: 100%;
+    height: 380px;
+    position: absolute;
+    
+}
 .section-footer {
-    border: 2px outset #255a77;
+    position: relative;
+    z-index: 9999;
+    
     border-radius: 5px;
     .wrapper-inner {
         .copywrite {
