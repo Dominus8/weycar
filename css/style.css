@@ -1,6 +1,7 @@
 @import url(fonts.css);
 body {
   border: none;
+  background-color: #0e1f27;
 }
 
 .wrapper-outer {
@@ -120,6 +121,8 @@ body {
 }
 
 .first-screen .swap-button .swap-button__item:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
   background: url(/image/swap-button-item-active.png) center center no-repeat;
   -webkit-transition: 0.9;
   transition: 0.9;
@@ -230,5 +233,220 @@ body {
 
 .section-referent .wrapper-inner .referent-wrapper .referent-content .referent-content-wrapper .referent-content__button a img {
   padding-top: 75px;
+}
+
+.section-contacts {
+  height: 1017px;
+  background: url(/image/contacts-bg.png) no-repeat;
+  background-position: 350px 20px;
+  background-color: #0e1f27;
+}
+
+.section-contacts .wrapper-inner .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data {
+  width: 950px;
+  color: #bbbdbe;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data__contacts {
+  margin-top: 50px;
+  margin-left: -245px;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, right top, from(#255a77), to(rgba(16, 37, 47, 0.3)));
+  background: linear-gradient(to right, #255a77, rgba(16, 37, 47, 0.3));
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data__contacts .contact-data__contacts-wrapper {
+  margin-left: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data__contacts .contact-data__contacts-wrapper .contacts-title {
+  font-size: 48px;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data__contacts .contact-data__contacts-wrapper .contacts-phone {
+  font-size: 24px;
+  margin-top: 35px;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data__contacts .contact-data__contacts-wrapper .contactsmail {
+  font-size: 24px;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data__contacts .contact-data__contacts-wrapper .contacts-address {
+  font-size: 24px;
+  margin-top: 25px;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data-contacts__mode {
+  padding-right: 35px;
+  margin-right: 115px;
+  margin-left: -245px;
+  height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  background: -webkit-gradient(linear, right top, left top, from(#255a77), to(rgba(16, 37, 47, 0.3)));
+  background: linear-gradient(to left, #255a77, rgba(16, 37, 47, 0.3));
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data-contacts__mode .contact-data-contacts__mode-wrapper {
+  margin-left: 450px;
+  text-align: right;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data-contacts__mode .contact-data-contacts__mode-wrapper .contact-data-contacts__mode-title {
+  padding-top: 50px;
+  font-size: 48px;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data-contacts__mode .contact-data-contacts__mode-wrapper .text1 {
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-data .contact-data-contacts__mode .contact-data-contacts__mode-wrapper .text2 {
+  font-size: 24px;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-map .contact-map-mobile {
+  width: 365px;
+  height: 770px;
+  background: url(/image/Huawei-P8.png) center center no-repeat;
+}
+
+.section-contacts .wrapper-inner .contacts .contact-map .contact-map-mobile .contact-map-wrapper {
+  padding-left: 5px;
+  padding-top: 72px;
+}
+
+.section-footer {
+  border: 2px outset #255a77;
+  border-radius: 5px;
+}
+
+.section-footer .wrapper-inner .copywrite {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #bbbdbe;
+  font-family: ArialNarrow, Helvetica, sans-serif;
+  font-weight: regular;
+  text-align: left;
+  font-size: 18px;
+  text-align: center;
+}
+
+.section-footer .wrapper-inner .footer {
+  margin-top: 30px;
+  color: #bbbdbe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-footer .wrapper-inner .footer a {
+  text-decoration: none;
+  color: #bbbdbe;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+}
+
+.section-footer .wrapper-inner .footer .catalog {
+  width: 150px;
+}
+
+.section-footer .wrapper-inner .footer .catalog .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+}
+
+.section-footer .wrapper-inner .footer .cataog2 {
+  width: 150px;
+}
+
+.section-footer .wrapper-inner .footer .menu {
+  width: 150px;
+}
+
+.section-footer .wrapper-inner .footer .menu .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+}
+
+.section-footer .wrapper-inner .footer .service {
+  width: 150px;
+}
+
+.section-footer .wrapper-inner .footer .service .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+}
+
+.section-footer .wrapper-inner .footer .social {
+  width: 260px;
+}
+
+.section-footer .wrapper-inner .footer .social .social-button .social-button-phone-wrapper {
+  border: 2px solid #477693;
+  border-radius: 5px;
+  padding: 2px 14px;
+  width: 260px;
+  text-align: center;
+}
+
+.section-footer .wrapper-inner .footer .social .social-button .social-button-phone-wrapper a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+}
+
+.section-footer .wrapper-inner .footer .social .social-button .social-button-phone-wrapper img {
+  padding: 3px 0 3px 15px;
+}
+
+.section-footer .wrapper-inner .footer .social .social-button .social-button-wrapper {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-footer .wrapper-inner .footer .social .social-button .social-button-wrapper a div {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #477693;
+  border-radius: 6px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
