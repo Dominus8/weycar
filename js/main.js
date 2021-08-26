@@ -16,7 +16,7 @@
 //     },
 // });
 
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper(".swiper", {
     slidesPerView: 4,
     spaceBetween: 30,
     pagination: {
@@ -47,3 +47,23 @@ var swiper = new Swiper(".swiper-container", {
     },
 
 });
+
+
+$(function(){
+    $(window).scroll(function() {
+        if($(this).scrollTop() >= 840) {
+            $('.swap-button').addClass('stickytop');
+            
+        }
+        else{
+            $('.swap-button').removeClass('stickytop');
+        }
+    });
+});
+
+// $("#scroll_bottom").click(function () {
+//     var elementClick = $(this).attr("href");
+//     var destination = $(elementClick).offset().top;
+//     $('html, body').animate({ scrollTop: destination }, 300);
+//     return false;
+// });

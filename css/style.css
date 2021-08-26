@@ -125,7 +125,6 @@ body {
 }
 
 .first-screen .swap-button {
-  position: fixed;
   right: 300px;
   margin-top: 23px;
   display: -webkit-box;
@@ -152,6 +151,10 @@ body {
   height: 56px;
   border: 2px solid #3f4c54;
   border-radius: 50px;
+}
+
+.first-screen .swap-button .swap-button__item #scroll_top {
+  visibility: hidden;
 }
 
 .first-screen .swap-button .swap-button__item #scroll_top span img {
@@ -187,6 +190,15 @@ body {
 
 .first-screen .swap-button .swap-button__item:hover #scroll_bottom span img {
   opacity: 1;
+}
+
+.first-screen .stickytop {
+  position: fixed;
+  top: 0;
+}
+
+.first-screen .stickytop .swap-button__item #scroll_top {
+  visibility: visible;
 }
 
 .section-hot-offers {
@@ -228,7 +240,7 @@ body {
   border: 2px solid #a5a9aa;
 }
 
-.hot-offers .hot-offers__slider .swiper-container {
+.hot-offers .hot-offers__slider .swiper {
   width: 1115px;
   height: 270px;
 }

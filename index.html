@@ -15,7 +15,7 @@
 
 <body>
     <!--header-->
-    <section class="wrapper-outer section-header">
+    <section  class="wrapper-outer section-header">
         <div class="wrapper-inner">
             <div class="header-wrapper">
                 <div class="header-logo">
@@ -39,7 +39,7 @@
     <!--main-->
     <div class="main-content">
         <!--Первый Экран-->
-        <div class="bgtop"></div>
+        <div id="next0" class="bgtop"></div>
         <section class="wrapper-outer section-first-screen">
             <div class="wrapper-inner">
                 <div class="first-screen">
@@ -181,7 +181,7 @@
                     <!--слайдер-->
                     <div class="hot-offers__slider">
                         <!-- Slider main container -->
-                        <div class="swiper-container">
+                        <div class="swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
@@ -237,7 +237,7 @@
             </div>
         </section>
         <!--Полный контроль-->
-        <section id="next" class="wrapper-outer section-all-control">
+        <section id="next2" class="wrapper-outer section-all-control">
             <div class="wrapper-inner">
                 <div class="all-controll-wrapper">
                     <div class="all-control__title">
@@ -250,7 +250,7 @@
             </div>
         </section>
         <!--Референт лист-->
-        <section class="wrapper-outer section-referent">
+        <section id="next3" class="wrapper-outer section-referent">
             <div class="wrapper-inner">
                 <div class="referent-wrapper">
                     <div class="referent__title">
@@ -290,7 +290,7 @@
             </div>
         </section>
         <!--Контакты-->
-        <section class="wrapper-outer section-contacts">
+        <section id="next4" class="wrapper-outer section-contacts">
             <div class="wrapper-inner">
                 <div class="contacts">
                     <div class="contact-data">
@@ -322,7 +322,7 @@
         </section>
     </div>
     <!--footer-->
-    <div class="footer-bg"></div>
+    <div id="next5" class="footer-bg"></div>
     <section class="wrapper-outer section-footer">
         <div class="wrapper-inner">
             <div class="footer">
@@ -384,11 +384,13 @@
         </div>
     </section>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
     <script> 
 
+        
+
         document.getElementById("tahograf-button").onmouseover=function(){
-        console.log(1);
         document.getElementById("core-menu-img").setAttribute("visibility","hidden");
         document.getElementById("tahograf-img").setAttribute("visibility","visable");
         document.getElementById("tahograf-text").setAttribute("visibility","visable");
@@ -397,7 +399,6 @@
 
        }
        document.getElementById("tahograf-button").onmouseleave=function(){
-        console.log(2);
         let coreImg = document.getElementById("core-menu-img");
         coreImg.setAttribute("visibility","visable");
         document.getElementById("tahograf-img").setAttribute("visibility","hidden");

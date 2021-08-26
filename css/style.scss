@@ -107,8 +107,8 @@ body {
             margin-left: -30px;
         }
     }
+   
     .swap-button {
-        position: fixed;
         right: 300px;
         margin-top: 23px;
         display: flex;
@@ -123,7 +123,8 @@ body {
             border:2px solid #3f4c54;
             border-radius: 50px;
             
-            #scroll_top{  
+            #scroll_top{
+                visibility: hidden;  
                 span{
                     img{
                         opacity: 0.2;
@@ -136,7 +137,7 @@ body {
                         opacity: 0.2;
                     }
                 }
-            }             
+            }
             &:hover {
                 transition: 1s;
                 border:2px solid #bbbdbe;
@@ -167,6 +168,18 @@ body {
         }
 
     }
+    
+    .stickytop {
+        position:fixed;
+        top:0;       
+        .swap-button__item{
+        #scroll_top{
+            visibility: visible;
+        }
+        }
+
+
+    } 
 }
 
 .section-hot-offers {
@@ -197,11 +210,12 @@ body {
                background:#0e1f27;
                border: 2px solid #a5a9aa;
             }        
-        .swiper-container {
+        .swiper{
             width: 1115px;
             height: 270px;
 
             .swiper-pagination{
+                
                 .swiper-pagination-bullets{
                     .swiper-pagination-bullet-active{
                         
