@@ -94,7 +94,7 @@ body {
                 #tahograf-img{
                     transition: visibility 1s;  
                 }
-                }
+            }
             
             position: absolute;
             width: 157px;
@@ -108,19 +108,64 @@ body {
         }
     }
     .swap-button {
+        position: fixed;
+        right: 300px;
         margin-top: 23px;
         display: flex;
         justify-content: flex-end;
+        z-index: 9999;
         .swap-button__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 56px;
             height: 56px;
-            background: url(/image/swap-button-item-passive.png) center center no-repeat;
+            border:2px solid #3f4c54;
+            border-radius: 50px;
+            
+            #scroll_top{  
+                span{
+                    img{
+                        opacity: 0.2;
+                    }
+                }
+            }
+            #scroll_bottom{
+                span{
+                    img{
+                        opacity: 0.2;
+                    }
+                }
+            }             
             &:hover {
                 transition: 1s;
-                background: url(/image/swap-button-item-active.png) center center no-repeat;
+                border:2px solid #bbbdbe;
+                border-radius: 50px;
                 transition: 0.9;
+
+                #scroll_top{
+                    transition: 1s;
+                    span{
+                        img{
+                            opacity: 1;
+                        }  
+                    }
+                    
+                }
+                #scroll_bottom{
+                    transition: 1s;
+                        span{
+                            img{
+                                opacity: 1;
+                            }
+                            
+                        
+                    }
+                }  
             }
+           
         }
+
     }
 }
 
