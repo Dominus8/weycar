@@ -94,7 +94,7 @@ body {
   z-index: 9000;
   margin-top: -93px;
   height: 906px;
-  background: url(../image/main_bg.png) center center no-repeat;
+  background: url(../image/main_bg.jpg) center center no-repeat;
 }
 
 .first-screen .menu-core {
@@ -125,8 +125,9 @@ body {
 }
 
 .first-screen .swap-button {
-  right: 300px;
+  right: 400px;
   margin-top: 23px;
+  margin-right: -100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

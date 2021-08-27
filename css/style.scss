@@ -78,7 +78,7 @@ body {
     z-index: 9000;
     margin-top: -93px;
     height: 906px;
-    background: url(../image/main_bg.png) center center no-repeat ;
+    background: url(../image/main_bg.jpg) center center no-repeat ;
     // background-size: cover;      
     .wrapper-inner{
        
@@ -109,8 +109,11 @@ body {
     }
    
     .swap-button {
-        right: 300px;
+        right: 400px;
+        // position: relative;
+        
         margin-top: 23px;
+        margin-right: -100px;
         display: flex;
         justify-content: flex-end;
         z-index: 9999;
