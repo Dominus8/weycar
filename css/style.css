@@ -125,7 +125,6 @@ body {
 }
 
 .first-screen .swap-button {
-  right: 400px;
   margin-top: 23px;
   margin-right: -100px;
   display: -webkit-box;
@@ -196,6 +195,7 @@ body {
 .first-screen .stickytop {
   position: fixed;
   top: 0;
+  right: 15.5%;
 }
 
 .first-screen .stickytop .swap-button__item #scroll_top {

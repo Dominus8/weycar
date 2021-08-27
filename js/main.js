@@ -51,7 +51,7 @@ var swiper = new Swiper(".swiper", {
 
 $(function(){
     $(window).scroll(function() {
-        if($(this).scrollTop() >= 840) {
+        if($(this).scrollTop() >= 810) {
             $('.swap-button').addClass('stickytop');
             
         }
