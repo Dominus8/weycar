@@ -20,6 +20,7 @@ body {
 .main-content {}
 
 .section-header {
+    overflow:hidden;
     position: relative;
     z-index: 999999;
 }
@@ -109,12 +110,12 @@ body {
     }
    
     .swap-button {
-        // position: relative;
+        position: absolute;
         
         margin-top: 23px;
-        margin-right: -100px;
-        display: flex;
-        justify-content: flex-end;
+        right: 10px;
+        // display: flex;
+        // justify-content: flex-end;
         z-index: 9999;
         .swap-button__item {
             display: flex;
@@ -174,7 +175,7 @@ body {
     .stickytop {
         position:fixed;
         top:0; 
-        right: 15.5%;      
+        right: 3px;      
         .swap-button__item{
         #scroll_top{
             visibility: visible;
@@ -228,7 +229,7 @@ body {
         }
     }
 }
-
+// Секция с ноутбуком
 .section-all-control {
     height: 900px;
     background: url(/image/all-controll-bg-v1.png) center right 15px no-repeat #0e1f27;
@@ -245,12 +246,14 @@ body {
             .all-control__content {
                 margin: 50px auto 0 auto;
                 height: 543px;
-                width: 944px;
+                 max-width: 944px;
                 background: url(/image/all-controll-PC.png) center center no-repeat;
                 text-align: center;
                 img {
                     margin-top: 30px;
-                    height: 450px;
+                    max-width:100%;
+                    height:auto;
+                    
                 }
             }
         }
@@ -273,8 +276,11 @@ body {
 
 
             .referent-content {
+               overflow:hidden;
                 
-                .referent-content-wrapper {
+                .referent-content-wrapper { 
+                    display: grid;
+                    max-width: 1110px;
                     padding-left: 50px;
                     
 
@@ -285,9 +291,10 @@ body {
                         flex-wrap: wrap;
                         
                         .referent-image1{
+
                             padding-left: 44px;
-                            width: 595px;
-                            height: 73px;
+                            max-width: 595px;
+                            height: auto;
         
         
                             img{
@@ -359,8 +366,8 @@ body {
         }
     }
 }
-
 .section-contacts {
+    overflow:hidden;
     height: 1017px;
     background: url(/image/contacts-bg.png) no-repeat;
     background-position: 350px 20px;
@@ -368,9 +375,9 @@ body {
     .wrapper-inner {
         .contacts {
             display: flex;
-            // flex-wrap: wrap; 
+            flex-wrap: wrap; 
             .contact-data {
-                width: 950px;
+                max-width: 950px;
                 color: #bbbdbe;               
                 .contact-data__contacts {
                     margin-top: 50px;
@@ -448,6 +455,7 @@ body {
     
 }
 .section-footer {
+    overflow:hidden;
     position: relative;
     z-index: 9999;
     
@@ -547,4 +555,8 @@ body {
             }
         }
     }
+}
+
+@media (max-width: 600px) {
+    
 }

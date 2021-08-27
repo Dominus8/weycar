@@ -16,6 +16,7 @@ body {
 }
 
 .section-header {
+  overflow: hidden;
   position: relative;
   z-index: 999999;
 }
@@ -125,14 +126,9 @@ body {
 }
 
 .first-screen .swap-button {
+  position: absolute;
   margin-top: 23px;
-  margin-right: -100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  right: 10px;
   z-index: 9999;
 }
 
@@ -195,7 +191,7 @@ body {
 .first-screen .stickytop {
   position: fixed;
   top: 0;
-  right: 15.5%;
+  right: 3px;
 }
 
 .first-screen .stickytop .swap-button__item #scroll_top {
@@ -263,14 +259,15 @@ body {
 .section-all-control .wrapper-inner .all-controll-wrapper .all-control__content {
   margin: 50px auto 0 auto;
   height: 543px;
-  width: 944px;
+  max-width: 944px;
   background: url(/image/all-controll-PC.png) center center no-repeat;
   text-align: center;
 }
 
 .section-all-control .wrapper-inner .all-controll-wrapper .all-control__content img {
   margin-top: 30px;
-  height: 450px;
+  max-width: 100%;
+  height: auto;
 }
 
 .section-referent {
@@ -290,7 +287,14 @@ body {
   text-align: center;
 }
 
+.section-referent .wrapper-inner .referent-wrapper .referent-content {
+  overflow: hidden;
+}
+
 .section-referent .wrapper-inner .referent-wrapper .referent-content .referent-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1110px;
   padding-left: 50px;
 }
 
@@ -308,8 +312,8 @@ body {
 
 .section-referent .wrapper-inner .referent-wrapper .referent-content .referent-content-wrapper .referent-content-rowone .referent-image1 {
   padding-left: 44px;
-  width: 595px;
-  height: 73px;
+  max-width: 595px;
+  height: auto;
 }
 
 .section-referent .wrapper-inner .referent-wrapper .referent-content .referent-content-wrapper .referent-content-rowone .referent-image1 img {
@@ -383,6 +387,7 @@ body {
 }
 
 .section-contacts {
+  overflow: hidden;
   height: 1017px;
   background: url(/image/contacts-bg.png) no-repeat;
   background-position: 350px 20px;
@@ -393,10 +398,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .section-contacts .wrapper-inner .contacts .contact-data {
-  width: 950px;
+  max-width: 950px;
   color: #bbbdbe;
 }
 
@@ -486,6 +493,7 @@ body {
 }
 
 .section-footer {
+  overflow: hidden;
   position: relative;
   z-index: 9999;
   border-radius: 5px;
