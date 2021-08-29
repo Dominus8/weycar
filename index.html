@@ -39,8 +39,19 @@
     <!--main-->
     <div class="main-content">
         <!--Первый Экран-->
-        <div id="next0" class="bgtop"></div>
+
+                 <div class="swap-button">
+                    <div class="swap-button__item">
+                        <a href="#" id="scroll_top"><span><img src="/image/arrow-up.png" alt=""></span></a>
+                        <a href="#next" id="scroll_bottom"><span><img src="/image/arrow-down.png" alt=""></span></a>
+                    </div>
+                </div>         
+        <div id="next0" class="bgtop">
+               
+        </div>
+     
         <section class="wrapper-outer section-first-screen">
+            
             <div class="wrapper-inner">
                 <div class="first-screen">
                     <div class="menu-core">
@@ -163,14 +174,9 @@
                             </defs>
                         </svg>       
                     </div>
-                    <div class="swap-button">
-                        <div class="swap-button__item">
-                            <a href="#" id="scroll_top"><span><img src="/image/arrow-up.png" alt=""></span></a>
-                            <a href="#next" id="scroll_bottom"><span><img src="/image/arrow-down.png" alt=""></span></a>
-                        </div>
-                    </div>
                 </div>
             </div>
+          
         </section>
         
         <!--Горячие предложения-->
@@ -315,7 +321,13 @@
                     <div class="contact-map">
                         <div class="contact-map-mobile">
                             <div class="contact-map-wrapper">
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3022bae51bafb660ac34c649b39955850e269e88695f7bfce01355db091883f4&amp;width=350&amp;height=630&amp;lang=ru_RU&amp;scroll=true"></script>
+                                <div id="map1">
+                                    <script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3022bae51bafb660ac34c649b39955850e269e88695f7bfce01355db091883f4&amp;width=350&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
+                                </div>
+                                <div id="map2">
+                                    <script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3022bae51bafb660ac34c649b39955850e269e88695f7bfce01355db091883f4&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+                                </div>
+
                             </div>
                         </div>
                     </div>

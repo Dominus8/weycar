@@ -304,4 +304,3 @@ document.getElementById("tahograf-button").onmouseover=function(){
     document.getElementById("tahograf-text").setAttribute("visibility","hidden");
 
    }
-   
