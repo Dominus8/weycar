@@ -83,10 +83,10 @@ body {
 }
 
 .swap-button {
-  position: absolute;
+  position: fixed;
   margin-top: 23px;
   top: 800px;
-  right: 10px;
+  right: 15px;
   z-index: 9999;
 }
 
@@ -146,13 +146,6 @@ body {
   opacity: 1;
 }
 
-.stickytop {
-  z-index: 8000;
-  position: fixed;
-  top: 0;
-  right: 10px;
-}
-
 .stickytop .swap-button__item #scroll_top {
   visibility: visible;
 }
@@ -162,15 +155,16 @@ body {
   position: absolute;
   width: 100%;
   background-color: #0a1215;
-  height: 903px;
+  height: 900px;
 }
 
 .section-first-screen {
   position: relative;
   z-index: 9000;
   margin-top: -93px;
-  height: 906px;
+  height: 900px;
   background: url(../image/main_bg.jpg) center center no-repeat;
+  background-size: contain;
 }
 
 .first-screen .menu-core {
@@ -715,7 +709,7 @@ body {
   }
   .section-referent .wrapper-inner .referent-wrapper .referent-content .referent-content-wrapper .referent-content-rowone .referent-image2 {
     text-align: center;
-    margin: 10px  0 0 20%;
+    margin: 10px 0 0 20%;
   }
   .section-referent .wrapper-inner .referent-wrapper .referent-content .referent-content-wrapper .referent-contentrowtwo {
     -ms-flex-wrap: wrap;
@@ -980,7 +974,7 @@ body {
   }
   .section-referent .wrapper-inner .referent-wrapper .referent-content .referent-content-wrapper .referent-content-rowone .referent-image2 {
     text-align: center;
-    margin: 10px  0 0 20%;
+    margin: 10px 0 0 20%;
   }
   .section-referent .wrapper-inner .referent-wrapper .referent-content .referent-content-wrapper .referent-contentrowtwo {
     -ms-flex-wrap: wrap;

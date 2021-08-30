@@ -20,7 +20,7 @@ body {
 .main-content {}
 
 .section-header {
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
     z-index: 999999;
 }
@@ -67,98 +67,89 @@ body {
     }
 }
 
-    .swap-button {
-        position: absolute ;
-        margin-top: 23px;
-        top: 800px;
-        right: 10px;
-        z-index: 9999;
-        .swap-button__item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 56px;
-            height: 56px;
-            border:2px solid #3f4c54;
+.swap-button {
+    position: fixed;
+    margin-top: 23px;
+    top: 800px;
+    right: 15px;
+    z-index: 9999;
+    .swap-button__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        border: 2px solid #3f4c54;
+        border-radius: 50px;
+        #scroll_top {
+            visibility: hidden;
+            span {
+                img {
+                    opacity: 0.2;
+                }
+            }
+        }
+        #scroll_bottom {
+            span {
+                img {
+                    opacity: 0.2;
+                }
+            }
+        }
+        &:hover {
+            transition: 1s;
+            border: 2px solid #bbbdbe;
             border-radius: 50px;
-            
-            #scroll_top{
-                visibility: hidden;  
-                span{
-                    img{
-                        opacity: 0.2;
-                    }
-                }
-            }
-            #scroll_bottom{
-                span{
-                    img{
-                        opacity: 0.2;
-                    }
-                }
-            }
-            &:hover {
+            transition: 0.9;
+            #scroll_top {
                 transition: 1s;
-                border:2px solid #bbbdbe;
-                border-radius: 50px;
-                transition: 0.9;
-
-                #scroll_top{
-                    transition: 1s;
-                    span{
-                        img{
-                            opacity: 1;
-                        }  
+                span {
+                    img {
+                        opacity: 1;
                     }
-                    
                 }
-                #scroll_bottom{
-                    
-                    transition: 1s;
-                    span{
-                        img{
-                            opacity: 1;
-                        }
+            }
+            #scroll_bottom {
+                transition: 1s;
+                span {
+                    img {
+                        opacity: 1;
                     }
-                }  
+                }
             }
-           
         }
-
     }
-    
-    .stickytop {
-        z-index: 8000;
-        position:fixed;
-        top:0; 
-        right: 10px;      
-        .swap-button__item{
-            #scroll_top{
-                visibility: visible;
-            }
-        }
+}
 
-    }  
-.bgtop{
+.stickytop {
+    // z-index: 8000;
+    // position: fixed;
+    // top: 0;
+    // right: 10px;
+    .swap-button__item {
+        #scroll_top {
+            visibility: visible;
+        }
+    }
+}
+
+.bgtop {
     z-index: 1;
     position: absolute;
     width: 100%;
     background-color: #0a1215;
-    height: 903px;
-   
+    height: 900px;
 }
+
 .section-first-screen {
     position: relative;
     z-index: 9000;
     margin-top: -93px;
-    height: 906px;
-    background: url(../image/main_bg.jpg) center center no-repeat ;
-    // background-size: cover;      
-    .wrapper-inner{
-       
-    }
-
-
+    height: 900px;
+    background: url(../image/main_bg.jpg) center center no-repeat;
+    background-size: contain;
+    // background-size: cover;
+    .wrapper-inner {}
 }
 
 .first-screen {
@@ -166,12 +157,11 @@ body {
         display: flex;
         justify-content: center;
         .menu-core__logo {
-            svg{
-                #tahograf-img{
-                    transition: visibility 1s;  
+            svg {
+                #tahograf-img {
+                    transition: visibility 1s;
                 }
             }
-            
             position: absolute;
             width: 157px;
             height: 133px;
@@ -205,29 +195,26 @@ body {
     .hot-offers__slider {
         display: flex;
         justify-content: center;
-        div > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets > span.swiper-pagination-bullet{
-            background:#0e1f27;
-            border: 2px solid #3c96c8;           
+        div>div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets>span.swiper-pagination-bullet {
+            background: #0e1f27;
+            border: 2px solid #3c96c8;
         }
-        div > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets > span.swiper-pagination-bullet.swiper-pagination-bullet-active{
-               background:#0e1f27;
-               border: 2px solid #a5a9aa;
-            }        
-        .swiper{
+        div>div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets>span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: #0e1f27;
+            border: 2px solid #a5a9aa;
+        }
+        .swiper {
             width: 1115px;
             height: 270px;
-
-            .swiper-pagination{
-                
-                .swiper-pagination-bullets{
-                    .swiper-pagination-bullet-active{
-                        
-                    }
+            .swiper-pagination {
+                .swiper-pagination-bullets {
+                    .swiper-pagination-bullet-active {}
                 }
             }
         }
     }
 }
+
 // Секция с ноутбуком
 .section-all-control {
     height: 900px;
@@ -251,9 +238,8 @@ body {
                 img {
                     // margin-top: 30px;
                     margin-top: -60px;
-                    max-width:100%;
-                    height:auto;
-                    
+                    max-width: 100%;
+                    height: auto;
                 }
             }
         }
@@ -273,52 +259,40 @@ body {
                 font-size: 36px;
                 text-align: center;
             }
-
-
             .referent-content {
-               overflow:hidden;
-                
-                .referent-content-wrapper { 
+                overflow: hidden;
+                .referent-content-wrapper {
                     // display: grid;
                     max-width: 1110px;
                     padding-left: 50px;
-                    
-
-                    .referent-content-rowone{
+                    .referent-content-rowone {
                         margin-top: 20px;
                         display: flex;
                         align-items: center;
                         flex-wrap: wrap;
-                        
-                        .referent-image1{
-
+                        .referent-image1 {
                             padding-left: 44px;
                             max-width: 595px;
                             height: auto;
-        
-        
-                            img{
-                                
+                            img {
                                 width: 595px;
-                                height: 73px;                       
+                                height: 73px;
                             }
                         }
-                        .referent-image2{
+                        .referent-image2 {
                             margin-left: 95px;
-                            width:155px ;
-                            height:260px ; 
-                            img{
-                                width:155px ;
-                                height:260px ;                       
+                            width: 155px;
+                            height: 260px;
+                            img {
+                                width: 155px;
+                                height: 260px;
                             }
                         }
-        
-        
                     }
-                    .referent-contentrowtwo{
+                    .referent-contentrowtwo {
                         display: flex;
                         flex-wrap: wrap;
-                        .referent-image3{
+                        .referent-image3 {
                             .referent-content__button-title {
                                 font-family: Arial, Helvetica, sans-serif;
                                 font-weight: bold;
@@ -336,26 +310,26 @@ body {
                                         padding-top: 75px;
                                     }
                                 }
-                            }                            
+                            }
                         }
-                        .referent-image4{
+                        .referent-image4 {
                             padding-top: 65px;
                             padding-left: 14px;
                             width: 555px;
                             height: 100px;
-                            img{
+                            img {
                                 width: 555px;
                                 height: 100px;
                             }
-                        }                                        
+                        }
                     }
-                    .referent-contentrowthree{
+                    .referent-contentrowthree {
                         margin-top: -180px;
                         padding-left: 270px;
-                        .referent-image5{
+                        .referent-image5 {
                             width: 506px;
                             height: 358px;
-                            img{
+                            img {
                                 width: 506px;
                                 height: 358px;
                             }
@@ -366,8 +340,9 @@ body {
         }
     }
 }
+
 .section-contacts {
-    overflow:hidden;
+    overflow: hidden;
     height: 1017px;
     background: url(/image/contacts-bg.png) no-repeat;
     background-position: 350px 20px;
@@ -375,10 +350,10 @@ body {
     .wrapper-inner {
         .contacts {
             display: flex;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
             .contact-data {
                 max-width: 950px;
-                color: #bbbdbe;               
+                color: #bbbdbe;
                 .contact-data__contacts {
                     margin-top: 50px;
                     margin-left: -245px;
@@ -440,7 +415,7 @@ body {
                     .contact-map-wrapper {
                         padding-left: 5px;
                         padding-top: 72px;
-                        #map2{
+                        #map2 {
                             display: none;
                         }
                     }
@@ -449,20 +424,20 @@ body {
         }
     }
 }
-.footer-bg{
+
+.footer-bg {
     border-top: 2px solid #255b78;
     z-index: 1;
     background: linear-gradient(to top, #424e54, rgba(16, 37, 47, 0.3));
     width: 100%;
     height: 380px;
     position: absolute;
-    
 }
+
 .section-footer {
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
     z-index: 9999;
-    
     border-radius: 5px;
     .wrapper-inner {
         .copywrite {
@@ -560,51 +535,49 @@ body {
         }
     }
 }
+
 //=====================================Адаптив 320=========================================
 @media (max-width: 320px) {
-    .swap-button{
+    .swap-button {
         // display: none;
         top: 480px;
-
     }
-    .bgtop{
-        height: 350px;   
+    .bgtop {
+        height: 350px;
     }
     //Шапка на 320
-    .section-header{
-        .wrapper-inner{
-            .header-wrapper{
+    .section-header {
+        .wrapper-inner {
+            .header-wrapper {
                 flex-wrap: wrap;
-                .header-logo{}
-                .header-contact{
+                .header-logo {}
+                .header-contact {
                     padding-left: 30px;
                     margin-top: 15px;
                 }
-                .header-login{
+                .header-login {
                     margin-top: 15px;
                     padding-bottom: 15px;
                 }
             }
         }
     }
-
     //Первый экран на 320
-    .section-first-screen{
+    .section-first-screen {
         margin-top: -105px;
         background-size: cover;
         height: 480px;
-        .wrapper-inner{
+        .wrapper-inner {
             margin: 0 15px 0 15px;
             width: 290px;
-            
-            .first-screen{
+            .first-screen {
                 text-align: center;
                 width: 290px;
-                .menu-core{
+                .menu-core {
                     width: 290px;
                     display: inline-block;
                     text-align: center;
-                    svg{
+                    svg {
                         width: 290px;
                         height: auto;
                     }
@@ -612,120 +585,105 @@ body {
             }
         }
     }
-
     //Горячие предложения 320
-    .section-hot-offers{
-        .wrapper-inner{
+    .section-hot-offers {
+        .wrapper-inner {
             margin: 0 15px 0 15px;
             width: 290px;
-            .hot-offers{
-                .hot-offers__title{
+            .hot-offers {
+                .hot-offers__title {
                     padding-top: 40px;
                 }
-                .hot-offers__slider{
+                .hot-offers__slider {
                     padding-top: 20px;
                     text-align: center;
                 }
             }
         }
     }
-
     // Секция с ноутбуком
-    .section-all-control{
+    .section-all-control {
         height: 450px;
-        .wrapper-inner{
+        .wrapper-inner {
             margin: 0 15px 0 15px;
             width: 290px;
-            .all-controll-wrapper{
+            .all-controll-wrapper {
                 height: 450px;
-                .all-control__title{
-
-                }
-
-                .all-control__content{
+                .all-control__title {}
+                .all-control__content {
                     padding-top: 15px;
                     height: 150px;
                 }
             }
-            
         }
     }
-
-
     //Референт лист на 320
-    .section-referent{
+    .section-referent {
         height: 1250px;
-        .wrapper-inner{
+        .wrapper-inner {
             margin: 15px;
             width: 290px;
-            .referent-wrapper{
-                .referent__title{
+            .referent-wrapper {
+                .referent__title {
                     padding-top: 20px;
                 }
-                .referent-content{
+                .referent-content {
                     width: 290px;
-                    .referent-content-wrapper{
+                    .referent-content-wrapper {
                         padding: 0;
-                        .referent-content-rowone{
+                        .referent-content-rowone {
                             flex-wrap: wrap;
-                            .referent-image1{
+                            .referent-image1 {
                                 padding: 0;
-                                img{
-                                    
+                                img {
                                     width: 290px;
                                     height: auto;
                                 }
                             }
-                            .referent-image2{
+                            .referent-image2 {
                                 text-align: center;
-                                margin: 10px  0 0 20%;
-                                img{
-
-                                }
+                                margin: 10px 0 0 20%;
+                                img {}
                             }
                         }
-                        .referent-contentrowtwo{
+                        .referent-contentrowtwo {
                             flex-wrap: wrap;
-                            .referent-image3{
-                                .referent-content__button-title{
+                            .referent-image3 {
+                                .referent-content__button-title {
                                     text-align: center;
                                 }
-                                .referent-content__button{
+                                .referent-content__button {
                                     background-size: contain;
                                     margin-top: 15px;
-                                    
                                     width: 290px;
                                     height: 290px;
-                                    a{
-                                       img{
+                                    a {
+                                        img {
                                             padding-top: 60px;
-                                       }
+                                        }
                                     }
-                                    
                                 }
-
                             }
-                            .referent-image4{
+                            .referent-image4 {
                                 padding: 0;
                                 margin-top: 15px;
-                                img{
+                                img {
                                     width: 290px;
                                     height: auto;
                                 }
                             }
                         }
-                        .referent-contentrowthree{
+                        .referent-contentrowthree {
                             flex-wrap: wrap;
                             padding: 0;
-                            .referent-image5{
+                            .referent-image5 {
                                 margin-top: 160px;
                                 width: 290px;
                                 height: 250px;
-                                img{
+                                img {
                                     width: 290px;
                                     height: auto;
                                 }
-
                             }
                         }
                     }
@@ -733,73 +691,68 @@ body {
             }
         }
     }
-
     //Контакты на 320
-    .section-contacts{height: 1300px;
-        .wrapper-inner{
-            
-            margin: 0 ;
-            .contacts{
+    .section-contacts {
+        height: 1300px;
+        .wrapper-inner {
+            margin: 0;
+            .contacts {
                 display: flex;
                 flex-direction: column;
                 // align-items: center;
                 justify-content: center;
-                .contact-data{
-
-                    .contact-data__contacts{
+                .contact-data {
+                    .contact-data__contacts {
                         padding-left: 40px;
-                        .contact-data__contacts-wrapper{
+                        .contact-data__contacts-wrapper {
                             text-align: center;
                             width: 275px;
                             margin-left: 230px;
-                            .contacts-title{
+                            .contacts-title {
                                 padding-top: 15px;
                                 font-size: 32px;
                             }
-                            .contacts-phone{
+                            .contacts-phone {
                                 margin-top: 15px;
                                 text-align: center;
                             }
                         }
-
                     }
-                    .contact-data-contacts__mode{
+                    .contact-data-contacts__mode {
                         padding-left: 40px;
                         padding-right: 20px;
                         margin-right: 0;
                         height: auto;
-                        .contact-data-contacts__mode-wrapper{
+                        .contact-data-contacts__mode-wrapper {
                             margin-left: 220px;
-                            .contact-data-contacts__mode-title{
+                            .contact-data-contacts__mode-title {
                                 padding-top: 15px;
                                 font-size: 32px;
-                                text-align: center;  
-                            }
-                            .text1{
                                 text-align: center;
                             }
-                            .text2{
+                            .text1 {
                                 text-align: center;
                             }
-                            
+                            .text2 {
+                                text-align: center;
+                            }
                         }
                     }
                 }
-                .contact-map{
+                .contact-map {
                     margin-left: 6px;
-                    .contact-map-mobile{
-                            width: 310px;
-                            background-size: contain;                            
-                        .contact-map-wrapper{
+                    .contact-map-mobile {
+                        width: 310px;
+                        background-size: contain;
+                        .contact-map-wrapper {
                             padding-top: 110px;
-                            #map1{
+                            #map1 {
                                 display: none;
                             }
-                            #map2{
+                            #map2 {
                                 width: 298px;
                                 height: 550px;
                                 display: block;
-
                             }
                         }
                     }
@@ -807,107 +760,99 @@ body {
             }
         }
     }
-
     //footer 320
-    .footer-bg{
+    .footer-bg {
         height: 1110px;
     }
-    .section-footer{
-        .wrapper-inner{
+    .section-footer {
+        .wrapper-inner {
             margin: 30px auto 0 auto;
-
-            .footer{
+            .footer {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                
-                .catalog{
+                .catalog {
                     padding-top: 20px;
                     margin: 0 auto 0 auto;
                     text-align: center;
-                    .title{
+                    .title {
                         text-align: center;
                     }
                 }
-                .cataog2{
+                .cataog2 {
                     padding-top: 20px;
                     margin: 0 auto 0 auto;
                     text-align: center;
-                    .title{
+                    .title {
                         text-align: center;
                     }
                 }
-                .menu{
+                .menu {
                     padding-top: 20px;
                     margin: 0 auto 0 auto;
                     text-align: center;
-                    .title{
+                    .title {
                         text-align: center;
                     }
                 }
-                .service{
+                .service {
                     padding-top: 20px;
                     margin: 0 auto 0 auto;
                     text-align: center;
-                    .title{
+                    .title {
                         text-align: center;
                     }
                 }
-                .social{
+                .social {
                     padding-top: 20px;
-
                 }
-            }            
+            }
         }
     }
 }
 
 @media (max-width: 425px) {
-
-    .swap-button{
+    .swap-button {
         // display: none;
         top: 480px;
-
     }
-    .bgtop{
-        height: 350px;   
+    .bgtop {
+        height: 350px;
     }
     //Шапка на 320
-    .section-header{
-        .wrapper-inner{
-            .header-wrapper{
+    .section-header {
+        .wrapper-inner {
+            .header-wrapper {
                 flex-wrap: wrap;
-                .header-logo{}
-                .header-contact{
+                .header-logo {}
+                .header-contact {
                     padding-left: 30px;
                     margin-top: 15px;
                 }
-                .header-login{
+                .header-login {
                     margin-top: 15px;
                     padding-bottom: 15px;
                 }
             }
         }
     }
-
     //Первый экран на 320
-    .section-first-screen{
+    .section-first-screen {
         margin-top: -105px;
         background-size: cover;
         height: 480px;
-        .wrapper-inner{
+        .wrapper-inner {
             margin: 0 15px 0 15px;
             width: 290px;
-            
-            .first-screen{
+            .first-screen {
                 text-align: center;
                 width: 290px;
-                .menu-core{
+                .menu-core {
                     width: 290px;
                     display: inline-block;
                     text-align: center;
-                    svg{
+                    svg {
                         width: 290px;
                         height: auto;
                     }
@@ -915,120 +860,105 @@ body {
             }
         }
     }
-
     //Горячие предложения 320
-    .section-hot-offers{
-        .wrapper-inner{
+    .section-hot-offers {
+        .wrapper-inner {
             margin: 0 15px 0 15px;
             width: 290px;
-            .hot-offers{
-                .hot-offers__title{
+            .hot-offers {
+                .hot-offers__title {
                     padding-top: 40px;
                 }
-                .hot-offers__slider{
+                .hot-offers__slider {
                     padding-top: 20px;
                     text-align: center;
                 }
             }
         }
     }
-
     // Секция с ноутбуком
-    .section-all-control{
+    .section-all-control {
         height: 450px;
-        .wrapper-inner{
+        .wrapper-inner {
             margin: 0 15px 0 15px;
             width: 290px;
-            .all-controll-wrapper{
+            .all-controll-wrapper {
                 height: 450px;
-                .all-control__title{
-
-                }
-
-                .all-control__content{
+                .all-control__title {}
+                .all-control__content {
                     padding-top: 15px;
                     height: 150px;
                 }
             }
-            
         }
     }
-
-
     //Референт лист на 320
-    .section-referent{
+    .section-referent {
         height: 1250px;
-        .wrapper-inner{
+        .wrapper-inner {
             margin: 15px;
             width: 290px;
-            .referent-wrapper{
-                .referent__title{
+            .referent-wrapper {
+                .referent__title {
                     padding-top: 20px;
                 }
-                .referent-content{
+                .referent-content {
                     width: 290px;
-                    .referent-content-wrapper{
+                    .referent-content-wrapper {
                         padding: 0;
-                        .referent-content-rowone{
+                        .referent-content-rowone {
                             flex-wrap: wrap;
-                            .referent-image1{
+                            .referent-image1 {
                                 padding: 0;
-                                img{
-                                    
+                                img {
                                     width: 290px;
                                     height: auto;
                                 }
                             }
-                            .referent-image2{
+                            .referent-image2 {
                                 text-align: center;
-                                margin: 10px  0 0 20%;
-                                img{
-
-                                }
+                                margin: 10px 0 0 20%;
+                                img {}
                             }
                         }
-                        .referent-contentrowtwo{
+                        .referent-contentrowtwo {
                             flex-wrap: wrap;
-                            .referent-image3{
-                                .referent-content__button-title{
+                            .referent-image3 {
+                                .referent-content__button-title {
                                     text-align: center;
                                 }
-                                .referent-content__button{
+                                .referent-content__button {
                                     background-size: contain;
                                     margin-top: 15px;
-                                    
                                     width: 290px;
                                     height: 290px;
-                                    a{
-                                       img{
+                                    a {
+                                        img {
                                             padding-top: 60px;
-                                       }
+                                        }
                                     }
-                                    
                                 }
-
                             }
-                            .referent-image4{
+                            .referent-image4 {
                                 padding: 0;
                                 margin-top: 15px;
-                                img{
+                                img {
                                     width: 290px;
                                     height: auto;
                                 }
                             }
                         }
-                        .referent-contentrowthree{
+                        .referent-contentrowthree {
                             flex-wrap: wrap;
                             padding: 0;
-                            .referent-image5{
+                            .referent-image5 {
                                 margin-top: 160px;
                                 width: 290px;
                                 height: 250px;
-                                img{
+                                img {
                                     width: 290px;
                                     height: auto;
                                 }
-
                             }
                         }
                     }
@@ -1036,73 +966,68 @@ body {
             }
         }
     }
-
     //Контакты на 320
-    .section-contacts{height: 1300px;
-        .wrapper-inner{
-            
-            margin: 0 ;
-            .contacts{
+    .section-contacts {
+        height: 1300px;
+        .wrapper-inner {
+            margin: 0;
+            .contacts {
                 display: flex;
                 flex-direction: column;
                 // align-items: center;
                 justify-content: center;
-                .contact-data{
-
-                    .contact-data__contacts{
+                .contact-data {
+                    .contact-data__contacts {
                         padding-left: 40px;
-                        .contact-data__contacts-wrapper{
+                        .contact-data__contacts-wrapper {
                             text-align: center;
                             width: 275px;
                             margin-left: 230px;
-                            .contacts-title{
+                            .contacts-title {
                                 padding-top: 15px;
                                 font-size: 32px;
                             }
-                            .contacts-phone{
+                            .contacts-phone {
                                 margin-top: 15px;
                                 text-align: center;
                             }
                         }
-
                     }
-                    .contact-data-contacts__mode{
+                    .contact-data-contacts__mode {
                         padding-left: 40px;
                         padding-right: 20px;
                         margin-right: 0;
                         height: auto;
-                        .contact-data-contacts__mode-wrapper{
+                        .contact-data-contacts__mode-wrapper {
                             margin-left: 220px;
-                            .contact-data-contacts__mode-title{
+                            .contact-data-contacts__mode-title {
                                 padding-top: 15px;
                                 font-size: 32px;
-                                text-align: center;  
-                            }
-                            .text1{
                                 text-align: center;
                             }
-                            .text2{
+                            .text1 {
                                 text-align: center;
                             }
-                            
+                            .text2 {
+                                text-align: center;
+                            }
                         }
                     }
                 }
-                .contact-map{
+                .contact-map {
                     margin-left: 6px;
-                    .contact-map-mobile{
-                            width: 310px;
-                            background-size: contain;                            
-                        .contact-map-wrapper{
+                    .contact-map-mobile {
+                        width: 310px;
+                        background-size: contain;
+                        .contact-map-wrapper {
                             padding-top: 110px;
-                            #map1{
+                            #map1 {
                                 display: none;
                             }
-                            #map2{
+                            #map2 {
                                 width: 298px;
                                 height: 550px;
                                 display: block;
-
                             }
                         }
                     }
@@ -1110,58 +1035,54 @@ body {
             }
         }
     }
-
     //footer 320
-    .footer-bg{
+    .footer-bg {
         height: 1110px;
     }
-    .section-footer{
-        .wrapper-inner{
+    .section-footer {
+        .wrapper-inner {
             margin: 30px auto 0 auto;
-
-            .footer{
+            .footer {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                
-                .catalog{
+                .catalog {
                     padding-top: 20px;
                     margin: 0 auto 0 auto;
                     text-align: center;
-                    .title{
+                    .title {
                         text-align: center;
                     }
                 }
-                .cataog2{
+                .cataog2 {
                     padding-top: 20px;
                     margin: 0 auto 0 auto;
                     text-align: center;
-                    .title{
+                    .title {
                         text-align: center;
                     }
                 }
-                .menu{
+                .menu {
                     padding-top: 20px;
                     margin: 0 auto 0 auto;
                     text-align: center;
-                    .title{
+                    .title {
                         text-align: center;
                     }
                 }
-                .service{
+                .service {
                     padding-top: 20px;
                     margin: 0 auto 0 auto;
                     text-align: center;
-                    .title{
+                    .title {
                         text-align: center;
                     }
                 }
-                .social{
+                .social {
                     padding-top: 20px;
-
                 }
-            }            
+            }
         }
     }
 }
