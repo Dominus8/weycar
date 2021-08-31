@@ -470,34 +470,45 @@ body {
                 font-size: 16px;
                 // line-height: 14px;
             }
-            .catalog {
-                width: 150px;
-                .title {
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-weight: bold;
-                    text-align: left;
-                    font-size: 16px;
+            .cat-wrapp {
+                width: 350px;
+                display: flex;
+                justify-content: space-between;
+                .catalog {
+                    width: 150px;
+                    .title {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        text-align: left;
+                        font-size: 16px;
+                    }
+                }
+                .cataog2 {
+                    width: 150px;
+                    padding-top: 18px;
                 }
             }
-            .cataog2 {
-                width: 150px;
-            }
-            .menu {
-                width: 150px;
-                .title {
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-weight: bold;
-                    text-align: left;
-                    font-size: 16px;
+            .ms-wrapp {
+                width: 350px;
+                display: flex;
+                justify-content: space-between;
+                .menu {
+                    width: 150px;
+                    .title {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        text-align: left;
+                        font-size: 16px;
+                    }
                 }
-            }
-            .service {
-                width: 150px;
-                .title {
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-weight: bold;
-                    text-align: left;
-                    font-size: 16px;
+                .service {
+                    width: 150px;
+                    .title {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        text-align: left;
+                        font-size: 16px;
+                    }
                 }
             }
             .social {
@@ -797,7 +808,7 @@ body {
     }
     //footer 425
     .footer-bg {
-        height: 1110px;
+        height: auto;
     }
     .section-footer {
         .wrapper-inner {
