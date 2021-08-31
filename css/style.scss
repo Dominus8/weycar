@@ -1144,6 +1144,78 @@ body {
     }
 }
 
+@media (max-width: 399px) {
+    //Контакты на 375
+    .section-contacts {
+        height: 1300px;
+        .wrapper-inner {
+            margin: 30px;
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .contact-data {
+                    width: 399px;
+                    .contact-data__contacts {
+                        padding-left: 40px;
+                        .contact-data__contacts-wrapper {
+                            text-align: center;
+                            width: 399px;
+                            margin-left: 215px;
+                            .contacts-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                            }
+                            .contacts-phone {
+                                margin-top: 15px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .contact-data-contacts__mode {
+                        padding-left: 40px;
+                        padding-right: 50px;
+                        margin-right: 0;
+                        height: auto;
+                        .contact-data-contacts__mode-wrapper {
+                            margin-left: 200px;
+                            .contact-data-contacts__mode-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                                text-align: center;
+                            }
+                            .text1 {
+                                text-align: center;
+                            }
+                            .text2 {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .contact-map {
+                    margin-left: 22px;
+                    .contact-map-mobile {
+                        width: 310px;
+                        background-size: contain;
+                        .contact-map-wrapper {
+                            padding-top: 110px;
+                            #map1 {
+                                display: none;
+                            }
+                            #map2 {
+                                width: 298px;
+                                height: 550px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 375px) {
     //Контакты на 375
     .section-contacts {
