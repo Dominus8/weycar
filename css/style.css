@@ -42,7 +42,7 @@ body {
           flex-grow: 1;
 }
 
-.header-wrapper .header-contact {
+.header-wrapper .wrapp320 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,27 +51,36 @@ body {
           align-items: center;
 }
 
-.header-wrapper .header-contact .contact-data {
+.header-wrapper .wrapp320 .header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-wrapper .wrapp320 .header-contact .contact-data {
   margin-right: 4px;
   color: #cc6600;
 }
 
-.header-wrapper .header-contact .contact-data .contact-data__phone {
+.header-wrapper .wrapp320 .header-contact .contact-data .contact-data__phone {
   font-family: ArialNarrow, Helvetica, sans-serif;
   font-size: 14px;
 }
 
-.header-wrapper .header-contact .contact-data .contact-data__email {
+.header-wrapper .wrapp320 .header-contact .contact-data .contact-data__email {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 14px;
 }
 
-.header-wrapper .header-login {
+.header-wrapper .wrapp320 .header-login {
   margin-left: 33px;
 }
 
-.header-wrapper .header-login a {
+.header-wrapper .wrapp320 .header-login a {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -174,6 +183,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.first-screen .menu-core #mc2 {
+  display: none;
 }
 
 .first-screen .menu-core .menu-core__logo {
@@ -614,22 +627,47 @@ body {
           justify-content: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .swap-button {
     top: 480px;
   }
   .bgtop {
-    height: 350px;
+    height: 480px;
+  }
+  .section-header .wrapper-inner {
+    min-width: 280px;
   }
   .section-header .wrapper-inner .header-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .section-header .wrapper-inner .header-wrapper .header-contact {
-    padding-left: 30px;
-    margin-top: 15px;
+  .section-header .wrapper-inner .header-wrapper .header-logo {
+    text-align: center;
   }
-  .section-header .wrapper-inner .header-wrapper .header-login {
+  .section-header .wrapper-inner .header-wrapper .wrapp320 {
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-header .wrapper-inner .header-wrapper .wrapp320 .header-contact {
+    padding-left: 15px;
+    margin-top: 0px;
+  }
+  .section-header .wrapper-inner .header-wrapper .wrapp320 .header-contact .contact-data {
+    display: none;
+  }
+  .section-header .wrapper-inner .header-wrapper .wrapp320 .header-contact .contact-image {
+    margin-top: 0px;
+  }
+  .section-header .wrapper-inner .header-wrapper .wrapp320 .header-login {
     margin-top: 15px;
     padding-bottom: 15px;
   }
@@ -637,26 +675,35 @@ body {
     margin-top: -105px;
     background-size: cover;
     height: 480px;
+    max-width: 425px;
   }
   .section-first-screen .wrapper-inner {
-    margin: 0 15px 0 15px;
-    width: 290px;
+    margin: 0 auto;
+    width: 320px;
   }
   .section-first-screen .wrapper-inner .first-screen {
     text-align: center;
-    width: 290px;
+    width: 320px;
   }
   .section-first-screen .wrapper-inner .first-screen .menu-core {
-    width: 290px;
+    width: 320px;
     display: inline-block;
     text-align: center;
+  }
+  .section-first-screen .wrapper-inner .first-screen .menu-core #mc1 {
+    display: none;
+  }
+  .section-first-screen .wrapper-inner .first-screen .menu-core #mc2 {
+    margin: 0 auto;
+    margin-top: 130px;
+    display: block;
   }
   .section-first-screen .wrapper-inner .first-screen .menu-core svg {
     width: 290px;
     height: auto;
   }
   .section-hot-offers .wrapper-inner {
-    margin: 0 15px 0 15px;
+    margin: 0 auto;
     width: 290px;
   }
   .section-hot-offers .wrapper-inner .hot-offers .hot-offers__title {
@@ -670,7 +717,7 @@ body {
     height: 450px;
   }
   .section-all-control .wrapper-inner {
-    margin: 0 15px 0 15px;
+    margin: 0 auto;
     width: 290px;
   }
   .section-all-control .wrapper-inner .all-controll-wrapper {
@@ -684,7 +731,7 @@ body {
     height: 1250px;
   }
   .section-referent .wrapper-inner {
-    margin: 15px;
+    margin: 0 auto;
     width: 290px;
   }
   .section-referent .wrapper-inner .referent-wrapper .referent__title {
@@ -753,7 +800,7 @@ body {
     height: 1300px;
   }
   .section-contacts .wrapper-inner {
-    margin: 0;
+    margin: 0 auto;
   }
   .section-contacts .wrapper-inner .contacts {
     display: -webkit-box;
@@ -772,8 +819,8 @@ body {
   }
   .section-contacts .wrapper-inner .contacts .contact-data .contact-data__contacts .contact-data__contacts-wrapper {
     text-align: center;
-    width: 275px;
-    margin-left: 230px;
+    width: 320px;
+    margin-left: 190px;
   }
   .section-contacts .wrapper-inner .contacts .contact-data .contact-data__contacts .contact-data__contacts-wrapper .contacts-title {
     padding-top: 15px;
@@ -784,13 +831,13 @@ body {
     text-align: center;
   }
   .section-contacts .wrapper-inner .contacts .contact-data .contact-data-contacts__mode {
-    padding-left: 40px;
-    padding-right: 20px;
-    margin-right: 0;
+    padding-left: 65px;
+    padding-right: 70px;
+    margin-right: -40px;
     height: auto;
   }
   .section-contacts .wrapper-inner .contacts .contact-data .contact-data-contacts__mode .contact-data-contacts__mode-wrapper {
-    margin-left: 220px;
+    margin-left: 190px;
   }
   .section-contacts .wrapper-inner .contacts .contact-data .contact-data-contacts__mode .contact-data-contacts__mode-wrapper .contact-data-contacts__mode-title {
     padding-top: 15px;
@@ -803,11 +850,8 @@ body {
   .section-contacts .wrapper-inner .contacts .contact-data .contact-data-contacts__mode .contact-data-contacts__mode-wrapper .text2 {
     text-align: center;
   }
-  .section-contacts .wrapper-inner .contacts .contact-map {
-    margin-left: 6px;
-  }
   .section-contacts .wrapper-inner .contacts .contact-map .contact-map-mobile {
-    width: 310px;
+    width: 320px;
     background-size: contain;
   }
   .section-contacts .wrapper-inner .contacts .contact-map .contact-map-mobile .contact-map-wrapper {
@@ -851,7 +895,6 @@ body {
     text-align: center;
   }
   .section-footer .wrapper-inner .footer .cataog2 {
-    padding-top: 20px;
     margin: 0 auto 0 auto;
     text-align: center;
   }
@@ -879,7 +922,7 @@ body {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 320px) {
   .swap-button {
     top: 480px;
   }
@@ -890,11 +933,27 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .section-header .wrapper-inner .header-wrapper .header-contact {
-    padding-left: 30px;
-    margin-top: 15px;
+  .section-header .wrapper-inner .header-wrapper .wrapp320 {
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .section-header .wrapper-inner .header-wrapper .header-login {
+  .section-header .wrapper-inner .header-wrapper .wrapp320 .header-contact {
+    padding-left: 15px;
+    margin-top: 0px;
+  }
+  .section-header .wrapper-inner .header-wrapper .wrapp320 .header-contact .contact-data {
+    display: none;
+  }
+  .section-header .wrapper-inner .header-wrapper .wrapp320 .header-login {
     margin-top: 15px;
     padding-bottom: 15px;
   }
@@ -913,8 +972,12 @@ body {
   }
   .section-first-screen .wrapper-inner .first-screen .menu-core {
     width: 290px;
+    margin: 0;
     display: inline-block;
     text-align: center;
+  }
+  .section-first-screen .wrapper-inner .first-screen .menu-core #mc2 {
+    margin-left: 0px;
   }
   .section-first-screen .wrapper-inner .first-screen .menu-core svg {
     width: 290px;

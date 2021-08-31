@@ -1,0 +1,288 @@
+//=====================================Адаптив 320=========================================
+@media (max-width: 320px) {
+    .swap-button {
+        // display: none;
+        top: 480px;
+    }
+    .bgtop {
+        height: 350px;
+    }
+    //Шапка на 320
+    .section-header {
+        .wrapper-inner {
+            .header-wrapper {
+                flex-wrap: wrap;
+                .header-logo {}
+                .wrapp320 {
+                    padding-top: 15px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    .header-contact {
+                        padding-left: 15px;
+                        margin-top: 0px;
+                        .contact-data {
+                            display: none;
+                        }
+                    }
+                    .header-login {
+                        margin-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    //Первый экран на 320
+    .section-first-screen {
+        margin-top: -105px;
+        background-size: cover;
+        height: 480px;
+        .wrapper-inner {
+            margin: 0 15px 0 15px;
+            width: 290px;
+            .first-screen {
+                text-align: center;
+                width: 290px;
+                .menu-core {
+                    width: 290px;
+                    margin: 0;
+                    display: inline-block;
+                    text-align: center;
+                    #mc2 {
+                        margin-left: 0px;
+                    }
+                    svg {
+                        width: 290px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    //Горячие предложения 320
+    .section-hot-offers {
+        .wrapper-inner {
+            margin: 0 15px 0 15px;
+            width: 290px;
+            .hot-offers {
+                .hot-offers__title {
+                    padding-top: 40px;
+                }
+                .hot-offers__slider {
+                    padding-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // Секция с ноутбуком
+    .section-all-control {
+        height: 450px;
+        .wrapper-inner {
+            margin: 0 15px 0 15px;
+            width: 290px;
+            .all-controll-wrapper {
+                height: 450px;
+                .all-control__title {}
+                .all-control__content {
+                    padding-top: 15px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    //Референт лист на 320
+    .section-referent {
+        height: 1250px;
+        .wrapper-inner {
+            margin: 15px;
+            width: 290px;
+            .referent-wrapper {
+                .referent__title {
+                    padding-top: 20px;
+                }
+                .referent-content {
+                    width: 290px;
+                    .referent-content-wrapper {
+                        padding: 0;
+                        .referent-content-rowone {
+                            flex-wrap: wrap;
+                            .referent-image1 {
+                                padding: 0;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                            .referent-image2 {
+                                text-align: center;
+                                margin: 10px 0 0 20%;
+                                img {}
+                            }
+                        }
+                        .referent-contentrowtwo {
+                            flex-wrap: wrap;
+                            .referent-image3 {
+                                .referent-content__button-title {
+                                    text-align: center;
+                                }
+                                .referent-content__button {
+                                    background-size: contain;
+                                    margin-top: 15px;
+                                    width: 290px;
+                                    height: 290px;
+                                    a {
+                                        img {
+                                            padding-top: 60px;
+                                        }
+                                    }
+                                }
+                            }
+                            .referent-image4 {
+                                padding: 0;
+                                margin-top: 15px;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                        .referent-contentrowthree {
+                            flex-wrap: wrap;
+                            padding: 0;
+                            .referent-image5 {
+                                margin-top: 160px;
+                                width: 290px;
+                                height: 250px;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Контакты на 320
+    .section-contacts {
+        height: 1300px;
+        .wrapper-inner {
+            margin: 0;
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                justify-content: center;
+                .contact-data {
+                    .contact-data__contacts {
+                        padding-left: 40px;
+                        .contact-data__contacts-wrapper {
+                            text-align: center;
+                            width: 275px;
+                            margin-left: 230px;
+                            .contacts-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                            }
+                            .contacts-phone {
+                                margin-top: 15px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .contact-data-contacts__mode {
+                        padding-left: 40px;
+                        padding-right: 20px;
+                        margin-right: 0;
+                        height: auto;
+                        .contact-data-contacts__mode-wrapper {
+                            margin-left: 220px;
+                            .contact-data-contacts__mode-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                                text-align: center;
+                            }
+                            .text1 {
+                                text-align: center;
+                            }
+                            .text2 {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .contact-map {
+                    margin-left: 6px;
+                    .contact-map-mobile {
+                        width: 310px;
+                        background-size: contain;
+                        .contact-map-wrapper {
+                            padding-top: 110px;
+                            #map1 {
+                                display: none;
+                            }
+                            #map2 {
+                                width: 298px;
+                                height: 550px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //footer 320
+    .footer-bg {
+        height: 1110px;
+    }
+    .section-footer {
+        .wrapper-inner {
+            margin: 30px auto 0 auto;
+            .footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .catalog {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .cataog2 {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .menu {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .service {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .social {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
