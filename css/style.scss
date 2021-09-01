@@ -58,6 +58,7 @@ body {
         .header-login {
             margin-left: 33px;
             a {
+                white-space: nowrap;
                 padding: 10px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 16px;
@@ -444,7 +445,7 @@ body {
 .section-footer {
     overflow: hidden;
     position: relative;
-    z-index: 9999;
+    z-index: 6666;
     border-radius: 5px;
     .wrapper-inner {
         .copywrite {
@@ -563,7 +564,7 @@ body {
     .bgtop {
         height: 480px;
     }
-    //Шапка на 425
+    //Шапка на 768
     .section-header {
         .wrapper-inner {
             margin: 0 auto;
@@ -597,12 +598,12 @@ body {
             }
         }
     }
-    //Первый экран на 425
+    //Первый экран на 768
     .section-first-screen {
         margin-top: -105px;
         background-size: cover;
         height: 480px;
-        max-width: 425px;
+        max-width: 768px;
         .wrapper-inner {
             margin: 0 auto;
             width: 320px;
@@ -629,13 +630,14 @@ body {
             }
         }
     }
-    //Горячие предложения 425
+    //Горячие предложения 768
     .section-hot-offers {
         .wrapper-inner {
             margin: 0 auto;
-            width: 290px;
+            max-width: 600px;
             .hot-offers {
                 .hot-offers__title {
+                    max-width: 600px;
                     padding-top: 40px;
                 }
                 .hot-offers__slider {
@@ -647,10 +649,11 @@ body {
     }
     // Секция с ноутбуком
     .section-all-control {
-        height: 450px;
+        height: auto;
+        padding-bottom: 110px;
         .wrapper-inner {
             margin: 0 auto;
-            width: 290px;
+            max-width: 600px;
             .all-controll-wrapper {
                 height: 450px;
                 .all-control__title {}
@@ -661,13 +664,16 @@ body {
             }
         }
     }
-    //Референт лист на 425
+    //Референт лист на 768
     .section-referent {
         height: 1250px;
         .wrapper-inner {
             margin: 0 auto;
-            width: 290px;
             .referent-wrapper {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                align-items: center;
                 .referent__title {
                     padding-top: 20px;
                 }
@@ -735,7 +741,7 @@ body {
             }
         }
     }
-    //Контакты на 425
+    //Контакты на 768
     .section-contacts {
         height: 1300px;
         .wrapper-inner {
@@ -748,8 +754,8 @@ body {
                     .contact-data__contacts {
                         padding-left: 40px;
                         .contact-data__contacts-wrapper {
-                            text-align: center;
-                            max-width: 320px;
+                            text-align: left;
+                            max-width: 315px;
                             margin-left: 190px;
                             .contacts-title {
                                 padding-top: 15px;
@@ -757,27 +763,28 @@ body {
                             }
                             .contacts-phone {
                                 margin-top: 15px;
-                                text-align: center;
+                                text-align: left;
                             }
                         }
                     }
                     .contact-data-contacts__mode {
                         padding-left: 65px;
-                        padding-right: 70px;
-                        margin-right: -40px;
+                        padding-right: 90px;
+                        margin-right: -117px;
+                        padding-bottom: 18px;
                         height: auto;
                         .contact-data-contacts__mode-wrapper {
                             margin-left: 190px;
                             .contact-data-contacts__mode-title {
                                 padding-top: 15px;
                                 font-size: 32px;
-                                text-align: center;
+                                text-align: right;
                             }
                             .text1 {
-                                text-align: center;
+                                text-align: right;
                             }
                             .text2 {
-                                text-align: center;
+                                text-align: right;
                             }
                         }
                     }
@@ -806,53 +813,69 @@ body {
             }
         }
     }
-    //footer 425
+    //footer 768
     .footer-bg {
-        height: auto;
+        height: 694px;
     }
     .section-footer {
         .wrapper-inner {
-            margin: 30px auto 0 auto;
+            margin: 30px 0 0 0;
+            width: auto;
             .footer {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                .catalog {
-                    padding-top: 20px;
-                    margin: 0 auto 0 auto;
-                    text-align: center;
-                    .title {
+                width: auto;
+                .cat-wrapp {
+                    width: auto;
+                    .catalog {
+                        padding-top: 20px;
+                        margin: 0 auto 0 auto;
                         text-align: center;
+                        .title {
+                            text-align: center;
+                        }
+                    }
+                    .cataog2 {
+                        padding-top: 42px;
+                        margin: 0 auto 0 auto;
+                        text-align: center;
+                        .title {
+                            text-align: center;
+                        }
                     }
                 }
-                .cataog2 {
-                    margin: 0 auto 0 auto;
-                    text-align: center;
-                    .title {
+                .ms-wrapp {
+                    width: auto;
+                    .menu {
+                        padding-top: 20px;
+                        margin: 0 auto 0 auto;
                         text-align: center;
+                        .title {
+                            text-align: center;
+                        }
                     }
-                }
-                .menu {
-                    padding-top: 20px;
-                    margin: 0 auto 0 auto;
-                    text-align: center;
-                    .title {
+                    .service {
+                        padding-top: 20px;
+                        margin: 0 auto 0 auto;
                         text-align: center;
-                    }
-                }
-                .service {
-                    padding-top: 20px;
-                    margin: 0 auto 0 auto;
-                    text-align: center;
-                    .title {
-                        text-align: center;
+                        .title {
+                            text-align: center;
+                        }
                     }
                 }
                 .social {
+                    align-self: center;
                     padding-top: 20px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    .section-header {
+        .wrapper-inner {
+            max-width: 290px;
         }
     }
 }
@@ -946,7 +969,7 @@ body {
             }
         }
     }
-    // Секция с ноутбуком
+    // Секция с ноутбуком 425
     .section-all-control {
         height: 450px;
         .wrapper-inner {
@@ -1106,7 +1129,7 @@ body {
     }
     //footer 425
     .footer-bg {
-        height: 1110px;
+        height: 694px;
     }
     .section-footer {
         .wrapper-inner {
@@ -1297,10 +1320,7 @@ body {
             }
         }
     }
-    //footer 320
-    .footer-bg {
-        height: 1110px;
-    }
+    //footer 375
     .section-footer {
         .wrapper-inner {
             margin: 30px auto 0 auto;
@@ -1318,7 +1338,6 @@ body {
                     }
                 }
                 .cataog2 {
-                    padding-top: 20px;
                     margin: 0 auto 0 auto;
                     text-align: center;
                     .title {
@@ -1426,7 +1445,7 @@ body {
             }
         }
     }
-    // Секция с ноутбуком
+    // Секция с ноутбуком 320
     .section-all-control {
         height: 450px;
         .wrapper-inner {
@@ -1544,8 +1563,8 @@ body {
                         }
                     }
                     .contact-data-contacts__mode {
-                        padding-left: 40px;
-                        padding-right: 20px;
+                        padding-left: 30px;
+                        padding-right: 45px;
                         margin-right: 0;
                         height: auto;
                         .contact-data-contacts__mode-wrapper {
@@ -1586,9 +1605,6 @@ body {
         }
     }
     //footer 320
-    .footer-bg {
-        height: 1110px;
-    }
     .section-footer {
         .wrapper-inner {
             margin: 30px auto 0 auto;
@@ -1606,7 +1622,6 @@ body {
                     }
                 }
                 .cataog2 {
-                    padding-top: 20px;
                     margin: 0 auto 0 auto;
                     text-align: center;
                     .title {
