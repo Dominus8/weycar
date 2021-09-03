@@ -1758,7 +1758,7 @@ body {
   .section-contacts .wrapper-inner .contacts .contact-data .contact-data__contacts .contact-data__contacts-wrapper {
     text-align: center;
     width: 399px;
-    margin-left: 215px;
+    margin-left: 370px;
   }
   .section-contacts .wrapper-inner .contacts .contact-data .contact-data__contacts .contact-data__contacts-wrapper .contacts-title {
     padding-top: 15px;
@@ -1769,8 +1769,8 @@ body {
     text-align: center;
   }
   .section-contacts .wrapper-inner .contacts .contact-data .contact-data-contacts__mode {
-    padding-left: 40px;
-    padding-right: 50px;
+    padding-left: 60px;
+    padding-right: 20px;
     margin-right: 0;
     height: auto;
   }
