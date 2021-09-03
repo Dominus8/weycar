@@ -46,12 +46,12 @@ body {
                 color: #cc6600;
                 .contact-data__phone {
                     font-family: ArialNarrow, Helvetica, sans-serif;
-                    font-size: 14px;
+                    font-size: 16px;
                 }
                 .contact-data__email {
                     font-family: Arial, Helvetica, sans-serif;
                     font-weight: bold;
-                    font-size: 14px;
+                    font-size: 16px;
                 }
             }
         }
@@ -555,7 +555,208 @@ body {
     }
 }
 
-//=====================================Адаптив 768=========================================
+//=====================================Адаптив 1024=========================================
+@media (max-width: 1545px) {
+    .bgtop {
+        height: 895px;
+    }
+    .section-first-screen {
+        height: 895px;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 1525px) {
+    .bgtop {
+        height: 875px;
+    }
+    .section-first-screen {
+        height: 875px;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 1490px) {
+    .bgtop {
+        height: 860px;
+    }
+    .section-first-screen {
+        height: 860px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 125px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .bgtop {
+        height: 800px;
+    }
+    .section-first-screen {
+        height: 800px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 95px;
+                    }
+                }
+            }
+        }
+    }
+    #next3>div>div>div.referent-content>div>div.referent-contentrowtwo>div.referent-image4 {
+        max-width: 400px;
+        img {}
+    }
+    #next4>div>div {
+        justify-content: space-between;
+    }
+    #next4>div>div {
+        // flex-wrap: nowrap;
+    }
+    #next4>div>div>div.contact-data>div.contact-data__contacts {
+        margin-left: -400px;
+    }
+    #next4>div>div>div.contact-data>div.contact-data-contacts__mode>div {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .bgtop {
+        height: 760px;
+    }
+    .section-first-screen {
+        height: 760px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 75px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1289px) {}
+
+@media (max-width: 1240px) {
+    .bgtop {
+        height: 710px;
+    }
+    .section-first-screen {
+        height: 710px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .bgtop {
+        height: 660px;
+    }
+    .section-first-screen {
+        height: 660px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1125px) {
+    //Горячие предложения 1125
+    .section-hot-offers {
+        .wrapper-inner {
+            margin: 0 auto;
+            width: 800px;
+            .hot-offers {
+                .hot-offers__title {
+                    max-width: 800px;
+                    padding-top: 40px;
+                }
+                .hot-offers__slider {
+                    max-width: 800px;
+                    padding-top: 20px;
+                    text-align: center;
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .swiper-slide__image {
+                                    img {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .bgtop {
+        height: 680px;
+    }
+    .section-first-screen {
+        height: 680px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .bgtop {
+        height: 610px;
+    }
+    .section-first-screen {
+        height: 610px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .swap-button {
         // display: none;
@@ -564,7 +765,7 @@ body {
     .bgtop {
         height: 480px;
     }
-    //Шапка на 768
+    //Шапка на 1024
     .section-header {
         .wrapper-inner {
             margin: 0 auto;
@@ -577,13 +778,13 @@ body {
                 .wrapp320 {
                     padding-top: 15px;
                     display: flex;
-                    flex-direction: row-reverse;
+                    flex-direction: row;
                     align-items: center;
                     .header-contact {
                         padding-left: 15px;
                         margin-top: 0px;
                         .contact-data {
-                            display: none;
+                            // display: none;
                         }
                         .contact-image {
                             margin-top: 0px;
@@ -598,7 +799,7 @@ body {
             }
         }
     }
-    //Первый экран на 768
+    //Первый экран на 1024
     .section-first-screen {
         margin-top: -105px;
         background-size: cover;
@@ -630,24 +831,32 @@ body {
             }
         }
     }
-    //Горячие предложения 768
+    //Горячие предложения 1024
     .section-hot-offers {
         .wrapper-inner {
             margin: 0 auto;
-            max-width: 600px;
             .hot-offers {
                 .hot-offers__title {
-                    max-width: 600px;
+                    max-width: 800px;
                     padding-top: 40px;
                 }
                 .hot-offers__slider {
                     padding-top: 20px;
                     text-align: center;
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .swiper-slide__image {
+                                    img {}
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-    // Секция с ноутбуком
+    // Секция с ноутбуком 1024
     .section-all-control {
         height: auto;
         padding-bottom: 110px;
@@ -664,12 +873,13 @@ body {
             }
         }
     }
-    //Референт лист на 768
+    //Референт лист на 1024
     .section-referent {
-        height: 1250px;
+        height: 950px;
         .wrapper-inner {
             margin: 0 auto;
             .referent-wrapper {
+                max-width: 900px;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
@@ -678,56 +888,67 @@ body {
                     padding-top: 20px;
                 }
                 .referent-content {
-                    width: 290px;
+                    width: auto;
                     .referent-content-wrapper {
                         padding: 0;
                         .referent-content-rowone {
                             flex-wrap: wrap;
+                            align-items: center;
                             .referent-image1 {
                                 padding: 0;
+                                padding-top: 60px;
                                 img {
-                                    width: 290px;
+                                    width: 320px;
                                     height: auto;
                                 }
                             }
                             .referent-image2 {
-                                text-align: center;
-                                margin: 10px 0 0 20%;
+                                margin: 10px 0 0 10%;
                                 img {}
                             }
                         }
                         .referent-contentrowtwo {
                             flex-wrap: wrap;
+                            align-items: center;
                             .referent-image3 {
+                                text-align: center;
                                 .referent-content__button-title {
+                                    width: 350px;
                                     text-align: center;
                                 }
                                 .referent-content__button {
+                                    display: inline-block;
                                     background-size: contain;
                                     margin-top: 15px;
-                                    width: 290px;
-                                    height: 290px;
+                                    width: 250px;
+                                    height: 250px;
                                     a {
                                         img {
+                                            width: 110px;
+                                            height: 140px;
                                             padding-top: 60px;
                                         }
                                     }
                                 }
                             }
                             .referent-image4 {
+                                width: 250px;
                                 padding: 0;
-                                margin-top: 15px;
+                                // margin-top: 15px;
                                 img {
-                                    width: 290px;
+                                    padding-top: 20px;
+                                    display: block;
+                                    width: 250px;
                                     height: auto;
                                 }
                             }
                         }
                         .referent-contentrowthree {
-                            flex-wrap: wrap;
+                            text-align: right;
                             padding: 0;
                             .referent-image5 {
-                                margin-top: 160px;
+                                display: inline-block;
+                                margin-top: 110px;
                                 width: 290px;
                                 height: 250px;
                                 img {
@@ -756,7 +977,7 @@ body {
                         .contact-data__contacts-wrapper {
                             text-align: left;
                             max-width: 315px;
-                            margin-left: 190px;
+                            margin-left: 290px;
                             .contacts-title {
                                 padding-top: 15px;
                                 // font-size: 32px;
@@ -845,6 +1066,32 @@ body {
     }
 }
 
+@media (max-width: 890px) {
+    body>section.wrapper-outer.section-header>div>div>div.wrapp320>div.header-contact>div.contact-data {
+        display: none;
+    }
+}
+
+@media (max-width: 810px) {
+    //Горячие предложения 768
+    .section-hot-offers {
+        .wrapper-inner {
+            margin: 0 auto;
+            max-width: 600px;
+            .hot-offers {
+                .hot-offers__title {
+                    max-width: 600px;
+                    padding-top: 40px;
+                }
+                .hot-offers__slider {
+                    padding-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .swap-button {
         // display: none;
@@ -921,12 +1168,14 @@ body {
     }
     //Горячие предложения 768
     .section-hot-offers {
+        max-width: 100%;
         .wrapper-inner {
             margin: 0 auto;
-            max-width: 600px;
+            max-width: 100%;
             .hot-offers {
                 .hot-offers__title {
-                    max-width: 600px;
+                    margin: 0 auto;
+                    max-width: 100;
                     padding-top: 40px;
                 }
                 .hot-offers__slider {
@@ -988,7 +1237,9 @@ body {
                         .referent-contentrowtwo {
                             flex-wrap: wrap;
                             .referent-image3 {
+                                min-width: 290px;
                                 .referent-content__button-title {
+                                    max-width: 290px;
                                     text-align: center;
                                 }
                                 .referent-content__button {
@@ -998,6 +1249,8 @@ body {
                                     height: 290px;
                                     a {
                                         img {
+                                            width: auto;
+                                            height: auto;
                                             padding-top: 60px;
                                         }
                                     }
@@ -1016,7 +1269,7 @@ body {
                             flex-wrap: wrap;
                             padding: 0;
                             .referent-image5 {
-                                margin-top: 160px;
+                                margin-top: 230px;
                                 width: 290px;
                                 height: 250px;
                                 img {
@@ -1045,7 +1298,7 @@ body {
                         .contact-data__contacts-wrapper {
                             text-align: left;
                             max-width: 315px;
-                            margin-left: 190px;
+                            margin-left: 290px;
                             .contacts-title {
                                 padding-top: 15px;
                                 font-size: 32px;
@@ -1167,6 +1420,21 @@ body {
             max-width: 290px;
         }
     }
+    .section-first-screen {
+        margin-top: -165px;
+    }
+    .section-first-screen {
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc2 {
+                        margin-top: 190px;
+                        width: 260px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 425px) {
@@ -1212,7 +1480,7 @@ body {
     }
     //Первый экран на 425
     .section-first-screen {
-        margin-top: -105px;
+        margin-top: -160px;
         background-size: cover;
         height: 480px;
         max-width: 425px;
@@ -1231,7 +1499,7 @@ body {
                     }
                     #mc2 {
                         margin: 0 auto;
-                        margin-top: 130px;
+                        margin-top: 190px;
                         display: block;
                     }
                     svg {
@@ -1350,7 +1618,7 @@ body {
     }
     //Контакты на 425
     .section-contacts {
-        height: 1300px;
+        height: 1350px;
         .wrapper-inner {
             margin: 0 auto;
             .contacts {
@@ -1364,7 +1632,7 @@ body {
                         .contact-data__contacts-wrapper {
                             text-align: center;
                             width: 320px;
-                            margin-left: 190px;
+                            margin-left: 350px;
                             .contacts-title {
                                 padding-top: 15px;
                                 font-size: 32px;
@@ -1377,8 +1645,8 @@ body {
                     }
                     .contact-data-contacts__mode {
                         padding-left: 65px;
-                        padding-right: 70px;
-                        margin-right: -40px;
+                        padding-right: 60px;
+                        margin-right: -70px;
                         height: auto;
                         .contact-data-contacts__mode-wrapper {
                             margin-left: 190px;
@@ -1397,7 +1665,9 @@ body {
                     }
                 }
                 .contact-map {
+                    padding-top: 0;
                     .contact-map-mobile {
+                        padding-top: 0;
                         width: 320px;
                         background-size: contain;
                         .contact-map-wrapper {
@@ -1556,7 +1826,7 @@ body {
                         .contact-data__contacts-wrapper {
                             text-align: center;
                             width: 375px;
-                            margin-left: 200px;
+                            margin-left: 360px;
                             .contacts-title {
                                 padding-top: 15px;
                                 font-size: 32px;
@@ -1568,7 +1838,7 @@ body {
                         }
                     }
                     .contact-data-contacts__mode {
-                        padding-left: 40px;
+                        padding-left: 90px;
                         padding-right: 50px;
                         margin-right: 0;
                         height: auto;
@@ -1693,7 +1963,7 @@ body {
     }
     //Первый экран на 320
     .section-first-screen {
-        margin-top: -105px;
+        margin-top: -160px;
         background-size: cover;
         height: 480px;
         .wrapper-inner {
@@ -1707,9 +1977,7 @@ body {
                     margin: 0;
                     display: inline-block;
                     text-align: center;
-                    #mc2 {
-                        margin-left: 0px;
-                    }
+                    #mc2 {}
                     svg {
                         width: 290px;
                         height: auto;
@@ -1840,7 +2108,7 @@ body {
                         .contact-data__contacts-wrapper {
                             text-align: center;
                             width: 275px;
-                            margin-left: 230px;
+                            margin-left: 390px;
                             .contacts-title {
                                 padding-top: 15px;
                                 font-size: 32px;
@@ -1852,7 +2120,7 @@ body {
                         }
                     }
                     .contact-data-contacts__mode {
-                        padding-left: 30px;
+                        padding-left: 90px;
                         padding-right: 45px;
                         margin-right: 0;
                         height: auto;
