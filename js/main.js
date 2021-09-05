@@ -265,7 +265,6 @@ document.getElementById("vreg-button").onmouseleave = function() {
 }
 allMButton
 
-
 //все пункты включить
 document.getElementById("core-menu-img-area").onmouseover = function() {
     document.getElementById("core-menu-img").setAttribute("fill", "#3c96c8");
@@ -305,3 +304,15 @@ document.getElementById("core-menu-img-area").onmouseleave = function() {
     document.getElementById("tahograf-text").setAttribute("visibility", "hidden");
 
 }
+
+// Мобильное меню
+
+$(document).ready(function() {
+    $("#mc2mobil").click(function() {
+        $('.mob-menu').addClass("mob-visible");
+    });
+    $(".mob-menu__close").click(function() {
+        $('.mob-menu').removeClass("mob-visible");
+    });
+
+});
