@@ -910,12 +910,13 @@ body {
     width: 320px;
   }
   .section-first-screen .wrapper-inner .first-screen .mob-menu {
-    top: 120px;
+    top: 130px;
     right: 0;
     left: 0;
     display: none;
-    position: fixed;
-    background-color: #474747;
+    position: absolute;
+    background-color: #0a1215;
+    height: 350px;
   }
   .section-first-screen .wrapper-inner .first-screen .mob-menu .mob-menu-wrapper {
     display: -webkit-box;
@@ -931,17 +932,18 @@ body {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-auto-rows: 2em;
-    grid-gap: .5em;
+    grid-gap: 20px 10px;
     width: 550px;
   }
   .section-first-screen .wrapper-inner .first-screen .mob-menu .mob-menu-wrapper .mob-menu__item-wrapper .mob-menu__item a {
     color: white;
     line-height: 3px;
-    padding: 5px 0;
     text-decoration: none;
   }
   .section-first-screen .wrapper-inner .first-screen .mob-menu .mob-menu-wrapper .mob-menu__close {
     display: block;
+    height: 50px;
+    width: 50px;
     color: red;
     font-size: 32px;
   }
@@ -1529,6 +1531,9 @@ body {
   }
   .section-first-screen {
     margin-top: -165px;
+  }
+  .section-first-screen .wrapper-inner .first-screen .mob-menu {
+    top: 170px;
   }
   .section-first-screen .wrapper-inner .first-screen .menu-core #mc2 {
     margin-top: 190px;
