@@ -1,0 +1,107 @@
+    .ourworks-paginations {
+        color: white;
+        height: 30px;
+        display: block;
+        width: 1600px;
+        margin: auto;
+    }
+    
+    .ourworks-main {
+        background-color: #15252d;
+        .ourworks-label-bg {}
+        .section-ourworks-label {
+            height: 900px;
+            background: url(../image/ourworks-bg.png)center center no-repeat, linear-gradient(to top, #00151f, rgba(16, 37, 47, 0.1));
+            background-blend-mode: overlay;
+            // background-size: contain;}
+            .wrapper-inner {
+                height: 100%;
+                .ourworks {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .ourworks-wrapper {
+                        padding-top: 50px;
+                        width: 620px;
+                        height: 620px;
+                        background-color: rgba(21, 37, 45, 0.8);
+                        ;
+                        border-radius: 50%;
+                        border: solid 8px #3681ac;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .ourworks-logo {
+                            text-align: center;
+                        }
+                        .ourworks-title {
+                            // padding-top: 20px;
+                            text-align: center;
+                            color: #bbbdbe;
+                            font-family: ArialNarrow, Helvetica, sans-serif;
+                            font-size: 58px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .section-ourworks-buttons {
+            .wrapper-inner {
+                .ourworks-buttons {
+                    .ourworks-buttons-wrapper {
+                        padding: 250px 0;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 10px 10px;
+                        .ourworks-buttons-item {
+                            width: 540px;
+                            .ourworks-buttons-item__btn {
+                                .ourworks-buttons-item__btn-title {
+                                    padding-top: 30px;
+                                    height: 93px;
+                                    border: 2px solid #3c96c8;
+                                    border-radius: 5px;
+                                    text-align: center;
+                                    color: white;
+                                    &:hover {
+                                        transition-duration: .2s;
+                                        border: 2px solid white;
+                                    }
+                                    &:active {
+                                        border: 2px solid #3c96c8;
+                                        color: #3c96c8;
+                                    }
+                                }
+                            }
+                            .ourworks-buttons-item__hidden {
+                                padding-top: 20px;
+                                .item-hidden-wrapper {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                                    grid-gap: 10px 10px;
+                                    .item-hidden {
+                                        &:first-child {
+                                            height: 180px;
+                                            width: 180px;
+                                            grid-column-start: 1;
+                                            grid-column-end: 3;
+                                            grid-row-start: 1;
+                                            grid-row-end: 3;
+                                            background-color: rgb(184, 22, 22);
+                                        }
+                                        height: 80px;
+                                        width: 80px;
+                                        background-color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
