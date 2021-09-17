@@ -6,6 +6,10 @@
   margin: auto;
 }
 
+.main-content {
+  background: url(/image/catcalog_bg.png) top center repeat-y;
+}
+
 .ourworks-main {
   background-color: #15252d;
 }
