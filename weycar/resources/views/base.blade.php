@@ -21,7 +21,7 @@
         <div class="wrapper-inner">
             <div class="header-wrapper">
                 <div class="header-logo">
-                    <img src="/image/logo.png" alt="Logo">
+                    <a href="/"><img src="/image/logo.png" alt="Logo"></a>
                 </div>
                 <div class="wrapp320">
                     <div class="header-contact">
