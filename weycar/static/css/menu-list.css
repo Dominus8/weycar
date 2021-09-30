@@ -1,0 +1,126 @@
+.paginations {
+  width: 999px;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #bbbdbe;
+}
+
+.section-menu-list {
+  margin-top: 35px;
+}
+
+.section-menu-list .wrapper-inner .menu-list .menu-list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 100px;
+}
+
+.section-menu-list .wrapper-inner .menu-list .menu-list-wrapper .menu-list__item {
+  width: 160px;
+  text-align: center;
+  color: #bbbdbe;
+}
+
+.section-menu-list .wrapper-inner .menu-list .menu-list-wrapper .menu-list__item .item-wrapper .item__image {
+  border: 3.79px solid #3582ac;
+  border-radius: 15px;
+  border-image-slice: 1;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #162831;
+  background: linear-gradient(340deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
+.section-menu-list .wrapper-inner .menu-list .menu-list-wrapper .menu-list__item .item-wrapper .item__title {
+  padding-top: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.section-video-recorders-category-info .wrapper-inner .video-recorders-category-info {
+  margin-top: 55px;
+  color: #bbbdbe;
+}
+
+.section-video-recorders-category-info .wrapper-inner .video-recorders-category-info .category-info-title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+}
+
+.section-video-recorders-category-info .wrapper-inner .video-recorders-category-info .category-info-subtitle {
+  margin-top: 15px;
+  max-width: 600px;
+  font-family: NorrowArial, Helvetica, sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.equipment {
+  padding: 50px 0px 100px 100px;
+}
+
+.equipment .equipment-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 25px;
+}
+
+.equipment .equipment-wrapper .equipment__item {
+  width: 160px;
+  text-align: center;
+  color: #bbbdbe;
+}
+
+.equipment .equipment-wrapper .equipment__item .item-wrapper .item__image {
+  border: 3.79px solid #3582ac;
+  border-radius: 15px;
+  border-image-slice: 1;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #162831;
+  background: linear-gradient(340deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
+.equipment .equipment-wrapper .equipment__item .item-wrapper .item__title {
+  padding-top: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}
+/*# sourceMappingURL=menu-list.css.map */

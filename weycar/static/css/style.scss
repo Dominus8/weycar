@@ -1,0 +1,2316 @@
+@import url(fonts.css);
+body {
+    border: none;
+    background-color: #0e1f27;
+}
+
+.wrapper-outer {
+    margin-top: -2px;
+    max-width: 1600px;
+    margin: 0 auto;
+    .wrapper-inner {
+        margin: 0 auto;
+        width: 69.375%;
+    }
+}
+
+.main-content {}
+
+.section-header {
+    overflow: hidden;
+    position: relative;
+    z-index: 999999;
+}
+
+.header-wrapper {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-logo {
+        flex-grow: 1;
+    }
+    .wrapp320 {
+        display: flex;
+        align-items: center;
+        .header-contact {
+            display: flex;
+            align-items: center;
+            .contact-data {
+                margin-right: 4px;
+                color: #cc6600;
+                .contact-data__phone {
+                    font-family: ArialNarrow, Helvetica, sans-serif;
+                    font-size: 16px;
+                }
+                .contact-data__email {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+        }
+        .header-login {
+            margin-left: 33px;
+            a {
+                white-space: nowrap;
+                padding: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: #bbbdbe;
+                text-decoration: none;
+                border: 3.15px solid #3c96c8;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.swap-button {
+    position: fixed;
+    margin-top: 23px;
+    top: 800px;
+    right: 15px;
+    z-index: 9999;
+    .swap-button__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        border: 2px solid #3f4c54;
+        border-radius: 50px;
+        #scroll_top {
+            visibility: hidden;
+            span {
+                img {
+                    opacity: 0.2;
+                }
+            }
+        }
+        #scroll_bottom {
+            span {
+                img {
+                    opacity: 0.2;
+                }
+            }
+        }
+        &:hover {
+            transition: 1s;
+            border: 2px solid #bbbdbe;
+            border-radius: 50px;
+            transition: 0.9;
+            #scroll_top {
+                transition: 1s;
+                span {
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+            #scroll_bottom {
+                transition: 1s;
+                span {
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.stickytop {
+    // z-index: 8000;
+    // position: fixed;
+    // top: 0;
+    // right: 10px;
+    .swap-button__item {
+        #scroll_top {
+            visibility: visible;
+        }
+    }
+}
+
+.bgtop {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    background-color: #0a1215;
+    height: 900px;
+}
+
+.section-first-screen {
+    position: relative;
+    z-index: 9000;
+    margin-top: -93px;
+    height: 900px;
+    background: url(../image/main_bg.jpg) center center no-repeat;
+    background-size: contain;
+    // background-size: cover;
+    .wrapper-inner {}
+}
+
+.first-screen {
+    .mob-menu {
+        display: none;
+    }
+    .menu-core {
+        display: flex;
+        justify-content: center;
+        #mc2 {
+            display: none;
+        }
+        .menu-core__logo {
+            svg {
+                #tahograf-img {
+                    transition: visibility 1s;
+                }
+            }
+            position: absolute;
+            width: 157px;
+            height: 133px;
+            margin-top: 420px;
+            background: url(/image/core-menu-logo.png) center center no-repeat;
+        }
+        svg {
+            margin-top: 135px;
+            margin-left: -30px;
+        }
+    }
+}
+
+.section-hot-offers {
+    background-color: #0e1f27;
+    padding-bottom: 50px;
+}
+
+.hot-offers {
+    padding-bottom: 50px;
+    height: 450px;
+    max-width: 100%;
+    .hot-offers__title {
+        padding-top: 82px;
+        color: #bbbdbe;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+    }
+    .hot-offers__slider {
+        display: flex;
+        justify-content: center;
+        div>div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets>span.swiper-pagination-bullet {
+            background: #0e1f27;
+            border: 2px solid #3c96c8;
+        }
+        div>div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets>span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: #0e1f27;
+            border: 2px solid #a5a9aa;
+        }
+        .swiper {
+            width: 1115px;
+            height: 270px;
+            .swiper-pagination {
+                .swiper-pagination-bullets {
+                    .swiper-pagination-bullet-active {}
+                }
+            }
+        }
+    }
+}
+
+// Секция с ноутбуком
+.section-all-control {
+    height: 900px;
+    background: url(/image/all-controll-bg-v1.png) center right 15px no-repeat #0e1f27;
+    .wrapper-inner {
+        .all-controll-wrapper {
+            .all-control__title {
+                padding-top: 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 24px;
+                text-align: center;
+                color: #3584b0;
+            }
+            .all-control__content {
+                margin: 50px auto 0 auto;
+                height: 543px;
+                max-width: 944px;
+                // background: url(/image/all-controll-PC.png) center center no-repeat;
+                text-align: center;
+                img {
+                    // margin-top: 30px;
+                    margin-top: -60px;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.section-referent {
+    height: 1180px;
+    background-color: #0e1f27;
+    .wrapper-inner {
+        .referent-wrapper {
+            color: #bbbdbe;
+            .referent__title {
+                padding-top: 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 36px;
+                text-align: center;
+            }
+            .referent-content {
+                overflow: hidden;
+                .referent-content-wrapper {
+                    // display: grid;
+                    max-width: 1110px;
+                    padding-left: 50px;
+                    .referent-content-rowone {
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        .referent-image1 {
+                            padding-left: 44px;
+                            max-width: 595px;
+                            height: auto;
+                            img {
+                                width: 595px;
+                                height: 73px;
+                            }
+                        }
+                        .referent-image2 {
+                            margin-left: 95px;
+                            width: 155px;
+                            height: 260px;
+                            img {
+                                width: 155px;
+                                height: 260px;
+                            }
+                        }
+                    }
+                    .referent-contentrowtwo {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .referent-image3 {
+                            .referent-content__button-title {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-weight: bold;
+                                font-size: 24px;
+                                text-align: left;
+                            }
+                            .referent-content__button {
+                                margin-top: 47px;
+                                height: 320px;
+                                width: 310px;
+                                text-align: center;
+                                background: url(/image/referen-button-bg.png) center left 20px no-repeat;
+                                a {
+                                    img {
+                                        padding-top: 75px;
+                                    }
+                                }
+                            }
+                        }
+                        .referent-image4 {
+                            padding-top: 65px;
+                            padding-left: 14px;
+                            width: 555px;
+                            height: 100px;
+                            img {
+                                width: 555px;
+                                height: 100px;
+                            }
+                        }
+                    }
+                    .referent-contentrowthree {
+                        margin-top: -180px;
+                        padding-left: 270px;
+                        .referent-image5 {
+                            width: 506px;
+                            height: 358px;
+                            img {
+                                width: 506px;
+                                height: 358px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-contacts {
+    overflow: hidden;
+    height: 1017px;
+    background: url(/image/contacts-bg.png) no-repeat;
+    background-position: 350px 20px;
+    background-color: #0e1f27;
+    .wrapper-inner {
+        .contacts {
+            display: flex;
+            flex-wrap: wrap;
+            .contact-data {
+                max-width: 950px;
+                color: #bbbdbe;
+                .contact-data__contacts {
+                    margin-top: 50px;
+                    margin-left: -245px;
+                    height: 300px;
+                    background: linear-gradient(to right, #255a77, rgba(16, 37, 47, 0.3));
+                    .contact-data__contacts-wrapper {
+                        margin-left: 300px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        text-align: left;
+                        .contacts-title {
+                            font-size: 48px;
+                        }
+                        .contacts-phone {
+                            font-size: 24px;
+                            margin-top: 35px;
+                        }
+                        .contactsmail {
+                            font-size: 24px;
+                        }
+                        .contacts-address {
+                            font-size: 24px;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+                .contact-data-contacts__mode {
+                    padding-right: 35px;
+                    margin-right: 115px;
+                    margin-left: -245px;
+                    height: 300px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    text-align: left;
+                    background: linear-gradient(to left, #255a77, rgba(16, 37, 47, 0.3));
+                    .contact-data-contacts__mode-wrapper {
+                        margin-left: 450px;
+                        text-align: right;
+                        .contact-data-contacts__mode-title {
+                            padding-top: 50px;
+                            font-size: 48px;
+                        }
+                        .text1 {
+                            font-size: 24px;
+                            padding-top: 10px;
+                        }
+                        .text2 {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+            .contact-map {
+                .contact-map-mobile {
+                    width: 365px;
+                    height: 770px;
+                    background: url(/image/Huawei-P8.png) center center no-repeat;
+                    background-size: cover;
+                    .contact-map-wrapper {
+                        padding-left: 5px;
+                        padding-top: 72px;
+                        #map2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-bg {
+    border-top: 2px solid #255b78;
+    z-index: 1;
+    background: linear-gradient(to top, #424e54, rgba(16, 37, 47, 0.3));
+    width: 100%;
+    height: 380px;
+    position: absolute;
+}
+
+.section-footer {
+    overflow: hidden;
+    position: relative;
+    z-index: 6666;
+    border-radius: 5px;
+    .wrapper-inner {
+        .copywrite {
+            margin-top: 60px;
+            margin-bottom: 20px;
+            color: #bbbdbe;
+            font-family: ArialNarrow, Helvetica, sans-serif;
+            font-weight: regular;
+            text-align: left;
+            font-size: 18px;
+            text-align: center;
+        }
+        .footer {
+            margin-top: 30px;
+            color: #bbbdbe;
+            display: flex;
+            justify-content: space-between;
+            a {
+                text-decoration: none;
+                color: #bbbdbe;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: regular;
+                font-size: 16px;
+                // line-height: 14px;
+            }
+            .cat-wrapp {
+                width: 350px;
+                display: flex;
+                justify-content: space-between;
+                .catalog {
+                    width: 150px;
+                    .title {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        text-align: left;
+                        font-size: 16px;
+                    }
+                }
+                .cataog2 {
+                    width: 150px;
+                    padding-top: 18px;
+                }
+            }
+            .ms-wrapp {
+                width: 350px;
+                display: flex;
+                justify-content: space-between;
+                .menu {
+                    width: 150px;
+                    .title {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        text-align: left;
+                        font-size: 16px;
+                    }
+                }
+                .service {
+                    width: 150px;
+                    .title {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        text-align: left;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .social {
+                width: 260px;
+                .social-button {
+                    .social-button-phone-wrapper {
+                        border: 2px solid #477693;
+                        border-radius: 5px;
+                        padding: 2px 14px;
+                        width: 260px;
+                        text-align: center;
+                        a {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: bold;
+                            text-align: left;
+                            font-size: 16px;
+                        }
+                        img {
+                            padding: 3px 0 3px 15px;
+                        }
+                    }
+                    .social-button-wrapper {
+                        padding-top: 30px;
+                        display: flex;
+                        justify-content: space-between;
+                        a {
+                            div {
+                                width: 50px;
+                                height: 50px;
+                                border: 2px solid #477693;
+                                border-radius: 6px;
+                                text-align: center;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                img {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//=====================================Адаптив 1024=========================================
+@media (max-width: 1545px) {
+    .bgtop {
+        height: 895px;
+    }
+    .section-first-screen {
+        height: 895px;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 1525px) {
+    .bgtop {
+        height: 875px;
+    }
+    .section-first-screen {
+        height: 875px;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 1490px) {
+    .bgtop {
+        height: 860px;
+    }
+    .section-first-screen {
+        height: 860px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 125px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .bgtop {
+        height: 800px;
+    }
+    .section-first-screen {
+        height: 800px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 95px;
+                    }
+                }
+            }
+        }
+    }
+    #next3>div>div>div.referent-content>div>div.referent-contentrowtwo>div.referent-image4 {
+        max-width: 310px;
+        img {
+            padding-top: 40px;
+            max-width: 310px;
+            height: auto;
+        }
+    }
+    .section-contacts {
+        height: 1500px;
+        .wrapper-inner {
+            margin: 0 auto;
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .contact-data {
+                    .contact-data__contacts {
+                        padding-left: 40px;
+                        .contact-data__contacts-wrapper {
+                            text-align: left;
+                            max-width: 315px;
+                            margin-left: 200px;
+                            .contacts-title {
+                                padding-top: 15px;
+                                // font-size: 32px;
+                            }
+                            .contacts-phone {
+                                margin-top: 15px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                    .contact-data-contacts__mode {
+                        padding-left: 10px;
+                        padding-right: 200px;
+                        margin-right: -270px;
+                        // padding-bottom: 22px;
+                        // height: auto;
+                        .contact-data-contacts__mode-wrapper {
+                            margin-left: 190px;
+                            .contact-data-contacts__mode-title {
+                                padding-top: 50px;
+                                // font-size: 32px;
+                                text-align: right;
+                            }
+                            .text1 {
+                                // text-align: right;
+                            }
+                            .text2 {
+                                // text-align: right;
+                            }
+                        }
+                    }
+                }
+                .contact-map {
+                    padding-top: 40px;
+                    align-items: center;
+                    display: block;
+                    margin: 0 auto;
+                    .contact-map-mobile {
+                        margin: 0 auto;
+                        display: inline-block;
+                        // width: 320px;
+                        background-size: contain;
+                        .contact-map-wrapper {
+                            display: inline-block;
+                            padding-top: 110px;
+                            #map1 {
+                                // display: inline-block;
+                            }
+                            #map2 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1340px) {
+    .bgtop {
+        height: 760px;
+    }
+    .section-first-screen {
+        height: 760px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 75px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1289px) {}
+
+@media (max-width: 1240px) {
+    .bgtop {
+        height: 710px;
+    }
+    .section-first-screen {
+        height: 710px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .bgtop {
+        height: 660px;
+    }
+    .section-first-screen {
+        height: 660px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1125px) {
+    //Горячие предложения 1125
+    .section-hot-offers {
+        .wrapper-inner {
+            margin: 0 auto;
+            width: 800px;
+            .hot-offers {
+                .hot-offers__title {
+                    max-width: 800px;
+                    padding-top: 40px;
+                }
+                .hot-offers__slider {
+                    max-width: 800px;
+                    padding-top: 20px;
+                    text-align: center;
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .swiper-slide__image {
+                                    img {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .bgtop {
+        height: 680px;
+    }
+    .section-first-screen {
+        height: 680px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .bgtop {
+        height: 610px;
+    }
+    .section-first-screen {
+        height: 610px;
+        background-size: contain;
+        .wrapper-inner {
+            .first-screen {
+                .menu-core {
+                    #mc1 {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .swap-button {
+        // display: none;
+        top: 480px;
+    }
+    .bgtop {
+        height: 480px;
+        // border-bottom: 1px solid rgb(173, 173, 173);
+    }
+    //Шапка на 1024
+    .section-header {
+        .wrapper-inner {
+            margin: 0 auto;
+            min-width: 280px;
+            .header-wrapper {
+                flex-wrap: wrap;
+                .header-logo {
+                    text-align: center;
+                }
+                .wrapp320 {
+                    padding-top: 15px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .header-contact {
+                        padding-left: 15px;
+                        margin-top: 0px;
+                        .contact-data {
+                            // display: none;
+                        }
+                        .contact-image {
+                            margin-top: 0px;
+                        }
+                    }
+                    .header-login {
+                        // margin-top: 15px;
+                        margin-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    //Первый экран на 1024
+    .section-first-screen {
+        margin-top: -105px;
+        background-size: cover;
+        height: 480px;
+        max-width: 768px;
+        .wrapper-inner {
+            margin: 0 auto;
+            width: 320px;
+            .first-screen {
+                text-align: center;
+                width: 320px;
+                .mob-menu {
+                    top: 130px;
+                    right: 0;
+                    left: 0;
+                    display: none;
+                    position: absolute;
+                    background-color: #0a1215;
+                    height: 350px;
+                    .mob-menu-wrapper {
+                        display: flex;
+                        justify-content: center;
+                        .mob-menu__item-wrapper {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-auto-rows: 2em;
+                            grid-gap: 20px 10px;
+                            width: 550px;
+                            .mob-menu__item {
+                                a {
+                                    color: white;
+                                    line-height: 3px;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        .mob-menu__close {
+                            display: block;
+                            height: 50px;
+                            width: 50px;
+                            color: red;
+                            font-size: 32px;
+                        }
+                    }
+                }
+                .mob-hidden {
+                    display: none;
+                }
+                .mob-visible {
+                    display: block;
+                }
+                .menu-core {
+                    width: 320px;
+                    display: inline-block;
+                    text-align: center;
+                    #mc1 {
+                        display: none;
+                    }
+                    #mc2 {
+                        margin: 0 auto;
+                        margin-top: 130px;
+                        display: block;
+                    }
+                    svg {
+                        width: 290px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    //Горячие предложения 1024
+    .section-hot-offers {
+        .wrapper-inner {
+            margin: 0 auto;
+            .hot-offers {
+                .hot-offers__title {
+                    max-width: 800px;
+                    padding-top: 40px;
+                }
+                .hot-offers__slider {
+                    padding-top: 20px;
+                    text-align: center;
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .swiper-slide__image {
+                                    img {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Секция с ноутбуком 1024
+    .section-all-control {
+        height: auto;
+        padding-bottom: 110px;
+        .wrapper-inner {
+            margin: 0 auto;
+            max-width: 600px;
+            .all-controll-wrapper {
+                height: 450px;
+                .all-control__title {}
+                .all-control__content {
+                    padding-top: 15px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    //Референт лист на 1024
+    .section-referent {
+        height: 950px;
+        .wrapper-inner {
+            margin: 0 auto;
+            .referent-wrapper {
+                max-width: 900px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                align-items: center;
+                .referent__title {
+                    padding-top: 20px;
+                }
+                .referent-content {
+                    width: auto;
+                    .referent-content-wrapper {
+                        padding: 0;
+                        .referent-content-rowone {
+                            flex-wrap: wrap;
+                            align-items: center;
+                            .referent-image1 {
+                                padding: 0;
+                                padding-top: 60px;
+                                img {
+                                    width: 320px;
+                                    height: auto;
+                                }
+                            }
+                            .referent-image2 {
+                                margin: 10px 0 0 10%;
+                                img {}
+                            }
+                        }
+                        .referent-contentrowtwo {
+                            flex-wrap: wrap;
+                            align-items: center;
+                            .referent-image3 {
+                                text-align: center;
+                                .referent-content__button-title {
+                                    width: 350px;
+                                    text-align: center;
+                                }
+                                .referent-content__button {
+                                    display: inline-block;
+                                    background-size: contain;
+                                    margin-top: 15px;
+                                    width: 250px;
+                                    height: 250px;
+                                    a {
+                                        img {
+                                            width: 110px;
+                                            height: 140px;
+                                            padding-top: 60px;
+                                        }
+                                    }
+                                }
+                            }
+                            .referent-image4 {
+                                width: 250px;
+                                padding: 0;
+                                // margin-top: 15px;
+                                img {
+                                    padding-top: 20px;
+                                    display: block;
+                                    width: 250px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                        .referent-contentrowthree {
+                            text-align: right;
+                            padding: 0;
+                            .referent-image5 {
+                                display: inline-block;
+                                margin-top: 110px;
+                                width: 290px;
+                                height: 250px;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Контакты на 1024
+    .section-contacts {
+        height: 1500px;
+        .wrapper-inner {
+            margin: 0 auto;
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .contact-data {
+                    .contact-data__contacts {
+                        padding-left: 40px;
+                        .contact-data__contacts-wrapper {
+                            text-align: left;
+                            max-width: 315px;
+                            margin-left: 160px;
+                            .contacts-title {
+                                padding-top: 15px;
+                                // font-size: 32px;
+                            }
+                            .contacts-phone {
+                                margin-top: 15px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                    .contact-data-contacts__mode {
+                        padding-left: 55px;
+                        padding-right: 90px;
+                        margin-right: -155px;
+                        // padding-bottom: 22px;
+                        // height: auto;
+                        .contact-data-contacts__mode-wrapper {
+                            margin-left: 190px;
+                            .contact-data-contacts__mode-title {
+                                padding-top: 50px;
+                                // font-size: 32px;
+                                text-align: right;
+                            }
+                            .text1 {
+                                // text-align: right;
+                            }
+                            .text2 {
+                                // text-align: right;
+                            }
+                        }
+                    }
+                }
+                .contact-map {
+                    padding-top: 40px;
+                    align-items: center;
+                    display: block;
+                    margin: 0 auto;
+                    .contact-map-mobile {
+                        margin: 0 auto;
+                        display: inline-block;
+                        // width: 320px;
+                        background-size: contain;
+                        .contact-map-wrapper {
+                            display: inline-block;
+                            padding-top: 110px;
+                            #map1 {
+                                // display: inline-block;
+                            }
+                            #map2 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //footer 1024
+    .footer-bg {}
+    .section-footer {
+        .wrapper-inner {
+            width: auto;
+            padding: 0 40px;
+            .footer {
+                .cat-wrapp {
+                    .catalog {
+                        .title {}
+                    }
+                    .cataog2 {
+                        .title {}
+                    }
+                }
+                .ms-wrapp {
+                    .menu {
+                        .title {}
+                    }
+                    .service {
+                        .title {}
+                    }
+                }
+                .social {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    body>section.wrapper-outer.section-header>div>div>div.wrapp320>div.header-contact>div.contact-data {
+        display: none;
+    }
+}
+
+@media (max-width: 810px) {
+    //Горячие предложения 768
+    .section-hot-offers {
+        .wrapper-inner {
+            margin: 0 auto;
+            max-width: 600px;
+            .hot-offers {
+                .hot-offers__title {
+                    max-width: 600px;
+                    padding-top: 40px;
+                }
+                .hot-offers__slider {
+                    padding-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .swap-button {
+        // display: none;
+        top: 480px;
+    }
+    .bgtop {
+        height: 480px;
+    }
+    //Шапка на 768
+    .section-header {
+        .wrapper-inner {
+            margin: 0 auto;
+            min-width: 280px;
+            .header-wrapper {
+                flex-wrap: wrap;
+                .header-logo {
+                    text-align: center;
+                }
+                .wrapp320 {
+                    padding-top: 15px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    .header-contact {
+                        padding-left: 15px;
+                        margin-top: 0px;
+                        .contact-data {
+                            display: none;
+                        }
+                        .contact-image {
+                            margin-top: 0px;
+                        }
+                    }
+                    .header-login {
+                        // margin-top: 15px;
+                        margin-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    //Первый экран на 768
+    .section-first-screen {
+        margin-top: -105px;
+        background-size: cover;
+        height: 480px;
+        max-width: 768px;
+        .wrapper-inner {
+            margin: 0 auto;
+            width: 320px;
+            .first-screen {
+                text-align: center;
+                width: 320px;
+                .menu-core {
+                    width: 320px;
+                    display: inline-block;
+                    text-align: center;
+                    #mc1 {
+                        display: none;
+                    }
+                    #mc2 {
+                        margin: 0 auto;
+                        margin-top: 130px;
+                        display: block;
+                    }
+                    svg {
+                        width: 290px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    //Горячие предложения 768
+    .section-hot-offers {
+        max-width: 100%;
+        .wrapper-inner {
+            margin: 0 auto;
+            max-width: 100%;
+            .hot-offers {
+                .hot-offers__title {
+                    margin: 0 auto;
+                    max-width: 100;
+                    padding-top: 40px;
+                }
+                .hot-offers__slider {
+                    padding-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // Секция с ноутбуком
+    .section-all-control {
+        height: auto;
+        padding-bottom: 110px;
+        .wrapper-inner {
+            margin: 0 auto;
+            max-width: 600px;
+            .all-controll-wrapper {
+                height: 450px;
+                .all-control__title {}
+                .all-control__content {
+                    padding-top: 15px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    //Референт лист на 768
+    .section-referent {
+        height: 1250px;
+        .wrapper-inner {
+            margin: 0 auto;
+            .referent-wrapper {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                align-items: center;
+                .referent__title {
+                    padding-top: 20px;
+                }
+                .referent-content {
+                    width: 290px;
+                    .referent-content-wrapper {
+                        padding: 0;
+                        .referent-content-rowone {
+                            flex-wrap: wrap;
+                            .referent-image1 {
+                                padding: 0;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                            .referent-image2 {
+                                text-align: center;
+                                margin: 10px 0 0 20%;
+                                img {}
+                            }
+                        }
+                        .referent-contentrowtwo {
+                            flex-wrap: wrap;
+                            .referent-image3 {
+                                min-width: 290px;
+                                .referent-content__button-title {
+                                    max-width: 290px;
+                                    text-align: center;
+                                }
+                                .referent-content__button {
+                                    background-size: contain;
+                                    margin-top: 15px;
+                                    width: 290px;
+                                    height: 290px;
+                                    a {
+                                        img {
+                                            width: auto;
+                                            height: auto;
+                                            padding-top: 60px;
+                                        }
+                                    }
+                                }
+                            }
+                            .referent-image4 {
+                                padding: 0;
+                                margin-top: 15px;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                        .referent-contentrowthree {
+                            flex-wrap: wrap;
+                            padding: 0;
+                            .referent-image5 {
+                                margin-top: 230px;
+                                width: 290px;
+                                height: 250px;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Контакты на 768
+    .section-contacts {
+        height: 1300px;
+        .wrapper-inner {
+            margin: 0 auto;
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .contact-data {
+                    .contact-data__contacts {
+                        padding-left: 40px;
+                        .contact-data__contacts-wrapper {
+                            text-align: left;
+                            max-width: 315px;
+                            margin-left: 190px;
+                            .contacts-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                            }
+                            .contacts-phone {
+                                margin-top: 15px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                    .contact-data-contacts__mode {
+                        padding-left: 65px;
+                        padding-right: 90px;
+                        margin-right: -117px;
+                        padding-bottom: 18px;
+                        height: auto;
+                        .contact-data-contacts__mode-wrapper {
+                            margin-left: 190px;
+                            .contact-data-contacts__mode-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                                text-align: right;
+                            }
+                            .text1 {
+                                text-align: right;
+                            }
+                            .text2 {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                .contact-map {
+                    align-items: center;
+                    display: block;
+                    margin: 0 auto;
+                    .contact-map-mobile {
+                        margin: 0 auto;
+                        display: inline-block;
+                        width: 320px;
+                        background-size: contain;
+                        .contact-map-wrapper {
+                            display: inline-block;
+                            padding-top: 110px;
+                            #map1 {
+                                display: none;
+                            }
+                            #map2 {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //footer 768
+    .footer-bg {
+        height: 694px;
+    }
+    .section-footer {
+        .wrapper-inner {
+            margin: 30px 0 0 0;
+            width: auto;
+            .footer {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                .cat-wrapp {
+                    width: auto;
+                    .catalog {
+                        padding-top: 20px;
+                        margin: 0 auto 0 auto;
+                        text-align: center;
+                        .title {
+                            text-align: center;
+                        }
+                    }
+                    .cataog2 {
+                        padding-top: 42px;
+                        margin: 0 auto 0 auto;
+                        text-align: center;
+                        .title {
+                            text-align: center;
+                        }
+                    }
+                }
+                .ms-wrapp {
+                    width: auto;
+                    .menu {
+                        padding-top: 20px;
+                        margin: 0 auto 0 auto;
+                        text-align: center;
+                        .title {
+                            text-align: center;
+                        }
+                    }
+                    .service {
+                        padding-top: 20px;
+                        margin: 0 auto 0 auto;
+                        text-align: center;
+                        .title {
+                            text-align: center;
+                        }
+                    }
+                }
+                .social {
+                    align-self: center;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    .section-header {
+        .wrapper-inner {
+            max-width: 290px;
+        }
+    }
+    .section-first-screen {
+        margin-top: -165px;
+        .wrapper-inner {
+            .first-screen {
+                .mob-menu {
+                    top: 170px;
+                }
+                .menu-core {
+                    #mc2 {
+                        margin-top: 190px;
+                        width: 260px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .swap-button {
+        // display: none;
+        top: 480px;
+    }
+    .bgtop {
+        height: 480px;
+    }
+    //Шапка на 425
+    .section-header {
+        .wrapper-inner {
+            min-width: 280px;
+            .header-wrapper {
+                flex-wrap: wrap;
+                .header-logo {
+                    text-align: center;
+                }
+                .wrapp320 {
+                    padding-top: 15px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    .header-contact {
+                        padding-left: 15px;
+                        margin-top: 0px;
+                        .contact-data {
+                            display: none;
+                        }
+                        .contact-image {
+                            margin-top: 0px;
+                        }
+                    }
+                    .header-login {
+                        // margin-top: 15px;
+                        margin-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    //Первый экран на 425
+    .section-first-screen {
+        margin-top: -160px;
+        background-size: cover;
+        height: 480px;
+        max-width: 425px;
+        .wrapper-inner {
+            margin: 0 auto;
+            width: 320px;
+            .first-screen {
+                text-align: center;
+                width: 320px;
+                .menu-core {
+                    width: 320px;
+                    display: inline-block;
+                    text-align: center;
+                    #mc1 {
+                        display: none;
+                    }
+                    #mc2 {
+                        margin: 0 auto;
+                        margin-top: 190px;
+                        display: block;
+                    }
+                    svg {
+                        width: 290px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    //Горячие предложения 425
+    .section-hot-offers {
+        .wrapper-inner {
+            margin: 0 auto;
+            width: 290px;
+            .hot-offers {
+                .hot-offers__title {
+                    padding-top: 40px;
+                }
+                .hot-offers__slider {
+                    padding-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // Секция с ноутбуком 425
+    .section-all-control {
+        height: 450px;
+        .wrapper-inner {
+            margin: 0 auto;
+            width: 290px;
+            .all-controll-wrapper {
+                height: 450px;
+                .all-control__title {}
+                .all-control__content {
+                    padding-top: 15px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    //Референт лист на 425
+    .section-referent {
+        height: 1250px;
+        .wrapper-inner {
+            margin: 0 auto;
+            width: 290px;
+            .referent-wrapper {
+                .referent__title {
+                    padding-top: 20px;
+                }
+                .referent-content {
+                    width: 290px;
+                    .referent-content-wrapper {
+                        padding: 0;
+                        .referent-content-rowone {
+                            flex-wrap: wrap;
+                            .referent-image1 {
+                                padding: 0;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                            .referent-image2 {
+                                text-align: center;
+                                margin: 10px 0 0 20%;
+                                img {}
+                            }
+                        }
+                        .referent-contentrowtwo {
+                            flex-wrap: wrap;
+                            .referent-image3 {
+                                .referent-content__button-title {
+                                    text-align: center;
+                                }
+                                .referent-content__button {
+                                    background-size: contain;
+                                    margin-top: 15px;
+                                    width: 290px;
+                                    height: 290px;
+                                    a {
+                                        img {
+                                            padding-top: 60px;
+                                        }
+                                    }
+                                }
+                            }
+                            .referent-image4 {
+                                padding: 0;
+                                margin-top: 15px;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                        .referent-contentrowthree {
+                            flex-wrap: wrap;
+                            padding: 0;
+                            .referent-image5 {
+                                margin-top: 160px;
+                                width: 290px;
+                                height: 250px;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Контакты на 425
+    .section-contacts {
+        height: 1350px;
+        .wrapper-inner {
+            margin: 0 auto;
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                justify-content: center;
+                .contact-data {
+                    .contact-data__contacts {
+                        padding-left: 40px;
+                        .contact-data__contacts-wrapper {
+                            text-align: center;
+                            width: 320px;
+                            margin-left: 200px;
+                            .contacts-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                            }
+                            .contacts-phone {
+                                margin-top: 15px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .contact-data-contacts__mode {
+                        padding-left: 35px;
+                        padding-right: 70px;
+                        margin-right: -70px;
+                        height: auto;
+                        .contact-data-contacts__mode-wrapper {
+                            margin-left: 190px;
+                            .contact-data-contacts__mode-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                                text-align: center;
+                            }
+                            .text1 {
+                                text-align: center;
+                            }
+                            .text2 {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .contact-map {
+                    padding-top: 0;
+                    .contact-map-mobile {
+                        padding-top: 0;
+                        width: 320px;
+                        background-size: contain;
+                        .contact-map-wrapper {
+                            padding-top: 110px;
+                            #map1 {
+                                display: none;
+                            }
+                            #map2 {
+                                width: 298px;
+                                height: 550px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //footer 425
+    .footer-bg {
+        height: 694px;
+    }
+    .section-footer {
+        .wrapper-inner {
+            margin: 30px auto 0 auto;
+            .footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .catalog {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .cataog2 {
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .menu {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .service {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .social {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 399px) {
+    //Контакты на 375
+    .section-contacts {
+        height: 1300px;
+        .wrapper-inner {
+            margin: 30px;
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .contact-data {
+                    width: 399px;
+                    .contact-data__contacts {
+                        padding-left: 40px;
+                        .contact-data__contacts-wrapper {
+                            text-align: center;
+                            width: 399px;
+                            margin-left: 220px;
+                            .contacts-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                            }
+                            .contacts-phone {
+                                margin-top: 15px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .contact-data-contacts__mode {
+                        padding-left: 50px;
+                        padding-right: 50px;
+                        margin-right: 0;
+                        height: auto;
+                        .contact-data-contacts__mode-wrapper {
+                            margin-left: 200px;
+                            .contact-data-contacts__mode-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                                text-align: center;
+                            }
+                            .text1 {
+                                text-align: center;
+                            }
+                            .text2 {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .contact-map {
+                    margin-left: 22px;
+                    .contact-map-mobile {
+                        width: 310px;
+                        background-size: contain;
+                        .contact-map-wrapper {
+                            padding-top: 110px;
+                            #map1 {
+                                display: none;
+                            }
+                            #map2 {
+                                width: 298px;
+                                height: 550px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    //Контакты на 375
+    .section-contacts {
+        height: 1300px;
+        .wrapper-inner {
+            margin: 30px;
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .contact-data {
+                    width: 375px;
+                    .contact-data__contacts {
+                        padding-left: 40px;
+                        .contact-data__contacts-wrapper {
+                            text-align: center;
+                            width: 375px;
+                            margin-left: 210px;
+                            .contacts-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                            }
+                            .contacts-phone {
+                                margin-top: 15px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .contact-data-contacts__mode {
+                        padding-left: 40px;
+                        padding-right: 50px;
+                        margin-right: 0;
+                        height: auto;
+                        .contact-data-contacts__mode-wrapper {
+                            margin-left: 200px;
+                            .contact-data-contacts__mode-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                                text-align: center;
+                            }
+                            .text1 {
+                                text-align: center;
+                            }
+                            .text2 {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .contact-map {
+                    margin-left: 6px;
+                    .contact-map-mobile {
+                        width: 310px;
+                        background-size: contain;
+                        .contact-map-wrapper {
+                            padding-top: 110px;
+                            #map1 {
+                                display: none;
+                            }
+                            #map2 {
+                                width: 298px;
+                                height: 550px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //footer 375
+    .section-footer {
+        .wrapper-inner {
+            margin: 30px auto 0 auto;
+            .footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .catalog {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .cataog2 {
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .menu {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .service {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .social {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .swap-button {
+        // display: none;
+        top: 480px;
+    }
+    .bgtop {
+        height: 350px;
+    }
+    //Шапка на 320
+    .section-header {
+        .wrapper-inner {
+            .header-wrapper {
+                flex-wrap: wrap;
+                .header-logo {}
+                .wrapp320 {
+                    padding-top: 15px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    .header-contact {
+                        padding-left: 15px;
+                        margin-top: 0px;
+                        .contact-data {
+                            display: none;
+                        }
+                    }
+                    .header-login {
+                        margin-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    //Первый экран на 320
+    .section-first-screen {
+        margin-top: -160px;
+        background-size: cover;
+        height: 480px;
+        .wrapper-inner {
+            margin: 0 15px 0 15px;
+            width: 290px;
+            .first-screen {
+                text-align: center;
+                width: 290px;
+                .menu-core {
+                    width: 290px;
+                    margin: 0;
+                    display: inline-block;
+                    text-align: center;
+                    #mc2 {}
+                    svg {
+                        width: 290px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    //Горячие предложения 320
+    .section-hot-offers {
+        .wrapper-inner {
+            margin: 0 15px 0 15px;
+            width: 290px;
+            .hot-offers {
+                .hot-offers__title {
+                    padding-top: 40px;
+                }
+                .hot-offers__slider {
+                    padding-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // Секция с ноутбуком 320
+    .section-all-control {
+        height: 450px;
+        .wrapper-inner {
+            margin: 0 15px 0 15px;
+            width: 290px;
+            .all-controll-wrapper {
+                height: 450px;
+                .all-control__title {}
+                .all-control__content {
+                    padding-top: 15px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    //Референт лист на 320
+    .section-referent {
+        height: 1250px;
+        .wrapper-inner {
+            margin: 15px;
+            width: 290px;
+            .referent-wrapper {
+                .referent__title {
+                    padding-top: 20px;
+                }
+                .referent-content {
+                    width: 290px;
+                    .referent-content-wrapper {
+                        padding: 0;
+                        .referent-content-rowone {
+                            flex-wrap: wrap;
+                            .referent-image1 {
+                                padding: 0;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                            .referent-image2 {
+                                text-align: center;
+                                margin: 10px 0 0 20%;
+                                img {}
+                            }
+                        }
+                        .referent-contentrowtwo {
+                            flex-wrap: wrap;
+                            .referent-image3 {
+                                .referent-content__button-title {
+                                    text-align: center;
+                                }
+                                .referent-content__button {
+                                    background-size: contain;
+                                    margin-top: 15px;
+                                    width: 290px;
+                                    height: 290px;
+                                    a {
+                                        img {
+                                            padding-top: 60px;
+                                        }
+                                    }
+                                }
+                            }
+                            .referent-image4 {
+                                padding: 0;
+                                margin-top: 15px;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                        .referent-contentrowthree {
+                            flex-wrap: wrap;
+                            padding: 0;
+                            .referent-image5 {
+                                margin-top: 160px;
+                                width: 290px;
+                                height: 250px;
+                                img {
+                                    width: 290px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Контакты на 320
+    .section-contacts {
+        height: 1300px;
+        .wrapper-inner {
+            margin: 0;
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                justify-content: center;
+                .contact-data {
+                    .contact-data__contacts {
+                        padding-left: 40px;
+                        .contact-data__contacts-wrapper {
+                            text-align: center;
+                            width: 275px;
+                            margin-left: 230px;
+                            .contacts-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                            }
+                            .contacts-phone {
+                                margin-top: 15px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .contact-data-contacts__mode {
+                        padding-left: 60px;
+                        padding-right: 85px;
+                        margin-right: 0;
+                        height: auto;
+                        .contact-data-contacts__mode-wrapper {
+                            margin-left: 220px;
+                            .contact-data-contacts__mode-title {
+                                padding-top: 15px;
+                                font-size: 32px;
+                                text-align: center;
+                            }
+                            .text1 {
+                                text-align: center;
+                            }
+                            .text2 {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .contact-map {
+                    margin-left: 6px;
+                    .contact-map-mobile {
+                        width: 310px;
+                        background-size: contain;
+                        .contact-map-wrapper {
+                            padding-top: 110px;
+                            #map1 {
+                                display: none;
+                            }
+                            #map2 {
+                                width: 298px;
+                                height: 550px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //footer 320
+    .section-footer {
+        .wrapper-inner {
+            margin: 30px auto 0 auto;
+            .footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .catalog {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .cataog2 {
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .menu {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .service {
+                    padding-top: 20px;
+                    margin: 0 auto 0 auto;
+                    text-align: center;
+                    .title {
+                        text-align: center;
+                    }
+                }
+                .social {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}

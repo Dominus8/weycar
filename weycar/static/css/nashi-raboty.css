@@ -1,0 +1,141 @@
+.ourworks-paginations {
+  color: white;
+  height: 30px;
+  display: block;
+  width: 1600px;
+  margin: auto;
+}
+
+.main-content {
+  background: url(/image/catcalog_bg.png) top center repeat-y;
+}
+
+.ourworks-main {
+  background-color: #15252d;
+}
+
+.ourworks-main .section-ourworks-label {
+  height: 900px;
+  background: url(../image/ourworks-bg.png) center center no-repeat, -webkit-gradient(linear, left bottom, left top, from(#00151f), to(rgba(16, 37, 47, 0.1)));
+  background: url(../image/ourworks-bg.png) center center no-repeat, linear-gradient(to top, #00151f, rgba(16, 37, 47, 0.1));
+  background-blend-mode: overlay;
+}
+
+.ourworks-main .section-ourworks-label .wrapper-inner {
+  height: 100%;
+}
+
+.ourworks-main .section-ourworks-label .wrapper-inner .ourworks {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ourworks-main .section-ourworks-label .wrapper-inner .ourworks .ourworks-wrapper {
+  padding-top: 50px;
+  width: 620px;
+  height: 620px;
+  background-color: rgba(21, 37, 45, 0.8);
+  border-radius: 50%;
+  border: solid 8px #3681ac;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ourworks-main .section-ourworks-label .wrapper-inner .ourworks .ourworks-wrapper .ourworks-logo {
+  text-align: center;
+}
+
+.ourworks-main .section-ourworks-label .wrapper-inner .ourworks .ourworks-wrapper .ourworks-title {
+  text-align: center;
+  color: #bbbdbe;
+  font-family: ArialNarrow, Helvetica, sans-serif;
+  font-size: 58px;
+  text-align: center;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper {
+  padding: 250px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 10px;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item {
+  width: 540px;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__btn .ourworks-buttons-item__btn-title {
+  padding-top: 30px;
+  height: 93px;
+  border: 2px solid #3c96c8;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__btn .ourworks-buttons-item__btn-title:hover {
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  border: 2px solid white;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__btn .ourworks-buttons-item__btn-title:active {
+  border: 2px solid #3c96c8;
+  color: #3c96c8;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__hidden {
+  padding-top: 20px;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__hidden .item-hidden-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px 10px;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__hidden .item-hidden-wrapper .item-hidden {
+  height: 80px;
+  width: 80px;
+  background-color: #fff;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__hidden .item-hidden-wrapper .item-hidden:first-child {
+  height: 180px;
+  width: 180px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: #b81616;
+}
+/*# sourceMappingURL=nashi-raboty.css.map */
