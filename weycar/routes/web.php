@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
+use Intervention\Image\ImageManagerStatic as Image;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//главная
+Route::get('/', [MainController::class, 'index'])->name('index');
+
+// Все категории и страницы
+Route::get('/all-category', [MainController::class, 'all_category'] )->name('all_category');
+
+//страница с подкатегориями и списком товаров
+Route::get('/category', [MainController::class, 'category'] )->name('category');
