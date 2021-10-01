@@ -24,3 +24,6 @@ Route::get('/all-category', [MainController::class, 'all_category'] )->name('all
 
 //страница с подкатегориями и списком товаров
 Route::get('/category', [MainController::class, 'category'] )->name('category');
+
+//Админка
+Route::get('/admin', [MainController::class, 'admin'] )->name('admin');

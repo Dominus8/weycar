@@ -20,4 +20,9 @@ class MainController extends Controller
     public function category(){
         return view('category');
     }
-}
+
+    // Подкатегории и товары
+    public function admin(){
+        return view('admin');
+    }
+}//закрывает класс
