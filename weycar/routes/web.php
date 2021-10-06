@@ -27,3 +27,6 @@ Route::get('/category', [MainController::class, 'category'] )->name('category');
 
 //Админка
 Route::get('/admin', [MainController::class, 'admin'] )->name('admin');
+
+// Создание продукта
+Route::post('/admin/create-product', [MainController::class, 'create_product']) ->name('create-product');
