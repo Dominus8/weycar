@@ -208,6 +208,7 @@
                     <div class="hot-offers__title">
                         Горячие предложения и новинки оборудования
                     </div>
+
                     <!--слайдер-->
                     <div class="hot-offers__slider">
                         <!-- Slider main container -->
@@ -215,13 +216,17 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
+                                @foreach($product as $el)
                                 <div class="swiper-slide">
                                     <a href="#">
                                         <div class="swiper-slide__image">
-                                            <img src="/image/slideItem.jpg" alt="Слайд">
+                                            <img style='height:216px; width:260px; ' src="@if(is_array($el->image))storage/product_image/{{$el->image[0]}}@endif" alt="Слайд">                                   
                                         </div>
                                     </a>
                                 </div>
+
+                                @endforeach
+
                                 <div class="swiper-slide">
                                     <a href="#">
                                         <div class="swiper-slide__image">

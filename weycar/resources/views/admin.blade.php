@@ -11,11 +11,11 @@
             <h2>Создать товар</h2>
         </div>
         <div class="admin-section__form" style="color:white;">
-        <form action="/admin/create-product" method="post" enctype="multipart/form-data" >
+            <form action="/admin/create-product" method="post" enctype="multipart/form-data" >
                 {{ csrf_field() }}
                 <div class="form-group"> 
-                    <lable for="pcat" class="form-label"> <h6>Категория товара</h6> </lable>
 
+                    <lable for="pcat" class="form-label"> <h6>Категория товара</h6> </lable>
                     <select id="pcat" name="product_subcategory_id" size="1" >
                       <option selected value="1">Топливозаправочные модули</option>
                       <option value=2>Системы нагрузки на ось</option>
@@ -31,8 +31,8 @@
                     <br>
     
                     <lable for="pi" class="form-label"> <h6>Изображение продукта</h6>  </lable>
-                    <input id="pi" type="file" class="form-control" name='product_image'multiple> <br>
-
+                    <input id="pi" type="file" class="form-control" name='product_image[]' multiple> <br> <!---->
+                    
                     <lable for="pt" class="form-label"> <h6>Название</h6>  </lable>
                     <input id="pt" type="text" class="form-control" name='product_name' placeholder="" > <br>
                     
@@ -52,7 +52,7 @@
                     
                     <input id="ph" type="radio"  name="product_code" value=1 >
                     <lable for="ph" class="form-label"> <h6>Горячий товар нет</h6> </lable>
-                </input><input id="ph0" type="radio"  name="product_code" value=0 checked></input>
+                    </input><input id="ph0" type="radio"  name="product_code" value=0 checked></input>
                     
                     
                      <br>

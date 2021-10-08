@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use Intervention\Image\ImageManager;
+use Intervention\Image\ImageManagerStatic as Image;
+
 use Illuminate\Http\Request;
 use App\Models\Product;
 
@@ -8,7 +12,9 @@ class MainController extends Controller
 {
     // Главная станицаа
     public function index(){
-        return view('home');
+        $product= new Product;
+        $product=$product->where('code', 1)->get();
+        return view('home', ['product'=>$product]);
     }
 
     // Все категории
@@ -34,14 +40,24 @@ class MainController extends Controller
         //     'direction_card_title'=>'required|max:40',
         //     'direction_card_link'=>'required|max:40',
         // ]);
+        
+        $image = $request->file('product_image');//->store('storage', 'product_image')
+        
+        $arr=array();
+        foreach($image as $img){
+            $x=$img->store('public','product_image');
+            array_push($arr,$x);
+        }
+        
 
-        // $image = $request->file('direction_card_image')->store('storage', 'directions_image');
+        // Image::make( $request->file('product_image[]'))->fit(398, 263)->save('product_image/mob_img/'.$image);
+        // Image::make( $request->file('product_image[]'))->fit(190)->save('product_image/'.$image);
 
-        // Image::make( $request->file('direction_card_image'))->fit(398, 263)->save('storage/directions_image/mob_img/'.$image);
-        // Image::make( $request->file('direction_card_image'))->fit(190)->save('storage/directions_image/'.$image);
+        
 
         $product = new Product();
-        $product ->image = 'image';
+
+        $product ->image = $arr;
         $product ->subcategory_id = $request->input('product_subcategory_id');
         $product ->name = $request->input('product_name');
         $product ->description = $request->input('product_description');
