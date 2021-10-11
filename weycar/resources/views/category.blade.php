@@ -2,7 +2,7 @@
 
 @section('content')
 <!--main-->
-<div class="paginations">Главная > Каталог > Регистраторы </div>
+<div class="paginations">Главная > Каталог > {{ $catid }} </div>
     <div class="main-content">
         <section class="wrapper-outer section-singl-page">
             <div class="wrapper-inner">
@@ -46,26 +46,27 @@
 
         <section class="wrapper-outer section-singl-page-product-cards">
             <div class="wrapper-inner">
+            @foreach($product as $el)
                 <div class="singl-page-product-cards">
                     <div class="product-cards-wrapper">
                         <div class="product-cards__body">
                             <div class="product-cards__body-image-area">
-                                <div class="cards-image"><img src="" alt=""></div>
-                                <div class="cards-image"><img src="" alt=""></div>
-                                <div class="cards-image"><img src="" alt=""></div>
-                                <div class="cards-image"><img src="" alt=""></div>
-                                <div class="cards-image"><img src="" alt=""></div>
+                            @if(is_array($el->image))
+                                @foreach($el->image as $i)
+                                 <div class="cards-image"><img src="/storage/product_image/{{$i}}" alt=""></div>
+                                @endforeach
+                            @endif 
                             </div>
                             <div class="product-cards__body-text-area">
-                                <div class="body-text-area-title">Заголовок товара</div>
-                                <div class="body-text-area-subtitle">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
-                                    размеров
+                                <div class="body-text-area-title">{{$el->name}}</div>
+                                <div class="body-text-area-subtitle">
+                                    {{$el->description}}
                                 </div>
                             </div>
                         </div>
                         <div class="product-cards__buttons">
                             <div class="product-cards__buttons-top">
-                                <div class="product-cards-price">1500₽</div>
+                                <div class="product-cards-price">{{$el->price}}₽</div>
                                 <div class="product-cards-order">Заказать</div>
                             </div>
                             <div class="product-cards__buttons-bottom">
@@ -78,6 +79,7 @@
                         </div>
                     </div>
                 </div>
+            @endforeach
             </div>
         </section>
     </div>

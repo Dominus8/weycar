@@ -23,8 +23,12 @@ class MainController extends Controller
     }
 
     // Подкатегории и товары
-    public function category(){
-        return view('category');
+    public function category($catid){
+        $product= Product::where('subcategory_id','=',$catid)->get()->values()->all();
+        
+        
+
+        return view('category',['catid'=>$catid,'product'=>$product]);
     }
 
     // Подкатегории и товары

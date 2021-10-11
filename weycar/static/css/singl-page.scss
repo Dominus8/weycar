@@ -93,8 +93,12 @@
                         .cards-image {
                             width: 70px;
                             height: 70px;
-                            background-color: #fff;
+                            // background-color: #fff;
                             border-radius: 15px;
+                            img {
+                                width: 70px;
+                                height: 70px;
+                            }
                             &:first-child {
                                 height: 260px;
                                 width: 260px;
@@ -102,7 +106,12 @@
                                 grid-column-end: 5;
                                 grid-row-start: 1;
                                 grid-row-end: 5;
-                                background-color: rgb(184, 22, 22);
+                                // background-color: rgb(184, 22, 22);
+                                img {
+                                    object-fit: cover;
+                                    height: 260px;
+                                    width: 260px;
+                                }
                             }
                         }
                     }
