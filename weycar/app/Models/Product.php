@@ -12,4 +12,7 @@ class Product extends Model
     protected $casts = [
         'image' => 'array',
     ];
+    public function subcategory(){
+        return $this->belongdTo(Subcategory::class, 'code','category_id');
+    }
 }

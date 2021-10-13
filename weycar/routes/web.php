@@ -30,3 +30,6 @@ Route::get('/admin', [MainController::class, 'admin'] )->name('admin');
 
 // Создание продукта
 Route::post('/admin/create-product', [MainController::class, 'create_product']) ->name('create-product');
+
+// Создание продукта
+Route::post('/admin/create-subcategory', [MainController::class, 'create_subcategory']) ->name('create-subcategory');

@@ -7,6 +7,7 @@ use Intervention\Image\ImageManagerStatic as Image;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Subcategory;
 
 class MainController extends Controller
 {
@@ -25,8 +26,6 @@ class MainController extends Controller
     // Подкатегории и товары
     public function category($catid){
         $product= Product::where('subcategory_id','=',$catid)->get()->values()->all();
-        
-        
 
         return view('category',['catid'=>$catid,'product'=>$product]);
     }
@@ -53,11 +52,8 @@ class MainController extends Controller
             array_push($arr,$x);
         }
         
-
         // Image::make( $request->file('product_image[]'))->fit(398, 263)->save('product_image/mob_img/'.$image);
         // Image::make( $request->file('product_image[]'))->fit(190)->save('product_image/'.$image);
-
-        
 
         $product = new Product();
 
@@ -72,6 +68,16 @@ class MainController extends Controller
 
         $product ->save();
 
+        return redirect()->route('admin');
+    }
+
+    public function create_subcategory(Request $request){
+        $subcategory = new Subcategory();
+        $subcategory -> category_id = $request ->input('subcategory_id');
+        $subcategory -> title = $request ->input('subcategory_name');
+        $subcategory -> subtitle = $request ->input('subcategory_description');
+
+        $subcategory ->save();
         return redirect()->route('admin');
     }
 }//закрывает класс

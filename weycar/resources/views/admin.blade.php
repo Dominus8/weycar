@@ -29,12 +29,13 @@
                       <option value=10>Приборы спутникового мониторинга</option>
                     </select> 
                     <br>
+                    
     
                     <lable for="pi" class="form-label"> <h6>Изображение продукта</h6>  </lable>
                     <input id="pi" type="file" class="form-control" name='product_image[]' multiple> <br> <!---->
                     
                     <lable for="pt" class="form-label"> <h6>Название</h6>  </lable>
-                    <input id="pt" type="text" class="form-control" name='product_name' placeholder="" > <br>
+                    <input id="pt" type="text" class="form-control" name='product_name' placeholder=""></input> <br>
                     
                     <lable for="ps" class="form-label"> <h6>Описание</h6> </lable>
                     <input id="ps"  class="form-control" name="product_description" placeholder=""></input> <br>
@@ -59,7 +60,27 @@
                    
                     <button class="btn btn-primary" type="sucsess"> Создать продукт</button>
                 </div>
-            </form>
+            </form> <br> <br> <br>
+
+            <div class="admin-section__form" style="color:white;">
+            <form action="/admin/create-subcategory" method="post">
+                {{ csrf_field() }}
+                <div class="form-group"> 
+                    
+                    <lable for="сt" class="form-label"> <h6>id категории</h6> </lable>
+                    <input id="сt" class="form-control" name='subcategory_id' placeholder=""></input> <br>
+                    
+                    <lable for="сs" class="form-label"> <h6>название</h6> </lable>
+                    <input id="сs" class="form-control" name="subcategory_name" placeholder=""></input> <br>
+                    
+                    <lable for="сsp" class="form-label"> <h6>описание</h6> </lable>
+                    <input id="сsp" type="text" class="form-control" name="subcategory_description" placeholder=""></input> <br>
+                                  
+                     <br>
+                   
+                    <button class="btn btn-primary" type="sucsess"> Создать подкатегорию</button>
+                </div>
+            </form> <br>
         </div>
     </div>
                 </div>
