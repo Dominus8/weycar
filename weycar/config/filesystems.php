@@ -42,6 +42,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'subcategory_image' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/subcategory_image'),
+            'url' => env('APP_URL').'/',
+            'visibility' => 'public',
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),

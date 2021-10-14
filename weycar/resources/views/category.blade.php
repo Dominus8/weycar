@@ -8,24 +8,20 @@
             <div class="wrapper-inner">
                 <div class="singl-page">
                     <div class="singl-page-wrapper">
-                        <div class="singl-page__item">
-                            <div class="item-wrapper">
-                                <div class="item__image">
-                                    <img src="/image/tablo.png" alt="">
-                                </div>
-                                <div class="item__title">Табло
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singl-page__item">
-                            <div class="item-wrapper">
-                                <div class="item__image">
-                                    <img src="/image/nabor.png" alt="">
-                                </div>
-                                <div class="item__title">Комплекты
+                    @foreach($subcategory as $el)
+                        <a href="{{$el->subcategory_id}}">
+                            <div class="singl-page__item">
+                                <div class="item-wrapper">
+                                    <div class="item__image">
+                                        <img src="/storage/subcategory_image/{{$el->image}}" alt="">
+                                    </div>
+                                    <div class="item__title">
+                                        {{$el->title}}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                    @endforeach
                     </div>
                 </div>
             </div>

@@ -23,7 +23,7 @@ Route::get('/', [MainController::class, 'index'])->name('index');
 Route::get('/all-category', [MainController::class, 'all_category'] )->name('all_category');
 
 //страница с подкатегориями и списком товаров
-Route::get('/category/{catid}', [MainController::class, 'category'] )->name('category');
+Route::get('/category/{catid}/{subcatid}', [MainController::class, 'category'] )->name('category');
 
 //Админка
 Route::get('/admin', [MainController::class, 'admin'] )->name('admin');
@@ -31,5 +31,8 @@ Route::get('/admin', [MainController::class, 'admin'] )->name('admin');
 // Создание продукта
 Route::post('/admin/create-product', [MainController::class, 'create_product']) ->name('create-product');
 
-// Создание продукта
+// Создание подкатегории
 Route::post('/admin/create-subcategory', [MainController::class, 'create_subcategory']) ->name('create-subcategory');
+
+// Создание категории
+Route::post('/admin/create-category', [MainController::class, 'create_category']) ->name('create-category');

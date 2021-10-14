@@ -15,7 +15,6 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->integer('category_id')->default(0);
             $table->integer('subcategory_id')->default(0);
             $table->string('name');
             $table->integer('code')->default(0);

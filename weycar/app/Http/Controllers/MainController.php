@@ -8,6 +8,7 @@ use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Subcategory;
+use App\Models\Category;
 
 class MainController extends Controller
 {
@@ -25,26 +26,24 @@ class MainController extends Controller
 
     // Подкатегории и товары
     public function category($catid){
+        
+        $subcategory = Subcategory::where('category_id','=',$catid)->get()->values()->all();
         $product= Product::where('subcategory_id','=',$catid)->get()->values()->all();
 
-        return view('category',['catid'=>$catid,'product'=>$product]);
+        return view('category',['catid'=>$catid,'product'=>$product, 'subcategory'=>$subcategory]);
     }
 
-    // Подкатегории и товары
+    // Админка
     public function admin(){
-        return view('admin');
+        $category = Category::all();
+        $subcategory = Subcategory::all();
+        return view('admin',['category'=>$category, 'subcategory'=>$subcategory]);
     }
 
-    //Создание карточки направления
+    // Создание продукта
     public function create_product(Request $request){
 
-        // $valid = $request->validate([
-        //     'direction_card_image'=>'required',
-        //     'direction_card_title'=>'required|max:40',
-        //     'direction_card_link'=>'required|max:40',
-        // ]);
-        
-        $image = $request->file('product_image');//->store('storage', 'product_image')
+        $image = $request->file('product_image');
         
         $arr=array();
         foreach($image as $img){
@@ -71,13 +70,25 @@ class MainController extends Controller
         return redirect()->route('admin');
     }
 
+    // Создание категории
     public function create_subcategory(Request $request){
         $subcategory = new Subcategory();
-        $subcategory -> category_id = $request ->input('subcategory_id');
+        $subcategory -> image = $request->file('subcategory_image')->store('public','subcategory_image');
+        $subcategory -> category_id = $request ->input('category_id');
+        $subcategory -> subcategory_id = $request ->input('subcategory_id');
         $subcategory -> title = $request ->input('subcategory_name');
         $subcategory -> subtitle = $request ->input('subcategory_description');
 
         $subcategory ->save();
+        return redirect()->route('admin');
+    }
+
+    public function create_category(Request $request){
+        $category = new Category();
+        $category -> category_id = $request ->input('category_id');
+        $category -> category_name = $request ->input('category_name');
+
+        $category ->save();
         return redirect()->route('admin');
     }
 }//закрывает класс

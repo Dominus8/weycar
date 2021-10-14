@@ -1,7 +1,8 @@
 @extends('base')
 
 @section('content')
-<div class="paginations">Главная > Каталог > Регистраторы </div>
+<div class="paginations"> Админка </div>
+
     <div class="main-content">
         <section class="wrapper-outer section-singl-page">
             <div class="wrapper-inner">
@@ -16,21 +17,13 @@
                 <div class="form-group"> 
 
                     <lable for="pcat" class="form-label"> <h6>Категория товара</h6> </lable>
-                    <select id="pcat" name="product_subcategory_id" size="1" >
-                      <option selected value="1">Топливозаправочные модули</option>
-                      <option value=2>Системы нагрузки на ось</option>
-                      <option value=3>Оборудование для спец. техники</option>
-                      <option value=4>Отопители</option>
-                      <option value=5>Сигнализации</option>
-                      <option value=6>Датчики уровня топлива</option>
-                      <option value=7>Табло</option>
-                      <option value=8>Видеорегистраторы</option>
-                      <option value=9>Тахографы</option>
-                      <option value=10>Приборы спутникового мониторинга</option>
+                    <select id="pcat" name="product_subcategory_id" size="1">
+                        @foreach($category as $el)
+                            <option value="{{$el->category_id}}">{{$el->category_name}}</option>
+                        @endforeach
                     </select> 
                     <br>
                     
-    
                     <lable for="pi" class="form-label"> <h6>Изображение продукта</h6>  </lable>
                     <input id="pi" type="file" class="form-control" name='product_image[]' multiple> <br> <!---->
                     
@@ -53,32 +46,59 @@
                     
                     <input id="ph" type="radio"  name="product_code" value=1 >
                     <lable for="ph" class="form-label"> <h6>Горячий товар нет</h6> </lable>
-                    </input><input id="ph0" type="radio"  name="product_code" value=0 checked></input>
-                    
-                    
-                     <br>
+                    <input id="ph0" type="radio"  name="product_code" value=0 checked></input>
+                    <br>
                    
                     <button class="btn btn-primary" type="sucsess"> Создать продукт</button>
                 </div>
             </form> <br> <br> <br>
 
             <div class="admin-section__form" style="color:white;">
-            <form action="/admin/create-subcategory" method="post">
+            <form action="/admin/create-subcategory" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
-                <div class="form-group"> 
+                <div class="form-group">
+
+                    <lable for="sсi" class="form-label"> <h6>Изображение категории</h6>  </lable>
+                    <input id="sсi" type="file" class="form-control" name='subcategory_image'> <br> <!---->
+
+                    <lable for="scat" class="form-label"> <h6>id категории</h6> </lable>
+                    <select id="scat" name="category_id" size="1">
+                        @foreach($category as $el)
+                            <option value="{{$el->category_id}}">{{$el->category_name}}</option>
+                        @endforeach
+                    </select> 
+                    <br>
+                    <br>
+
+                    <lable for="sсsi" class="form-label"> <h6>id подкатегории</h6> </lable>
+                    <input id="sсsi" class="form-control" name="subcategory_id" placeholder=""></input> <br>
                     
-                    <lable for="сt" class="form-label"> <h6>id категории</h6> </lable>
-                    <input id="сt" class="form-control" name='subcategory_id' placeholder=""></input> <br>
+                    <lable for="sсs" class="form-label"> <h6>название</h6> </lable>
+                    <input id="sсs" class="form-control" name="subcategory_name" placeholder=""></input> <br>
                     
-                    <lable for="сs" class="form-label"> <h6>название</h6> </lable>
-                    <input id="сs" class="form-control" name="subcategory_name" placeholder=""></input> <br>
-                    
-                    <lable for="сsp" class="form-label"> <h6>описание</h6> </lable>
-                    <input id="сsp" type="text" class="form-control" name="subcategory_description" placeholder=""></input> <br>
+                    <lable for="sсsp" class="form-label"> <h6>описание</h6> </lable>
+                    <input id="sсsp" type="text" class="form-control" name="subcategory_description" placeholder=""></input> <br>
                                   
                      <br>
                    
                     <button class="btn btn-primary" type="sucsess"> Создать подкатегорию</button>
+                </div>
+            </form> <br>
+
+            <div class="admin-section__form" style="color:white;">
+            <form action="/admin/create-category" method="post" enctype="multipart/form-data">
+                {{ csrf_field() }}
+                <div class="form-group"> 
+
+                    <lable for="сt" class="form-label"> <h6>id категории</h6> </lable>
+                    <input id="сt" class="form-control" name='category_id' placeholder=""></input> <br>
+                    
+                    <lable for="сs" class="form-label"> <h6>название</h6> </lable>
+                    <input id="сs" class="form-control" name="category_name" placeholder=""></input> <br>
+                              
+                    <br>
+                   
+                    <button class="btn btn-primary" type="sucsess"> Создать категорию</button>
                 </div>
             </form> <br>
         </div>
