@@ -2,14 +2,14 @@
 
 @section('content')
 <!--main-->
-<div class="paginations">Главная > Каталог > {{ $catid }} </div>
+<div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> > {{ $catid }} >  </div>
     <div class="main-content">
         <section class="wrapper-outer section-singl-page">
             <div class="wrapper-inner">
                 <div class="singl-page">
                     <div class="singl-page-wrapper">
                     @foreach($subcategory as $el)
-                        <a href="{{$el->subcategory_id}}">
+                        <a href="{{route('subcategory', ['catid'=>$catid, 'subcatid'=>$el->subcategory_id] )}}">
                             <div class="singl-page__item">
                                 <div class="item-wrapper">
                                     <div class="item__image">

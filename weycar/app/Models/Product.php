@@ -13,6 +13,6 @@ class Product extends Model
         'image' => 'array',
     ];
     public function subcategory(){
-        return $this->belongdTo(Subcategory::class, 'code','category_id');
+        return $this->hasOne(Subcategory::class, 'subcategory_id','category_id');
     }
 }

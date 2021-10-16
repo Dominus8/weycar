@@ -27,8 +27,40 @@ class MainController extends Controller
     // Подкатегории и товары
     public function category($catid){
         
+        $subcategory = subcategory::where('category_id','=',$catid)->get()->values()->all();
+        
+
+            $arr = array();
+            foreach($subcategory as $el){
+                $x = $el->subcategory_id;
+                $y = Product::where('subcategory_id','=',$x)->get()->values()->all();
+                array_push($arr, $y);
+            }
+        
+        
+        
+        $product = array();
+        
+            foreach($arr as $el){
+                
+                if(count($el)){                
+                    $x=$el[0];
+                    array_push($product,$x);
+                }
+
+            }
+        
+
+        
+
+        return view('category',['catid'=>$catid,'product'=>$product, 'subcategory'=>$subcategory]);
+    }
+    // Подкатегории и товары
+    public function subcategory($catid, $subcatid){
+        
         $subcategory = Subcategory::where('category_id','=',$catid)->get()->values()->all();
-        $product= Product::where('subcategory_id','=',$catid)->get()->values()->all();
+        $product= Product::where('subcategory_id','=',$subcatid)->get()->values()->all();
+        
 
         return view('category',['catid'=>$catid,'product'=>$product, 'subcategory'=>$subcategory]);
     }
@@ -38,6 +70,7 @@ class MainController extends Controller
         $category = Category::all();
         $subcategory = Subcategory::all();
         return view('admin',['category'=>$category, 'subcategory'=>$subcategory]);
+        
     }
 
     // Создание продукта

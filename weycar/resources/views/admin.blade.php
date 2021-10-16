@@ -19,7 +19,12 @@
                     <lable for="pcat" class="form-label"> <h6>Категория товара</h6> </lable>
                     <select id="pcat" name="product_subcategory_id" size="1">
                         @foreach($category as $el)
-                            <option value="{{$el->category_id}}">{{$el->category_name}}</option>
+                            <optgroup label="{{$el->category_name}}">
+                                @foreach($el->subcat as $el)
+                                <option value="{{$el->subcategory_id}}">{{$el->title}}</option>
+                                @endforeach
+                                
+                            </optgroup>
                         @endforeach
                     </select> 
                     <br>
