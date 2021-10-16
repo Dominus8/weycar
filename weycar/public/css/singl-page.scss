@@ -76,8 +76,10 @@
             margin-top: 60px;
             padding-bottom: 60px;
             .product-cards-wrapper {
+                height: 340px;
                 display: flex;
                 .product-cards__body {
+                    width: 925px;
                     padding: 10px;
                     border: 2px solid #3c96c8;
                     border-radius: 15px;
@@ -85,7 +87,7 @@
                     background: rgb(34, 193, 195);
                     background: linear-gradient(94deg, rgba(34, 193, 195, 0.3) 0%, rgba(0, 0, 0, 0.0032387955182072714) 100%);
                     .product-cards__body-image-area {
-                        max-width: 900px;
+                        max-width: 350px;
                         flex-grow: 2;
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

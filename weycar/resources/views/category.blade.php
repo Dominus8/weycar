@@ -2,7 +2,7 @@
 
 @section('content')
 <!--main-->
-<div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> > {{ $catid }} >  </div>
+<div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> > {{ $category->category_name }} </div>
     <div class="main-content">
         <section class="wrapper-outer section-singl-page">
             <div class="wrapper-inner">
@@ -63,19 +63,73 @@
                         <div class="product-cards__buttons">
                             <div class="product-cards__buttons-top">
                                 <div class="product-cards-price">{{$el->price}}₽</div>
-                                <div class="product-cards-order">Заказать</div>
+                                <div type="button" class="product-cards-order" data-bs-toggle="modal" data-bs-target="#orderModal{{$el->id}}">Заказать</div>
                             </div>
-                            <div class="product-cards__buttons-bottom">
+                            <div type="button" class="product-cards__buttons-bottom">
                                 <div class="product-cards-share">
                                     <img src="/image/product-cards-share.png" alt="">
                                 </div>
-                                <div class="product-cards-specifications">Характеристики</div>
-                                <div class="product-cards-accessories">Комплектующие</div>
+                                <div type="button" class="product-cards-specifications" data-bs-toggle="modal" data-bs-target="#specificationsModal{{$el->id}}">Характеристики</div>
+                                <div type="button" class="product-cards-accessories" data-bs-toggle="modal" data-bs-target="#accessoriesModal{{$el->id}}">Комплектующие</div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Modal -->
+                <div  class="modal fade" id="orderModal{{$el->id}}" tabindex="-1" aria-labelledby="orderModal{{$el->id}}Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="orderModal{{$el->id}}Label">Купить</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="specificationsModal{{$el->id}}" tabindex="-1" aria-labelledby="specificationsModal{{$el->id}}Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="specificationsModal{{$el->id}}Label">Характеристики</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        {{$el->specifications}}
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="accessoriesModal{{$el->id}}" tabindex="-1" aria-labelledby="accessoriesModal{{$el->id}}Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="accessoriesModal{{$el->id}}Label">Комплектация</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        {{$el->accessories}}
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             @endforeach
+
             </div>
         </section>
     </div>
