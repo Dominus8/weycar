@@ -88,6 +88,14 @@
   grid-row-gap: 25px;
 }
 
+.equipment .equipment-wrapper a {
+  color: #bbbdbe;
+}
+
+.equipment .equipment-wrapper a:hover {
+  color: #4baee0;
+}
+
 .equipment .equipment-wrapper .equipment__item {
   width: 160px;
   text-align: center;
@@ -114,6 +122,14 @@
           align-items: center;
   background: #162831;
   background: linear-gradient(340deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
+.equipment .equipment-wrapper .equipment__item .item-wrapper .item__image:hover {
+  background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
+.equipment .equipment-wrapper .equipment__item .item-wrapper .item__image img {
+  max-width: 144px;
 }
 
 .equipment .equipment-wrapper .equipment__item .item-wrapper .item__title {

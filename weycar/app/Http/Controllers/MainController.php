@@ -21,7 +21,8 @@ class MainController extends Controller
 
     // Все категории
     public function all_category(){
-        return view('all-category');
+        $subcategory=Subcategory::all();
+        return view('all-category', ['subcategory'=>$subcategory]);
     }
 
     // Подкатегории и товары
@@ -31,7 +32,7 @@ class MainController extends Controller
         $category = Category::where('category_id','=',$catid)->first();
         
         
-        $subcategory = subcategory::where('category_id','=',$catid)->get()->values()->all();
+        $subcategory = Subcategory::where('category_id','=',$catid)->get()->values()->all();
 
         $arr = array();
             foreach($subcategory as $el){
