@@ -451,7 +451,7 @@ body {
 .section-footer {
     overflow: hidden;
     position: relative;
-    z-index: 6666;
+    z-index: 1;
     border-radius: 5px;
     .wrapper-inner {
         .copywrite {
@@ -482,7 +482,6 @@ body {
                 display: flex;
                 justify-content: space-between;
                 .catalog {
-                    overflow-wrap: wrap;
                     width: 150px;
                     .title {
                         font-family: Arial, Helvetica, sans-serif;

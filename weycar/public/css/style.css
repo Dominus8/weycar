@@ -515,7 +515,7 @@ body {
 .section-footer {
   overflow: hidden;
   position: relative;
-  z-index: 6666;
+  z-index: 1;
   border-radius: 5px;
 }
 
@@ -560,7 +560,6 @@ body {
 }
 
 .section-footer .wrapper-inner .footer .cat-wrapp .catalog {
-  overflow-wrap: wrap;
   width: 150px;
 }
 
