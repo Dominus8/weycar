@@ -16,7 +16,8 @@ class MainController extends Controller
     public function index(){
         $product= new Product;
         $product=$product->where('code', 1)->get();
-        return view('home', ['product'=>$product]);
+        $subcategory=Subcategory::all();
+        return view('home', ['product'=>$product, 'subcategory'=>$subcategory]);
     }
 
     // Все категории

@@ -128,10 +128,16 @@
                             font-size: 30px;
                         }
                         .body-text-area-subtitle {
+                            height: 190px;
                             margin-top: 35px;
                             font-family: ArialNarrow, Helvetica, sans-serif;
                             font-weight: regular;
                             font-size: 18px;
+                            overflow: scroll;
+                            &::-webkit-scrollbar {
+                                display: none;
+                                /*chrome*/
+                            }
                         }
                     }
                 }
