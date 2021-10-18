@@ -31,31 +31,27 @@ class MainController extends Controller
         
         
         $subcategory = subcategory::where('category_id','=',$catid)->get()->values()->all();
-        
 
-            $arr = array();
+        $arr = array();
             foreach($subcategory as $el){
                 $x = $el->subcategory_id;
                 $y = Product::where('subcategory_id','=',$x)->get()->values()->all();
                 array_push($arr, $y);
             }
-        
-        
+          
         
         $product = array();
         
             foreach($arr as $el){
                 
-                if(count($el)){                
-                    $x=$el[0];
-                    array_push($product,$x);
-                }
+                $product =array_merge($product,$el);
+                // if(count($el)){                
+                //     $x=$el[0];
+                //     array_push($product,$x);
+                // }
 
             }
-        
-
-        
-
+         
         return view('category',['catid'=>$catid,'product'=>$product, 'subcategory'=>$subcategory, 'category'=>$category]);
     }
     // Подкатегории и товары
