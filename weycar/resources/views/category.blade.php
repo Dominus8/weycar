@@ -2,7 +2,13 @@
 
 @section('content')
 <!--main-->
-<div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> > {{ $category->category_name }} </div>
+<div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> >
+@if(isset($subcatid))
+<a href="{{route('category', $category->category_id )}}">{{ $category->category_name }}</a> > {{$subcategory_title}}
+@else
+{{ $category->category_name }}
+@endif
+ </div>
     <div class="main-content">
         <section class="wrapper-outer section-singl-page">
             <div class="wrapper-inner">
