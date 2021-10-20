@@ -75,7 +75,9 @@ class MainController extends Controller
     public function admin(){
         $category = Category::all();
         $subcategory = Subcategory::all();
-        return view('admin',['category'=>$category, 'subcategory'=>$subcategory]);
+        $product = Product::all();
+        // dd($product);
+        return view('admin',['category'=>$category, 'subcategory'=>$subcategory, 'product'=>$product]);
         
     }
 
@@ -105,6 +107,39 @@ class MainController extends Controller
         $product ->code = $request->input('product_code');
 
         $product ->save();
+
+        return redirect()->route('admin');
+    }
+
+    // Редактирование продукта
+    public function edit_product($id){
+        $category = Category::all();
+        $subcategory = Subcategory::all();
+        $product = Product::where('id', '=', $id)->first();
+        return view('editproduct',['category'=>$category, 'subcategory'=>$subcategory, 'product'=>$product]);
+    }
+
+    // Обновление продукта
+    public function update_product($id, Request $request){
+       
+        $product = Product::find($id);
+        $product ->subcategory_id = $request->input('product_subcategory_id');
+        $product ->name = $request->input('product_name');
+        $product ->description = $request->input('product_description');
+        $product ->specifications = $request->input('product_specifications');
+        $product ->accessories = $request->input('product_accessories');
+        $product ->price = $request->input('product_price');
+        $product ->code = $request->input('product_code');
+
+        $product ->save();
+
+        return redirect()->route('admin');
+    }
+
+    //удаление продукта
+    public function delete_product($id){
+        $product = Product::find($id);
+        $product->delete();
 
         return redirect()->route('admin');
     }

@@ -58,6 +58,12 @@
                 </div>
             </form> <br> <br> <br>
 
+            <div style="color:black; background-color:white; border:2px solid; border-radius:5px; max-height:350px; overflow:scroll; " class="col-md-12">
+                @foreach($product as $el)
+                    <div class="" style="display:flex; justify-content:space-between; margin:0; padding:5px 10px 0 10px;"> {{$el->name}}&nbsp <div class="" style="margin:0; padding:0;"> <a class="btn btn-warning" href="{{route('edit-product', $el->id)}}">edit</a>&nbsp<a style="right:0;" class="btn btn-danger" href="{{route('delete-product', $el->id)}}">delet</a></div></div><br>
+                @endforeach
+            </div> <br> <br> <br>
+
             <div class="admin-section__form" style="color:white;">
             <form action="/admin/create-subcategory" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}

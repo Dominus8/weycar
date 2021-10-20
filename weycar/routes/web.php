@@ -33,6 +33,15 @@ Route::get('/admin', [MainController::class, 'admin'] )->name('admin');
 // Создание продукта
 Route::post('/admin/create-product', [MainController::class, 'create_product']) ->name('create-product');
 
+//Редактирование продукта
+Route::get('/admin/edit-product/{id}', [MainController::class, 'edit_product']) ->name('edit-product');
+
+//Обновление продукта
+Route::post('/admin/update-product/{id}', [MainController::class, 'update_product']) ->name('update-product');
+
+//Удаление продукта
+Route::get('/admin/delete-product/{id}', [MainController::class, 'delete_product']) ->name('delete-product');
+
 // Создание подкатегории
 Route::post('/admin/create-subcategory', [MainController::class, 'create_subcategory']) ->name('create-subcategory');
 
