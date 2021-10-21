@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Subcategory;
 use App\Models\Category;
+use Illuminate\Support\Facades\Storage;
 
 class MainController extends Controller
 {
@@ -87,6 +88,7 @@ class MainController extends Controller
         $image = $request->file('product_image');
         
         $arr=array();
+
         foreach($image as $img){
             $x=$img->store('public','product_image');
             array_push($arr,$x);
@@ -121,8 +123,30 @@ class MainController extends Controller
 
     // Обновление продукта
     public function update_product($id, Request $request){
+        if($request->file('product_image')){
+
+            $image = Product::find($id)->image;
+
+            foreach($image as $img){
+                
+                Storage::disk('product_image')->delete($img);
+
+            }
+
+            $image = $request->file('product_image');
+
+            $arr=array();
+
+            foreach($image as $img){
+                $x=$img->store('public','product_image');
+                array_push($arr,$x);
+            }
+        }else{
+            $arr = Product::find($id)->image;
+        }
        
         $product = Product::find($id);
+        $product ->image = $arr;
         $product ->subcategory_id = $request->input('product_subcategory_id');
         $product ->name = $request->input('product_name');
         $product ->description = $request->input('product_description');
@@ -138,7 +162,17 @@ class MainController extends Controller
 
     //удаление продукта
     public function delete_product($id){
+
+        $image = Product::find($id)->image;
+
+        foreach($image as $img){
+            
+            Storage::disk('product_image')->delete($img);
+
+        }
+
         $product = Product::find($id);
+        
         $product->delete();
 
         return redirect()->route('admin');
