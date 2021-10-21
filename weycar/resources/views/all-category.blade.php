@@ -95,7 +95,7 @@
 
                     <div class="equipment__item">
                         <div class="item-wrapper">
-                            <a href="{{route('category', 1)}}{{route('category', 1)}}">
+                            <a href="{{route('category', 10)}}">
                                 <div class="item__image">
                                     <img src="image/s-monitor.png" alt="">
                                 </div>
@@ -108,7 +108,7 @@
 
                     <div class="equipment__item">
                         <div class="item-wrapper">
-                            <a href="{{route('category', 2)}}">
+                            <a href="{{route('category', 9)}}">
                                 <div class="item__image">
                                     <img src="image/tachographs.png" alt="">
                                 </div>
@@ -121,7 +121,7 @@
 
                     <div class="equipment__item">
                         <div class="item-wrapper">
-                            <a href="{{route('category', 3)}}">
+                            <a href="{{route('category', 8)}}">
                                 <div class="item__image">
                                     <img src="image/vr-camera.png" alt="">
                                 </div>
@@ -134,7 +134,7 @@
 
                     <div class="equipment__item">
                         <div class="item-wrapper">
-                            <a href="{{route('category', 4)}}">
+                            <a href="{{route('category', 7)}}">
                                 <div class="item__image">
                                     <img src="image/tablo.png" alt="">
                                 </div>
@@ -147,7 +147,7 @@
 
                     <div class="equipment__item">
                         <div class="item-wrapper">
-                            <a href="{{route('category', 5)}}">
+                            <a href="{{route('category', 6)}}">
                                 <div class="item__image">
                                     <img src="image/fuil-dat.png" alt="">
                                 </div>
@@ -160,7 +160,7 @@
 
                     <div class="equipment__item">
                         <div class="item-wrapper">
-                            <a href="{{route('category', 6)}}">
+                            <a href="{{route('category', 5)}}">
                                 <div class="item__image">
                                     <img src="image/alerts.png" alt="">
                                 </div>
@@ -173,7 +173,7 @@
 
                     <div class="equipment__item">
                         <div class="item-wrapper">
-                            <a href="{{route('category', 7)}}">
+                            <a href="{{route('category', 4)}}">
                                 <div class="item__image">
                                     <img src="image/heaters.png" alt="">
                                 </div>
@@ -186,7 +186,7 @@
 
                     <div class="equipment__item">
                         <div class="item-wrapper">
-                            <a href="{{route('category', 8)}}">
+                            <a href="{{route('category', 3)}}">
                                 <div class="item__image">
                                     <img src="image/mass-button.png" alt="">
                                 </div>
@@ -199,7 +199,7 @@
 
                     <div class="equipment__item">
                         <div class="item-wrapper">
-                            <a href="{{route('category', 9)}}">
+                            <a href="{{route('category', 2)}}">
                                 <div class="item__image">
                                     <img src="image/sno.png" alt="">
                                 </div>
@@ -212,7 +212,7 @@
 
                     <div class="equipment__item">
                         <div class="item-wrapper">
-                            <a href="{{route('category', 10)}}">
+                            <a href="{{route('category', 1)}}">
                                 <div class="item__image">
                                     <img src="image/tzm.png" alt="">
                                 </div>
