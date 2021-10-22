@@ -13,6 +13,12 @@
                 display: flex;
                 justify-content: space-between;
                 padding: 0 100px;
+                a {
+                    color: #bbbdbe;
+                    &:hover {
+                        color: #4baee0;
+                    }
+                }
                 .menu-list__item {
                     width: 160px;
                     text-align: center;
@@ -30,13 +36,16 @@
                             align-items: center;
                             background: rgba(22, 40, 49, 1);
                             background: linear-gradient(340deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
-                            img {}
-                        }
-                        .item__title {
-                            padding-top: 12px;
-                            font-family: Arial, Helvetica, sans-serif;
-                            font-size: 16px;
-                            font-weight: bold;
+                            &:hover {
+                                background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                                img {}
+                            }
+                            .item__title {
+                                padding-top: 12px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 16px;
+                                font-weight: bold;
+                            }
                         }
                     }
                 }

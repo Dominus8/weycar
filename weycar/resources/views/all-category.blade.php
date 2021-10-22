@@ -9,37 +9,46 @@
                     <div class="menu-list-wrapper">
                         <div class="menu-list__item">
                             <div class="item-wrapper">
-                                <div class="item__image">
-                                    <img src="/image/services.png" alt="">
-                                </div>
-                                <div class="item__title">Услуги
-                                </div>
+                                <a href="{{route('services')}}">
+                                    <div class="item__image">
+                                        <img src="/image/services.png" alt="">
+                                    </div>
+                                    <div class="item__title">Услуги
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="menu-list__item">
                             <div class="item-wrapper">
-                                <div class="item__image">
-                                    <img src="/image/ourw.png" alt="">
-                                </div>
-                                <div class="item__title">Наши работы
-                                </div>
+                                <a href="{{route('ourworks')}}">
+                                    <div class="item__image">
+                                        <img src="/image/ourw.png" alt="">
+                                    </div>
+                                    <div class="item__title">Наши работы
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="menu-list__item">
                             <div class="item-wrapper">
-                                <div class="item__image">
-                                    <img src="/image/sr.png" alt="">
-                                </div>
-                                <div class="item__title">Сопутствующие работы
-                                </div>
+                                <a href="{{route('relatedproducts')}}">
+                                    <div class="item__image">
+                                        <img src="/image/sr.png" alt="">
+                                    </div>
+                                    <div class="item__title">Сопутствующие работы
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="menu-list__item">
                             <div class="item-wrapper">
-                                <div class="item__image">
-                                    <img src="/image/refer-list.png" alt="">
-                                </div>
-                                <div class="item__title">Референт-лист</div>
+                                <a href="{{route('referentlist')}}">
+                                    <div class="item__image">
+                                        <img src="/image/refer-list.png" alt="">
+                                    </div>
+                                    <div class="item__title">Референт-лист
+                                    </div>
+                                </a>
                             </div>
                         </div>
 

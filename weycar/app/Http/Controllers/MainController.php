@@ -172,7 +172,7 @@ class MainController extends Controller
         }
 
         $product = Product::find($id);
-        
+
         $product->delete();
 
         return redirect()->route('admin');
@@ -198,5 +198,21 @@ class MainController extends Controller
 
         $category ->save();
         return redirect()->route('admin');
+    }
+
+    public function services(){
+        return view('services');
+    }
+
+    public function ourworks(){
+        return view('ourworks');
+    }
+
+    public function relatedproducts(){
+        return view('relatedproducts');
+    }
+
+    public function referentlist(){
+        return view('referentlist');
     }
 }//закрывает класс

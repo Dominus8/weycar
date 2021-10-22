@@ -47,3 +47,15 @@ Route::post('/admin/create-subcategory', [MainController::class, 'create_subcate
 
 // Создание категории
 Route::post('/admin/create-category', [MainController::class, 'create_category']) ->name('create-category');
+
+//Услуги
+Route::get('/services', [MainController::class, 'services'] )->name('services');
+
+//Наши работы
+Route::get('/ourworks', [MainController::class, 'ourworks'] )->name('ourworks');
+
+//Наши работы
+Route::get('/relatedproducts', [MainController::class, 'relatedproducts'] )->name('relatedproducts');
+
+//Наши работы
+Route::get('/referentlist', [MainController::class, 'referentlist'] )->name('referentlist');
