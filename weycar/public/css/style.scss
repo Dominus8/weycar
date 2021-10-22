@@ -26,6 +26,55 @@ body {
     overflow: hidden;
     position: relative;
     z-index: 999999;
+    .modal {
+        margin-top: 150px;
+        background-color: rgba(14, 31, 39, 0);
+        .modal-dialog {
+            background-color: rgba(14, 31, 39, 0);
+            .modal-content {
+                height: 305px;
+                width: 485px;
+                background-color: rgba(14, 31, 39, 0);
+                .modal-body {
+                    background-color: rgba(14, 31, 39, 0.8);
+                    border-radius: 5px;
+                    border: 2px solid #bcbdbe;
+                    ;
+                    .btn {
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        display: flex;
+                        justify-content: right;
+                        .btn-close {
+                            color: #bcbdbe;
+                        }
+                    }
+                    .login-link {
+                        margin-top: 30px;
+                        padding-top: 20px;
+                        height: 90px;
+                        width: 440px;
+                        border-radius: 5px;
+                        border: 2px solid #bcbdbe;
+                        text-align: center;
+                        a {
+                            color: #bcbdbe;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: bold;
+                            font-size: 18px;
+                        }
+                        &:hover {
+                            cursor: pointer;
+                            a {
+                                color: #3c96c8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .header-wrapper {
@@ -47,22 +96,29 @@ body {
             .contact-data {
                 margin-right: 4px;
                 color: #cc6600;
-                .contact-data__phone {
-                    font-family: ArialNarrow, Helvetica, sans-serif;
-                    font-size: 16px;
+                a {
+                    color: #cc6600;
+                    .contact-data__phone {
+                        font-family: ArialNarrow, Helvetica, sans-serif;
+                        font-size: 16px;
+                    }
                 }
-                .contact-data__email {
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-weight: bold;
-                    font-size: 16px;
+                a {
+                    color: #cc6600;
+                    .contact-data__email {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
                 }
             }
         }
         .header-login {
             margin-left: 33px;
-            a {
+            button {
                 white-space: nowrap;
                 padding: 10px;
+                background-color: rgba(16, 37, 47, 0);
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 16px;
                 font-weight: bold;

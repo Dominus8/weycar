@@ -28,21 +28,43 @@
                 <div class="wrapp320">
                     <div class="header-contact">
                         <div class="contact-data">
-                            <div class="contact-data__phone">+7 (495) 790 50 61</div>
-                            <div class="contact-data__email">info@weycar.ru</div>
+                            <a href="tel:+7 (495) 790 50 61"><div class="contact-data__phone">+7 (495) 790 50 61</div></a> 
+                            <a href="mailto:info@weycar.ru"><div class="contact-data__email">info@weycar.ru</div></a> 
                         </div>
+                        <a href="tel:+7 (495) 790 50 61">
                         <div class="contact-image">
                             <img src="/image/phone_ico.png" alt="ico">
                         </div>
+                        </a>
                     </div>
                     <div class="header-login">
-                        <a href="#">Личный кабинет</a>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Личный кабинет</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">                      
+
+                  <div class="btn">                  
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                 <div class="login-link"><a target="_blank" href="https://hosting.wialon.com/">Мониторинг транспорта<br>Войти </a></div>
+                 <div class="login-link"><a target="_blank" href="https://carvis.online/">Видео мониторинг<br>Войти</a></div>
+                </div>
+            </div>
+          </div>
+        </div>
+
     </section>
     @yield('content')
+    <!-- Button trigger modal -->
+
+
         <!--footer-->
         <div id="next5" class="footer-bg"></div>
     <section class="wrapper-outer section-footer">
