@@ -11,7 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/*.js', 'public/js')
-    .postCss('resources/assets/css/*.css', 'public/css', [
-        //
-    ]);
+// mix.js('resources/assets/js/*.js', 'public/js')
+//     .postCss('resources/assets/css/*.css', 'public/css', [
+//         //
+//     ]);
+mix.browserSync('http://localhost:8000');

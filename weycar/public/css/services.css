@@ -1,4 +1,9 @@
+.wrapper-outer {
+  color: #bbbdbe;
+}
+
 .section-services-first .wrapper-inner .services-first {
+  margin-left: 50px;
   padding-top: 50px;
   padding-bottom: 100px;
   color: #bbbdbe;
@@ -18,7 +23,7 @@
 }
 
 .section-services-first .wrapper-inner .services-first .services-first__descriptions {
-  max-width: 705px;
+  max-width: 700px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
@@ -65,5 +70,393 @@
 .section-services-first .wrapper-inner .services-first .ofers-wrapper .ofers-image img {
   width: 540px;
   height: 390px;
+}
+
+.section-services-video {
+  height: 887px;
+  background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/serv-video.png) center right no-repeat;
+  background: linear-gradient(to right, #0e1f27, rgba(14, 31, 39, 0.07)), url(/image/serv-video.png) center right no-repeat;
+  background-size: contain;
+}
+
+.section-services-video .wrapper-inner .services-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-services-video .wrapper-inner .services-video .services-video__information .video-information-wrappwer {
+  max-width: 490px;
+  height: 775px;
+}
+
+.section-services-video .wrapper-inner .services-video .services-video__information .video-information-wrappwer .video-information__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.section-services-video .wrapper-inner .services-video .services-video__information .video-information-wrappwer .video-information__body {
+  max-width: 460px;
+  padding-top: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: Regular;
+}
+
+.section-services-video .wrapper-inner .services-video .services-video__catalog-button {
+  width: 55%;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.section-services-video .wrapper-inner .services-video .services-video__catalog-button .video-catalog-button {
+  padding: 15px 47px;
+  color: #bbbdbe;
+  border: 2px solid #3c96c8;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: Regular;
+}
+
+.section-services-monitoring {
+  height: 902px;
+  background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/serv-monitoring.png) center right no-repeat;
+  background: linear-gradient(to right, #0e1f27, rgba(14, 31, 39, 0.07)), url(/image/serv-monitoring.png) center right no-repeat;
+  background-size: contain;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring {
+  padding-top: 60px;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-text .information-top-text__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-text .information-top-text__body {
+  max-width: 730px;
+  padding-top: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: Regular;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-catalog-button .monitoring-catalog-button {
+  margin-left: 20px;
+  padding: 15px 47px;
+  color: #bbbdbe;
+  border: 2px solid #3c96c8;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: Regular;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom {
+  padding-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-buttons {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  max-width: 450px;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-buttons .information-bottom-button {
+  display: block;
+  margin-top: 30px;
+  width: 377px;
+  height: 47px;
+  color: #bbbdbe;
+  border: 2px solid #3c96c8;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: Regular;
+  text-align: center;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-price {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 430px;
+  padding-top: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: Regular;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-price .information-bottom-price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-price .information-bottom-price-wrapper .information-bottom-price-name {
+  text-align-last: left;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-price .information-bottom-price-wrapper .information-bottom-price-cost {
+  text-align: right;
+}
+
+.section-services-tachographs {
+  height: 897px;
+  background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/serv-tachographs.png) center right no-repeat;
+  background: linear-gradient(to right, #0e1f27, rgba(14, 31, 39, 0.07)), url(/image/serv-tachographs.png) center right no-repeat;
+  background-size: contain;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 45px;
+  height: 897px;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation {
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation .tachographs-installation__text {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation .tachographs-installation__text .installation-text__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation .tachographs-installation__text .installation-text__body {
+  padding-top: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: Regular;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation .tachographs-installation__button {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation .tachographs-installation__button .installation-button {
+  padding: 10px 15px;
+  color: #bbbdbe;
+  border: 2px solid #3c96c8;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog .tachographs-catalog__button .catalog-button {
+  padding: 15px 47px;
+  color: #bbbdbe;
+  border: 2px solid #3c96c8;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: Regular;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog .tachographs-catalog__description {
+  padding: 10px;
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: Regular;
+  border: 2px solid #3c96c8;
+  border-radius: 5px;
+  background-color: rgba(14, 31, 39, 0.9);
+}
+
+.section-services-scoreboards {
+  height: 908px;
+  background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/serv-scoreboards.png) center right no-repeat;
+  background: linear-gradient(to right, #0e1f27, rgba(14, 31, 39, 0.07)), url(/image/serv-scoreboards.png) center right no-repeat;
+  background-size: contain;
+}
+
+.section-services-scoreboards .wrapper-inner .services-scoreboards {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information .scoreboards-information-wrappwer {
+  max-width: 400px;
+  height: 775px;
+}
+
+.section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information .scoreboards-information-wrappwer .scoreboards-information__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information .scoreboards-information-wrappwer .scoreboards-information__body {
+  max-width: 460px;
+  padding-top: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: Regular;
+}
+
+.section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__catalog-button {
+  -webkit-box-flex: 1.6;
+      -ms-flex-positive: 1.6;
+          flex-grow: 1.6;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__catalog-button .scoreboards-catalog-button {
+  padding: 15px 47px;
+  color: #bbbdbe;
+  border: 2px solid #3c96c8;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: Regular;
+}
+
+.section-services-heaters {
+  height: 868px;
+  background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/serv-heaters.png) center right no-repeat;
+  background: linear-gradient(to right, #0e1f27, rgba(14, 31, 39, 0.07)), url(/image/serv-heaters.png) center right no-repeat;
+  background-size: contain;
+}
+
+.section-services-heaters .wrapper-inner .services-heaters {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-services-heaters .wrapper-inner .services-heaters .services-heaters__information {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.section-services-heaters .wrapper-inner .services-heaters .services-heaters__information .heaters-information-wrappwer {
+  max-width: 495px;
+  height: 775px;
+}
+
+.section-services-heaters .wrapper-inner .services-heaters .services-heaters__information .heaters-information-wrappwer .heaters-information__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.section-services-heaters .wrapper-inner .services-heaters .services-heaters__information .heaters-information-wrappwer .heaters-information__body {
+  max-width: 460px;
+  padding-top: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: Regular;
+}
+
+.section-services-heaters .wrapper-inner .services-heaters .services-heaters__catalog-button {
+  -webkit-box-flex: 1.6;
+      -ms-flex-positive: 1.6;
+          flex-grow: 1.6;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.section-services-heaters .wrapper-inner .services-heaters .services-heaters__catalog-button .heaters-catalog-button {
+  padding: 15px 47px;
+  color: #bbbdbe;
+  border: 2px solid #3c96c8;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: Regular;
 }
 /*# sourceMappingURL=services.css.map */
