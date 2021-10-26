@@ -11,13 +11,13 @@
 }
 
 .ourworks-main {
-  background-color: #15252d;
+  background-color: #0e1f27;
 }
 
 .ourworks-main .section-ourworks-label {
   height: 900px;
-  background: url(../image/ourworks-bg.png) center center no-repeat, -webkit-gradient(linear, left bottom, left top, from(#00151f), to(rgba(16, 37, 47, 0.1)));
-  background: url(../image/ourworks-bg.png) center center no-repeat, linear-gradient(to top, #00151f, rgba(16, 37, 47, 0.1));
+  background: url(../image/ourworks-bg.png) center center no-repeat, -webkit-gradient(linear, left bottom, left top, from(#10252f), to(rgba(16, 37, 47, 0)));
+  background: url(../image/ourworks-bg.png) center center no-repeat, linear-gradient(to top, #10252f, rgba(16, 37, 47, 0));
   background-blend-mode: overlay;
 }
 
