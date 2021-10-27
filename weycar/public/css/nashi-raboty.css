@@ -89,24 +89,43 @@
   width: 540px;
 }
 
-.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__btn .ourworks-buttons-item__btn-title {
-  padding-top: 30px;
-  height: 93px;
-  border: 2px solid #3c96c8;
-  border-radius: 5px;
-  text-align: center;
-  color: white;
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .accordion-item {
+  background-color: transparent;
 }
 
-.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__btn .ourworks-buttons-item__btn-title:hover {
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .accordion-item h2 button {
+  background-color: transparent;
+  height: 93px;
+  width: 100%;
+  border: 2px solid #3c96c8;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  color: #bbbdbe;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .accordion-item h2 button:hover {
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   border: 2px solid white;
+  outline: none;
 }
 
-.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__btn .ourworks-buttons-item__btn-title:active {
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .accordion-item h2 button:active {
   border: 2px solid #3c96c8;
   color: #3c96c8;
+  outline: none;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .accordion-item h2 button:focus {
+  outline: none !important;
+  border: 2px solid #3c96c8;
+  color: #3c96c8;
+  outline: none;
 }
 
 .ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__hidden {
@@ -124,7 +143,6 @@
 .ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__hidden .item-hidden-wrapper .item-hidden {
   height: 80px;
   width: 80px;
-  background-color: #fff;
 }
 
 .ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__hidden .item-hidden-wrapper .item-hidden:first-child {
@@ -136,6 +154,17 @@
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
-  background-color: #b81616;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__hidden .item-hidden-wrapper .item-hidden:first-child img {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #3c96c8;
+}
+
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .ourworks-buttons-item__hidden .item-hidden-wrapper .item-hidden img {
+  height: 80px;
+  width: 80px;
+  border: 2px solid #3c96c8;
 }
 /*# sourceMappingURL=nashi-raboty.css.map */

@@ -17,7 +17,7 @@
             height: 900px;
             background: url(../image/ourworks-bg.png)center center no-repeat, linear-gradient(to top, rgba(16, 37, 47, 2), rgba(16, 37, 47, 0));
             background-blend-mode: overlay;
-            // background-size: contain;}
+            // background-size: contain;
             .wrapper-inner {
                 height: 100%;
                 .ourworks {
@@ -63,21 +63,38 @@
                         grid-gap: 10px 10px;
                         .ourworks-buttons-item {
                             width: 540px;
-                            .ourworks-buttons-item__btn {
-                                .ourworks-buttons-item__btn-title {
-                                    padding-top: 30px;
-                                    height: 93px;
-                                    border: 2px solid #3c96c8;
-                                    border-radius: 5px;
-                                    text-align: center;
-                                    color: white;
-                                    &:hover {
-                                        transition-duration: .2s;
-                                        border: 2px solid white;
-                                    }
-                                    &:active {
+                            .accordion-item {
+                                background-color: transparent;
+                                h2 {
+                                    button {
+                                        background-color: transparent;
+                                        height: 93px;
+                                        width: 100%;
                                         border: 2px solid #3c96c8;
-                                        color: #3c96c8;
+                                        border-radius: 5px;
+                                        color: white;
+                                        text-align: center;
+                                        color: #bbbdbe;
+                                        font-family: Arial, Helvetica, sans-serif;
+                                        font-weight: 900;
+                                        font-size: 18px;
+                                        text-align: center;
+                                        &:hover {
+                                            transition-duration: .2s;
+                                            border: 2px solid white;
+                                            outline: none;
+                                        }
+                                        &:active {
+                                            border: 2px solid #3c96c8;
+                                            color: #3c96c8;
+                                            outline: none;
+                                        }
+                                        &:focus {
+                                            outline: none !important;
+                                            border: 2px solid #3c96c8;
+                                            color: #3c96c8;
+                                            outline: none;
+                                        }
                                     }
                                 }
                             }
@@ -95,11 +112,21 @@
                                             grid-column-end: 3;
                                             grid-row-start: 1;
                                             grid-row-end: 3;
-                                            background-color: rgb(184, 22, 22);
+                                            // background-color: rgb(184, 22, 22);
+                                            img {
+                                                width: 180px;
+                                                height: 180px;
+                                                border: 2px solid #3c96c8;
+                                            }
                                         }
                                         height: 80px;
                                         width: 80px;
-                                        background-color: #fff;
+                                        // background-color: #fff;
+                                        img {
+                                            height: 80px;
+                                            width: 80px;
+                                            border: 2px solid #3c96c8;
+                                        }
                                     }
                                 }
                             }
