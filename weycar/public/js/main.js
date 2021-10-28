@@ -1,22 +1,4 @@
-// const swiper = new Swiper('.swiper-container', {
-//     direction: 'vertical',
-//     loop: true,
-
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
-
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//     },
-// });
-
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".swiper1", {
     slidesPerView: 4,
     spaceBetween: 30,
     pagination: {
@@ -49,6 +31,142 @@ var swiper = new Swiper(".swiper", {
     },
 
 });
+// слайдер наши работы Установка GPS
+const mySwiper1 = new Swiper(".slider-block1", {
+    slidesPerView: 1,
+    loop: true,
+});
+
+const sliderNavItemsOne = document.querySelectorAll('.s1');
+
+sliderNavItemsOne.forEach((el, index) => {
+    el.setAttribute('data-index', index);
+
+    el.addEventListener('click', (e) => {
+        const index = parseInt(e.currentTarget.dataset.index);
+        mySwiper1.slideTo(index);
+    })
+});
+
+// слайдер наши работы Установка регистратора
+const mySwiper2 = new Swiper(".slider-block2", {
+    slidesPerView: 1,
+    loop: true,
+});
+
+const sliderNavItemsTwo = document.querySelectorAll('.s2');
+
+sliderNavItemsTwo.forEach((el, index) => {
+    el.setAttribute('data-index', index);
+
+    el.addEventListener('click', (e) => {
+        const index = parseInt(e.currentTarget.dataset.index);
+        mySwiper2.slideTo(index);
+    })
+});
+
+// слайдер наши работы Рации
+const mySwiper3 = new Swiper(".slider-block3", {
+    slidesPerView: 1,
+    loop: true,
+});
+
+const sliderNavItemsthree = document.querySelectorAll('.s3');
+
+sliderNavItemsthree.forEach((el, index) => {
+    el.setAttribute('data-index', index);
+
+    el.addEventListener('click', (e) => {
+        const index = parseInt(e.currentTarget.dataset.index);
+        mySwiper3.slideTo(index);
+    })
+});
+
+// слайдер наши работы
+const mySwiper4 = new Swiper(".slider-block4", {
+    slidesPerView: 1,
+    loop: true,
+});
+
+const sliderNavItemsfour = document.querySelectorAll('.s4');
+
+sliderNavItemsfour.forEach((el, index) => {
+    el.setAttribute('data-index', index);
+
+    el.addEventListener('click', (e) => {
+        const index = parseInt(e.currentTarget.dataset.index);
+        mySwiper4.slideTo(index);
+    })
+});
+
+// слайдер наши работы
+const mySwiper5 = new Swiper(".slider-block5", {
+    slidesPerView: 1,
+    loop: true,
+});
+
+const sliderNavItemsFive = document.querySelectorAll('.s5');
+
+sliderNavItemsFive.forEach((el, index) => {
+    el.setAttribute('data-index', index);
+
+    el.addEventListener('click', (e) => {
+        const index = parseInt(e.currentTarget.dataset.index);
+        mySwiper5.slideTo(index);
+    })
+});
+
+// слайдер наши работы
+const mySwiper6 = new Swiper(".slider-block6", {
+    slidesPerView: 1,
+    loop: true,
+});
+
+const sliderNavItemsSix = document.querySelectorAll('.s6');
+
+sliderNavItemsSix.forEach((el, index) => {
+    el.setAttribute('data-index', index);
+
+    el.addEventListener('click', (e) => {
+        const index = parseInt(e.currentTarget.dataset.index);
+        mySwiper6.slideTo(index);
+    })
+});
+
+// слайдер наши работы
+const mySwiper7 = new Swiper(".slider-block7", {
+    slidesPerView: 1,
+    loop: true,
+});
+
+const sliderNavItemsSeven = document.querySelectorAll('.s7');
+
+sliderNavItemsSeven.forEach((el, index) => {
+    el.setAttribute('data-index', index);
+
+    el.addEventListener('click', (e) => {
+        const index = parseInt(e.currentTarget.dataset.index);
+        mySwiper7.slideTo(index);
+    })
+});
+
+// слайдер наши работы
+const mySwiper8 = new Swiper(".slider-block8", {
+    slidesPerView: 1,
+    loop: true,
+});
+
+const sliderNavItemsEight = document.querySelectorAll('.s8');
+
+sliderNavItemsEight.forEach((el, index) => {
+    el.setAttribute('data-index', index);
+
+    el.addEventListener('click', (e) => {
+        const index = parseInt(e.currentTarget.dataset.index);
+        mySwiper8.slideTo(index);
+    })
+});
+
 
 
 $(function() {

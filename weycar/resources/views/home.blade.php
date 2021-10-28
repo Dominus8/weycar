@@ -212,7 +212,7 @@
                     <!--слайдер-->
                     <div class="hot-offers__slider">
                         <!-- Slider main container -->
-                        <div class="swiper">
+                        <div class="swiper swiper1">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->

@@ -39,33 +39,37 @@
                                     <div class="accordion-body">
                                         <div class="ourworks-buttons-item__hidden">
                                             <div class="item-hidden-wrapper">
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
+                                                <div class="card-slider">
+                                                    <div class="cart-slider__nav slider-nav">
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-1.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-2.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-3.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-4.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-5.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-6.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-7.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-8.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-9.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-10.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-11.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s1"><img src="/image/ors1-12.jpg" class="rounded" alt="..."></div>
+                                                    </div> 
+                                                    <div class="swiper card-slider__block slider-block1">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="/image/ors1-1.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-2.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-3.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-4.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-5.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-6.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-7.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-8.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-9.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-10.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-11.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/ors1-12.jpg" class="rounded" alt="..."></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -85,33 +89,39 @@
                                         <div class="ourworks-buttons-item__hidden">
                                             <div class="item-hidden-wrapper">
 
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
+                                                <div class="card-slider">
+                                                    <div class="cart-slider__nav slider-nav">
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s2" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                    </div>
+                                                    <div class="swiper card-slider__block slider-block2">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -130,33 +140,39 @@
                                         <div class="ourworks-buttons-item__hidden">
                                             <div class="item-hidden-wrapper">
 
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
+                                                <div class="card-slider">
+                                                    <div class="cart-slider__nav slider-nav">
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s3" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                    </div>
+                                                    <div class="swiper card-slider__block slider-block3">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -175,33 +191,39 @@
                                         <div class="ourworks-buttons-item__hidden">
                                             <div class="item-hidden-wrapper">
 
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
+                                            <div class="card-slider">
+                                                    <div class="cart-slider__nav slider-nav">
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s4" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                    </div>
+                                                    <div class="swiper card-slider__block slider-block4">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -220,33 +242,39 @@
                                         <div class="ourworks-buttons-item__hidden">
                                             <div class="item-hidden-wrapper">
 
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
+                                            <div class="card-slider">
+                                                    <div class="cart-slider__nav slider-nav">
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s5" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                    </div>
+                                                    <div class="swiper card-slider__block slider-block5">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -265,33 +293,39 @@
                                         <div class="ourworks-buttons-item__hidden">
                                             <div class="item-hidden-wrapper">
 
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
+                                            <div class="card-slider">
+                                                    <div class="cart-slider__nav slider-nav">
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s6" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                    </div>
+                                                    <div class="swiper card-slider__block slider-block6">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -310,33 +344,39 @@
                                         <div class="ourworks-buttons-item__hidden">
                                             <div class="item-hidden-wrapper">
 
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
+                                            <div class="card-slider">
+                                                    <div class="cart-slider__nav slider-nav">
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s7" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                    </div>
+                                                    <div class="swiper card-slider__block slider-block7">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -355,33 +395,39 @@
                                         <div class="ourworks-buttons-item__hidden">
                                             <div class="item-hidden-wrapper">
 
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
+                                            <div class="card-slider">
+                                                    <div class="cart-slider__nav slider-nav">
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        <div class="slider-nav__item s8" tabindex="0"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                    </div>
+                                                    <div class="swiper card-slider__block slider-block8">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                            <div class="swiper-slide"><img src="/image/slideItem.jpg" class="rounded" alt="..."></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
-
-                                                <div class="item-hidden">
-                                                    <img src="/image/slideItem.jpg" class="rounded" alt="...">
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>

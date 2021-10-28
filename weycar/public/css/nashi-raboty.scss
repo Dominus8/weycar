@@ -97,35 +97,81 @@
                                         }
                                     }
                                 }
-                            }
-                            .ourworks-buttons-item__hidden {
-                                padding-top: 20px;
-                                .item-hidden-wrapper {
-                                    display: grid;
-                                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                                    grid-gap: 10px 10px;
-                                    .item-hidden {
-                                        &:first-child {
-                                            height: 180px;
-                                            width: 180px;
-                                            grid-column-start: 1;
-                                            grid-column-end: 3;
-                                            grid-row-start: 1;
-                                            grid-row-end: 3;
-                                            // background-color: rgb(184, 22, 22);
-                                            img {
-                                                width: 180px;
-                                                height: 180px;
-                                                border: 2px solid #3c96c8;
+                                .accordion-collapse {
+                                    .accordion-body {
+                                        margin: 0;
+                                        padding: 0;
+                                        .ourworks-buttons-item__hidden {
+                                            padding: 20px 0 10px 0;
+                                            .item-hidden-wrapper {
+                                                // display: grid;
+                                                // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                                                // grid-gap: 10px 10px;
+                                                .card-slider {
+                                                    padding: 0 23px;
+                                                    display: flex;
+                                                    flex-direction: row-reverse;
+                                                    .cart-slider__nav {
+                                                        padding-left: 20px;
+                                                        flex-grow: 1;
+                                                        display: grid;
+                                                        grid-template-columns: 1fr 1fr 1fr;
+                                                        grid-gap: 8px 17px;
+                                                        height: 55px;
+                                                        width: 55px;
+                                                        .slider-nav__item {
+                                                            cursor: pointer;
+                                                            img {
+                                                                height: 55px;
+                                                                width: 55px;
+                                                                border: 2px solid #3c96c8;
+                                                            }
+                                                        }
+                                                    }
+                                                    .card-slider__block {
+                                                        padding-top: 2px;
+                                                        height: 240px;
+                                                        width: 275px;
+                                                        .swiper-wrapper {
+                                                            height: 240px;
+                                                            width: 275px;
+                                                            .swiper-slide {
+                                                                height: 240px;
+                                                                width: 275px;
+                                                                img {
+                                                                    height: 240px;
+                                                                    width: 275px;
+                                                                    border: 2px solid #3c96c8;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                // .item-hidden {
+                                                //     // &:first-child {
+                                                //     //     height: 180px;
+                                                //     //     width: 180px;
+                                                //     //     grid-column-start: 1;
+                                                //     //     grid-column-end: 3;
+                                                //     //     grid-row-start: 1;
+                                                //     //     grid-row-end: 3;
+                                                //     //     // background-color: rgb(184, 22, 22);
+                                                //     //     img {
+                                                //     //         width: 180px;
+                                                //     //         height: 180px;
+                                                //     //         border: 2px solid #3c96c8;
+                                                //     //     }
+                                                //     // }
+                                                //     height: 80px;
+                                                //     width: 80px;
+                                                //     // background-color: #fff;
+                                                //     img {
+                                                //         height: 80px;
+                                                //         width: 80px;
+                                                //         border: 2px solid #3c96c8;
+                                                //     }
+                                                // }
                                             }
-                                        }
-                                        height: 80px;
-                                        width: 80px;
-                                        // background-color: #fff;
-                                        img {
-                                            height: 80px;
-                                            width: 80px;
-                                            border: 2px solid #3c96c8;
                                         }
                                     }
                                 }
