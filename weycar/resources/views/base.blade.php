@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/menu-list.css">
     <link rel="stylesheet" href="/css/services.css">
     <link rel="stylesheet" href="/css/nashi-raboty.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <title>weycar</title>
 </head>

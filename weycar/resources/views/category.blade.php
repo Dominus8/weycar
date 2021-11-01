@@ -52,13 +52,29 @@
                 <div class="singl-page-product-cards">
                     <div class="product-cards-wrapper">
                         <div class="product-cards__body">
+
+                            <div class="slider-block{{$el->id}} swiper" style="width:250px; height:250px;">
+                              <div class="swiper-wrapper">
+                                @if(is_array($el->image))
+                                    @foreach($el->image as $i)
+                                     <div class="cards-image swiper-slide"><img style="width:250px; height:250px;" src="/storage/product_image/{{$i}}" alt=""></div>
+                                    @endforeach
+                                @endif 
+                              </div>
+                            </div>
+
                             <div class="product-cards__body-image-area">
+
                             @if(is_array($el->image))
                                 @foreach($el->image as $i)
-                                 <div class="cards-image"><img src="/storage/product_image/{{$i}}" alt=""></div>
+                                 <div class="cards-image slider-nav s{{$el->id}}"><img src="/storage/product_image/{{$i}}" alt=""></div>
                                 @endforeach
                             @endif 
+
+
                             </div>
+
+
                             <div class="product-cards__body-text-area">
                                 <div class="body-text-area-title">{{$el->name}}</div>
                                 <div class="body-text-area-subtitle">
@@ -134,6 +150,24 @@
                     </div>
                   </div>
                 </div>
+
+              <script>
+                const mySwiper{{$el->id}} = new Swiper(".slider-block{{$el->id}}", {
+                    slidesPerView: 1,
+                    loop: true,
+                });
+
+                const sliderNavItems{{$el->id}} = document.querySelectorAll('.s{{$el->id}}');
+
+                sliderNavItems{{$el->id}}.forEach((el, index) => {
+                    el.setAttribute('data-index', index);
+                
+                    el.addEventListener('click', (e) => {
+                        const index = parseInt(e.currentTarget.dataset.index);
+                        mySwiper{{$el->id}}.slideTo(index);
+                    })
+                });
+              </script>
             @endforeach
 
             </div>
