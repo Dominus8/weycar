@@ -29,23 +29,24 @@
                     </select> 
                     <br>
                     
-                    <lable for="pi" class="form-label"> <h6>Изображение продукта</h6>  </lable>
+                    <lable for="pi" class="form-label"> <h6>Изображение продукта</h6> </lable>
                     <input id="pi" type="file" class="form-control" name='product_image[]' multiple> <br> <!---->
                     
-                    <lable for="pt" class="form-label"> <h6>Название</h6>  </lable>
+                    <lable for="pt" class="form-label"> <h6>Название</h6> </lable>
                     <input id="pt" type="text" class="form-control" name='product_name' placeholder=""></input> <br>
                     
+
                     <lable for="ps" class="form-label"> <h6>Описание</h6> </lable>
-                    <input id="ps"  class="form-control" name="product_description" placeholder=""></input> <br>
-                    
+                    <textarea id="info_sms_id" rows="5"  wrap="physical" id="ps" type="text" class="form-control" name="product_description"  placeholder=""></textarea> <br>
+
                     <lable for="psp" class="form-label"> <h6>Спецификация</h6> </lable>
-                    <input id="psp"  class="form-control" name="product_specifications" placeholder=""></input> <br>
-                    
+                    <textarea rows="5"  wrap="physical" id="psp" type="text" class="form-control" name="product_specifications"   placeholder=""></textarea> <br>
+
                     <lable for="pa" class="form-label"> <h6>Комплектующие</h6> </lable>
-                    <input id="pa"  class="form-control" name="product_accessories" placeholder=""></input> <br>
-                    
+                    <textarea rows="5"  wrap="physical" id="pa" type="text" class="form-control" name="product_accessories"  placeholder=""></textarea> <br>
+
                     <lable for="pp" class="form-label"> <h6>Цена</h6> </lable>
-                    <input id="pp"  class="form-control" name="product_price" placeholder=""></input> <br>
+                    <input id="pp" type="number" step="0.001" class="form-control" name="product_price" ></input> <br>
 
                     <lable for="ph" class="form-label"> <h6>Горячий товар да</h6> </lable>
                     
@@ -118,4 +119,5 @@
             </div>                
         </section>
 </div>
+
 @endsection

@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                         </a>
-                    @endforeach
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -52,12 +52,12 @@
                 <div class="singl-page-product-cards">
                     <div class="product-cards-wrapper">
                         <div class="product-cards__body">
-
-                            <div class="slider-block{{$el->id}} swiper" style="width:250px; height:250px;">
+                          <div class="product-body__image-wrapper">
+                            <div class="slider slider-block{{$el->id}} swiper" >
                               <div class="swiper-wrapper">
                                 @if(is_array($el->image))
                                     @foreach($el->image as $i)
-                                     <div class="cards-image swiper-slide"><img style="width:250px; height:250px;" src="/storage/product_image/{{$i}}" alt=""></div>
+                                     <div class="cards-image swiper-slide"><img src="/storage/product_image/{{$i}}" alt=""></div>
                                     @endforeach
                                 @endif 
                               </div>
@@ -70,15 +70,14 @@
                                  <div class="cards-image slider-nav s{{$el->id}}"><img src="/storage/product_image/{{$i}}" alt=""></div>
                                 @endforeach
                             @endif 
-
-
+                          </div>
                             </div>
 
 
                             <div class="product-cards__body-text-area">
                                 <div class="body-text-area-title">{{$el->name}}</div>
                                 <div class="body-text-area-subtitle">
-                                    {{$el->description}}
+                                    {!!$el->description!!}
                                 </div>
                             </div>
                         </div>
@@ -108,10 +107,43 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        ...
+                        <form id="contactform" method="POST" class="validateform">
+                            {{ csrf_field() }}
+
+                            <!-- <div id="sendmessage">
+                                Ваше сообщение отправлено!
+                            </div> -->
+                            <!-- <div id="senderror">
+                                При отправке сообщения произошла ошибка. Продублируйте его, пожалуйста, на почту администратора <span>{{ env('MAIL_ADMIN_EMAIL') }}</span>
+                            </div> -->
+                            <div class="row">
+                                <div class="col-lg-12 field">
+                                    <input class="form-control" type="text" name="name" placeholder="* Введите ваше имя" required />
+                                </div>
+                              </div><br>
+                                <div class="row">
+                                <div class="col-lg-12 field">
+                                    <input class="form-control" type="email" name="email" placeholder="* Введите ваш email" required />
+                                </div>
+                                </div><br>
+                                <div class="row">
+                                <div class="col-lg-12 field">
+                                    <input class="form-control" type="text" name="subject" placeholder="{{$el->name}}" required />
+                                </div><br><br>
+                                
+                                <div class="col-lg-12 margintop10 field">
+                                    <textarea class="form-control" rows="12" name="message" class="input-block-level" placeholder="* Ваше сообщение..." required></textarea>
+                                    <br>
+                                    <p>
+                                        <button class="btn btn-success margintop10 pull-right" type="submit">Отправить</button>
+                                        <!-- <span class="pull-right margintop20">* Заполните, пожалуйста, все обязательные поля!</span> -->
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
                       </div>
                     </div>
                   </div>
@@ -125,10 +157,10 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        {{$el->specifications}}
+                        {!!$el->specifications!!}
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
                       </div>
                     </div>
                   </div>
@@ -142,10 +174,10 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        {{$el->accessories}}
+                        {!!$el->accessories!!}
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
                       </div>
                     </div>
                   </div>
@@ -160,11 +192,12 @@
                 const sliderNavItems{{$el->id}} = document.querySelectorAll('.s{{$el->id}}');
 
                 sliderNavItems{{$el->id}}.forEach((el, index) => {
-                    el.setAttribute('data-index', index);
-                
+                    el.setAttribute('data-index', index +1);
+                    
                     el.addEventListener('click', (e) => {
                         const index = parseInt(e.currentTarget.dataset.index);
                         mySwiper{{$el->id}}.slideTo(index);
+                        console.log(index);
                     })
                 });
               </script>

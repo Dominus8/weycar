@@ -86,46 +86,56 @@
                     display: flex;
                     background: rgb(34, 193, 195);
                     background: linear-gradient(94deg, rgba(34, 193, 195, 0.3) 0%, rgba(0, 0, 0, 0.0032387955182072714) 100%);
-                    .product-cards__body-image-area {
-                        // max-width: 350px;
-                        flex-grow: 2;
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        grid-gap: 10px 10px;
-                        .cards-image {
-                            width: 70px;
-                            height: 70px;
-                            // background-color: #fff;
-                            border-radius: 15px;
-                            img {
-                                border-radius: 15px;
-                                height: 70px;
-                                width: 70px;
+                    .product-body__image-wrapper {
+                        display: flex;
+                        .slider {
+                            width: 255px;
+                            height: 265px;
+                            .swiper-wrapper {
+                                .cards-image {
+                                    img {
+                                        border-radius: 5px;
+                                        width: 255px;
+                                        height: 265px;
+                                    }
+                                }
                             }
-                            // &:first-child {
-                            //     height: 260px;
-                            //     width: 260px;
-                            //     grid-column-start: 1;
-                            //     grid-column-end: 5;
-                            //     grid-row-start: 1;
-                            //     grid-row-end: 5;
-                            //     // background-color: rgb(184, 22, 22);
-                            //     img {
-                            //         height: 260px;
-                            //         width: 260px;
-                            //         border-radius: 15px;
-                            //     }
-                            // }
+                        }
+                        .product-cards__body-image-area {
+                            max-width: 90px;
+                            padding-left: 20px;
+                            flex-grow: 2;
+                            display: flex;
+                            flex-direction: column;
+                            overflow: scroll;
+                            &::-webkit-scrollbar {
+                                display: none;
+                                /*chrome*/
+                            }
+                            .cards-image {
+                                margin-bottom: 15px;
+                                width: 70px;
+                                height: 70px;
+                                // background-color: #fff;
+                                border-radius: 15px;
+                                img {
+                                    border-radius: 15px;
+                                    height: 70px;
+                                    width: 70px;
+                                }
+                            }
                         }
                     }
                     .product-cards__body-text-area {
+                        // max-width: 555px;
                         flex-grow: 1;
-                        padding-left: 40px;
+                        padding-left: 30px;
                         .body-text-area-title {
                             margin-top: 18px;
                             font-family: ArialNarrow, Helvetica, sans-serif;
                             font-weight: bold;
                             font-size: 30px;
+                            letter-spacing: 0.03em;
                         }
                         .body-text-area-subtitle {
                             height: 190px;
@@ -133,10 +143,28 @@
                             font-family: ArialNarrow, Helvetica, sans-serif;
                             font-weight: regular;
                             font-size: 18px;
-                            overflow: scroll;
+                            overflow-y: hidden;
+                            overflow-x: hidden;
+                            transition: 3s;
+                            &:hover {
+                                overflow-y: scroll;
+                            }
                             &::-webkit-scrollbar {
-                                display: none;
+                                // display: none;
                                 /*chrome*/
+                                width: 8px;
+                            }
+                            &::-webkit-scrollbar-track {
+                                // background: orange;
+                                /* цвет дорожки */
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: #3c96c1;
+                                /* цвет плашки */
+                                border-radius: 20px;
+                                /* закругления плашки */
+                                border: 1px solid #3c96c8;
+                                /* padding вокруг плашки */
                             }
                         }
                     }

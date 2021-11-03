@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .paginations {
   width: 999px;
   margin: 0 auto;
@@ -101,24 +102,52 @@
   background: linear-gradient(94deg, rgba(34, 193, 195, 0.3) 0%, rgba(0, 0, 0, 0.0032388) 100%);
 }
 
-.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-cards__body-image-area {
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-body__image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-body__image-wrapper .slider {
+  width: 255px;
+  height: 265px;
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-body__image-wrapper .slider .swiper-wrapper .cards-image img {
+  border-radius: 5px;
+  width: 255px;
+  height: 265px;
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-body__image-wrapper .product-cards__body-image-area {
+  max-width: 90px;
+  padding-left: 20px;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
 }
 
-.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-cards__body-image-area .cards-image {
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-body__image-wrapper .product-cards__body-image-area::-webkit-scrollbar {
+  display: none;
+  /*chrome*/
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-body__image-wrapper .product-cards__body-image-area .cards-image {
+  margin-bottom: 15px;
   width: 70px;
   height: 70px;
   border-radius: 15px;
 }
 
-.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-cards__body-image-area .cards-image img {
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-body__image-wrapper .product-cards__body-image-area .cards-image img {
   border-radius: 15px;
   height: 70px;
   width: 70px;
@@ -128,7 +157,7 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-cards__body-text-area .body-text-area-title {
@@ -136,6 +165,7 @@
   font-family: ArialNarrow, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 30px;
+  letter-spacing: 0.03em;
 }
 
 .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-cards__body-text-area .body-text-area-subtitle {
@@ -144,12 +174,32 @@
   font-family: ArialNarrow, Helvetica, sans-serif;
   font-weight: regular;
   font-size: 18px;
-  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-cards__body-text-area .body-text-area-subtitle:hover {
+  overflow-y: scroll;
 }
 
 .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-cards__body-text-area .body-text-area-subtitle::-webkit-scrollbar {
-  display: none;
   /*chrome*/
+  width: 8px;
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-cards__body-text-area .body-text-area-subtitle::-webkit-scrollbar-track {
+  /* цвет дорожки */
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-cards__body-text-area .body-text-area-subtitle::-webkit-scrollbar-thumb {
+  background-color: #3c96c1;
+  /* цвет плашки */
+  border-radius: 20px;
+  /* закругления плашки */
+  border: 1px solid #3c96c8;
+  /* padding вокруг плашки */
 }
 
 .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__buttons {
