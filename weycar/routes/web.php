@@ -30,7 +30,7 @@ Route::get('/category/{catid}/{subcatid}', [MainController::class, 'subcategory'
 //Админка
 Route::get('/admin', [MainController::class, 'admin'] )->name('admin');
 
-// Создание продукта
+//Создание продукта
 Route::post('/admin/create-product', [MainController::class, 'create_product']) ->name('create-product');
 
 //Редактирование продукта
@@ -54,8 +54,8 @@ Route::get('/services', [MainController::class, 'services'] )->name('services');
 //Наши работы
 Route::get('/ourworks', [MainController::class, 'ourworks'] )->name('ourworks');
 
-//Наши работы
+//Сопутствующие работы
 Route::get('/relatedproducts', [MainController::class, 'relatedproducts'] )->name('relatedproducts');
 
-//Наши работы
+//Референт лист
 Route::get('/referentlist', [MainController::class, 'referentlist'] )->name('referentlist');

@@ -30,7 +30,6 @@ class MainController extends Controller
     // Подкатегории и товары
     public function category($catid){
 
-
         $category = Category::where('category_id','=',$catid)->first();
         
         
@@ -67,9 +66,10 @@ class MainController extends Controller
         $subcategory = Subcategory::where('category_id','=',$catid)->get()->values()->all();
         $product= Product::where('subcategory_id','=',$subcatid)->get()->values()->all();
         $subcategory_title= Subcategory::where('subcategory_id','=',$subcatid)->first()->title;
+        $subcategory_subtitle= Subcategory::where('subcategory_id','=',$subcatid)->first()->subtitle;
         
 
-        return view('category',['catid'=>$catid,'product'=>$product, 'subcategory'=>$subcategory, 'category'=>$category, 'subcatid'=>$subcatid, 'subcategory_title'=>$subcategory_title ]);
+        return view('category',['catid'=>$catid,'product'=>$product, 'subcategory'=>$subcategory, 'category'=>$category, 'subcatid'=>$subcatid, 'subcategory_title'=>$subcategory_title, 'subcategory_subtitle'=>$subcategory_subtitle ]);
     }
 
     // Админка

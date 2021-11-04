@@ -28,7 +28,14 @@
                             </div>
                         </a>
                         @endforeach
-                    </div>
+                    </div><br>
+                    @if(isset($subcatid))
+                    <div class=""><h5>{{$subcategory_subtitle}}</h5></div>
+                    @endif
+                    @if(count($subcategory)==1 and !isset($subcatid))
+                    <div class=""><h5>{{$subcategory[0]->subtitle}}</h5></div>
+                    
+                    @endif
                 </div>
             </div>
         </section>
