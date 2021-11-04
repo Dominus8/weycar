@@ -141,7 +141,7 @@
 }
 
 .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-body__image-wrapper .product-cards__body-image-area .cards-image {
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   width: 70px;
   height: 70px;
   border-radius: 15px;
@@ -165,6 +165,7 @@
   font-family: ArialNarrow, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 30px;
+  line-height: 30px;
   letter-spacing: 0.03em;
 }
 

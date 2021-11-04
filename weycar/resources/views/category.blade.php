@@ -135,7 +135,7 @@
                                 </div><br>
                                 <div class="row">
                                 <div class="col-lg-12 field">
-                                    <input class="form-control" type="text" name="subject" placeholder="{{$el->name}}" required />
+                                    <input class="form-control" type="text" name="subject" placeholder="" value="{{$el->name}}" required />
                                 </div><br><br>
                                 
                                 <div class="col-lg-12 margintop10 field">
