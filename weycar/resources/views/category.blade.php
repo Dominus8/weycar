@@ -70,16 +70,16 @@
                                 <!--Основной слайд-->
                                 @if(is_array($el->image))
                                     @foreach($el->image as $i)
-                                      <div class="swiper-slide">
-                                        <div id="cards-image-container{{$i[7]}}{{$i[8]}}{{$i[9]}}">
+                                      <div class="cards-image-container swiper-slide">
+                                        
                                           <img src="/storage/product_image/{{$i}}">
-                                        </div>
+                                        
                                       </div>
 
                                       <script>
                                         // Example:
                                           $(document).ready(function(){
-                                            $('#cards-image-container{{$i[7]}}{{$i[8]}}{{$i[9]}}').zoom({ on:'click' });
+                                            $('.cards-image-container').zoom();
                                           });
                                       </script>
                                     @endforeach
