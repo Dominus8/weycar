@@ -80,7 +80,6 @@
                           </div>
                             </div>
 
-
                             <div class="product-cards__body-text-area">
                                 <div class="body-text-area-title">{{$el->name}}</div>
                                 <div class="body-text-area-subtitle">
@@ -95,7 +94,9 @@
                             </div>
                             <div type="button" class="product-cards__buttons-bottom">
                                 <div class="product-cards-share">
-                                    <img src="/image/product-cards-share.png" alt="">
+                                    <script src="https://yastatic.net/share2/share.js"></script>
+                                    <div class="ya-share2" data-curtain data-size="l" data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,facebook,telegram,viber,whatsapp"></div>
+                                    <!-- <img src="/image/product-cards-share.png" alt=""> -->
                                 </div>
                                 <div type="button" class="product-cards-specifications" data-bs-toggle="modal" data-bs-target="#specificationsModal{{$el->id}}">Характеристики</div>
                                 <div type="button" class="product-cards-accessories" data-bs-toggle="modal" data-bs-target="#accessoriesModal{{$el->id}}">Комплектующие</div>

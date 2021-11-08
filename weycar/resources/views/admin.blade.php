@@ -35,7 +35,6 @@
                     <lable for="pt" class="form-label"> <h6>Название</h6> </lable>
                     <input id="pt" type="text" class="form-control" name='product_name' placeholder=""></input> <br>
                     
-
                     <lable for="ps" class="form-label"> <h6>Описание</h6> </lable>
                     <textarea id="info_sms_id" rows="5"  wrap="physical" id="ps" type="text" class="form-control" name="product_description"  placeholder=""></textarea> <br>
 
@@ -91,7 +90,7 @@
                     <lable for="sсsp" class="form-label"> <h6>описание</h6> </lable>
                     <input id="sсsp" type="text" class="form-control" name="subcategory_description" placeholder=""></input> <br>
                                   
-                     <br>
+                    <br>
                    
                     <button class="btn btn-primary" type="sucsess"> Создать подкатегорию</button>
                 </div>
