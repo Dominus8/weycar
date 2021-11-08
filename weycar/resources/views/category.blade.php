@@ -1,7 +1,7 @@
 @extends('base')
 
-
 @section('content')
+
 <!--main-->
 <div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> >
 @if(isset($subcatid))
@@ -66,40 +66,26 @@
                         <div class="product-cards__body">
                           <div class="product-body__image-wrapper">
                             <div class="slider slider-block{{$el->id}} swiper">
-                              <div class="swiper-wrapper">
+                              <div  class="swiper-wrapper">
+                                <!--Основной слайд-->
                                 @if(is_array($el->image))
                                     @foreach($el->image as $i)
-                                      <div class="cards-image swiper-slide">
-                                        <a type="button" data-bs-toggle="modal" data-bs-target="#imageModal{{$i[7]}}{{$i[8]}}{{$i[9]}}">
-                                          <img src="/storage/product_image/{{$i}}" alt="">
-                                        </a>
+                                      <div class="swiper-slide">
+                                        <div id="cards-image-container{{$i[7]}}{{$i[8]}}{{$i[9]}}">
+                                          <img src="/storage/product_image/{{$i}}">
+                                        </div>
                                       </div>
+
+                                      <script>
+                                        // Example:
+                                          $(document).ready(function(){
+                                            $('#cards-image-container{{$i[7]}}{{$i[8]}}{{$i[9]}}').zoom({ on:'click' });
+                                          });
+                                      </script>
                                     @endforeach
-                                @endif 
+                                @endif
                               </div>
                             </div>
-
-                            @if(is_array($el->image))
-                                @foreach($el->image as $i)
-                                    <!-- Modal -->
-                                        <div class="modal fade" id="imageModal{{$i[7]}}{{$i[8]}}{{$i[9]}}" tabindex="-1" aria-labelledby="imageModal{{$i[7]}}{{$i[8]}}{{$i[9]}}Label" aria-hidden="true">
-                                          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                <h5 class="modal-title" id="imageModal{{$i[7]}}{{$i[8]}}{{$i[9]}}Label"></h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                              </div>
-                                              <div class="modal-body" >
-                                                <img src="/storage/product_image/{{$i}}" alt="">
-                                              </div>
-                                              <div class="modal-footer">
-                                                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                @endforeach
-                            @endif 
 
                             <div class="product-cards__body-image-area">
 
@@ -127,7 +113,6 @@
                                 <div class="product-cards-share">
                                     <script src="https://yastatic.net/share2/share.js"></script>
                                     <div class="ya-share2" data-curtain data-size="l" data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,facebook,telegram,viber,whatsapp"></div>
-                                    <!-- <img src="/image/product-cards-share.png" alt=""> -->
                                 </div>
                                 <div type="button" class="product-cards-specifications" data-bs-toggle="modal" data-bs-target="#specificationsModal{{$el->id}}">Характеристики</div>
                                 <div type="button" class="product-cards-accessories" data-bs-toggle="modal" data-bs-target="#accessoriesModal{{$el->id}}">Комплектующие</div>
@@ -246,5 +231,5 @@
             </div>
         </section>
     </div>
-    
+
 @endsection

@@ -2,7 +2,7 @@
 
 @section('content')
     <!--main-->
-    <div class="paginations">test</div>
+    <div class="paginations"><a href="{{route('index')}}">Главная</a> > <a href="{{route('all_category')}}">Каталог</a> > Услуги </div>
     <div class="services-main">
         <section class="wrapper-outer section-services-first">
             <div class="wrapper-inner">
@@ -17,11 +17,11 @@
                         <div class="ofers-list">
                             <div class="ofers-list__list-heading">Мы предлогаем такие услуги как:</div>
                             <div class="ofers-list-buttons">
-                                <div class="ofers-listbuttons__item">Установка видеонаблюдения в транспорте</div>
-                                <div class="ofers-listbuttons__item">Спутниковый мониторинг транспорта</div>
-                                <div class="ofers-listbuttons__item">Установка тахографов</div>
-                                <div class="ofers-listbuttons__item">Установка информационного табло</div>
-                                <div class="ofers-listbuttons__item">Установка автономного отопителя</div>
+                                <div type="button" data-bs-toggle="modal" data-bs-target="#serviceModal1" class="ofers-listbuttons__item">Установка видеонаблюдения в транспорте</div>
+                                <div type="button" data-bs-toggle="modal" data-bs-target="#serviceModal2" class="ofers-listbuttons__item">Спутниковый мониторинг транспорта</div>
+                                <div type="button" data-bs-toggle="modal" data-bs-target="#serviceModal3" class="ofers-listbuttons__item">Установка тахографов</div>
+                                <div type="button" data-bs-toggle="modal" data-bs-target="#serviceModal4" class="ofers-listbuttons__item">Установка информационного табло</div>
+                                <div type="button" data-bs-toggle="modal" data-bs-target="#serviceModal5" class="ofers-listbuttons__item">Установка автономного отопителя</div>
                             </div>
                         </div>
                         <div class="ofers-image">
@@ -58,7 +58,7 @@
                     </div>
                     </div>
                     <div class="services-video__catalog-button">
-                        <a href="#" class="video-catalog-button">
+                        <a href="{{route('all_category')}}" class="video-catalog-button">
                             Каталог
                         </a>
                     </div>
@@ -82,14 +82,16 @@
                                 </div>
                             </div>
                             <div class="information-top-catalog-button">
-                                <a href="#" class="monitoring-catalog-button">Каталог</a>
+                                <a href="{{route('all_category')}}" class="monitoring-catalog-button">
+                                    Каталог
+                                </a>
                             </div>
                         </div>
                         <div class="services-monitoring-information__bottom">
                         <div class="information-bottom-buttons">
-                            <a href="#" class="information-bottom-button">Стоимость</a>
-                            <a href="#" class="information-bottom-button">Что дает спутниковый мониторинг</a>
-                            <a href="#" class="information-bottom-button">Как устроена система слежения за транспортом</a>
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal6" class="information-bottom-button">Стоимость</a>
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal7" class="information-bottom-button">Что дает спутниковый мониторинг</a>
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal8" class="information-bottom-button">Как устроена система слежения за транспортом</a>
                         </div>
                         <div class="information-bottom-price">
                             <div class="information-bottom-price-wrapper">
@@ -180,12 +182,13 @@
                             </div>
                         </div>
                         <div class="tachographs-installation__button">
-                            <a href="#" class="installation-button">Установка тахографа под ключ — Москва и Подмосковье</a>
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal9" class="installation-button">Установка тахографа под ключ — Москва и Подмосковье</a>
                         </div>
                     </div>
                     <div class="services-tachographs-catalog">
                         <div class="tachographs-catalog__button">
-                            <a class="catalog-button" href="#">Каталог</a>
+                            <a href="{{route('all_category')}}" class="catalog-button">
+                                Каталог</a>
                         </div>
                         <div class="tachographs-catalog__description">
                         Установка тахографа под ключ подразумевает комплекс единовременных и последующих услуг: <br><br>
@@ -239,7 +242,7 @@
                         </div>
                     </div>
                     <div class="services-scoreboards__catalog-button">
-                        <a href="#" class="scoreboards-catalog-button">
+                        <a href="{{route('all_category')}}" class="scoreboards-catalog-button">
                              Каталог
                         </a>
                     </div>
@@ -278,12 +281,174 @@
                         </div>
                     </div>
                     <div class="services-heaters__catalog-button">
-                        <a href="#" class="heaters-catalog-button">
+                        <a href="{{route('all_category')}}" class="heaters-catalog-button">
                              Каталог
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+    </div>
+ 
+    <!-- Modal 1 -->
+    <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="serviceModal1Label">Установка видеонаблюдения в транспорте</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              Установка видеонаблюдения в транспорте
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
+              </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal 2 -->
+    <div class="modal fade" id="serviceModal2" tabindex="-1" aria-labelledby="serviceModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="serviceModal2Label">Спутниковый мониторинг транспорта</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              Спутниковый мониторинг транспорта
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
+              </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal 3 -->
+    <div class="modal fade" id="serviceModal3" tabindex="-1" aria-labelledby="serviceModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="serviceModal3Label">Установка тахографов</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              Установка тахографов
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
+              </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal 4 -->
+    <div class="modal fade" id="serviceModal4" tabindex="-1" aria-labelledby="serviceModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="serviceModal4Label">Установка информационного табло</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              Установка информационного табло
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
+              </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal 5 -->
+    <div class="modal fade" id="serviceModal5" tabindex="-1" aria-labelledby="serviceModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="serviceModal5Label">Установка автономного отопителя</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              Установка автономного отопителя
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
+              </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal 6 -->
+    <div class="modal fade" id="serviceModal6" tabindex="-1" aria-labelledby="serviceModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="serviceModal6Label">Стоимость</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              Стоимость
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
+              </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal 7 -->
+    <div class="modal fade" id="serviceModal7" tabindex="-1" aria-labelledby="serviceModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="serviceModal7Label">Что дает спутниковый мониторинг</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              Что дает спутниковый мониторинг
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
+              </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal 8 -->
+    <div class="modal fade" id="serviceModal8" tabindex="-1" aria-labelledby="serviceModal8Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="serviceModal8Label">Как устроена система слежения за транспортом</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              Как устроена система слежения за транспортом
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
+              </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal 9 -->
+    <div class="modal fade" id="serviceModal9" tabindex="-1" aria-labelledby="serviceModal9Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="serviceModal9Label">Установка тахографа под ключ — Москва и Подмосковье</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              Установка тахографа под ключ — Москва и Подмосковье
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
+              </div>
+            </div>
+        </div>
     </div>
 @endsection
