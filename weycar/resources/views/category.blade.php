@@ -1,5 +1,6 @@
 @extends('base')
 
+
 @section('content')
 <!--main-->
 <div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> >
@@ -14,6 +15,8 @@
             <div class="wrapper-inner">
                 <div class="singl-page">
                     <div class="singl-page-wrapper">
+
+
                     @foreach($subcategory as $el)
                         <a href="{{route('subcategory', ['catid'=>$catid, 'subcatid'=>$el->subcategory_id] )}}">
                             <div class="singl-page__item">
@@ -28,6 +31,8 @@
                             </div>
                         </a>
                         @endforeach
+
+
                     </div><br>
                     @if(isset($subcatid))
                     <div class=""><h5>{{$subcategory_subtitle}}</h5></div>
@@ -60,15 +65,41 @@
                     <div class="product-cards-wrapper">
                         <div class="product-cards__body">
                           <div class="product-body__image-wrapper">
-                            <div class="slider slider-block{{$el->id}} swiper" >
+                            <div class="slider slider-block{{$el->id}} swiper">
                               <div class="swiper-wrapper">
                                 @if(is_array($el->image))
                                     @foreach($el->image as $i)
-                                     <div class="cards-image swiper-slide"><img src="/storage/product_image/{{$i}}" alt=""></div>
+                                      <div class="cards-image swiper-slide">
+                                        <a type="button" data-bs-toggle="modal" data-bs-target="#imageModal{{$i[7]}}{{$i[8]}}{{$i[9]}}">
+                                          <img src="/storage/product_image/{{$i}}" alt="">
+                                        </a>
+                                      </div>
                                     @endforeach
                                 @endif 
                               </div>
                             </div>
+
+                            @if(is_array($el->image))
+                                @foreach($el->image as $i)
+                                    <!-- Modal -->
+                                        <div class="modal fade" id="imageModal{{$i[7]}}{{$i[8]}}{{$i[9]}}" tabindex="-1" aria-labelledby="imageModal{{$i[7]}}{{$i[8]}}{{$i[9]}}Label" aria-hidden="true">
+                                          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="imageModal{{$i[7]}}{{$i[8]}}{{$i[9]}}Label"></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                              </div>
+                                              <div class="modal-body" >
+                                                <img src="/storage/product_image/{{$i}}" alt="">
+                                              </div>
+                                              <div class="modal-footer">
+                                                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                @endforeach
+                            @endif 
 
                             <div class="product-cards__body-image-area">
 
@@ -208,10 +239,12 @@
                         console.log(index);
                     })
                 });
+
               </script>
             @endforeach
 
             </div>
         </section>
     </div>
+    
 @endsection
