@@ -166,9 +166,6 @@
                             </div>
                         </form>
                       </div>
-                      <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -183,9 +180,6 @@
                       <div class="modal-body">
                         {!!$el->specifications!!}
                       </div>
-                      <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -200,9 +194,6 @@
                       <div class="modal-body">
                         {!!$el->accessories!!}
                       </div>
-                      <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -211,6 +202,7 @@
                 const mySwiper{{$el->id}} = new Swiper(".slider-block{{$el->id}}", {
                     slidesPerView: 1,
                     loop: true,
+                    allowTouchMove:false,
                 });
 
                 const sliderNavItems{{$el->id}} = document.querySelectorAll('.s{{$el->id}}');
@@ -221,7 +213,7 @@
                     el.addEventListener('click', (e) => {
                         const index = parseInt(e.currentTarget.dataset.index);
                         mySwiper{{$el->id}}.slideTo(index);
-                        console.log(index);
+                        
                     })
                 });
 
