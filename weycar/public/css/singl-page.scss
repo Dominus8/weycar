@@ -74,12 +74,12 @@
         .singl-page-product-cards {
             color: #bbbdbe;
             margin-top: 60px;
-            padding-bottom: 60px;
             .product-cards-wrapper {
                 height: 340px;
                 display: flex;
                 .product-cards__body {
                     width: 925px;
+                    height: 340px;
                     padding: 10px;
                     border: 2px solid #3c96c8;
                     border-radius: 15px;
@@ -114,14 +114,17 @@
                             }
                             .cards-image {
                                 margin-bottom: 11px;
-                                width: 70px;
-                                height: 70px;
+                                width: 72px;
+                                height: 72px;
                                 // background-color: #fff;
                                 border-radius: 15px;
                                 img {
                                     border-radius: 15px;
                                     height: 70px;
                                     width: 70px;
+                                    &:hover {
+                                        border: 1px solid rgba(187, 186, 186, 0.5);
+                                    }
                                 }
                             }
                         }
@@ -172,7 +175,7 @@
                 }
                 .product-cards__buttons {
                     width: 170px;
-                    padding: 25px;
+                    padding: 15px 25px;
                     display: flex;
                     flex-direction: column;
                     align-items: start;
@@ -184,19 +187,70 @@
                             font-size: 36px;
                         }
                         .product-cards-order {
-                            padding: 0 20px;
+                            padding: 0 25px;
                             border: 3px solid #13d313;
                             border-radius: 10px;
                             color: #7fdf78;
                             font-family: Arial, Helvetica, sans-serif;
                             font-weight: bold;
                             font-size: 24px;
+                            &:hover {
+                                background-color: rgba(127, 223, 120, 0.3);
+                            }
                         }
                     }
                     .product-cards__buttons-bottom {
-                        .product-cards-share {}
+                        .product-cards-share {
+                            .ya-share2__container {
+                                .ya-share2__list {
+                                    .ya-share2__item {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        .ya-share2__link {
+                                            padding: 0;
+                                            .ya-share2__badge {
+                                                margin-left: -8px;
+                                                .ya-share2__icon_more {
+                                                    background-image: url(/image/product-cards-share.png);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .ya-share2__popup {
+                                width: 115px;
+                                height: 115px;
+                                top: -65px;
+                                left: 40px;
+                                background: linear-gradient(to right, rgba(89, 151, 189, 0.6), rgba(14, 31, 39, 0.3));
+                                border: 2px solid #3c96c8;
+                                .ya-share2__list {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    grid-row-gap: 10px;
+                                    .ya-share2__item_service_facebook {
+                                        .ya-share2__link {
+                                            .ya-share2__badge {
+                                                .ya-share2__icon {}
+                                            }
+                                        }
+                                    }
+                                }
+                                .ya-share2__item {
+                                    .ya-share2__icon {
+                                        width: 36px;
+                                        height: 36px;
+                                    }
+                                    .ya-share2__title {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
                         .product-cards-specifications {
-                            margin-top: 20px;
+                            margin-top: 10px;
                             padding: 0px 20px 3px 20px;
                             color: #3c96c8;
                             border: 2px solid #3c96c8;
@@ -205,9 +259,12 @@
                             font-weight: bold;
                             font-size: 18px;
                             letter-spacing: 0.5px;
+                            &:hover {
+                                background-color: rgba(60, 150, 200, 0.3);
+                            }
                         }
                         .product-cards-accessories {
-                            margin-top: 20px;
+                            margin-top: 15px;
                             padding: 0px 20px 3px 20px;
                             color: #3c96c8;
                             border: 2px solid #3c96c8;
@@ -216,10 +273,32 @@
                             font-weight: bold;
                             font-size: 18px;
                             letter-spacing: 0.5px;
+                            &:hover {
+                                background-color: rgba(60, 150, 200, 0.3);
+                            }
                         }
                     }
                 }
             }
+        }
+    }
+}
+
+.modal-content {
+    background: linear-gradient(to right, #1f4a61, rgba(37, 85, 107, 0.9));
+    .modal-title {
+        font-size: 24px;
+    }
+    .send-btn {
+        padding: 0 20px;
+        border: 3px solid #13d313;
+        border-radius: 10px;
+        color: #7fdf78;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        &:hover {
+            background-color: rgba(127, 223, 120, 0.3);
         }
     }
 }

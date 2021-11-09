@@ -112,7 +112,7 @@
                             <div type="button" class="product-cards__buttons-bottom">
                                 <div class="product-cards-share">
                                     <script src="https://yastatic.net/share2/share.js"></script>
-                                    <div class="ya-share2" data-curtain data-size="l" data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,facebook,telegram,viber,whatsapp"></div>
+                                    <div class="ya-share2" data-curtain data-size="l" data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,facebook,telegram"></div>
                                 </div>
                                 <div type="button" class="product-cards-specifications" data-bs-toggle="modal" data-bs-target="#specificationsModal{{$el->id}}">Характеристики</div>
                                 <div type="button" class="product-cards-accessories" data-bs-toggle="modal" data-bs-target="#accessoriesModal{{$el->id}}">Комплектующие</div>
@@ -159,16 +159,16 @@
                                     <textarea class="form-control" rows="12" name="message" class="input-block-level" placeholder="* Ваше сообщение..." required></textarea>
                                     <br>
                                     <p>
-                                        <button class="btn btn-success margintop10 pull-right" type="submit">Отправить</button>
+                                        <button class="btn send-btn margintop10 pull-right" type="submit">Отправить</button>
                                         <!-- <span class="pull-right margintop20">* Заполните, пожалуйста, все обязательные поля!</span> -->
                                     </p>
                                 </div>
                             </div>
                         </form>
                       </div>
-                      <div class="modal-footer">
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
-                      </div>
+                      <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -183,9 +183,9 @@
                       <div class="modal-body">
                         {!!$el->specifications!!}
                       </div>
-                      <div class="modal-footer">
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
-                      </div>
+                      <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -200,9 +200,9 @@
                       <div class="modal-body">
                         {!!$el->accessories!!}
                       </div>
-                      <div class="modal-footer">
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button> -->
-                      </div>
+                      <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                      </div> -->
                     </div>
                   </div>
                 </div>
