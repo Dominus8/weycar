@@ -314,6 +314,7 @@
 }
 
 .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__buttons .product-cards__buttons-bottom .product-cards-specifications:hover {
+  color: #bbbdbe;
   background-color: rgba(60, 150, 200, 0.3);
 }
 
@@ -330,6 +331,7 @@
 }
 
 .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__buttons .product-cards__buttons-bottom .product-cards-accessories:hover {
+  color: #bbbdbe;
   background-color: rgba(60, 150, 200, 0.3);
 }
 
