@@ -12,7 +12,7 @@
  </div>
     <div class="main-content">
         <section class="wrapper-outer section-singl-page">
-            <div class="wrapper-inner">
+            <div class="wrapper-inner category-single">
                 <div class="singl-page">
                     <div class="singl-page-wrapper">
 
