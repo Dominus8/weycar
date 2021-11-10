@@ -1,8 +1,8 @@
 .paginations {
     width: 999px;
-    margin: 0 auto;
     margin-top: 30px;
     color: #bbbdbe;
+    width: 350px;
 }
 
 .section-singl-page {
@@ -130,7 +130,7 @@
                         }
                     }
                     .product-cards__body-text-area {
-                        // max-width: 555px;
+                        min-width: 270px;
                         flex-grow: 1;
                         padding-left: 30px;
                         .body-text-area-title {
@@ -301,6 +301,106 @@
         font-size: 24px;
         &:hover {
             background-color: rgba(127, 223, 120, 0.3);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .singl-page-product-cards {
+        margin-left: -60px;
+    }
+}
+
+@media (max-width: 770px) {
+    .paginations {
+        padding-left: 100px;
+        max-width: 768px;
+    }
+    .section-singl-page-product-cards {
+        margin-top: 60px;
+        .wrapper-inner {
+            .singl-page-product-cards {
+                margin-left: -85px;
+                margin-bottom: 120px !important;
+                .product-cards-wrapper {
+                    flex-direction: column;
+                    .product-cards__body {
+                        max-width: 695px;
+                        .product-body__image-wrapper {
+                            .slider {
+                                .swiper-wrapper {
+                                    img {}
+                                }
+                            }
+                            .product-cards__body-image-area {}
+                            .cards-image {
+                                img {}
+                            }
+                        }
+                    }
+                }
+                .product-cards__body-text-area {
+                    .body-text-area-title {}
+                    .body-text-area-subtitle {}
+                }
+            }
+            .product-cards__buttons {
+                margin-top: 5px;
+                width: 695px !important;
+                .product-cards__buttons-top {
+                    width: 695px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                    padding: 0 30px;
+                    .product-cards-price {
+                        padding-right: 25px;
+                    }
+                    .product-cards-order {}
+                }
+                .product-cards__buttons-bottom {
+                    padding: 0 15px 0 0;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    justify-content: end;
+                    width: 695px;
+                    .product-cards-share {
+                        .ya-share2__container {
+                            .ya-share2__list {
+                                .ya-share2__item {
+                                    .ya-share2__link {
+                                        .ya-share2__badge {
+                                            .ya-share2__icon_more {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .ya-share2__popup {
+                            .ya-share2__list {
+                                .ya-share2__item_service_facebook {
+                                    .ya-share2__link {
+                                        .ya-share2__badge {
+                                            .ya-share2__icon {}
+                                        }
+                                    }
+                                }
+                            }
+                            .ya-share2__item {
+                                .ya-share2__icon {}
+                                .ya-share2__title {}
+                            }
+                        }
+                    }
+                    .product-cards-specifications {
+                        margin: 0 0 0 10px !important;
+                    }
+                    .product-cards-accessories {
+                        margin: 0 !important;
+                    }
+                }
+            }
         }
     }
 }
