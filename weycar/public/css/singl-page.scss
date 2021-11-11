@@ -30,6 +30,9 @@
                             align-items: center;
                             background: rgba(22, 40, 49, 1);
                             background: linear-gradient(340deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                            &:hover {
+                                background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                            }
                             img {
                                 max-width: 145px;
                             }
@@ -379,7 +382,9 @@
                     .product-cards-price {
                         padding-right: 25px;
                     }
-                    .product-cards-order {}
+                    .product-cards-order {
+                        height: 43px;
+                    }
                 }
                 .product-cards__buttons-bottom {
                     padding: 0 22px 0 0;
@@ -445,7 +450,37 @@
             .category-single {
                 padding: 0 15px;
                 .singl-page {
-                    .singl-page-wrapper {}
+                    .singl-page-wrapper {
+                        a {
+                            display: flex;
+                            justify-content: center;
+                            .singl-page__item {
+                                .item-wrapper {
+                                    margin-left: -60px;
+                                    .item__image {
+                                        display: none;
+                                    }
+                                    .item__title {
+                                        padding-bottom: 10px;
+                                        margin: 5px 0;
+                                        margin-right: -50px;
+                                        border: 3.79px solid #3582ac;
+                                        border-radius: 5px;
+                                        border-image-slice: 1;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background: rgba(22, 40, 49, 1);
+                                        background: linear-gradient(340deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                                        &:hover {
+                                            background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -539,9 +574,13 @@
                     }
                     .product-cards-specifications {
                         margin: 0 0 0 10px !important;
+                        padding-left: 18px !important;
+                        padding-right: 18px !important;
                     }
                     .product-cards-accessories {
                         margin: 0 !important;
+                        padding-left: 18px !important;
+                        padding-right: 18px !important;
                     }
                 }
             }
@@ -559,7 +598,17 @@
             .category-single {
                 padding: 0 15px;
                 .singl-page {
-                    .singl-page-wrapper {}
+                    .singl-page-wrapper {
+                        a {
+                            .singl-page__item {
+                                .item-wrapper {
+                                    margin-left: -40px;
+                                    .item__image {}
+                                    .item__title {}
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -679,7 +728,17 @@
             .category-single {
                 padding: 0 15px;
                 .singl-page {
-                    .singl-page-wrapper {}
+                    .singl-page-wrapper {
+                        a {
+                            .singl-page__item {
+                                .item-wrapper {
+                                    margin-left: -50px;
+                                    .item__image {}
+                                    .item__title {}
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
