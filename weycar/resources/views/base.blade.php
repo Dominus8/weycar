@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/singl-page.css">
     <link rel="stylesheet" href="/css/menu-list.css">
     <link rel="stylesheet" href="/css/services.css">
     <link rel="stylesheet" href="/css/nashi-raboty.css">
+    <link rel="stylesheet" href="/css/singl-page.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
