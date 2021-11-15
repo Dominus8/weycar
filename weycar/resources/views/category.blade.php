@@ -16,7 +16,6 @@
                 <div class="singl-page">
                     <div class="singl-page-wrapper">
 
-
                     @foreach($subcategory as $el)
                         <a href="{{route('subcategory', ['catid'=>$catid, 'subcatid'=>$el->subcategory_id] )}}">
                             <div class="singl-page__item">
@@ -31,7 +30,6 @@
                             </div>
                         </a>
                         @endforeach
-
 
                     </div><br>
                     @if(isset($subcatid))
@@ -70,7 +68,7 @@
                                 <!--Основной слайд-->
                                 @if(is_array($el->image))
                                     @foreach($el->image as $i)
-                                      <div class="cards-image-container swiper-slide">
+                                      <div class="cards-image-container swiper-slide" type="button" data-bs-toggle="modal" data-bs-target="#imageModal{{$el->id}}">
                                         
                                           <img src="/storage/product_image/{{$i}}">
                                         
@@ -122,7 +120,7 @@
                     </div>
                 </div>
                 
-                <!-- Modal -->
+                <!-- Modal заказать -->
                 <div  class="modal fade" id="orderModal{{$el->id}}" tabindex="-1" aria-labelledby="orderModal{{$el->id}}Label" aria-hidden="true">
                   <div  class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div style="z-index: 9999" class="modal-content">
@@ -169,7 +167,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- Modal -->
+                <!-- Modal характеристики -->
                 <div class="modal fade" id="specificationsModal{{$el->id}}" tabindex="-1" aria-labelledby="specificationsModal{{$el->id}}Label" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
@@ -183,7 +181,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- Modal -->
+                <!-- Modal комплектация -->
                 <div class="modal fade" id="accessoriesModal{{$el->id}}" tabindex="-1" aria-labelledby="accessoriesModal{{$el->id}}Label" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
@@ -197,12 +195,46 @@
                     </div>
                   </div>
                 </div>
+                <!-- Modal с картинками -->
+                <div class="modal fade" id="imageModal{{$el->id}}" tabindex="-1" aria-labelledby="imageModal{{$el->id}}Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl ">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="imageModal{{$el->id}}Label">Изображения</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                      <div class="slider-block{{$el->id}}-2 swiper">
+                              <div class="swiper-wrapper">
+                                <!--Основной слайд-->
+                                @if(is_array($el->image))
+                                    @foreach($el->image as $i)
+                                      <div class="cards-image-container-2 swiper-slide">
+                                        
+                                          <img style="height:500px" src="/storage/product_image/{{$i}}">
+                                        
+                                      </div>
+                                    @endforeach
+                                @endif
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
               <script>
                 const mySwiper{{$el->id}} = new Swiper(".slider-block{{$el->id}}", {
                     slidesPerView: 1,
                     loop: true,
                     allowTouchMove:false,
+                });
+                const mySwiper2{{$el->id}} = new Swiper(".slider-block{{$el->id}}-2", {
+                  spaceBetween: 10,
+                  slidesPerView: 4,
+                  freeMode: true,
+                  watchSlidesProgress: true,
+
                 });
 
                 const sliderNavItems{{$el->id}} = document.querySelectorAll('.s{{$el->id}}');

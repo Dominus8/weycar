@@ -36,7 +36,7 @@ const mySwiper1 = new Swiper(".slider-block1", {
     slidesPerView: 1,
     loop: true,
 });
-
+// зум
 const sliderNavItemsOne = document.querySelectorAll('.s1');
 
 sliderNavItemsOne.forEach((el, index) => {
