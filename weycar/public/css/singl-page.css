@@ -416,7 +416,8 @@
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards {
     margin-left: -85px;
-    margin-bottom: 140px !important;
+    height: 450px;
+    margin-bottom: 0px !important;
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper {
     -webkit-box-orient: vertical;
