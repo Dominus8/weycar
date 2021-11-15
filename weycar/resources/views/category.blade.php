@@ -3,7 +3,7 @@
 @section('content')
 
 <!--main-->
-<div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> >
+<div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> > <a href="{{route('all_category')}}">Каталог</a> >
 @if(isset($subcatid))
 <a href="{{route('category', $category->category_id )}}">{{ $category->category_name }}</a> > {{$subcategory_title}}
 @else

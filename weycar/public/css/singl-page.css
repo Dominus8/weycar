@@ -416,8 +416,7 @@
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards {
     margin-left: -85px;
-    height: 450px;
-    margin-bottom: 0px !important;
+    height: 450px !important;
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper {
     -webkit-box-orient: vertical;
@@ -427,6 +426,9 @@
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body {
     max-width: 695px;
+  }
+  .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards__body-text-area {
+    height: 340px !important;
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons {
     margin-top: 5px !important;
@@ -571,7 +573,7 @@
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards {
     margin-left: -45px;
-    margin-bottom: 400px !important;
+    height: 810px !important;
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper {
     -webkit-box-orient: vertical;
@@ -580,7 +582,7 @@
             flex-direction: column;
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body {
-    max-width: 380px;
+    width: 380px;
     height: 760px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -588,7 +590,7 @@
             flex-direction: column;
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__body .product-body__image-wrapper {
-    max-height: 320px;
+    height: 320px;
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons {
     margin-top: 5px !important;
@@ -669,7 +671,6 @@
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards {
     margin-left: -40px;
-    margin-bottom: 400px !important;
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper {
     -webkit-box-orient: vertical;
@@ -771,7 +772,6 @@
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards {
     margin-left: -40px;
-    margin-bottom: 400px !important;
   }
   .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper {
     -webkit-box-orient: vertical;
