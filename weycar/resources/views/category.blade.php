@@ -74,14 +74,15 @@
                                         
                                       </div>
 
+
+                                    @endforeach
+                                @endif
                                       <script>
                                         // Example:
                                           $(document).ready(function(){
                                             $('.cards-image-container').zoom();
                                           });
-                                      </script>
-                                    @endforeach
-                                @endif
+                                      </script>                                
                               </div>
                             </div>
 
@@ -204,12 +205,12 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                      <div class="slider-block{{$el->id}}-2 swiper">
+                            <div class="slider-block-modal{{$el->id}} swiper">
                               <div class="swiper-wrapper">
                                 <!--Основной слайд-->
                                 @if(is_array($el->image))
                                     @foreach($el->image as $i)
-                                      <div class="cards-image-container-2 swiper-slide">
+                                      <div class="swiper-slide">
                                         
                                           <img style="height:500px" src="/storage/product_image/{{$i}}">
                                         
@@ -229,11 +230,19 @@
                     loop: true,
                     allowTouchMove:false,
                 });
-                const mySwiper2{{$el->id}} = new Swiper(".slider-block{{$el->id}}-2", {
+                const mySwiper2{{$el->id}} = new Swiper(".slider-block-modal{{$el->id}}", {
                   spaceBetween: 10,
                   slidesPerView: 4,
                   freeMode: true,
                   watchSlidesProgress: true,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
 
                 });
 
