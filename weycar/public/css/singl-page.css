@@ -297,6 +297,33 @@
   grid-row-gap: 10px;
 }
 
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item {
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item .ya-share2__link .ya-share2__badge {
+  display: none;
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item_service_vkontakte {
+  background-image: url(/image/vk-share-ico.png);
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item_service_facebook {
+  background-image: url(/image/fb-share-ico.png);
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item_service_telegram {
+  background-image: url(/image/fb-share-ico.png);
+}
+
+.section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item_copy {
+  background-image: url(/image/copy-share-ico.png);
+}
+
 .section-singl-page-product-cards .wrapper-inner .singl-page-product-cards .product-cards-wrapper .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__item .ya-share2__icon {
   width: 36px;
   height: 36px;
@@ -445,15 +472,42 @@
     margin-left: 5px;
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup {
-    width: 235px !important;
-    height: 55px !important;
+    width: 195px !important;
+    height: 33px !important;
     top: 45px !important;
-    left: -204px !important;
+    left: -160px !important;
+    border-radius: 5px;
+    padding-top: 2px;
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list {
+    padding: 0 10px;
+    height: 25px;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item {
+    height: 25px !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item .ya-share2__link .ya-share2__badge {
+    display: none;
+  }
+  .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item_service_vkontakte {
+    background-image: url(/image/fb-share-ico.png);
+  }
+  .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item_service_facebook {
+    background-image: url(/image/fb-share-ico.png);
+  }
+  .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item_service_telegram {
+    background-image: url(/image/fb-share-ico.png);
+  }
+  .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list .ya-share2__item_copy {
+    background-image: url(/image/fb-share-ico.png);
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-specifications {
     margin: 0 0 0 10px !important;
@@ -577,10 +631,9 @@
     margin-left: 5px;
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup {
-    width: 235px !important;
-    height: 55px !important;
     top: 45px !important;
-    left: -204px !important;
+    width: 194px !important;
+    left: -157px !important;
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list {
     display: -webkit-box !important;
@@ -681,10 +734,8 @@
     margin-left: 5px;
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup {
-    width: 235px !important;
-    height: 55px !important;
-    top: 45px !important;
-    left: -204px !important;
+    width: 178px !important;
+    left: -140px !important;
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list {
     display: -webkit-box !important;
@@ -785,15 +836,8 @@
     margin-left: 5px;
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup {
-    width: 235px !important;
-    height: 55px !important;
-    top: 45px !important;
-    left: -204px !important;
-  }
-  .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-share .ya-share2__popup .ya-share2__list {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    width: 287px !important;
+    left: -250px !important;
   }
   .section-singl-page-product-cards .wrapper-inner .product-cards__buttons .product-cards__buttons-bottom .product-cards-specifications {
     margin: 0 0 0 10px !important;

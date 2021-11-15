@@ -112,7 +112,7 @@
                             <div type="button" class="product-cards__buttons-bottom">
                                 <div class="product-cards-share">
                                     <script src="https://yastatic.net/share2/share.js"></script>
-                                    <div class="ya-share2" data-size="l" data-shape="normal" data-limit="0" data-more-button-type="short" data-services="vkontakte,facebook,telegram"></div>
+                                    <div class="ya-share2" data-size="l" data-shape="normal" data-color-scheme="whiteblack" data-limit="0" data-more-button-type="short" data-services="vkontakte,facebook,telegram"></div>
                                 </div>
                                 <div type="button" class="product-cards-specifications" data-bs-toggle="modal" data-bs-target="#specificationsModal{{$el->id}}">Характеристики</div>
                                 <div type="button" class="product-cards-accessories" data-bs-toggle="modal" data-bs-target="#accessoriesModal{{$el->id}}">Комплектующие</div>

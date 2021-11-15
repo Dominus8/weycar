@@ -234,12 +234,29 @@
                                     display: grid;
                                     grid-template-columns: 1fr 1fr;
                                     grid-row-gap: 10px;
-                                    .ya-share2__item_service_facebook {
+                                    .ya-share2__item {
+                                        height: 40px;
+                                        background-repeat: no-repeat;
+                                        background-position: center center;
+                                        background-size: contain;
                                         .ya-share2__link {
                                             .ya-share2__badge {
+                                                display: none;
                                                 .ya-share2__icon {}
                                             }
                                         }
+                                    }
+                                    .ya-share2__item_service_vkontakte {
+                                        background-image: url(/image/vk-share-ico.png);
+                                    }
+                                    .ya-share2__item_service_facebook {
+                                        background-image: url(/image/fb-share-ico.png);
+                                    }
+                                    .ya-share2__item_service_telegram {
+                                        background-image: url(/image/fb-share-ico.png);
+                                    }
+                                    .ya-share2__item_copy {
+                                        background-image: url(/image/copy-share-ico.png);
                                     }
                                 }
                                 .ya-share2__item {
@@ -408,18 +425,40 @@
                             }
                         }
                         .ya-share2__popup {
-                            width: 235px !important;
-                            height: 55px !important;
+                            width: 195px !important;
+                            height: 33px !important;
                             top: 45px !important;
-                            left: -204px !important;
+                            left: -160px !important;
+                            border-radius: 5px;
+                            padding-top: 2px;
                             .ya-share2__list {
+                                padding: 0 10px;
+                                height: 25px;
                                 display: flex !important;
-                                .ya-share2__item_service_facebook {
+                                justify-content: space-around;
+                                .ya-share2__item {
+                                    height: 25px !important;
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                    background-size: contain;
                                     .ya-share2__link {
                                         .ya-share2__badge {
+                                            display: none;
                                             .ya-share2__icon {}
                                         }
                                     }
+                                }
+                                .ya-share2__item_service_vkontakte {
+                                    background-image: url(/image/fb-share-ico.png);
+                                }
+                                .ya-share2__item_service_facebook {
+                                    background-image: url(/image/fb-share-ico.png);
+                                }
+                                .ya-share2__item_service_telegram {
+                                    background-image: url(/image/fb-share-ico.png);
+                                }
+                                .ya-share2__item_copy {
+                                    background-image: url(/image/fb-share-ico.png);
                                 }
                             }
                             .ya-share2__item {
@@ -552,10 +591,9 @@
                             }
                         }
                         .ya-share2__popup {
-                            width: 235px !important;
-                            height: 55px !important;
                             top: 45px !important;
-                            left: -204px !important;
+                            width: 194px !important;
+                            left: -157px !important;
                             .ya-share2__list {
                                 display: flex !important;
                                 .ya-share2__item_service_facebook {
@@ -682,10 +720,8 @@
                             }
                         }
                         .ya-share2__popup {
-                            width: 235px !important;
-                            height: 55px !important;
-                            top: 45px !important;
-                            left: -204px !important;
+                            width: 178px !important;
+                            left: -140px !important;
                             .ya-share2__list {
                                 display: flex !important;
                                 .ya-share2__item_service_facebook {
@@ -812,12 +848,9 @@
                             }
                         }
                         .ya-share2__popup {
-                            width: 235px !important;
-                            height: 55px !important;
-                            top: 45px !important;
-                            left: -204px !important;
+                            width: 287px !important;
+                            left: -250px !important;
                             .ya-share2__list {
-                                display: flex !important;
                                 .ya-share2__item_service_facebook {
                                     .ya-share2__link {
                                         .ya-share2__badge {
