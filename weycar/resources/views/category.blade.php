@@ -206,7 +206,7 @@
                       </div>
                       <div class="modal-body">
                         <!-- Slider main container -->
-                        <div class="swiper swiper{{$el->id}}" style="width: 1100px; height: 600px;">
+                        <div class="swiper swiper{{$el->id}}" >
                           <!-- Additional required wrapper -->
                           <div class="swiper-wrapper">
                             <!-- Slides -->
@@ -214,8 +214,8 @@
                             @if(is_array($el->image))
                                 @foreach($el->image as $i)
 
-                                <div class="swiper-slide">  
-                                  <img style="width: 1100px; " src="/storage/product_image/{{$i}}">
+                                <div class="swiper-slide" style="width:999px; height:800px;">  
+                                  <img style="object-fit:contain; width:999px; height:800px;" src="/storage/product_image/{{$i}}">
                                 </div>   
 
                                 @endforeach
@@ -239,7 +239,7 @@
               <script>
                 const swiperimg{{$el->id}} = new Swiper('.swiper{{$el->id}}', {
                   // Optional parameters
-                  direction: 'vertical',
+                  
                   loop: true,
 
                   // If we need pagination
