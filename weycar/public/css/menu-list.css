@@ -13,10 +13,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .section-menu-list .wrapper-inner .menu-list .menu-list-wrapper a {
@@ -88,16 +86,13 @@
   line-height: 24px;
 }
 
-.equipment {
-  padding: 50px 0px 100px 100px;
-}
-
 .equipment .equipment-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-row-gap: 25px;
+  justify-items: center;
 }
 
 .equipment .equipment-wrapper a {
