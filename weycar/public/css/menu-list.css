@@ -164,6 +164,24 @@
   }
 }
 
+@media (max-width: 650px) {
+  .menu-list .menu-list-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .equipment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .equipment .equipment-wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media (max-width: 430px) {
   .menu-list .menu-list-wrapper {
     -webkit-box-orient: vertical !important;
