@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <!--main-->
 <div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> > <a href="{{route('all_category')}}">Каталог</a> >
 @if(isset($subcatid))
@@ -68,21 +69,20 @@
                                 <!--Основной слайд-->
                                 @if(is_array($el->image))
                                     @foreach($el->image as $i)
-                                      <div class="cards-image-container swiper-slide" type="button" data-bs-toggle="modal" data-bs-target="#imageModal{{$el->id}}">
+                                      <div style="cursor: zoom-in" class="cards-image-container swiper-slide" type="button" data-bs-toggle="modal" data-bs-target="#imageModal{{$el->id}}">
                                         
                                           <img src="/storage/product_image/{{$i}}">
                                         
                                       </div>
 
-
-                                    @endforeach
-                                @endif
                                       <script>
-                                        // Example:
+                                        
                                           $(document).ready(function(){
                                             $('.cards-image-container').zoom();
                                           });
-                                      </script>                                
+                                      </script>
+                                    @endforeach
+                                @endif
                               </div>
                             </div>
 
@@ -197,7 +197,7 @@
                   </div>
                 </div>
                 <!-- Modal с картинками -->
-                <div class="modal fade" id="imageModal{{$el->id}}" tabindex="-1" aria-labelledby="imageModal{{$el->id}}Label" aria-hidden="true">
+                <div class="modal  fade" data-local="#myCarousel" id="imageModal{{$el->id}}" tabindex="-1" aria-labelledby="imageModal{{$el->id}}Label" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-xl ">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -205,63 +205,80 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                            <div class="slider-block-modal{{$el->id}} swiper">
-                              <div class="swiper-wrapper">
-                                <!--Основной слайд-->
-                                @if(is_array($el->image))
-                                    @foreach($el->image as $i)
-                                      <div class="swiper-slide">
-                                        
-                                          <img style="height:500px" src="/storage/product_image/{{$i}}">
-                                        
-                                      </div>
-                                    @endforeach
-                                @endif
-                              </div>
-                            </div>
+                        <!-- Slider main container -->
+                        <div class="swiper swiper{{$el->id}}" style="width: 1100px; height: 600px;">
+                          <!-- Additional required wrapper -->
+                          <div class="swiper-wrapper">
+                            <!-- Slides -->
+
+                            @if(is_array($el->image))
+                                @foreach($el->image as $i)
+
+                                <div class="swiper-slide">  
+                                  <img style="width: 1100px; " src="/storage/product_image/{{$i}}">
+                                </div>   
+
+                                @endforeach
+                            @endif
+                          </div>
+                          <!-- If we need pagination -->
+                          <div class="swiper-pagination"></div>
+
+                          <!-- If we need navigation buttons -->
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-button-next"></div>
+
+                          <!-- If we need scrollbar -->
+                          <div class="swiper-scrollbar"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
               <script>
+                const swiperimg{{$el->id}} = new Swiper('.swiper{{$el->id}}', {
+                  // Optional parameters
+                  direction: 'vertical',
+                  loop: true,
+
+                  // If we need pagination
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                
+                  // Navigation arrows
+                  navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+                
+                  // And if we need scrollbar
+                  scrollbar: {
+                    el: '.swiper-scrollbar',
+                  },
+                });
+
                 const mySwiper{{$el->id}} = new Swiper(".slider-block{{$el->id}}", {
                     slidesPerView: 1,
                     loop: true,
                     allowTouchMove:false,
                 });
-                const mySwiper2{{$el->id}} = new Swiper(".slider-block-modal{{$el->id}}", {
-                  spaceBetween: 10,
-                  slidesPerView: 4,
-                  freeMode: true,
-                  watchSlidesProgress: true,
-                  pagination: {
-                    el: ".swiper-pagination",
-                    type: "progressbar",
-                  },
-                  navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                  },
-
-                });
 
                 const sliderNavItems{{$el->id}} = document.querySelectorAll('.s{{$el->id}}');
 
-                sliderNavItems{{$el->id}}.forEach((el, index) => {
+                  sliderNavItems{{$el->id}}.forEach((el, index) => {
                     el.setAttribute('data-index', index +1);
                     
                     el.addEventListener('click', (e) => {
                         const index = parseInt(e.currentTarget.dataset.index);
-                        mySwiper{{$el->id}}.slideTo(index);
-                        
+                        mySwiper{{$el->id}}.slideTo(index); 
                     })
                 });
 
               </script>
             @endforeach
-
-            </div>
+          </div>
         </section>
     </div>
 

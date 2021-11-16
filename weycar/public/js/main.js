@@ -423,6 +423,8 @@ document.getElementById("core-menu-img-area").onmouseleave = function() {
 
 }
 
+
+
 // Мобильное меню
 
 $(document).ready(function() {
