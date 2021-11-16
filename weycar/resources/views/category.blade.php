@@ -197,7 +197,7 @@
                   </div>
                 </div>
                 <!-- Modal с картинками -->
-                <div class="modal  fade" data-local="#myCarousel" id="imageModal{{$el->id}}" tabindex="-1" aria-labelledby="imageModal{{$el->id}}Label" aria-hidden="true">
+                <div class="modal  fade" data-local="#myCarousel" id="imageModal{{$el->id}}" style="top:20px" tabindex="-1" aria-labelledby="imageModal{{$el->id}}Label" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-xl ">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -214,8 +214,8 @@
                             @if(is_array($el->image))
                                 @foreach($el->image as $i)
 
-                                <div class="swiper-slide" style="width:1106px; height:800px;">  
-                                  <img style="object-fit:contain; width:1106px; height:800px;" src="/storage/product_image/{{$i}}">
+                                <div class="swiper-slide" style="max-width:1106px; max-height:700px;">  
+                                  <img style="object-fit:contain; width:100%; height:100%;" src="/storage/product_image/{{$i}}">
                                 </div>   
 
                                 @endforeach
@@ -229,7 +229,7 @@
                           <div class="swiper-button-next"></div>
 
                           <!-- If we need scrollbar -->
-                          <div class="swiper-scrollbar"></div>
+                          <!-- <div class="swiper-scrollbar"></div> -->
                         </div>
                       </div>
                     </div>
