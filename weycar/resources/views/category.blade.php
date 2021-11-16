@@ -214,8 +214,8 @@
                             @if(is_array($el->image))
                                 @foreach($el->image as $i)
 
-                                <div class="swiper-slide" style="width:999px; height:800px;">  
-                                  <img style="object-fit:contain; width:999px; height:800px;" src="/storage/product_image/{{$i}}">
+                                <div class="swiper-slide" style="width:1106px; height:800px;">  
+                                  <img style="object-fit:contain; width:1106px; height:800px;" src="/storage/product_image/{{$i}}">
                                 </div>   
 
                                 @endforeach
