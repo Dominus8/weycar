@@ -24,6 +24,7 @@
                     color: #bbbdbe;
                     .item-wrapper {
                         .item__image {
+                            width: 160px;
                             border: 3.79px solid #3582ac;
                             border-radius: 15px;
                             // border-image: linear-gradient(to right bottom, #0B0E7F, #0B95DD);
@@ -96,6 +97,7 @@
             color: #bbbdbe;
             .item-wrapper {
                 .item__image {
+                    width: 160px;
                     border: 3.79px solid #3582ac;
                     border-radius: 15px;
                     border-image-slice: 1;
@@ -122,5 +124,101 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 920px) {
+    .paginations {
+        width: 100% !important;
+        padding: 0px !important;
+        padding-left: 65px !important;
+    }
+    .equipment {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 430px) {
+    .menu-list {
+        .menu-list-wrapper {
+            flex-direction: column !important;
+            .menu-list__item {
+                .item-wrapper {
+                    a {
+                        .item__image {
+                            display: none !important;
+                        }
+                        .item__title {
+                            width: 300px;
+                            padding-bottom: 10px;
+                            margin: 5px 0;
+                            margin-right: -50px;
+                            border: 3.79px solid #3582ac;
+                            border-radius: 5px;
+                            border-image-slice: 1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            background: rgba(22, 40, 49, 1);
+                            background: linear-gradient(340deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                            &:hover {
+                                background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .equipment {
+        display: flex;
+        justify-content: space-between;
+        .equipment-wrapper {
+            grid-template-columns: 1fr;
+            .equipment__item {
+                .item-wrapper {
+                    a {
+                        .item__image {
+                            display: none !important;
+                        }
+                        .item__title {
+                            width: 300px;
+                            padding-bottom: 10px;
+                            margin: 5px 0;
+                            margin-right: -50px;
+                            border: 3.79px solid #3582ac;
+                            border-radius: 5px;
+                            border-image-slice: 1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            background: rgba(22, 40, 49, 1);
+                            background: linear-gradient(340deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                            &:hover {
+                                background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .item__title {
+        width: 260px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .category-info-title {
+        margin-left: -20px;
+    }
+    .item__title {
+        width: 220px !important;
     }
 }
