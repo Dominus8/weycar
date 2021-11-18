@@ -43,7 +43,8 @@ sliderNavItemsOne.forEach((el, index) => {
     el.setAttribute('data-index', index);
 
     el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index);
+        const index = parseInt(e.currentTarget.dataset.index) + 1;
+        console.log(index);
         mySwiper1.slideTo(index);
     })
 });
@@ -60,7 +61,7 @@ sliderNavItemsTwo.forEach((el, index) => {
     el.setAttribute('data-index', index);
 
     el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index);
+        const index = parseInt(e.currentTarget.dataset.index) + 1;
         mySwiper2.slideTo(index);
     })
 });
@@ -77,7 +78,7 @@ sliderNavItemsthree.forEach((el, index) => {
     el.setAttribute('data-index', index);
 
     el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index);
+        const index = parseInt(e.currentTarget.dataset.index) + 1;
         mySwiper3.slideTo(index);
     })
 });
@@ -94,7 +95,7 @@ sliderNavItemsfour.forEach((el, index) => {
     el.setAttribute('data-index', index);
 
     el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index);
+        const index = parseInt(e.currentTarget.dataset.index) + 1;
         mySwiper4.slideTo(index);
     })
 });
@@ -111,7 +112,7 @@ sliderNavItemsFive.forEach((el, index) => {
     el.setAttribute('data-index', index);
 
     el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index);
+        const index = parseInt(e.currentTarget.dataset.index) + 1;
         mySwiper5.slideTo(index);
     })
 });
@@ -128,7 +129,7 @@ sliderNavItemsSix.forEach((el, index) => {
     el.setAttribute('data-index', index);
 
     el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index);
+        const index = parseInt(e.currentTarget.dataset.index) + 1;
         mySwiper6.slideTo(index);
     })
 });
@@ -145,7 +146,7 @@ sliderNavItemsSeven.forEach((el, index) => {
     el.setAttribute('data-index', index);
 
     el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index);
+        const index = parseInt(e.currentTarget.dataset.index) + 1;
         mySwiper7.slideTo(index);
     })
 });
@@ -162,7 +163,7 @@ sliderNavItemsEight.forEach((el, index) => {
     el.setAttribute('data-index', index);
 
     el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index);
+        const index = parseInt(e.currentTarget.dataset.index) + 1;
         mySwiper8.slideTo(index);
     })
 });

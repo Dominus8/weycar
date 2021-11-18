@@ -2,7 +2,7 @@
 
 @section('content')
 <!--main-->
-<div class="paginations">test</div>
+<div class="paginations"> <a href="{{route('index')}}">Главная </a>> <a href="{{route('all_category')}}"> Каталог </a> ><wbr> Наши работы </div>
     <div class="ourworks-main">
 
         <div class="ourworks-label-bg"></div>
@@ -26,7 +26,7 @@
         <section class="wrapper-outer section-ourworks-buttons">
             <div class="wrapper-inner">
                 <div class="ourworks-buttons">
-                    <div class="">   
+                    <div >   
                         <div class="accordion ourworks-buttons-wrapper " id="accordionPanel">
                         <div class="ourworks-buttons-item">
                             <div class="accordion-item ">
@@ -132,7 +132,7 @@
                             <div class="accordion-item ">
                                 <h2 class="accordion-header" id="panelsStayOpen-heading3">
                                   <button class=" collapsed ourworks-buttons-item__btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
-                                    Рации
+                                    Электронное табло
                                   </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading3" data-bs-parent="#accordionPanel">
@@ -183,7 +183,7 @@
                             <div class="accordion-item ">
                                 <h2 class="accordion-header" id="panelsStayOpen-heading4">
                                   <button class=" collapsed ourworks-buttons-item__btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
-                                    Установка оборудования на спецтехнику
+                                    Тахографы
                                   </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4" data-bs-parent="#accordionPanel">
@@ -285,7 +285,7 @@
                             <div class="accordion-item ">
                                 <h2 class="accordion-header" id="panelsStayOpen-heading6">
                                   <button class=" collapsed ourworks-buttons-item__btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
-                                    Установка видеорегистраторов
+                                    Установка оборудования на спецтехнику
                                   </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading6" data-bs-parent="#accordionPanel">
@@ -336,7 +336,7 @@
                             <div class="accordion-item ">
                                 <h2 class="accordion-header" id="panelsStayOpen-heading7">
                                   <button class=" collapsed ourworks-buttons-item__btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7" aria-expanded="false" aria-controls="panelsStayOpen-collapse7">
-                                    Тахографы
+                                    Рации
                                   </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading7" data-bs-parent="#accordionPanel">

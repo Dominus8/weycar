@@ -12,10 +12,12 @@
     
     .ourworks-main {
         background-color: #0e1f27;
-        .ourworks-label-bg {}
+        .ourworks-label-bg {
+            margin-top: 27px;
+        }
         .section-ourworks-label {
             height: 900px;
-            background: url(../image/ourworks-bg.png)center center no-repeat, linear-gradient(to top, rgba(16, 37, 47, 2), rgba(16, 37, 47, 0));
+            background: url(../image/ourworks-bg.png)center center no-repeat, linear-gradient(to top, rgba(16, 37, 47, 1), rgba(16, 37, 47, 0.2)); //
             background-blend-mode: overlay;
             // background-size: contain;
             .wrapper-inner {
@@ -104,9 +106,6 @@
                                         .ourworks-buttons-item__hidden {
                                             padding: 20px 0 10px 0;
                                             .item-hidden-wrapper {
-                                                // display: grid;
-                                                // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                                                // grid-gap: 10px 10px;
                                                 .card-slider {
                                                     padding: 0 23px;
                                                     display: flex;
@@ -147,30 +146,124 @@
                                                         }
                                                     }
                                                 }
-                                                // .item-hidden {
-                                                //     // &:first-child {
-                                                //     //     height: 180px;
-                                                //     //     width: 180px;
-                                                //     //     grid-column-start: 1;
-                                                //     //     grid-column-end: 3;
-                                                //     //     grid-row-start: 1;
-                                                //     //     grid-row-end: 3;
-                                                //     //     // background-color: rgb(184, 22, 22);
-                                                //     //     img {
-                                                //     //         width: 180px;
-                                                //     //         height: 180px;
-                                                //     //         border: 2px solid #3c96c8;
-                                                //     //     }
-                                                //     // }
-                                                //     height: 80px;
-                                                //     width: 80px;
-                                                //     // background-color: #fff;
-                                                //     img {
-                                                //         height: 80px;
-                                                //         width: 80px;
-                                                //         border: 2px solid #3c96c8;
-                                                //     }
-                                                // }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 1287px) {
+        .ourworks-buttons {
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .section-ourworks-buttons {
+            .wrapper-inner {
+                .ourworks-buttons {
+                    div {
+                        .ourworks-buttons-wrapper {
+                            grid-template-columns: 1fr !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 610px) {
+        .paginations {
+            white-space: nowrap;
+            max-width: 300px;
+        }
+        .section-ourworks-label {
+            .wrapper-inner {
+                .ourworks {
+                    .ourworks-wrapper {
+                        padding-bottom: 5px;
+                        width: 320px !important;
+                        height: 320px !important;
+                        border-radius: 50%;
+                        border: solid 8px #3681ac;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .ourworks-logo {
+                            width: 320px;
+                            height: 320px;
+                            text-align: center;
+                            img {
+                                width: 65%;
+                            }
+                        }
+                        .ourworks-title {
+                            padding-bottom: 27px;
+                            text-align: center;
+                            color: #bbbdbe;
+                            font-family: ArialNarrow, Helvetica, sans-serif;
+                            font-size: 36px !important;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .ourworks-buttons {
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .section-ourworks-buttons {
+            .wrapper-inner {
+                .ourworks-buttons {
+                    div {
+                        max-width: 320px;
+                        .ourworks-buttons-wrapper {
+                            padding-top: 60px !important;
+                            padding-bottom: 60px !important;
+                            max-width: 320px;
+                            grid-template-columns: 1fr !important;
+                            .ourworks-buttons-item {
+                                .accordion-item {
+                                    h2 {
+                                        button {
+                                            &:hover {}
+                                            &:active {}
+                                            &:focus {}
+                                        }
+                                    }
+                                    .accordion-collapse {
+                                        .accordion-body {
+                                            height: 470px;
+                                            .ourworks-buttons-item__hidden {
+                                                .item-hidden-wrapper {
+                                                    .card-slider {
+                                                        flex-direction: column-reverse !important;
+                                                        .cart-slider__nav {
+                                                            padding: 0px !important;
+                                                            padding-top: 10px !important;
+                                                            grid-template-columns: 1fr 1fr 1fr 1fr !important;
+                                                            grid-gap: 18px !important;
+                                                            .slider-nav__item {
+                                                                img {}
+                                                            }
+                                                        }
+                                                        .card-slider__block {
+                                                            .swiper-wrapper {
+                                                                .swiper-slide {
+                                                                    img {}
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
                                     }

@@ -213,7 +213,7 @@
                             @if(is_array($el->image))
                                 @foreach($el->image as $i)
 
-                                <div class="swiper-slide" >
+                                <div class="swiper-slide">
                                   <img src="/storage/product_image/{{$i}}">
                                 </div>   
 
