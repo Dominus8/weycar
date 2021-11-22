@@ -34,8 +34,8 @@
                 <div class="wrapp320">
                     <div class="header-contact">
                         <div class="contact-data">
-                            <a href="tel:+7 (495) 790 50 61"><div class="contact-data__phone">+7 (495) 790 50 61</div></a> 
-                            <a href="mailto:info@weycar.ru"><div class="contact-data__email">info@weycar.ru</div></a> 
+                            <a class="contact-data__phone" href="tel:+7 (495) 790 50 61"><div >+7 (495) 790 50 61</div></a> 
+                            <a class="contact-data__email" href="mailto:info@weycar.ru"><div > <span>info@weycar.ru </span> </div></a> 
                         </div>
                         <a href="tel:+7 (495) 790 50 61">
                         <div class="contact-image">

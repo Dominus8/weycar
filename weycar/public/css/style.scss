@@ -95,21 +95,22 @@
                     display: flex;
                     align-items: center;
                     .contact-data {
+                        display: flex;
+                        flex-direction: column;
                         margin-right: 4px;
                         color: #cc6600;
-                        a {
-                            color: #cc6600;
-                            .contact-data__phone {
-                                font-family: ArialNarrow, Helvetica, sans-serif;
-                                font-size: 16px;
-                            }
+                        .contact-data__phone {
+                            color: orange;
+                            font-family: ArialNarrow, Helvetica, sans-serif;
+                            font-size: 16px;
                         }
-                        a {
-                            color: #cc6600;
-                            .contact-data__email {
-                                font-family: Arial, Helvetica, sans-serif;
-                                font-weight: bold;
-                                font-size: 16px;
+                        .contact-data__email {
+                            padding-right: 10px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: bold;
+                            font-size: 16px;
+                            span {
+                                color: orange;
                             }
                         }
                     }
