@@ -64,6 +64,12 @@
   font-weight: Regular;
 }
 
+.section-services-first .wrapper-inner .services-first .ofers-wrapper .ofers-list .ofers-list-buttons .ofers-listbuttons__item:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
+  background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
 .section-services-first .wrapper-inner .services-first .ofers-wrapper .ofers-image {
   padding-left: 70px;
 }
@@ -124,6 +130,12 @@
   font-weight: Regular;
 }
 
+.section-services-video .wrapper-inner .services-video .services-video__catalog-button .video-catalog-button:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
+  background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
 .section-services-monitoring {
   height: 902px;
   background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/serv-monitoring.png) center right no-repeat;
@@ -169,6 +181,12 @@
   font-weight: Regular;
 }
 
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-catalog-button .monitoring-catalog-button:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
+  background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
 .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom {
   padding-top: 70px;
   display: -webkit-box;
@@ -196,6 +214,12 @@
   line-height: 42px;
   font-weight: Regular;
   text-align: center;
+}
+
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-buttons .information-bottom-button:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
+  background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
 }
 
 .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-price {
@@ -301,6 +325,12 @@
   white-space: nowrap;
 }
 
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation .tachographs-installation__button .installation-button:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
+  background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
 .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog {
   padding-left: 20px;
   display: -webkit-box;
@@ -327,6 +357,12 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: Regular;
+}
+
+.section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog .tachographs-catalog__button .catalog-button:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
+  background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
 }
 
 .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog .tachographs-catalog__description {
@@ -401,6 +437,12 @@
   font-weight: Regular;
 }
 
+.section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__catalog-button .scoreboards-catalog-button:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
+  background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
 .section-services-heaters {
   height: 868px;
   background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/serv-heaters.png) center right no-repeat;
@@ -459,5 +501,11 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: Regular;
+}
+
+.section-services-heaters .wrapper-inner .services-heaters .services-heaters__catalog-button .heaters-catalog-button:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
+  background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
 }
 /*# sourceMappingURL=services.css.map */
