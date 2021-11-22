@@ -408,5 +408,49 @@
 }
 
 @media (max-width: 1440px) {
-    .tachographs-catalog__description {}
+    .section-services-first {
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+    }
+    .section-services-video {
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+    }
+    .section-services-monitoring {
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+    }
+    .section-services-tachographs {
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+    }
+    .section-services-scoreboards {
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+    }
+    .section-services-heaters {
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+    }
+    .section-footer {
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 1440px !important;
+    }
+    .section-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 1440px !important;
+    }
+    .footer-bg {
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 1440px !important;
+    }
 }
