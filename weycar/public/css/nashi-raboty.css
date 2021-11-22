@@ -80,6 +80,14 @@
   text-align: center;
 }
 
+.ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper {
   padding: 250px 0;
   display: -ms-grid;
