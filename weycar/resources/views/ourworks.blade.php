@@ -27,7 +27,7 @@
             <div class="wrapper-inner">
                 <div class="ourworks-buttons">
                     <div >   
-                        <div class="accordion ourworks-buttons-wrapper " id="accordionPanel">
+                        <div class="accordion ourworks-buttons-wrapper" id="accordionPanel">
                         <div class="ourworks-buttons-item">
                             <div class="accordion-item ">
                                 <h2 class="accordion-header" id="panelsStayOpen-heading1">

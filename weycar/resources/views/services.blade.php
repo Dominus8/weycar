@@ -17,11 +17,11 @@
                         <div class="ofers-list">
                             <div class="ofers-list__list-heading">Мы предлогаем такие услуги как:</div>
                             <div class="ofers-list-buttons">
-                                <div type="button" data-bs-toggle="modal" data-bs-target="#serviceModal1" class="ofers-listbuttons__item">Установка видеонаблюдения в транспорте</div>
-                                <div type="button" data-bs-toggle="modal" data-bs-target="#serviceModal2" class="ofers-listbuttons__item">Спутниковый мониторинг транспорта</div>
-                                <div type="button" data-bs-toggle="modal" data-bs-target="#serviceModal3" class="ofers-listbuttons__item">Установка тахографов</div>
-                                <div type="button" data-bs-toggle="modal" data-bs-target="#serviceModal4" class="ofers-listbuttons__item">Установка информационного табло</div>
-                                <div type="button" data-bs-toggle="modal" data-bs-target="#serviceModal5" class="ofers-listbuttons__item">Установка автономного отопителя</div>
+                               <a href="#s1"><div class="ofers-listbuttons__item">Установка видеонаблюдения в транспорте</div></a> <!--type="button" data-bs-toggle="modal" data-bs-target="#serviceModal1" -->
+                               <a href="#s2"><div class="ofers-listbuttons__item">Спутниковый мониторинг транспорта</div></a>
+                               <a href="#s3"><div class="ofers-listbuttons__item">Установка тахографов</div></a>
+                               <a href="#s4"><div class="ofers-listbuttons__item">Установка информационного табло</div></a>
+                               <a href="#s5"><div class="ofers-listbuttons__item">Установка автономного отопителя</div></a>
                             </div>
                         </div>
                         <div class="ofers-image">
@@ -35,7 +35,7 @@
         <section class="wrapper-outer section-services-video">
             <div class="wrapper-inner">
                 <div class="services-video">
-                    <div class="services-video__information">
+                    <div id="s1" class="services-video__information">
                     <div class="video-information-wrappwer">
                         <div class="video-information__title">Установка видеонаблюдения в транспорте</div>
                         <div class="video-information__body">
@@ -58,7 +58,7 @@
                     </div>
                     </div>
                     <div class="services-video__catalog-button">
-                        <a href="{{route('all_category')}}" class="video-catalog-button">
+                        <a href="{{route('index')}}/category/8" class="video-catalog-button">
                             Каталог
                         </a>
                     </div>
@@ -68,11 +68,11 @@
 
         <section class="wrapper-outer section-services-monitoring">
             <div class="wrapper-inner">
-                <div class="services-monitoring">
+                <div id="s2" class="services-monitoring">
                     <div class="services-monitoring-information">
                         <div class="services-monitoring-information__top">
                             <div class="information-top-text">
-                                <div class="information-top-text__title">Спутниковый мониторинг транспорта</div>
+                                <div  class="information-top-text__title">Спутниковый мониторинг транспорта</div>
                                 <div class="information-top-text__body">
                                     С помощью компании «Вейкар» можно подключить спутниковый мониторинг транспорта. Эта технология обеспечивает непрерывный контроль грузовых или пассажирских машин, находящихся в рейсе. Отслеживание ведется в режиме реального времени. <br><br>
 
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                             <div class="information-top-catalog-button">
-                                <a href="{{route('all_category')}}" class="monitoring-catalog-button">
+                                <a href="{{route('index')}}/category/10" class="monitoring-catalog-button">
                                     Каталог
                                 </a>
                             </div>
@@ -163,10 +163,10 @@
 
         <section class="wrapper-outer section-services-tachographs">
             <div class="wrapper-inner">
-                <div class="services-tachographs">
+                <div id="s3" class="services-tachographs">
                     <div class="services-tachographs-installation">
                         <div class="tachographs-installation__text">
-                            <div class="installation-text__title">
+                            <div  class="installation-text__title">
                                 Установка тахографов
                             </div>
                             <div class="installation-text__body">
@@ -187,7 +187,7 @@
                     </div>
                     <div class="services-tachographs-catalog">
                         <div class="tachographs-catalog__button">
-                            <a href="{{route('all_category')}}" class="catalog-button">
+                            <a href="{{route('index')}}/category/9" class="catalog-button">
                                 Каталог</a>
                         </div>
                         <div class="tachographs-catalog__description">
@@ -213,10 +213,10 @@
 
         <section class="wrapper-outer section-services-scoreboards">
             <div class="wrapper-inner">
-                <div class="services-scoreboards">
+                <div id="s4" class="services-scoreboards">
                     <div class="services-scoreboards__information">
                         <div class="scoreboards-information-wrappwer">
-                            <div class="scoreboards-information__title">
+                            <div  class="scoreboards-information__title">
                                 Информационное табло
                             </div>
                             <div class="scoreboards-information__body">
@@ -242,7 +242,7 @@
                         </div>
                     </div>
                     <div class="services-scoreboards__catalog-button">
-                        <a href="{{route('all_category')}}" class="scoreboards-catalog-button">
+                        <a href="{{route('index')}}/category/7" class="scoreboards-catalog-button">
                              Каталог
                         </a>
                     </div>
@@ -252,10 +252,10 @@
 
         <section class="wrapper-outer section-services-heaters">
             <div class="wrapper-inner">
-                <div class="services-heaters">
-                    <div class="services-heaters__information">
-                        <div class="heaters-information-wrappwer">
-                            <div class="heaters-information__title">
+                <div id="s5" class="services-heaters">
+                    <div  class="services-heaters__information">
+                        <div  class="heaters-information-wrappwer">
+                            <div  class="heaters-information__title">
                                 Отопители
                             </div>
                             <div class="heaters-information__body">
@@ -281,7 +281,7 @@
                         </div>
                     </div>
                     <div class="services-heaters__catalog-button">
-                        <a href="{{route('all_category')}}" class="heaters-catalog-button">
+                        <a href="{{route('index')}}/category/4" class="heaters-catalog-button">
                              Каталог
                         </a>
                     </div>
