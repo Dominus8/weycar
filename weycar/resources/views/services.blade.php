@@ -19,9 +19,9 @@
                             <div class="ofers-list-buttons">
                                <a href="#s1"><div class="ofers-listbuttons__item">Установка видеонаблюдения в транспорте</div></a> <!--type="button" data-bs-toggle="modal" data-bs-target="#serviceModal1" -->
                                <a href="#s2"><div class="ofers-listbuttons__item">Спутниковый мониторинг транспорта</div></a>
-                               <a href="#s3"><div class="ofers-listbuttons__item">Установка тахографов</div></a>
+                               <a href="#s3"><div class="ofers-listbuttons__item"> <span>Установка тахографов</span> </div></a>
                                <a href="#s4"><div class="ofers-listbuttons__item">Установка информационного табло</div></a>
-                               <a href="#s5"><div class="ofers-listbuttons__item">Установка автономного отопителя</div></a>
+                               <a href="#s5"><div class="ofers-listbuttons__item"> <span>Установка автономного отопителя</span> </div></a>
                             </div>
                         </div>
                         <div class="ofers-image">
@@ -182,7 +182,7 @@
                             </div>
                         </div>
                         <div class="tachographs-installation__button">
-                            <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal9" class="installation-button">Установка тахографа под ключ — Москва и Подмосковье</a>
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal9" class="installation-button">Установка тахографа под ключ <wbr> —  Москва и Подмосковье</a>
                         </div>
                     </div>
                     <div class="services-tachographs-catalog">

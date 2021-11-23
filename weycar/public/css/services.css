@@ -630,4 +630,212 @@
     line-height: 17.5px !important;
   }
 }
+
+@media (max-width: 426px) {
+  .wrapper-inner {
+    width: 100% !important;
+  }
+  .section-services-first {
+    padding: 0 10px;
+    width: 100%;
+    height: 1400px;
+    margin-left: 0;
+  }
+  .section-services-first .services-first {
+    margin: 0 !important;
+  }
+  .section-services-first .services-first .ofers-wrapper {
+    width: 320px;
+  }
+  .section-services-first .services-first .ofers-wrapper .ofers-list {
+    width: 300px;
+  }
+  .section-services-first .services-first .ofers-wrapper .ofers-list .ofers-list-buttons a .ofers-listbuttons__item {
+    padding-left: 0 !important;
+    width: 300px !important;
+    height: 70px !important;
+    text-align: center;
+  }
+  .section-services-first .services-first .ofers-wrapper .ofers-list .ofers-list-buttons a .ofers-listbuttons__item span {
+    line-height: 47px !important;
+  }
+  .section-services-first .services-first .ofers-wrapper .ofers-image {
+    padding: 0 !important;
+    width: 320px;
+  }
+  .section-services-first .services-first .ofers-wrapper .ofers-image img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .section-services-video {
+    width: 320px;
+    margin-left: 0;
+    padding: 0 10px;
+    height: 1100px;
+  }
+  .section-services-video .services-video {
+    margin: 0;
+    width: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-services-video .services-video .services-video__information {
+    height: 1050px;
+  }
+  .section-services-video .services-video .services-video__information .video-information-wrappwer {
+    height: 1050px;
+  }
+  .section-services-video .services-video .services-video__information .video-information-wrappwer .video-information__body {
+    width: 300px;
+    text-align: center;
+  }
+  .section-services-video .services-video .services-video__catalog-button {
+    padding-top: 20px !important;
+    width: 320px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-services-monitoring {
+    padding: 0 10px;
+    width: 320px;
+    height: 1450px;
+  }
+  .section-services-monitoring .services-monitoring {
+    width: 320px;
+    height: 1800px;
+    margin: 0;
+  }
+  .section-services-monitoring .services-monitoring .services-monitoring-information {
+    width: 320px;
+  }
+  .section-services-monitoring .services-monitoring .services-monitoring-information .services-monitoring-information__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-services-monitoring .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-text .information-top-text__body {
+    width: 300px;
+    height: 500px;
+    text-align: center !important;
+  }
+  .section-services-monitoring .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-catalog-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-services-monitoring .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-catalog-button .monitoring-catalog-button {
+    margin: 0 !important;
+  }
+  .section-services-monitoring .services-monitoring .services-monitoring-information .services-monitoring-information__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 300px;
+  }
+  .section-services-monitoring .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-buttons .information-bottom-button {
+    width: 300px !important;
+  }
+  .section-services-monitoring .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-price .information-bottom-price-wrapper .information-bottom-price-name {
+    font-size: 12px;
+  }
+  .section-services-monitoring .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-price .information-bottom-price-wrapper .information-bottom-price-cost {
+    font-size: 12px;
+  }
+  .section-services-tachographs {
+    padding: 0 10px;
+    margin-left: 0;
+    width: 320px;
+    height: 1900px;
+  }
+  .section-services-tachographs .services-tachographs {
+    margin-left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1900px;
+    width: 320px;
+  }
+  .section-services-tachographs .services-tachographs-installation .tachographs-installation__text .installation-text__body {
+    height: 900px;
+    width: 300px;
+    text-align: center;
+  }
+  .section-services-tachographs .services-tachographs-installation .tachographs-installation__button {
+    height: 250px;
+  }
+  .section-services-tachographs .services-tachographs-installation .installation-button {
+    position: relative;
+    width: 305px;
+  }
+  .section-services-tachographs .services-tachographs-catalog {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    padding-left: 0 !important;
+    margin-left: -10px;
+    width: 320px;
+  }
+  .section-services-tachographs .services-tachographs-catalog .tachographs-catalog__description {
+    width: 310px;
+  }
+  .section-services-scoreboards {
+    margin-left: 0;
+    padding: 0 10px;
+    width: 320px;
+    height: 910px;
+  }
+  .section-services-scoreboards .services-scoreboards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 900px;
+    width: 320px;
+  }
+  .section-services-heaters {
+    margin-left: 0;
+    padding: 0;
+    width: 320px;
+    height: 1100px;
+  }
+  .section-services-heaters .services-heaters {
+    padding: 0 10px;
+    width: 320px;
+    height: 1100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-services-heaters .services-heaters .services-heaters__information {
+    height: 1000px;
+  }
+  .section-services-heaters .services-heaters .services-heaters__information .heaters-information-wrappwer .heaters-information__body {
+    text-align: center;
+  }
+  .section-services-heaters .services-heaters .services-heaters__catalog-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
 /*# sourceMappingURL=services.css.map */
