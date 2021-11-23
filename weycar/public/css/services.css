@@ -511,85 +511,123 @@
 
 @media (max-width: 1440px) {
   .section-services-first {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 1440px;
   }
   .section-services-video {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 1440px;
+    padding-left: 40px;
   }
   .section-services-monitoring {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 1440px;
+    padding-left: 40px;
   }
   .section-services-tachographs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 1440px;
+    padding-left: 40px;
   }
   .section-services-scoreboards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 1440px;
+    padding-left: 40px;
   }
   .section-services-heaters {
+    width: 1440px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .section-services-first {
+    width: 1025px;
+  }
+  .ofers-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ofers-image {
+    padding: 0 40px 30px 0 !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 1440px;
   }
-  .section-footer {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    width: 1440px !important;
+  .section-services-video {
+    width: 1025px;
+    height: 872px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .section-header {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    width: 1440px !important;
+  .section-services-video .services-video {
+    width: 850px;
+    margin-left: -40px;
   }
-  .footer-bg {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    width: 1440px !important;
+  .section-services-monitoring {
+    width: 1025px;
+  }
+  .section-services-monitoring .services-monitoring {
+    width: 750px;
+    margin-left: -40px;
+  }
+  .section-services-monitoring .services-monitoring-information__bottom {
+    width: 800px;
+    padding-top: 20px !important;
+  }
+  .section-services-tachographs {
+    height: 802px;
+    width: 1025px;
+  }
+  .section-services-tachographs .services-tachographs {
+    padding-top: 10px !important;
+    width: 950px;
+    height: 820px !important;
+    margin-left: -150px;
+  }
+  .section-services-tachographs .services-tachographs .installation-text__body {
+    width: 450px;
+  }
+  .section-services-tachographs .tachographs-catalog__button {
+    padding-top: 25px;
+  }
+  .section-services-tachographs .services-tachographs-catalog {
+    height: 700px;
+  }
+  .section-services-tachographs .installation-button {
+    position: absolute;
+  }
+  .section-services-scoreboards {
+    width: 1070px;
+    height: 764px;
+    margin-left: -40px;
+  }
+  .section-services-scoreboards .services-scoreboards {
+    height: 764px;
+  }
+  .section-services-heaters {
+    width: 1070px;
+    height: 740px;
+    margin-left: -40px;
+  }
+  .section-services-heaters .services-heaters {
+    padding-top: 20px !important;
+    height: 740px;
+    width: 740px;
+  }
+  .section-services-heaters .services-heaters .services-heaters__information .heaters-information-wrappwer .heaters-information__body {
+    padding-top: 20px !important;
+    line-height: 17.5px !important;
   }
 }
 /*# sourceMappingURL=services.css.map */

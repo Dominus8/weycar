@@ -1,142 +1,89 @@
-.wrapper-outer {
-    color: #bbbdbe;
-}
-
-.section-services-first {
-    .wrapper-inner {
-        .services-first {
-            margin-left: 50px;
-            padding-top: 50px;
-            padding-bottom: 100px;
-            color: #bbbdbe;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .services-first__descriptions {
-                max-width: 700px;
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 24px;
-                line-height: 24px;
-                font-weight: Regular;
-            }
-            .ofers-wrapper {
+    .wrapper-outer {
+        color: #bbbdbe;
+    }
+    
+    .section-services-first {
+        .wrapper-inner {
+            .services-first {
+                margin-left: 50px;
                 padding-top: 50px;
+                padding-bottom: 100px;
+                color: #bbbdbe;
                 display: flex;
-                .ofers-list {
-                    .ofers-list__list-heading {
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 24px;
-                        line-height: 24px;
-                        font-weight: Regular;
-                    }
-                    .ofers-list-buttons {
-                        padding-top: 10px;
-                        .ofers-listbuttons__item {
-                            color: #bbbdbe;
-                            border: 2px solid #3c96c8;
-                            border-radius: 5px;
-                            height: 45px;
-                            width: 375px;
-                            margin-top: 15px;
-                            padding-left: 7px;
-                            padding-top: 7px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .services-first__descriptions {
+                    max-width: 700px;
+                    text-align: center;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 24px;
+                    line-height: 24px;
+                    font-weight: Regular;
+                }
+                .ofers-wrapper {
+                    padding-top: 50px;
+                    display: flex;
+                    .ofers-list {
+                        .ofers-list__list-heading {
                             font-family: Arial, Helvetica, sans-serif;
-                            font-size: 18px;
+                            font-size: 24px;
                             line-height: 24px;
                             font-weight: Regular;
-                            &:hover {
-                                transition: 5s;
-                                background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                        }
+                        .ofers-list-buttons {
+                            padding-top: 10px;
+                            .ofers-listbuttons__item {
+                                color: #bbbdbe;
+                                border: 2px solid #3c96c8;
+                                border-radius: 5px;
+                                height: 45px;
+                                width: 375px;
+                                margin-top: 15px;
+                                padding-left: 7px;
+                                padding-top: 7px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 18px;
+                                line-height: 24px;
+                                font-weight: Regular;
+                                &:hover {
+                                    transition: 5s;
+                                    background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                                }
                             }
                         }
                     }
-                }
-                .ofers-image {
-                    padding-left: 70px;
-                    img {
-                        width: 540px;
-                        height: 390px;
+                    .ofers-image {
+                        padding-left: 70px;
+                        img {
+                            width: 540px;
+                            height: 390px;
+                        }
                     }
                 }
             }
         }
     }
-}
-
-.section-services-video {
-    height: 887px;
-    background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-video.png) center right no-repeat;
-    background-size: contain;
-    .wrapper-inner {
-        .services-video {
-            display: flex;
-            .services-video__information {
-                .video-information-wrappwer {
-                    max-width: 490px;
-                    height: 775px;
-                    .video-information__title {
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 30px;
-                        line-height: 30px;
-                        font-weight: bold;
-                    }
-                    .video-information__body {
-                        max-width: 460px;
-                        padding-top: 45px;
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 16px;
-                        line-height: 18px;
-                        font-weight: Regular;
-                    }
-                }
-            }
-            .services-video__catalog-button {
-                width: 55%;
-                padding-top: 35px;
-                text-align: center;
-                .video-catalog-button {
-                    padding: 15px 47px;
-                    color: #bbbdbe;
-                    border: 2px solid #3c96c8; //transparent
-                    border-radius: 5px;
-                    // border-image: linear-gradient(to right, #0B0E7F, #0B95DD);
-                    // border-image-slice: 1;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 18px;
-                    line-height: 18px;
-                    font-weight: Regular;
-                    &:hover {
-                        transition: 5s;
-                        background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
-                    }
-                }
-            }
-        }
-    }
-}
-
-.section-services-monitoring {
-    height: 902px;
-    background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-monitoring.png) center right no-repeat;
-    background-size: contain;
-    .wrapper-inner {
-        .services-monitoring {
-            padding-top: 60px;
-            .services-monitoring-information {
-                .services-monitoring-information__top {
-                    display: flex;
-                    .information-top-text {
-                        // flex-grow: 2;
-                        .information-top-text__title {
+    
+    .section-services-video {
+        height: 887px;
+        background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-video.png) center right no-repeat;
+        background-size: contain;
+        .wrapper-inner {
+            .services-video {
+                display: flex;
+                .services-video__information {
+                    .video-information-wrappwer {
+                        max-width: 490px;
+                        height: 775px;
+                        .video-information__title {
                             font-family: Arial, Helvetica, sans-serif;
                             font-size: 30px;
                             line-height: 30px;
                             font-weight: bold;
                         }
-                        .information-top-text__body {
-                            max-width: 730px;
+                        .video-information__body {
+                            max-width: 460px;
                             padding-top: 45px;
                             font-family: Arial, Helvetica, sans-serif;
                             font-size: 16px;
@@ -144,10 +91,188 @@
                             font-weight: Regular;
                         }
                     }
-                    .information-top-catalog-button {
-                        // flex-grow: 1;
-                        .monitoring-catalog-button {
-                            margin-left: 20px;
+                }
+                .services-video__catalog-button {
+                    width: 55%;
+                    padding-top: 35px;
+                    text-align: center;
+                    .video-catalog-button {
+                        padding: 15px 47px;
+                        color: #bbbdbe;
+                        border: 2px solid #3c96c8; //transparent
+                        border-radius: 5px;
+                        // border-image: linear-gradient(to right, #0B0E7F, #0B95DD);
+                        // border-image-slice: 1;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 18px;
+                        line-height: 18px;
+                        font-weight: Regular;
+                        &:hover {
+                            transition: 5s;
+                            background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .section-services-monitoring {
+        height: 902px;
+        background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-monitoring.png) center right no-repeat;
+        background-size: contain;
+        .wrapper-inner {
+            .services-monitoring {
+                padding-top: 60px;
+                .services-monitoring-information {
+                    .services-monitoring-information__top {
+                        display: flex;
+                        .information-top-text {
+                            // flex-grow: 2;
+                            .information-top-text__title {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 30px;
+                                line-height: 30px;
+                                font-weight: bold;
+                            }
+                            .information-top-text__body {
+                                max-width: 730px;
+                                padding-top: 45px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 16px;
+                                line-height: 18px;
+                                font-weight: Regular;
+                            }
+                        }
+                        .information-top-catalog-button {
+                            // flex-grow: 1;
+                            .monitoring-catalog-button {
+                                margin-left: 20px;
+                                padding: 15px 47px;
+                                color: #bbbdbe;
+                                border: 2px solid #3c96c8;
+                                border-radius: 5px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 18px;
+                                line-height: 18px;
+                                font-weight: Regular;
+                                &:hover {
+                                    transition: 5s;
+                                    background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                                }
+                            }
+                        }
+                    }
+                    .services-monitoring-information__bottom {
+                        padding-top: 70px;
+                        display: flex;
+                        .information-bottom-buttons {
+                            flex-grow: 2;
+                            max-width: 450px;
+                            .information-bottom-button {
+                                display: block;
+                                margin-top: 30px;
+                                width: 377px;
+                                height: 47px;
+                                color: #bbbdbe;
+                                border: 2px solid #3c96c8;
+                                border-radius: 5px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 16px;
+                                line-height: 42px;
+                                font-weight: Regular;
+                                text-align: center;
+                                &:hover {
+                                    transition: 5s;
+                                    background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                                }
+                            }
+                        }
+                        .information-bottom-price {
+                            justify-self: start;
+                            flex-grow: 1;
+                            max-width: 430px;
+                            padding-top: 35px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            line-height: 18px;
+                            font-weight: Regular;
+                            .information-bottom-price-wrapper {
+                                display: flex;
+                                margin-bottom: 10px;
+                                justify-content: space-between;
+                                .information-bottom-price-name {
+                                    text-align-last: left;
+                                }
+                                .information-bottom-price-cost {
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .section-services-tachographs {
+        height: 897px;
+        background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-tachographs.png) center right no-repeat;
+        background-size: contain;
+        .wrapper-inner {
+            .services-tachographs {
+                display: flex;
+                padding-top: 45px;
+                height: 897px;
+                .services-tachographs-installation {
+                    padding-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    .tachographs-installation__text {
+                        flex-grow: 2;
+                        .installation-text__title {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 30px;
+                            line-height: 30px;
+                            font-weight: bold;
+                        }
+                        .installation-text__body {
+                            padding-top: 45px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            line-height: 18px;
+                            font-weight: Regular;
+                        }
+                    }
+                    .tachographs-installation__button {
+                        flex-grow: 3;
+                        .installation-button {
+                            padding: 10px 15px;
+                            color: #bbbdbe;
+                            border: 2px solid #3c96c8;
+                            border-radius: 5px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 18px;
+                            font-weight: bold;
+                            text-align: center;
+                            white-space: nowrap;
+                            &:hover {
+                                transition: 5s;
+                                background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                            }
+                        }
+                    }
+                }
+                .services-tachographs-catalog {
+                    padding-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    .tachographs-catalog__button {
+                        .catalog-button {
                             padding: 15px 47px;
                             color: #bbbdbe;
                             border: 2px solid #3c96c8;
@@ -162,117 +287,56 @@
                             }
                         }
                     }
-                }
-                .services-monitoring-information__bottom {
-                    padding-top: 70px;
-                    display: flex;
-                    .information-bottom-buttons {
-                        flex-grow: 2;
-                        max-width: 450px;
-                        .information-bottom-button {
-                            display: block;
-                            margin-top: 30px;
-                            width: 377px;
-                            height: 47px;
-                            color: #bbbdbe;
-                            border: 2px solid #3c96c8;
-                            border-radius: 5px;
-                            font-family: Arial, Helvetica, sans-serif;
-                            font-size: 16px;
-                            line-height: 42px;
-                            font-weight: Regular;
-                            text-align: center;
-                            &:hover {
-                                transition: 5s;
-                                background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
-                            }
-                        }
-                    }
-                    .information-bottom-price {
-                        justify-self: start;
-                        flex-grow: 1;
-                        max-width: 430px;
-                        padding-top: 35px;
+                    .tachographs-catalog__description {
+                        padding: 10px;
+                        padding-top: 20px;
                         font-family: Arial, Helvetica, sans-serif;
                         font-size: 16px;
                         line-height: 18px;
                         font-weight: Regular;
-                        .information-bottom-price-wrapper {
-                            display: flex;
-                            margin-bottom: 10px;
-                            justify-content: space-between;
-                            .information-bottom-price-name {
-                                text-align-last: left;
-                            }
-                            .information-bottom-price-cost {
-                                text-align: right;
-                            }
-                        }
+                        border: 2px solid #3c96c8;
+                        border-radius: 5px;
+                        background-color: rgba(14, 31, 39, 0.9);
                     }
                 }
             }
         }
     }
-}
-
-.section-services-tachographs {
-    height: 897px;
-    background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-tachographs.png) center right no-repeat;
-    background-size: contain;
-    .wrapper-inner {
-        .services-tachographs {
-            display: flex;
-            padding-top: 45px;
-            height: 897px;
-            .services-tachographs-installation {
-                padding-right: 20px;
+    
+    .section-services-scoreboards {
+        height: 908px;
+        background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-scoreboards.png) center right no-repeat;
+        background-size: contain;
+        .wrapper-inner {
+            .services-scoreboards {
+                padding-top: 50px;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                .tachographs-installation__text {
-                    flex-grow: 2;
-                    .installation-text__title {
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 30px;
-                        line-height: 30px;
-                        font-weight: bold;
-                    }
-                    .installation-text__body {
-                        padding-top: 45px;
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 16px;
-                        line-height: 18px;
-                        font-weight: Regular;
-                    }
-                }
-                .tachographs-installation__button {
-                    flex-grow: 3;
-                    .installation-button {
-                        padding: 10px 15px;
-                        color: #bbbdbe;
-                        border: 2px solid #3c96c8;
-                        border-radius: 5px;
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 18px;
-                        font-weight: bold;
-                        text-align: center;
-                        white-space: nowrap;
-                        &:hover {
-                            transition: 5s;
-                            background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                .services-scoreboards__information {
+                    flex-grow: 1;
+                    .scoreboards-information-wrappwer {
+                        max-width: 400px;
+                        height: 775px;
+                        .scoreboards-information__title {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 30px;
+                            line-height: 30px;
+                            font-weight: bold;
+                        }
+                        .scoreboards-information__body {
+                            max-width: 460px;
+                            padding-top: 45px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            line-height: 18px;
+                            font-weight: Regular;
                         }
                     }
                 }
-            }
-            .services-tachographs-catalog {
-                padding-left: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                .tachographs-catalog__button {
-                    .catalog-button {
+                .services-scoreboards__catalog-button {
+                    flex-grow: 1.6;
+                    padding-top: 15px;
+                    text-align: center;
+                    .scoreboards-catalog-button {
                         padding: 15px 47px;
                         color: #bbbdbe;
                         border: 2px solid #3c96c8;
@@ -287,170 +351,190 @@
                         }
                     }
                 }
-                .tachographs-catalog__description {
-                    padding: 10px;
-                    padding-top: 20px;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 16px;
-                    line-height: 18px;
-                    font-weight: Regular;
-                    border: 2px solid #3c96c8;
-                    border-radius: 5px;
-                    background-color: rgba(14, 31, 39, 0.9);
-                }
             }
         }
     }
-}
-
-.section-services-scoreboards {
-    height: 908px;
-    background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-scoreboards.png) center right no-repeat;
-    background-size: contain;
-    .wrapper-inner {
-        .services-scoreboards {
-            padding-top: 50px;
-            display: flex;
-            .services-scoreboards__information {
-                flex-grow: 1;
-                .scoreboards-information-wrappwer {
-                    max-width: 400px;
-                    height: 775px;
-                    .scoreboards-information__title {
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 30px;
-                        line-height: 30px;
-                        font-weight: bold;
-                    }
-                    .scoreboards-information__body {
-                        max-width: 460px;
-                        padding-top: 45px;
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 16px;
-                        line-height: 18px;
-                        font-weight: Regular;
-                    }
-                }
-            }
-            .services-scoreboards__catalog-button {
-                flex-grow: 1.6;
-                padding-top: 15px;
-                text-align: center;
-                .scoreboards-catalog-button {
-                    padding: 15px 47px;
-                    color: #bbbdbe;
-                    border: 2px solid #3c96c8;
-                    border-radius: 5px;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 18px;
-                    line-height: 18px;
-                    font-weight: Regular;
-                    &:hover {
-                        transition: 5s;
-                        background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
-                    }
-                }
-            }
-        }
-    }
-}
-
-.section-services-heaters {
-    height: 868px;
-    background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-heaters.png) center right no-repeat;
-    background-size: contain;
-    .wrapper-inner {
-        .services-heaters {
-            padding-top: 50px;
-            display: flex;
-            .services-heaters__information {
-                flex-grow: 1;
-                .heaters-information-wrappwer {
-                    max-width: 495px;
-                    height: 775px;
-                    .heaters-information__title {
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 30px;
-                        line-height: 30px;
-                        font-weight: bold;
-                    }
-                    .heaters-information__body {
-                        max-width: 460px;
-                        padding-top: 45px;
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 16px;
-                        line-height: 18px;
-                        font-weight: Regular;
-                    }
-                }
-            }
-            .services-heaters__catalog-button {
-                flex-grow: 1.6;
-                padding-top: 15px;
-                text-align: center;
-                .heaters-catalog-button {
-                    padding: 15px 47px;
-                    color: #bbbdbe;
-                    border: 2px solid #3c96c8;
-                    border-radius: 5px;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 18px;
-                    line-height: 18px;
-                    font-weight: Regular;
-                    &:hover {
-                        transition: 5s;
-                        background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1440px) {
-    .section-services-first {
-        display: flex;
-        justify-content: space-between;
-        width: 1440px;
-    }
-    .section-services-video {
-        display: flex;
-        justify-content: space-between;
-        width: 1440px;
-    }
-    .section-services-monitoring {
-        display: flex;
-        justify-content: space-between;
-        width: 1440px;
-    }
-    .section-services-tachographs {
-        display: flex;
-        justify-content: space-between;
-        width: 1440px;
-    }
-    .section-services-scoreboards {
-        display: flex;
-        justify-content: space-between;
-        width: 1440px;
-    }
+    
     .section-services-heaters {
-        display: flex;
-        justify-content: space-between;
-        width: 1440px;
+        height: 868px;
+        background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-heaters.png) center right no-repeat;
+        background-size: contain;
+        .wrapper-inner {
+            .services-heaters {
+                padding-top: 50px;
+                display: flex;
+                .services-heaters__information {
+                    flex-grow: 1;
+                    .heaters-information-wrappwer {
+                        max-width: 495px;
+                        height: 775px;
+                        .heaters-information__title {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 30px;
+                            line-height: 30px;
+                            font-weight: bold;
+                        }
+                        .heaters-information__body {
+                            max-width: 460px;
+                            padding-top: 45px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            line-height: 18px;
+                            font-weight: Regular;
+                        }
+                    }
+                }
+                .services-heaters__catalog-button {
+                    flex-grow: 1.6;
+                    padding-top: 15px;
+                    text-align: center;
+                    .heaters-catalog-button {
+                        padding: 15px 47px;
+                        color: #bbbdbe;
+                        border: 2px solid #3c96c8;
+                        border-radius: 5px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 18px;
+                        line-height: 18px;
+                        font-weight: Regular;
+                        &:hover {
+                            transition: 5s;
+                            background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+                        }
+                    }
+                }
+            }
+        }
     }
-    .section-footer {
-        display: flex !important;
-        justify-content: space-between !important;
-        width: 1440px !important;
+    
+    @media (max-width: 1440px) {
+        .section-services-first {
+            // display: flex;
+            // justify-content: space-between;
+            width: 1440px;
+        }
+        .section-services-video {
+            // display: flex;
+            // justify-content: space-between;
+            width: 1440px;
+            padding-left: 40px;
+        }
+        .section-services-monitoring {
+            width: 1440px;
+            padding-left: 40px;
+        }
+        .section-services-tachographs {
+            // display: flex;
+            // justify-content: space-between;
+            width: 1440px;
+            padding-left: 40px;
+        }
+        .section-services-scoreboards {
+            width: 1440px;
+            padding-left: 40px;
+        }
+        .section-services-heaters {
+            width: 1440px;
+            padding-left: 40px;
+        }
+        // .section-footer {
+        //     width: 1440px;
+        //     padding-left: 40px;
+        // }
+        // .section-header {
+        //     width: 1440px;
+        //     padding-left: 40px;
+        // }
+        // .footer-bg {
+        //     width: 1440px;
+        //     padding-left: 40px;
+        // }
     }
-    .section-header {
-        display: flex !important;
-        justify-content: space-between !important;
-        width: 1440px !important;
+    
+    @media (max-width: 1025px) {
+        .section-services-first {
+            width: 1025px;
+        }
+        .ofers-wrapper {
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ofers-image {
+            padding: 0 40px 30px 0 !important;
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-services-video {
+            width: 1025px;
+            height: 872px;
+            display: flex;
+            justify-content: space-between;
+            .services-video {
+                width: 850px;
+                margin-left: -40px;
+            }
+        }
+        .section-services-monitoring {
+            width: 1025px;
+            .services-monitoring {
+                width: 750px;
+                margin-left: -40px;
+            }
+            .services-monitoring-information__bottom {
+                width: 800px;
+                padding-top: 20px !important;
+            }
+        }
+        //установка тахографов
+        .section-services-tachographs {
+            height: 802px;
+            width: 1025px;
+            .services-tachographs {
+                padding-top: 10px !important;
+                width: 950px;
+                height: 820px !important;
+                margin-left: -150px;
+                .installation-text__body {
+                    width: 450px;
+                }
+            }
+            .tachographs-catalog__button {
+                padding-top: 25px;
+            }
+            .services-tachographs-catalog {
+                height: 700px;
+            }
+            .installation-button {
+                position: absolute;
+            }
+        }
+        //табло
+        .section-services-scoreboards {
+            width: 1070px;
+            height: 764px;
+            margin-left: -40px;
+            .services-scoreboards {
+                height: 764px;
+            }
+        }
+        //отопители
+        .section-services-heaters {
+            width: 1070px;
+            height: 740px;
+            margin-left: -40px;
+            .services-heaters {
+                padding-top: 20px !important;
+                height: 740px;
+                width: 740px;
+                .services-heaters__information {
+                    .heaters-information-wrappwer {
+                        .heaters-information__body {
+                            padding-top: 20px !important;
+                            line-height: 17.5px !important;
+                        }
+                    }
+                }
+            }
+        }
     }
-    .footer-bg {
-        display: flex !important;
-        justify-content: space-between !important;
-        width: 1440px !important;
-    }
-}
