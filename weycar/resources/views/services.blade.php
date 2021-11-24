@@ -5,7 +5,7 @@
     <div class="paginations"><a href="{{route('index')}}">Главная</a> > <a href="{{route('all_category')}}">Каталог</a> > Услуги </div>
     <div class="services-main">
         <section class="wrapper-outer section-services-first">
-            <div class="wrapper-inner">
+            <div class="wrapper-inner service-inner">
                 <div class="services-first">
                     <div class="services-first__descriptions">
                         Компания “ВЕЙКАР” уже много лет специализируется на установке и наладке оборудования для спутникового мониторинга транспорта в Москве и Московской области. <br>
@@ -31,43 +31,46 @@
                 </div>
             </div>
         </section>
-
+<!--Видео-->
         <section class="wrapper-outer section-services-video">
-            <div class="wrapper-inner">
-                <div class="services-video">
-                    <div id="s1" class="services-video__information">
-                    <div class="video-information-wrappwer">
-                        <div class="video-information__title">Установка видеонаблюдения в транспорте</div>
-                        <div class="video-information__body">
+            <div class=" wrapper-inner">
+                
+                    <div class="services-video">
+                        <div id="s1" class="services-video__information">
+                            <div class="video-information-wrappwer">
+                                <div class="video-information__title">Установка видеонаблюдения в транспорте</div>
+                                <div class="video-information__body">
 
-                        Видеонаблюдение в автобусах и автомобилях – это <br> неотъемлемый элемент системы безопасности, 
-                        которым оснащается практически каждый транспорт. <br><br>
+                                Видеонаблюдение в автобусах и автомобилях – это <br> неотъемлемый элемент системы безопасности, 
+                                которым оснащается практически каждый транспорт. <br><br>
 
-                        Такая мера позволяет вовремя выявить правонарушителя, а также запись с камеры может стать доказательством в 
-                        спорной ситуации. Мы предлагаем приобрести такое оборудование на нашем сайте, а также установить видеонаблюдение в автобусе с нашей помощью.<br><br>
+                                Такая мера позволяет вовремя выявить правонарушителя, а также запись с камеры может стать доказательством в 
+                                спорной ситуации. Мы предлагаем приобрести такое оборудование на нашем сайте, а также установить видеонаблюдение в автобусе с нашей помощью.<br><br>
 
-                        В нашем ассортименте представлена продукция торговой марки CARVIS — видеорегистраторы, камеры, сопутствующее оборудование и типовые комплексы для создания централизованной системы видеонаблюдения и видеомониторинга.<br><br>
+                                В нашем ассортименте представлена продукция торговой марки CARVIS — видеорегистраторы, камеры, сопутствующее оборудование и типовые комплексы для создания централизованной системы видеонаблюдения и видеомониторинга.<br><br>
 
-                        Благодаря появлению новых профильных it-технологий сегодня установка видеонаблюдения на транспорте позволяет контролировать средство передвижения круглосуточно, из любой точки мира, с любого гаджета либо стационарного устройства, интегрированного в сеть Интернет.<br><br>
+                                Благодаря появлению новых профильных it-технологий сегодня установка видеонаблюдения на транспорте позволяет контролировать средство передвижения круглосуточно, из любой точки мира, с любого гаджета либо стационарного устройства, интегрированного в сеть Интернет.<br><br>
 
-                        Установка видеонаблюдения на транспорте удобна как физическим владельцам, так и диспетчерам, работникам охраны. Она адаптирована для любого вида транспорта: видеозапись ведется на запоминающее устройство, расположенное в видеорегистраторе.Оптимальна установка видеонаблюдения на транспорте без привязки к персональному компьютеру.<br><br>
+                                Установка видеонаблюдения на транспорте удобна как физическим владельцам, так и диспетчерам, работникам охраны. Она адаптирована для любого вида транспорта: видеозапись ведется на запоминающее устройство, расположенное в видеорегистраторе.Оптимальна установка видеонаблюдения на транспорте без привязки к персональному компьютеру.<br><br>
 
-                        Доступный ценовой диапазон, подбор видеооборудования опытными консультантами, оперативная доставка и установка, а также быстрое последующее обслуживание, — преимущества сотрудничества с нашей компанией на договорной основе.
+                                Доступный ценовой диапазон, подбор видеооборудования опытными консультантами, оперативная доставка и установка, а также быстрое последующее обслуживание, — преимущества сотрудничества с нашей компанией на договорной основе.
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-video__catalog-button">
+                            <a href="{{route('index')}}/category/8" class="video-catalog-button">
+                                Каталог
+                            </a>
                         </div>
                     </div>
-                    </div>
-                    <div class="services-video__catalog-button">
-                        <a href="{{route('index')}}/category/8" class="video-catalog-button">
-                            Каталог
-                        </a>
-                    </div>
-                </div>
+                
+
             </div>
         </section>
 
         <section class="wrapper-outer section-services-monitoring">
-            <div class="wrapper-inner">
+            <div class="service-inner wrapper-inner ">
                 <div id="s2" class="services-monitoring">
                     <div class="services-monitoring-information">
                         <div class="services-monitoring-information__top">
@@ -162,7 +165,7 @@
         </section>
 
         <section class="wrapper-outer section-services-tachographs">
-            <div class="wrapper-inner">
+            <div class="wrapper-inner service-inner ">
                 <div id="s3" class="services-tachographs">
                     <div class="services-tachographs-installation">
                         <div class="tachographs-installation__text">
@@ -212,7 +215,7 @@
         </section>
 
         <section class="wrapper-outer section-services-scoreboards">
-            <div class="wrapper-inner">
+            <div class="wrapper-inner service-inner">
                 <div id="s4" class="services-scoreboards">
                     <div class="services-scoreboards__information">
                         <div class="scoreboards-information-wrappwer">
@@ -251,7 +254,7 @@
         </section>
 
         <section class="wrapper-outer section-services-heaters">
-            <div class="wrapper-inner">
+            <div class="wrapper-inner service-inner">
                 <div id="s5" class="services-heaters">
                     <div  class="services-heaters__information">
                         <div  class="heaters-information-wrappwer">

@@ -20,7 +20,7 @@ body {
 
 .wrapper-outer .wrapper-inner {
   margin: 0 auto;
-  width: 69.375%;
+  max-width: 69.375%;
 }
 
 .section-header {

@@ -80,6 +80,13 @@
 }
 
 .section-services-video {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 887px;
   background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/serv-video.png) center right no-repeat;
   background: linear-gradient(to right, #0e1f27, rgba(14, 31, 39, 0.07)), url(/image/serv-video.png) center right no-repeat;
@@ -563,12 +570,6 @@
   .section-services-video {
     width: 1025px;
     height: 872px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .section-services-video .services-video {
     width: 850px;
@@ -631,7 +632,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 460px) {
   .section-services-first {
     padding: 0 10px;
     width: 100%;
@@ -665,30 +666,45 @@
     height: 100% !important;
   }
   .section-services-video {
-    width: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
     margin-left: 0;
     padding: 0 10px;
     height: 1100px;
   }
-  .section-services-video .services-video {
-    margin: 0;
+  .section-services-video .wrapper-inner .services-video {
     width: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .section-services-video .services-video .services-video__information {
+  .section-services-video .wrapper-inner .services-video .services-video__information {
     height: 1050px;
   }
-  .section-services-video .services-video .services-video__information .video-information-wrappwer {
+  .section-services-video .wrapper-inner .services-video .services-video__information .video-information-wrappwer {
     height: 1050px;
   }
-  .section-services-video .services-video .services-video__information .video-information-wrappwer .video-information__body {
+  .section-services-video .wrapper-inner .services-video .services-video__information .video-information-wrappwer .video-information__body {
     width: 300px;
     text-align: center;
   }
-  .section-services-video .services-video .services-video__catalog-button {
+  .section-services-video .wrapper-inner .services-video .services-video__catalog-button {
     padding-top: 20px !important;
     width: 320px !important;
     display: -webkit-box;
@@ -700,13 +716,12 @@
   }
   .section-services-monitoring {
     padding: 0 10px;
-    width: 320px;
+    width: 100%;
     height: 1450px;
   }
   .section-services-monitoring .services-monitoring {
     width: 320px;
     height: 1800px;
-    margin: 0;
   }
   .section-services-monitoring .services-monitoring .services-monitoring-information {
     width: 320px;
@@ -752,11 +767,17 @@
   .section-services-tachographs {
     padding: 0 10px;
     margin-left: 0;
-    width: 320px;
+    width: 100%;
     height: 1900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   .section-services-tachographs .services-tachographs {
-    margin-left: 0px;
+    margin-left: -40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -791,10 +812,11 @@
   .section-services-scoreboards {
     margin-left: 0;
     padding: 0 10px;
-    width: 320px;
+    width: 100%;
     height: 910px;
   }
   .section-services-scoreboards .services-scoreboards {
+    margin-left: -40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -805,10 +827,11 @@
   .section-services-heaters {
     margin-left: 0;
     padding: 0;
-    width: 320px;
+    width: 100%;
     height: 1100px;
   }
   .section-services-heaters .services-heaters {
+    margin-left: -40px;
     padding: 0 10px;
     width: 320px;
     height: 1100px;
