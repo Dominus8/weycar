@@ -83,6 +83,16 @@
                     padding: 0 !important;
                     text-align: center;
                 }
+                .ofers-list {
+                    .ofers-list__list-heading {}
+                    .ofers-list-buttons {
+                        a {
+                            .ofers-listbuttons__item {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
