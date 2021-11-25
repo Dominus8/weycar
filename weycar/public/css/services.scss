@@ -113,6 +113,14 @@
                         text-align: center;
                         font-size: 20px !important;
                     }
+                    .ofers-list-buttons {
+                        a {
+                            .ofers-listbuttons__item {
+                                height: auto !important;
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -157,6 +165,8 @@
         }
     }
     
+    //==============================================================================================
+    //Видео ========================================================================================
     .section-services-video {
         flex-direction: column;
         align-items: center;
