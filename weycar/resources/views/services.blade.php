@@ -66,7 +66,7 @@
             </div>
         </section>
 
-        <!--<section class="wrapper-outer section-services-monitoring">
+       <section class="wrapper-outer section-services-monitoring">
             <div class="service-inner wrapper-inner ">
                 <div id="s2" class="services-monitoring">
                     <div class="services-monitoring-information">
@@ -89,11 +89,36 @@
                         </div>
                         <div class="services-monitoring-information__bottom">
                         <div class="information-bottom-buttons">
-                            <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal6" class="information-bottom-button">Стоимость</a>
+                            <a type="button" id="p1" tu="1" class="information-bottom-button">Стоимость</a> <!--data-bs-toggle="modal" data-bs-target="#serviceModal6"-->
+                            <script>
+                                $( document ).ready( function (){
+                                    var y = $("#p1").attr("tu");
+                                    var x = $(".information-bottom-price").attr("style");
+                                    
+                                    $("#p1").on('click',function (){
+                                        
+                                        if(y==1){
+                                           $("#p1").attr("tu",2);
+                                           $(".information-bottom-price").attr("style","visibility:visible;");
+                                       }
+                                        if(y==2){
+                                           $("#p1").attr("tu",1);
+                                           $(".information-bottom-price").attr("style","visibility:hidden;");   
+                                       }
+                                       y = $("#p1").attr("tu");
+                                       
+                                    });
+                                    
+                                    
+                                    
+                                    
+                                });
+                                
+                            </script>
                             <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal7" class="information-bottom-button">Что дает спутниковый мониторинг</a>
                             <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal8" class="information-bottom-button">Как устроена система слежения за транспортом</a>
                         </div>
-                        <div class="information-bottom-price">
+                        <div class="information-bottom-price" style='visibility: hidden;'>
                             <div class="information-bottom-price-wrapper">
                                 <div class="information-bottom-price-name">Услуга</div>
                                 <div class="information-bottom-price-cost">Цена</div>
@@ -161,7 +186,7 @@
             </div>
         </section>
 
-        <section class="wrapper-outer section-services-tachographs">
+         <!--<section class="wrapper-outer section-services-tachographs">
             <div class="wrapper-inner service-inner ">
                 <div id="s3" class="services-tachographs">
                     <div class="services-tachographs-installation">
