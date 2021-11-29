@@ -942,36 +942,57 @@
                         text-align: center;
                         width: 320px;
                         .mob-menu {
+                            padding-top: 10px;
                             top: 130px;
                             right: 0;
                             left: 0;
                             display: none;
                             position: absolute;
                             background-color: #0a1215;
-                            height: 350px;
+                            height: auto;
+                            padding-bottom: 10px;
                             .mob-menu-wrapper {
                                 display: flex;
                                 justify-content: center;
+                                padding: 0 5px;
                                 .mob-menu__item-wrapper {
                                     display: grid;
                                     grid-template-columns: 1fr 1fr;
-                                    grid-auto-rows: 2em;
-                                    grid-gap: 20px 10px;
+                                    grid-auto-rows: auto; //2.4em
+                                    grid-gap: 10px 20px;
                                     width: 550px;
                                     .mob-menu__item {
+                                        padding: 5px 0;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border: 3.15px solid #3c96c8;
+                                        border-radius: 5px;
                                         a {
-                                            color: white;
-                                            line-height: 3px;
+                                            padding: 10px auto;
+                                            color: #bbbdbe;
+                                            font-family: Arial, Helvetica, sans-serif;
+                                            font-size: 13px;
+                                            line-height: 10px;
+                                            font-weight: bold;
+                                            line-height: 15px;
                                             text-decoration: none;
                                         }
                                     }
                                 }
                                 .mob-menu__close {
+                                    margin-left: 6px;
                                     display: block;
-                                    height: 50px;
-                                    width: 50px;
+                                    height: 35px;
+                                    padding: 10px;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    font-size: 16px;
+                                    line-height: 10px;
+                                    font-weight: bold;
                                     color: red;
-                                    font-size: 32px;
+                                    text-decoration: none;
+                                    border: 3.15px solid #3c96c8;
+                                    border-radius: 10px;
                                 }
                             }
                         }
@@ -1661,6 +1682,23 @@
                     .first-screen {
                         text-align: center;
                         width: 320px;
+                        .mob-menu {
+                            .mob-menu-wrapper {
+                                flex-direction: column-reverse;
+                                align-items: center;
+                                .mob-menu__item-wrapper {
+                                    width: 100%;
+                                    grid-template-columns: 1fr;
+                                }
+                                .mob-menu__close {
+                                    margin: 0;
+                                    margin-bottom: 10px;
+                                    width: 100%;
+                                    border-radius: 5px;
+                                    color: red;
+                                }
+                            }
+                        }
                         .menu-core {
                             width: 320px;
                             display: inline-block;
