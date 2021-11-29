@@ -99,26 +99,35 @@
                                         
                                         if(y==1){
                                            $("#p1").attr("tu",2);
-                                           $(".information-bottom-price").attr("style","visibility:visible;");
+                                           $(".information-bottom-price").attr("style","display: block;");
+                                           if( window.screen.width <= 1065 ){
+
+                                               $("#how").attr("style","display: none;");
+                                               $("#what").attr("style","display: none;");
+                                           }
                                        }
                                         if(y==2){
                                            $("#p1").attr("tu",1);
-                                           $(".information-bottom-price").attr("style","visibility:hidden;");   
+                                           $(".information-bottom-price").attr("style","display: none;");
+
+                                           if(window.screen.width <= 1065){
+
+                                               $("#how").attr("style","display: block;");
+                                               $("#what").attr("style","display: block;"); 
+                                           }
                                        }
+
                                        y = $("#p1").attr("tu");
                                        
                                     });
-                                    
-                                    
-                                    
-                                    
+ 
                                 });
                                 
                             </script>
-                            <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal7" class="information-bottom-button">Что дает спутниковый мониторинг</a>
-                            <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal8" class="information-bottom-button">Как устроена система слежения за транспортом</a>
+                            <a type="button" id="what" data-bs-toggle="modal" data-bs-target="#serviceModal7" class="information-bottom-button">Что дает спутниковый мониторинг</a>
+                            <a type="button" id="how" data-bs-toggle="modal" data-bs-target="#serviceModal8" class="information-bottom-button">Как устроена система слежения за транспортом</a>
                         </div>
-                        <div class="information-bottom-price" style='visibility: hidden;'>
+                        <div class="information-bottom-price" style='display:none;'>
                             <div class="information-bottom-price-wrapper">
                                 <div class="information-bottom-price-name">Услуга</div>
                                 <div class="information-bottom-price-cost">Цена</div>
@@ -186,7 +195,7 @@
             </div>
         </section>
 
-         <!--<section class="wrapper-outer section-services-tachographs">
+         <section class="wrapper-outer section-services-tachographs">
             <div class="wrapper-inner service-inner ">
                 <div id="s3" class="services-tachographs">
                     <div class="services-tachographs-installation">
@@ -207,29 +216,59 @@
                             </div>
                         </div>
                         <div class="tachographs-installation__button">
-                            <a type="button" data-bs-toggle="modal" data-bs-target="#serviceModal9" class="installation-button">Установка тахографа под ключ <wbr> —  Москва и Подмосковье</a>
+                            <a id="install" tu="1" type="button" class="installation-button">Установка тахографа под ключ<wbr> — Москва и Подмосковье</a> <!--data-bs-toggle="modal" data-bs-target="#serviceModal9"-->
+                            <script>
+                                $( document ).ready( function (){
+                                    var y = $("#install").attr("tu");
+                                    console.log(y);
+                                    
+                                    $("#install").on('click',function (){
+                                        
+                                        if(y==1){
+                                           $("#tah1").attr("tu",2);
+                                           $(".tachographs-catalog__description").attr("style","display: block;");
+                                           if( window.screen.width <= 1065 ){
+
+
+                                           }
+                                       }
+                                        if(y==2){
+                                           $("#tah1").attr("tu",1);
+                                           $(".tachographs-catalog__description").attr("style","display: none;");
+
+
+                                       }
+
+                                       y = $("#tah1").attr("tu");
+                                       
+                                    });
+ 
+                                });
+                                
+                            </script>
                         </div>
                     </div>
                     <div class="services-tachographs-catalog">
                         <div class="tachographs-catalog__button">
-                            <a href="{{route('index')}}/category/9" class="catalog-button">
-                                Каталог</a>
+                            <a  href="{{route('index')}}/category/9" class="catalog-button">
+                                Каталог
+                            </a>
                         </div>
-                        <div class="tachographs-catalog__description">
-                        Установка тахографа под ключ подразумевает комплекс единовременных и последующих услуг: <br><br>
+                        <div id="tah1" class="tachographs-catalog__description" style="display:none;">
+                            Установка тахографа под ключ подразумевает комплекс единовременных и последующих услуг: <br><br>
 
-                        - монтаж осуществляется по месту нахождения автомобиля в автопарке:<br>
-                        - установка тахографа сопровождается тестированием со снятием запротоколированных контрольных показаний;<br>
-                        - в ближайшее время производится повторная проверка показаний%<br>
-                        - заключение договора на гарантийное и обычное сервисное обслуживание с устранением сбоев, обработкой и анализом показаний;<br>
-                        - мелкий ремонт осуществляется без демонтажа, серьезный — с доставкой оборудования на базу компании;<br>
-                        - оперативную доставку сменных деталей.<br><br>
+                            - монтаж осуществляется по месту нахождения автомобиля в автопарке:<br>
+                            - установка тахографа сопровождается тестированием со снятием запротоколированных контрольных показаний;<br>
+                            - в ближайшее время производится повторная проверка показаний%<br>
+                            - заключение договора на гарантийное и обычное сервисное обслуживание с устранением сбоев, обработкой и анализом показаний;<br>
+                            - мелкий ремонт осуществляется без демонтажа, серьезный — с доставкой оборудования на базу компании;<br>
+                            - оперативную доставку сменных деталей.<br><br>
 
-                        Установка тахографов в Москве весьма востребована, что обусловлено ростом спроса на логистические услуги, тем не менее, обратившись в компанию «Вейкар», вы можете быть уверены в установке тахографа под ключ в самые быстрые сроки. Ваша заявка немедленно поступит в обработку.<br><br>
+                            Установка тахографов в Москве весьма востребована, что обусловлено ростом спроса на логистические услуги, тем не менее, обратившись в компанию «Вейкар», вы можете быть уверены в установке тахографа под ключ в самые быстрые сроки. Ваша заявка немедленно поступит в обработку.<br><br>
 
-                        Выполнение заявки в оговоренные сроки контролируется консультантом компании.<br><br>
+                            Выполнение заявки в оговоренные сроки контролируется консультантом компании.<br><br>
 
-                        Стоимость комплексной услуги варьируется в зависимости от спектра услуг, — как правило, выгоднее воспользоваться позицией «под ключ».
+                            Стоимость комплексной услуги варьируется в зависимости от спектра услуг, — как правило, выгоднее воспользоваться позицией «под ключ».
                         </div>
                     </div>
                 </div>
@@ -313,7 +352,7 @@
                 </div>
             </div>
         </section>
-    </div> -->
+    </div> <!---->
  
     <!-- Modal 1 -->
     <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModal1Label" aria-hidden="true">

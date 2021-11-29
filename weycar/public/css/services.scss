@@ -233,6 +233,7 @@
     
     @media (max-width: 1065px) {
         .section-services-video {
+            padding-top: 10px;
             height: auto !important;
             padding-bottom: 20px;
             background-size: cover;
@@ -341,7 +342,7 @@
     .section-services-monitoring {
         height: 902px;
         background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-monitoring.png) center right no-repeat;
-        background-size: contain;
+        background-size: cover;
         .wrapper-inner {
             .services-monitoring {
                 padding-top: 60px;
@@ -366,7 +367,6 @@
                             }
                         }
                         .information-top-catalog-button {
-                            // flex-grow: 1;
                             .monitoring-catalog-button {
                                 margin-left: 20px;
                                 padding: 15px 47px;
@@ -378,7 +378,6 @@
                                 line-height: 18px;
                                 font-weight: Regular;
                                 &:hover {
-                                    transition: 5s;
                                     background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
                                 }
                             }
@@ -410,6 +409,7 @@
                             }
                         }
                         .information-bottom-price {
+                            display: none;
                             justify-self: start;
                             flex-grow: 1;
                             max-width: 430px;
@@ -436,7 +436,104 @@
         }
     }
     
-    @media (max-width: 1440px) {}
+    @media (max-width: 1065px) {
+        .section-services-monitoring {
+            height: auto;
+            background-size: cover;
+            .wrapper-inner {
+                .services-monitoring {
+                    padding-top: 20px;
+                    .services-monitoring-information {
+                        padding-bottom: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .services-monitoring-information__top {
+                            max-width: 80%;
+                            flex-direction: column;
+                            .information-top-text {
+                                .information-top-text__title {
+                                    text-align: center;
+                                }
+                                .information-top-text__body {
+                                    text-align: center;
+                                }
+                            }
+                            .information-top-catalog-button {
+                                margin-top: 30px;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                .monitoring-catalog-button {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                        .services-monitoring-information__bottom {
+                            padding-top: 0px;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 870px) {
+        .section-services-monitoring {
+            .wrapper-inner {
+                .services-monitoring {
+                    margin: 0 -10%;
+                    .services-monitoring-information {
+                        .services-monitoring-information__top {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 425px) {
+        .section-services-monitoring {
+            .wrapper-inner {
+                .services-monitoring {
+                    margin: 0 -15%;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .section-services-monitoring {
+            .wrapper-inner {
+                .services-monitoring {
+                    .services-monitoring-information {
+                        .services-monitoring-information__top {
+                            .information-top-text {
+                                .information-top-text__title {}
+                                .information-top-text__body {}
+                            }
+                            .information-top-catalog-button {
+                                .monitoring-catalog-button {}
+                            }
+                        }
+                        .services-monitoring-information__bottom {
+                            width: 300px;
+                            .information-bottom-buttons {
+                                .information-bottom-button {
+                                    width: 300px;
+                                    height: auto;
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     //============================================================================================
     //тахографы
@@ -456,6 +553,7 @@
                     align-items: center;
                     justify-content: space-between;
                     .tachographs-installation__text {
+                        max-width: 605px;
                         flex-grow: 2;
                         .installation-text__title {
                             font-family: Arial, Helvetica, sans-serif;
@@ -491,6 +589,7 @@
                     }
                 }
                 .services-tachographs-catalog {
+                    width: 485px;
                     padding-left: 20px;
                     display: flex;
                     flex-direction: column;
@@ -528,8 +627,83 @@
         }
     }
     
+    @media (max-width: 1150px) {
+        .section-services-tachographs {
+            height: auto;
+            background-size: cover;
+            padding-bottom: 10px;
+            .wrapper-inner {
+                .services-tachographs {
+                    .services-tachographs-catalog {
+                        .tachographs-catalog__description {
+                            font-size: smaller;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 1065px) {
+        .section-services-tachographs {
+            height: auto;
+            .wrapper-inner {
+                .services-tachographs {
+                    height: auto;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .services-tachographs-installation {
+                        padding: 0;
+                        .tachographs-installation__text {
+                            .installation-text__title {
+                                text-align: center;
+                            }
+                            .installation-text__body {
+                                text-align: center;
+                            }
+                        }
+                        .tachographs-installation__button {
+                            .installation-button {
+                                display: block;
+                                margin-top: 10px;
+                                &:hover {}
+                            }
+                        }
+                    }
+                    .services-tachographs-catalog {
+                        width: 100%;
+                        padding: 0;
+                        margin-top: 10px;
+                        flex-direction: column-reverse;
+                        .tachographs-catalog__button {
+                            height: 65px;
+                            .catalog-button {
+                                display: block;
+                                margin-top: 10px;
+                                &:hover {}
+                            }
+                        }
+                        .tachographs-catalog__description {}
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 870px) {
+        .section-services-tachographs {
+            .wrapper-inner {
+                .services-tachographs {
+                    margin: 0 -10%;
+                }
+            }
+        }
+    }
+    
+    //============================================================================================
+    //инфо табло
     .section-services-scoreboards {
-        height: 908px;
+        height: auto;
         background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-scoreboards.png) center right no-repeat;
         background-size: contain;
         .wrapper-inner {
@@ -540,7 +714,7 @@
                     flex-grow: 1;
                     .scoreboards-information-wrappwer {
                         max-width: 400px;
-                        height: 775px;
+                        height: 855px;
                         .scoreboards-information__title {
                             font-family: Arial, Helvetica, sans-serif;
                             font-size: 30px;
@@ -580,6 +754,74 @@
         }
     }
     
+    @media (max-width: 1210px) {
+        .section-services-scoreboards {
+            background-size: cover;
+            padding-bottom: 30px;
+            .wrapper-inner {
+                .services-scoreboards {
+                    .services-scoreboards__information {
+                        .scoreboards-information-wrappwer {
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 1065px) {
+        .section-services-scoreboards {
+            .wrapper-inner {
+                .services-scoreboards {
+                    flex-direction: column;
+                    .services-scoreboards__information {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .scoreboards-information-wrappwer {
+                            max-width: 605px;
+                            .scoreboards-information__title {
+                                text-align: center;
+                                max-width: 100%;
+                            }
+                            .scoreboards-information__body {
+                                max-width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .services-scoreboards__catalog-button {
+                        padding: 30px 0;
+                        .scoreboards-catalog-button {}
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 870px) {
+        .section-services-scoreboards {
+            .wrapper-inner {
+                .services-scoreboards {
+                    margin: 0 -10%;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 425px) {
+        .section-services-scoreboards {
+            .wrapper-inner {
+                .services-scoreboards {
+                    margin: 0 -15%;
+                }
+            }
+        }
+    }
+    
+    //============================================================================================
+    //отопители
     .section-services-heaters {
         height: 868px;
         background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/serv-heaters.png) center right no-repeat;
@@ -632,321 +874,68 @@
         }
     }
     
-    // @media (max-width: 1440px) {
-    //     // .service-inner {
-    //     //     width: 100%;
-    //     // }
-    //     .section-services-first {
-    //         width: 1440px;
-    //     }
-    //     .section-services-video {
-    //         width: 1440px;
-    //         padding-left: 40px;
-    //     }
-    //     .section-services-monitoring {
-    //         width: 1440px;
-    //         padding-left: 40px;
-    //     }
-    //     .section-services-tachographs {
-    //         width: 1440px;
-    //         padding-left: 40px;
-    //     }
-    //     .section-services-scoreboards {
-    //         width: 1440px;
-    //         padding-left: 40px;
-    //     }
-    //     .section-services-heaters {
-    //         width: 1440px;
-    //         padding-left: 40px;
-    //     }
-    // }
-    // @media (max-width: 1025px) {
-    //     .section-services-first {
-    //         width: 1025px;
-    //     }
-    //     .ofers-wrapper {
-    //         flex-direction: column-reverse;
-    //         justify-content: space-between;
-    //         align-items: center;
-    //     }
-    //     .ofers-image {
-    //         padding: 0 40px 30px 0 !important;
-    //         display: flex;
-    //         justify-content: space-between;
-    //     }
-    //     .section-services-video {
-    //         width: 1025px;
-    //         height: 872px;
-    //         .services-video {
-    //             width: 850px;
-    //             margin-left: -40px;
-    //         }
-    //     }
-    //     .section-services-monitoring {
-    //         width: 1025px;
-    //         .services-monitoring {
-    //             width: 750px;
-    //             margin-left: -40px;
-    //         }
-    //         .services-monitoring-information__bottom {
-    //             width: 800px;
-    //             padding-top: 20px !important;
-    //         }
-    //     }
-    //     //установка тахографов
-    //     .section-services-tachographs {
-    //         height: 802px;
-    //         width: 1025px;
-    //         .services-tachographs {
-    //             padding-top: 10px !important;
-    //             width: 950px;
-    //             height: 820px !important;
-    //             margin-left: -150px;
-    //             .installation-text__body {
-    //                 width: 450px;
-    //             }
-    //         }
-    //         .tachographs-catalog__button {
-    //             padding-top: 25px;
-    //         }
-    //         .services-tachographs-catalog {
-    //             height: 700px;
-    //         }
-    //         .installation-button {
-    //             position: absolute;
-    //         }
-    //     }
-    //     //табло
-    //     .section-services-scoreboards {
-    //         width: 1070px;
-    //         height: 764px;
-    //         margin-left: -40px;
-    //         .services-scoreboards {
-    //             height: 764px;
-    //         }
-    //     }
-    //     //отопители
-    //     .section-services-heaters {
-    //         width: 1070px;
-    //         height: 740px;
-    //         margin-left: -40px;
-    //         .services-heaters {
-    //             padding-top: 20px !important;
-    //             height: 740px;
-    //             width: 740px;
-    //             .services-heaters__information {
-    //                 .heaters-information-wrappwer {
-    //                     .heaters-information__body {
-    //                         padding-top: 20px !important;
-    //                         line-height: 17.5px !important;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-    // @media (max-width: 460px) {
-    //     // .service-inner {
-    //     //     display: flex;
-    //     //     justify-content: center;
-    //     // }
-    //     .section-services-first {
-    //         padding: 0 10px;
-    //         width: 100%;
-    //         height: 1400px;
-    //         margin-left: 0;
-    //         .services-first {
-    //             margin: 0 !important;
-    //             .ofers-wrapper {
-    //                 width: 320px;
-    //                 .ofers-list {
-    //                     width: 300px;
-    //                     .ofers-list-buttons {
-    //                         a {
-    //                             .ofers-listbuttons__item {
-    //                                 padding-left: 0 !important;
-    //                                 width: 300px !important;
-    //                                 height: 70px !important;
-    //                                 text-align: center;
-    //                                 span {
-    //                                     line-height: 47px !important;
-    //                                 }
-    //                             }
-    //                         }
-    //                     }
-    //                 }
-    //                 .ofers-image {
-    //                     padding: 0 !important;
-    //                     width: 320px;
-    //                     img {
-    //                         width: 100% !important;
-    //                         height: 100% !important;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     .section-services-video {
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: center;
-    //         width: 100%;
-    //         margin-left: 0;
-    //         padding: 0 10px;
-    //         height: 1100px;
-    //         .wrapper-inner {
-    //             .services-video {
-    //                 width: 320px;
-    //                 display: flex;
-    //                 align-items: center;
-    //                 flex-direction: column;
-    //                 .services-video__information {
-    //                     height: 1050px;
-    //                     .video-information-wrappwer {
-    //                         height: 1050px;
-    //                         .video-information__body {
-    //                             width: 300px;
-    //                             text-align: center;
-    //                         }
-    //                     }
-    //                 }
-    //                 .services-video__catalog-button {
-    //                     padding-top: 20px !important;
-    //                     width: 320px !important;
-    //                     display: flex;
-    //                     justify-content: center;
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     // спутниковый мониторинг
-    //     .section-services-monitoring {
-    //         padding: 0 10px;
-    //         width: 100%;
-    //         height: 1450px;
-    //         .services-monitoring {
-    //             width: 320px;
-    //             height: 1800px;
-    //             .services-monitoring-information {
-    //                 width: 320px;
-    //                 .services-monitoring-information__top {
-    //                     flex-direction: column;
-    //                     .information-top-text {
-    //                         .information-top-text__body {
-    //                             width: 300px;
-    //                             height: 500px;
-    //                             text-align: center !important;
-    //                         }
-    //                     }
-    //                     .information-top-catalog-button {
-    //                         display: flex;
-    //                         justify-content: center;
-    //                         .monitoring-catalog-button {
-    //                             margin: 0 !important;
-    //                         }
-    //                     }
-    //                 }
-    //                 .services-monitoring-information__bottom {
-    //                     flex-direction: column;
-    //                     width: 300px;
-    //                     .information-bottom-buttons {
-    //                         .information-bottom-button {
-    //                             width: 300px !important;
-    //                         }
-    //                     }
-    //                     .information-bottom-price {
-    //                         .information-bottom-price-wrapper {
-    //                             .information-bottom-price-name {
-    //                                 font-size: 12px;
-    //                             }
-    //                             .information-bottom-price-cost {
-    //                                 font-size: 12px;
-    //                             }
-    //                         }
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     // тахографы
-    //     .section-services-tachographs {
-    //         padding: 0 10px;
-    //         margin-left: 0;
-    //         width: 100%;
-    //         height: 1900px;
-    //         display: flex;
-    //         justify-content: center !important;
-    //         .services-tachographs {
-    //             margin-left: -40px;
-    //             flex-direction: column;
-    //             height: 1900px;
-    //             width: 320px;
-    //         }
-    //         .services-tachographs-installation {
-    //             .tachographs-installation__text {
-    //                 .installation-text__body {
-    //                     height: 900px;
-    //                     width: 300px;
-    //                     text-align: center;
-    //                 }
-    //             }
-    //             .tachographs-installation__button {
-    //                 height: 250px;
-    //             }
-    //             .installation-button {
-    //                 position: relative;
-    //                 width: 305px;
-    //                 a {}
-    //             }
-    //         }
-    //         .services-tachographs-catalog {
-    //             flex-direction: column-reverse !important;
-    //             padding-left: 0 !important;
-    //             margin-left: -10px;
-    //             width: 320px;
-    //             .tachographs-catalog__description {
-    //                 width: 310px;
-    //             }
-    //         }
-    //     }
-    //     //табло
-    //     .section-services-scoreboards {
-    //         margin-left: 0;
-    //         padding: 0 10px;
-    //         width: 100%;
-    //         height: 910px;
-    //         .services-scoreboards {
-    //             margin-left: -40px;
-    //             flex-direction: column;
-    //             height: 900px;
-    //             width: 320px;
-    //         }
-    //     }
-    //     //отопители
-    //     .section-services-heaters {
-    //         margin-left: 0;
-    //         padding: 0;
-    //         width: 100%;
-    //         height: 1100px;
-    //         .services-heaters {
-    //             margin-left: -40px;
-    //             padding: 0 10px;
-    //             width: 320px;
-    //             height: 1100px;
-    //             flex-direction: column;
-    //             .services-heaters__information {
-    //                 height: 1000px;
-    //                 .heaters-information-wrappwer {
-    //                     .heaters-information__body {
-    //                         text-align: center;
-    //                     }
-    //                 }
-    //             }
-    //             .services-heaters__catalog-button {
-    //                 display: flex;
-    //                 justify-content: center;
-    //                 align-items: flex-end;
-    //             }
-    //         }
-    //     }
-    // }
+    @media (max-width: 1210px) {
+        .section-services-heaters {
+            height: auto;
+            background-size: cover;
+            .wrapper-inner {
+                .services-heaters {
+                    .services-heaters__information {
+                        .heaters-information-wrappwer {
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 1065px) {
+        .section-services-heaters {
+            .wrapper-inner {
+                .services-heaters {
+                    flex-direction: column;
+                    .services-heaters__information {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .heaters-information-wrappwer {
+                            max-width: 605px;
+                            .heaters-information__title {
+                                max-width: 100%;
+                                text-align: center;
+                            }
+                            .heaters-information__body {
+                                max-width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .services-heaters__catalog-button {
+                        padding: 30px 0;
+                        .heaters-catalog-button {}
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 870px) {
+        .section-services-heaters {
+            .wrapper-inner {
+                .services-heaters {
+                    margin: 0 -10%;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 425px) {
+        .section-services-heaters {
+            .wrapper-inner {
+                .services-heaters {
+                    margin: 0 -15%;
+                }
+            }
+        }
+    }

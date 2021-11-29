@@ -236,6 +236,7 @@
 
 @media (max-width: 1065px) {
   .section-services-video {
+    padding-top: 10px;
     height: auto !important;
     padding-bottom: 20px;
     background-size: cover;
@@ -315,7 +316,7 @@
   height: 902px;
   background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/serv-monitoring.png) center right no-repeat;
   background: linear-gradient(to right, #0e1f27, rgba(14, 31, 39, 0.07)), url(/image/serv-monitoring.png) center right no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .section-services-monitoring .wrapper-inner .services-monitoring {
@@ -357,8 +358,6 @@
 }
 
 .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-catalog-button .monitoring-catalog-button:hover {
-  -webkit-transition: 5s;
-  transition: 5s;
   background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
 }
 
@@ -398,6 +397,7 @@
 }
 
 .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-price {
+  display: none;
   -ms-grid-column-align: start;
       justify-self: start;
   -webkit-box-flex: 1;
@@ -427,6 +427,91 @@
 
 .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-price .information-bottom-price-wrapper .information-bottom-price-cost {
   text-align: right;
+}
+
+@media (max-width: 1065px) {
+  .section-services-monitoring {
+    height: auto;
+    background-size: cover;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring {
+    padding-top: 20px;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information {
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top {
+    max-width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-text .information-top-text__title {
+    text-align: center;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-text .information-top-text__body {
+    text-align: center;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-catalog-button {
+    margin-top: 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top .information-top-catalog-button .monitoring-catalog-button {
+    margin: 0;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom {
+    padding-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 870px) {
+  .section-services-monitoring .wrapper-inner .services-monitoring {
+    margin: 0 -10%;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__top {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .section-services-monitoring .wrapper-inner .services-monitoring {
+    margin: 0 -15%;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom {
+    width: 300px;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom .information-bottom-buttons .information-bottom-button {
+    width: 300px;
+    height: auto;
+    margin-top: 15px;
+  }
 }
 
 .section-services-tachographs {
@@ -462,6 +547,7 @@
 }
 
 .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation .tachographs-installation__text {
+  max-width: 605px;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -507,6 +593,7 @@
 }
 
 .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog {
+  width: 485px;
   padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -552,8 +639,70 @@
   background-color: rgba(14, 31, 39, 0.9);
 }
 
+@media (max-width: 1150px) {
+  .section-services-tachographs {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 10px;
+  }
+  .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog .tachographs-catalog__description {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 1065px) {
+  .section-services-tachographs {
+    height: auto;
+  }
+  .section-services-tachographs .wrapper-inner .services-tachographs {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation {
+    padding: 0;
+  }
+  .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation .tachographs-installation__text .installation-text__title {
+    text-align: center;
+  }
+  .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation .tachographs-installation__text .installation-text__body {
+    text-align: center;
+  }
+  .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-installation .tachographs-installation__button .installation-button {
+    display: block;
+    margin-top: 10px;
+  }
+  .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog .tachographs-catalog__button {
+    height: 65px;
+  }
+  .section-services-tachographs .wrapper-inner .services-tachographs .services-tachographs-catalog .tachographs-catalog__button .catalog-button {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 870px) {
+  .section-services-tachographs .wrapper-inner .services-tachographs {
+    margin: 0 -10%;
+  }
+}
+
 .section-services-scoreboards {
-  height: 908px;
+  height: auto;
   background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/serv-scoreboards.png) center right no-repeat;
   background: linear-gradient(to right, #0e1f27, rgba(14, 31, 39, 0.07)), url(/image/serv-scoreboards.png) center right no-repeat;
   background-size: contain;
@@ -574,7 +723,7 @@
 
 .section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information .scoreboards-information-wrappwer {
   max-width: 400px;
-  height: 775px;
+  height: 855px;
 }
 
 .section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information .scoreboards-information-wrappwer .scoreboards-information__title {
@@ -616,6 +765,63 @@
   -webkit-transition: 5s;
   transition: 5s;
   background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
+@media (max-width: 1210px) {
+  .section-services-scoreboards {
+    background-size: cover;
+    padding-bottom: 30px;
+  }
+  .section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information .scoreboards-information-wrappwer {
+    height: auto;
+  }
+}
+
+@media (max-width: 1065px) {
+  .section-services-scoreboards .wrapper-inner .services-scoreboards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information .scoreboards-information-wrappwer {
+    max-width: 605px;
+  }
+  .section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information .scoreboards-information-wrappwer .scoreboards-information__title {
+    text-align: center;
+    max-width: 100%;
+  }
+  .section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__information .scoreboards-information-wrappwer .scoreboards-information__body {
+    max-width: 100%;
+    text-align: center;
+  }
+  .section-services-scoreboards .wrapper-inner .services-scoreboards .services-scoreboards__catalog-button {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 870px) {
+  .section-services-scoreboards .wrapper-inner .services-scoreboards {
+    margin: 0 -10%;
+  }
+}
+
+@media (max-width: 425px) {
+  .section-services-scoreboards .wrapper-inner .services-scoreboards {
+    margin: 0 -15%;
+  }
 }
 
 .section-services-heaters {
@@ -682,5 +888,62 @@
   -webkit-transition: 5s;
   transition: 5s;
   background: linear-gradient(140deg, rgba(22, 40, 49, 0.1) 0%, rgba(79, 100, 219, 0.1) 30%, rgba(0, 212, 255, 0.3) 100%);
+}
+
+@media (max-width: 1210px) {
+  .section-services-heaters {
+    height: auto;
+    background-size: cover;
+  }
+  .section-services-heaters .wrapper-inner .services-heaters .services-heaters__information .heaters-information-wrappwer {
+    height: auto;
+  }
+}
+
+@media (max-width: 1065px) {
+  .section-services-heaters .wrapper-inner .services-heaters {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-services-heaters .wrapper-inner .services-heaters .services-heaters__information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-services-heaters .wrapper-inner .services-heaters .services-heaters__information .heaters-information-wrappwer {
+    max-width: 605px;
+  }
+  .section-services-heaters .wrapper-inner .services-heaters .services-heaters__information .heaters-information-wrappwer .heaters-information__title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .section-services-heaters .wrapper-inner .services-heaters .services-heaters__information .heaters-information-wrappwer .heaters-information__body {
+    max-width: 100%;
+    text-align: center;
+  }
+  .section-services-heaters .wrapper-inner .services-heaters .services-heaters__catalog-button {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 870px) {
+  .section-services-heaters .wrapper-inner .services-heaters {
+    margin: 0 -10%;
+  }
+}
+
+@media (max-width: 425px) {
+  .section-services-heaters .wrapper-inner .services-heaters {
+    margin: 0 -15%;
+  }
 }
 /*# sourceMappingURL=services.css.map */
