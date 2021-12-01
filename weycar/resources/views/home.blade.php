@@ -3,42 +3,40 @@
 @section('content')
 <div class="main-content">
         <!--Первый Экран-->
-
         <div class="swap-button">
             <div class="swap-button__item">
                 <a href="#" id="scroll_top"><span><img src="/image/arrow-up.png" alt=""></span></a>
                 <a href="#next" id="scroll_bottom"><span><img src="/image/arrow-down.png" alt=""></span></a>
             </div>
         </div>
-        <div id="next0" class="bgtop">
+            <div id="next0" class="bgtop">
         </div>
-
-
         <section class="wrapper-outer section-first-screen">
             <div class="wrapper-inner">
                 <div class="first-screen">
                     <div class="mob-menu">
                         <div class="mob-menu-wrapper">
                             <div class="mob-menu__item-wrapper">
-                                <div class="mob-menu__item"> <a href="">Приборы спутникового мониторинга</a>
-                                </div>
-                                <div class="mob-menu__item"><a href=""> Услуги</a></div>
-                                <div class="mob-menu__item"><a href="">Наши работы</a> </div>
-                                <div class="mob-menu__item"><a href="">Сопутствующие работы</a></div>
-                                <div class="mob-menu__item"><a href="">Референт-лист</a> </div>
-                                <div class="mob-menu__item"><a href="">Топливозаправочные модули</a></div>
-                                <div class="mob-menu__item"><a href="">Система нагрузки на ось</a> </div>
-                                <div class="mob-menu__item"><a href="">Оборудование для автомобилей специального назначения</a> </div>
-                                <div class="mob-menu__item"><a href=""> Отопители</a></div>
-                                <div class="mob-menu__item"><a href="">Сигнализации</a> </div>
-                                <div class="mob-menu__item"><a href="">Датчики уровня топлива Дополнительные датчики</a> </div>
-                                <div class="mob-menu__item"><a href="#">Табло Маршрутоуказатели</a></div>
-                                <div class="mob-menu__item"><a href="">Видеорегистраторы</a> </div>
-                                <div class="mob-menu__item"><a href="">Тахографы</a> </div>
+                                <div class="mob-menu__item"><a href="/all-category">Все категории</a></div>
+                                <div class="mob-menu__item"><a href="/services">Услуги</a></div>
+                                <div class="mob-menu__item"><a href="/ourworks">Наши работы</a></div>
+                                <div class="mob-menu__item"><a href="/relatedproducts">Сопутствующие работы</a></div>
+                                <div class="mob-menu__item"><a href="/referentlist">Референт-лист</a></div>
+                                <div class="mob-menu__item"><a href="/category/1">Топливозаправочные модули</a></div>
+                                <div class="mob-menu__item"><a href="/category/2">Система нагрузки на ось</a></div>
+                                <div class="mob-menu__item"><a href="/category/3">Оборудование для автомобилей специального назначения</a> </div>
+                                <div class="mob-menu__item"><a href="/category/4">Отопители</a></div>
+                                <div class="mob-menu__item"><a href="/category/5">Сигнализации</a></div>
+                                <div class="mob-menu__item"><a href="/category/6">Датчики уровня топлива Дополнительные датчики</a> </div>
+                                <div class="mob-menu__item"><a href="/category/7">Табло Маршрутоуказатели</a></div>
+                                <div class="mob-menu__item"><a href="/category/8">Видеорегистраторы</a></div>
+                                <div class="mob-menu__item"><a href="/category/9">Тахографы</a></div>
+                                <div class="mob-menu__item"><a href="/category/10">Приборы спутникового мониторинга</a></div>
                             </div>
                             <div class="mob-menu__close">X</div>
                         </div>
                     </div>
+        <!-- Основное меню -->
                     <div class="menu-core">
                         <svg id="mc1" width="1047" height="678" viewBox="0 0 1047 678" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path d="M770 344C770 468.816 668.816 570 544 570C419.184 570 318 468.816 318 344C318 219.184 419.184 118 544 118C668.816 118 770 219.184 770 344Z" fill="url(#paint0_linear)" fill-opacity="0.46"/>
@@ -198,9 +196,7 @@
                     </div>
                 </div>
             </div>
-
         </section>
-
         <!--Горячие предложения-->
         <section id="next" class="wrapper-outer section-hot-offers">
             <div class="wrapper-inner">
@@ -208,14 +204,10 @@
                     <div class="hot-offers__title">
                         Горячие предложения и новинки оборудования
                     </div>
-
                     <!--слайдер-->
                     <div class="hot-offers__slider">
-                        <!-- Slider main container -->
                         <div class="swiper swiper1">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 @foreach($product as $el)
                                 <div class="swiper-slide">
                                     <a href="#">
@@ -256,15 +248,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <!-- If we need pagination -->
                             <div class="swiper-pagination"></div>
-
-                            <!-- If we need navigation buttons -->
-                            <!-- <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div> -->
-
-                            <!-- If we need scrollbar -->
-                            <!-- <div class="swiper-scrollbar"></div> -->
                         </div>
                     </div>
                 </div>
@@ -354,7 +338,6 @@
                                 <div id="map2">
                                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3022bae51bafb660ac34c649b39955850e269e88695f7bfce01355db091883f4&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
                                 </div>
-
                             </div>
                         </div>
                     </div>
