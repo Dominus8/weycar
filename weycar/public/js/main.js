@@ -171,15 +171,53 @@ sliderNavItemsEight.forEach((el, index) => {
 
 
 $(function() {
+
+    $('#scroll_top').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 600);
+    });
+
+
+
+
+
+
+
     $(window).scroll(function() {
+
+        const sb = $(window).scrollTop();
+
+        $(window).bind('mousewheel', function(event) {
+            if (event.originalEvent.wheelDelta >= 0) {
+
+            } else {
+                const st = sb;
+
+                $('#scroll_bottom').click(function() {
+                    window.scrollBy(0, st);
+
+                });
+
+            }
+        });
+
+
+
+
         if ($(this).scrollTop() >= 810) {
             $('.swap-button').addClass('stickytop');
-
         } else {
             $('.swap-button').removeClass('stickytop');
         }
+
+
+
+
     });
+
+
+
 });
+
 
 document.getElementById("tahograf-button").onmouseover = function() {
     document.getElementById("core-menu-img").setAttribute("visibility", "hidden");
