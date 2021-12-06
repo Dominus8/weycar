@@ -90,16 +90,27 @@
                         <div class="services-monitoring-information__bottom">
                         <div class="information-bottom-buttons">
                             <a type="button" id="p1" tu="1" class="information-bottom-button">Стоимость</a> <!--data-bs-toggle="modal" data-bs-target="#serviceModal6"-->
+                            <a type="button" id="what" tu="1"  class="information-bottom-button">Что дает спутниковый мониторинг</a> <!--data-bs-toggle="modal" data-bs-target="#serviceModal7"-->
+                            <a type="button" id="how" tu="1" class="information-bottom-button">Как устроена система слежения за транспортом</a> <!--data-bs-toggle="modal" data-bs-target="#serviceModal8"-->
                             <script>
                                 $( document ).ready( function (){
                                     var y = $("#p1").attr("tu");
-                                    var x = $(".information-bottom-price").attr("style");
+                                    var y1 = $("#what").attr("tu");
+                                    var y2 = $("#how").attr("tu");
+                                    var x = $("#ib1").attr("style");
+                                    var x1 = $("#ib2").attr("style");
+                                    var x2 =$("#ib3").attr("style");
                                     
                                     $("#p1").on('click',function (){
                                         
                                         if(y==1){
                                            $("#p1").attr("tu",2);
-                                           $(".information-bottom-price").attr("style","display: block;");
+                                           $("#p2").attr("tu",1);
+                                           $("#p3").attr("tu",1);
+                                           $("#ib1").attr("style","display: block;");
+                                           $("#ib2").attr("style","display: none;");
+                                           $("#ib3").attr("style","display: none;");
+
                                            if( window.screen.width <= 1065 ){
 
                                                $("#how").attr("style","display: none;");
@@ -108,7 +119,9 @@
                                        }
                                         if(y==2){
                                            $("#p1").attr("tu",1);
-                                           $(".information-bottom-price").attr("style","display: none;");
+                                           $("#ib1").attr("style","display: none;");
+                                           $("#ib2").attr("style","display: none;");
+                                           $("#ib3").attr("style","display: none;");
 
                                            if(window.screen.width <= 1065){
 
@@ -116,18 +129,74 @@
                                                $("#what").attr("style","display: block;"); 
                                            }
                                        }
-
                                        y = $("#p1").attr("tu");
                                        
                                     });
+
+                                    $("#what").on('click',function (){
+                                        
+                                        if(y1==1){
+                                           $("#what").attr("tu",2);
+                                           $("#ib2").attr("style","display: block;");
+                                           $("#ib1").attr("style","display: none;");
+                                           $("#ib3").attr("style","display: none;");
+                                           if( window.screen.width <= 1065 ){
+
+                                               $("#how").attr("style","display: none;");
+                                               $("#what").attr("style","display: none;");
+                                           }
+                                       }
+                                        if(y1==2){
+                                           $("#what").attr("tu",1);
+                                           $("#ib2").attr("style","display: none;");
+                                           $("#ib2").attr("style","display: none;");
+                                           $("#ib3").attr("style","display: none;");
+
+                                           if(window.screen.width <= 1065){
+
+                                               $("#p1").attr("style","display: block;");
+                                               $("#what").attr("style","display: block;"); 
+                                           }
+                                       }
+                                       y1 = $("#what").attr("tu");
+                                       
+                                    });
+                                    $("#how").on('click',function (){
+                                        
+                                        if(y2==1){
+                                           $("#how").attr("tu",2);
+                                           $("#ib3").attr("style","display: block;");
+                                           $("#ib1").attr("style","display: none;");
+                                           $("#ib2").attr("style","display: none;");
+                                           if( window.screen.width <= 1065 ){
+
+                                               $("#how").attr("style","display: none;");
+                                               $("#how").attr("style","display: none;");
+                                           }
+                                       }
+                                        if(y2==2){
+                                           $("#how").attr("tu",1);
+                                           $("#ib2").attr("style","display: none;");
+                                           $("#ib2").attr("style","display: none;");
+                                           $("#ib3").attr("style","display: none;");
+
+                                           if(window.screen.width <= 1065){
+
+                                               $("#p1").attr("style","display: block;");
+                                               $("#how").attr("style","display: block;"); 
+                                           }
+                                       }
+                                       y2 = $("#how").attr("tu");
+                                       
+                                    });
+
+
  
                                 });
                                 
                             </script>
-                            <a type="button" id="what" data-bs-toggle="modal" data-bs-target="#serviceModal7" class="information-bottom-button">Что дает спутниковый мониторинг</a>
-                            <a type="button" id="how" data-bs-toggle="modal" data-bs-target="#serviceModal8" class="information-bottom-button">Как устроена система слежения за транспортом</a>
                         </div>
-                        <div class="information-bottom-price" style='display:none;'>
+                        <div id="ib1" class="information-bottom-price" >
                             <div class="information-bottom-price-wrapper">
                                 <div class="information-bottom-price-name">Услуга</div>
                                 <div class="information-bottom-price-cost">Цена</div>
@@ -189,7 +258,29 @@
                                 <div class="information-bottom-price-cost">от 1500руб.</div>
                             </div>
                         </div>
+                        
+                        <div id="ib2" class="information-bottom-price"> 
+                            Система спутникового мониторинга транспорта обеспечивает связь автомобиля и управляющего центра. Находясь в своем офисе, вы можете через компьютерную программу следить за актуальными изменениями технических параметров машины.
+
+                            Спутниковая навигация транспорта позволяет прокладывать наиболее короткий и наименее затратный маршрут к пункту назначения. Эта же технология дает возможность следить за тем, чтобы водители не сходили с заданного пути.
+                            Спутниковый мониторинг позволяет следить за целевым использованием машин коммерческого автопарка. Водители не смогут самовольно менять маршрут и использовать автомобили в личных целях в оплачиваемое рабочее время.
+                            Спутниковый мониторинг автотранспорта обеспечивает техническую возможность контроля расхода топлива. Это исключит или как минимум существенно сократит число попыток сливания корпоративного бензина для личных нужд.
+                            Спутниковый мониторинг транспорта обеспечивает соблюдение водителями и членами экипажа машины графика и рабочего режима. Это сделает их работу намного более безопасной для них и для других участников дорожного движения.
+                            Спутниковая система контроля транспорта способствует сохранению перевозимых товаров. Возможность контролировать маршрут, график, режим работы и другие параметры существенно снижает как техногенные, так и криминальные риски.
+                            Таким образом, система спутникового мониторинга дает вам технические средства для сокращения издержек и повышения доходности логистического бизнеса. Вам не придется нести расходы, возникшие по вине водителей или в результате человеческого фактора.
                         </div>
+                        <div id="ib3" class="information-bottom-price">
+                            Мониторинг транспорта и системы слежения технически возможны благодаря комплексу искусственных спутников Земли. Орбитальные установки вращаются вокруг планеты, принимают и ретранслируют радиосигналы, зашифрованные в электронном формате.
+
+                            Программы мониторинга транспорта работают в автоматическом режиме на базе спутников двух навигационных сетей. Это международная система GPS и ее российский национальный аналог – «ГЛОНАСС». Все аппараты поддерживают обе сети.
+
+                            Отслеживание через спутник обеспечивает круглосуточный мониторинг практически в любой точке поверхности земного шара. Учитывая, что в большинстве случаев грузовые машины идут по обустроенным трассам, сигнал от аппарата улавливается хорошо.
+
+                            Мониторинг транспорта через искусственный орбитальный спутник дает возможность почти тотального контроля всех ушедших в рейс автомобилей. Это повышает качество оперативного и стратегического управления логистическим предприятием.
+
+                            Компания «Вейкар» поставляет спутниковые системы транспорта торговых марок «Арнави», «Галилео», Galileosky и других. Они продаются по ценам от 5 000 до 10 000 рублей за комплект. 
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
