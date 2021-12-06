@@ -212,14 +212,14 @@
                                 <div class="swiper-slide">
                                     <a href="#">
                                         <div class="swiper-slide__image">
-                                            <img style='height:216px; width:260px; ' src="@if(is_array($el->image))storage/product_image/{{$el->image[0]}}@endif" alt="Слайд">                                   
+                                            <img  src="@if(is_array($el->image))storage/product_image/{{$el->image[0]}}@endif" alt="Слайд">                                   
                                         </div>
                                     </a>
                                 </div>
 
                                 @endforeach
 
-                                <div class="swiper-slide">
+                                <!-- <div class="swiper-slide">
                                     <a href="#">
                                         <div class="swiper-slide__image">
                                             <img src="/image/slideItem.jpg" alt="Слайд">
@@ -246,7 +246,7 @@
                                             <img src="/image/slideItem.jpg" alt="Слайд">
                                         </div>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>

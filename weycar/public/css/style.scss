@@ -98,11 +98,14 @@
                         display: flex;
                         flex-direction: column;
                         margin-right: 4px;
-                        color: #cc6600;
                         .contact-data__phone {
-                            color: orange;
-                            font-family: ArialNarrow, Helvetica, sans-serif;
-                            font-size: 16px;
+                            div {
+                                color: orange;
+                                font-family: Arial, Helvetica, sans-serif !important;
+                                font-weight: bold;
+                                font-size: 16px;
+                                word-spacing: -4px;
+                            }
                         }
                         .contact-data__email {
                             padding-right: 10px;
@@ -253,7 +256,7 @@
         }
         
         .hot-offers {
-            padding-bottom: 50px;
+            padding-bottom: 40px;
             height: 450px;
             max-width: 100%;
             .hot-offers__title {
@@ -267,6 +270,7 @@
             .hot-offers__slider {
                 display: flex;
                 justify-content: center;
+                div>div.swiper-pagination.swiper-pagination-clickable {}
                 div>div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets>span.swiper-pagination-bullet {
                     background: #0e1f27;
                     border: 2px solid #3c96c8;
@@ -277,10 +281,18 @@
                 }
                 .swiper {
                     width: 1115px;
-                    height: 270px;
-                    .swiper-pagination {
-                        .swiper-pagination-bullets {
-                            .swiper-pagination-bullet-active {}
+                    height: 295px;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            a {
+                                .swiper-slide__image {
+                                    text-align: center;
+                                    img {
+                                        width: 260px;
+                                        height: 260px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -836,8 +848,13 @@
                             .swiper {
                                 .swiper-wrapper {
                                     .swiper-slide {
-                                        .swiper-slide__image {
-                                            img {}
+                                        a {
+                                            .swiper-slide__image {
+                                                img {
+                                                    width: 260px;
+                                                    height: 260px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -948,7 +965,7 @@
                             left: 0;
                             display: none;
                             position: absolute;
-                            background-color: #0a1215;
+                            background-color: #0e1f27;
                             height: auto;
                             padding-bottom: 10px;
                             .mob-menu-wrapper {
@@ -1037,8 +1054,13 @@
                             .swiper {
                                 .swiper-wrapper {
                                     .swiper-slide {
-                                        .swiper-slide__image {
-                                            img {}
+                                        a {
+                                            .swiper-slide__image {
+                                                img {
+                                                    width: 260px;
+                                                    height: 260px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
