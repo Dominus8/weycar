@@ -6,16 +6,17 @@
 <!--main-->
 <div class="paginations">  <a href="{{route('index')}}">Главнаяa</a> > <a href="{{route('all_category')}}">Каталог</a> >
 @if(isset($subcatid))
-<a href="{{route('category', $category->category_id )}}">{{ $category->category_name }}</a> > {{$subcategory_title}}
+<a href="{{route('category', $category->category_id )}}">{{ $category->category_name }}</a> > <div class="catsubtitle">{{$subcategory_title}}</div> 
 @else
-{{ $category->category_name }}
+<div class="catsubtitle">{{ $category->category_name }}</div>
 @endif
  </div>
+
     <div class="main-content">
         <section class="wrapper-outer section-singl-page">
             <div class="wrapper-inner category-single">
                 <div class="singl-page">
-                    <div class="singl-page-wrapper">
+                  <div class="singl-page-wrapper">
 
                     @foreach($subcategory as $el)
                         <a href="{{route('subcategory', ['catid'=>$catid, 'subcatid'=>$el->subcategory_id] )}}">
@@ -34,10 +35,10 @@
 
                     </div><br>
                     @if(isset($subcatid))
-                    <div class=""><h5>{{$subcategory_subtitle}}</h5></div>
+                    <div class="subcategory_subtitle"><h5>{{$subcategory_subtitle}}</h5></div>
                     @endif
                     @if(count($subcategory)==1 and !isset($subcatid))
-                    <div class=""><h5>{{$subcategory[0]->subtitle}}</h5></div>
+                    <div class="subcategory_subtitle"><h5>{{$subcategory[0]->subtitle}}</h5></div>
                     
                     @endif
                 </div>
