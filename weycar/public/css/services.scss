@@ -431,6 +431,10 @@
                                 }
                             }
                         }
+                        #ib2 {
+                            font-size: small;
+                            padding: 0;
+                        }
                     }
                 }
             }
@@ -438,6 +442,10 @@
     }
     
     @media (max-width: 1065px) {
+        #ib2 {
+            padding-top: 35px !important;
+            font-size: medium !important;
+        }
         .section-services-monitoring {
             height: auto;
             background-size: cover;
@@ -474,6 +482,15 @@
                         .services-monitoring-information__bottom {
                             padding-top: 0px;
                             flex-direction: column;
+                        }
+                        .information-bottom-price {
+                            max-width: 380px !important;
+                        }
+                        #ib2 {
+                            text-align: center;
+                        }
+                        #ib3 {
+                            text-align: center;
                         }
                     }
                 }

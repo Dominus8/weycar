@@ -105,28 +105,32 @@
                                         
                                         if(y==1){
                                            $("#p1").attr("tu",2);
-                                           $("#p2").attr("tu",1);
-                                           $("#p3").attr("tu",1);
+                                           $("#what").attr("tu",1);
+                                           y1=1;
+                                           y2=2;
+                                           $("#how").attr("tu",1);
                                            $("#ib1").attr("style","display: block;");
                                            $("#ib2").attr("style","display: none;");
                                            $("#ib3").attr("style","display: none;");
 
                                            if( window.screen.width <= 1065 ){
 
-                                               $("#how").attr("style","display: none;");
-                                               $("#what").attr("style","display: none;");
+                                            //    $("#how").attr("style","display: none;");
+                                            //    $("#what").attr("style","display: none;");
                                            }
                                        }
                                         if(y==2){
                                            $("#p1").attr("tu",1);
+                                           $("#what").attr("tu",1);
+                                           $("#how").attr("tu",1);
                                            $("#ib1").attr("style","display: none;");
                                            $("#ib2").attr("style","display: none;");
                                            $("#ib3").attr("style","display: none;");
 
                                            if(window.screen.width <= 1065){
 
-                                               $("#how").attr("style","display: block;");
-                                               $("#what").attr("style","display: block;"); 
+                                            //    $("#how").attr("style","display: block;");
+                                            //    $("#what").attr("style","display: block;"); 
                                            }
                                        }
                                        y = $("#p1").attr("tu");
@@ -137,25 +141,31 @@
                                         
                                         if(y1==1){
                                            $("#what").attr("tu",2);
+                                           $("#p1").attr("tu",1);
+                                           $("#how").attr("tu",1);
+                                           y=1;
+                                           y2=1;
                                            $("#ib2").attr("style","display: block;");
                                            $("#ib1").attr("style","display: none;");
                                            $("#ib3").attr("style","display: none;");
                                            if( window.screen.width <= 1065 ){
 
-                                               $("#how").attr("style","display: none;");
-                                               $("#what").attr("style","display: none;");
+                                            //    $("#how").attr("style","display: none;");
+                                            //    $("#p1").attr("style","display: none;");
                                            }
                                        }
                                         if(y1==2){
+                                           $("#p1").attr("tu",1);
                                            $("#what").attr("tu",1);
+                                           $("#how").attr("tu",1);
                                            $("#ib2").attr("style","display: none;");
                                            $("#ib2").attr("style","display: none;");
                                            $("#ib3").attr("style","display: none;");
 
                                            if(window.screen.width <= 1065){
 
-                                               $("#p1").attr("style","display: block;");
-                                               $("#what").attr("style","display: block;"); 
+                                            //    $("#p1").attr("style","display: block;");
+                                            //    $("#how").attr("style","display: block;"); 
                                            }
                                        }
                                        y1 = $("#what").attr("tu");
@@ -165,13 +175,15 @@
                                         
                                         if(y2==1){
                                            $("#how").attr("tu",2);
+                                           $("#p1").attr("tu",1);
+                                           $("#what").attr("tu",1);
                                            $("#ib3").attr("style","display: block;");
                                            $("#ib1").attr("style","display: none;");
                                            $("#ib2").attr("style","display: none;");
                                            if( window.screen.width <= 1065 ){
 
-                                               $("#how").attr("style","display: none;");
-                                               $("#how").attr("style","display: none;");
+                                            //    $("#how").attr("style","display: none;");
+                                            //    $("#how").attr("style","display: none;");
                                            }
                                        }
                                         if(y2==2){
@@ -182,8 +194,8 @@
 
                                            if(window.screen.width <= 1065){
 
-                                               $("#p1").attr("style","display: block;");
-                                               $("#how").attr("style","display: block;"); 
+                                            //    $("#p1").attr("style","display: block;");
+                                            //    $("#how").attr("style","display: block;"); 
                                            }
                                        }
                                        y2 = $("#how").attr("tu");

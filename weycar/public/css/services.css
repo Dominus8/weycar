@@ -432,7 +432,16 @@
   text-align: right;
 }
 
+.section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .services-monitoring-information__bottom #ib2 {
+  font-size: small;
+  padding: 0;
+}
+
 @media (max-width: 1065px) {
+  #ib2 {
+    padding-top: 35px !important;
+    font-size: medium !important;
+  }
   .section-services-monitoring {
     height: auto;
     background-size: cover;
@@ -488,6 +497,15 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information .information-bottom-price {
+    max-width: 380px !important;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information #ib2 {
+    text-align: center;
+  }
+  .section-services-monitoring .wrapper-inner .services-monitoring .services-monitoring-information #ib3 {
+    text-align: center;
   }
 }
 
