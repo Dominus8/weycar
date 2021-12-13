@@ -203,9 +203,7 @@ $(function() {
                 $('#scroll_bottom').click(function() {
                     window.scrollBy(0, st);
                     $('#scroll_bottom').attr('style', 'display:none');
-
                 });
-
             }
         });
 
