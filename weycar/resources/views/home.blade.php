@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="main-content">
-        <!--Первый Экран-->
+        <!--Первый Экран -->
         <div class="swap-button">
-            <div class="swap-button__item">
+            <div class="swap-button__item" style="display:none" >
                 <a id="scroll_top"><span><img src="/image/arrow-up.png" alt=""></span></a>
                 <a id="scroll_bottom"><span><img src="/image/arrow-down.png" alt=""></span></a>
             </div>

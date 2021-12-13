@@ -168,39 +168,46 @@ sliderNavItemsEight.forEach((el, index) => {
     })
 });
 
-
+//кнопка скрола 
 
 $(function() {
-
-    $('#scroll_top').click(function() {
-        $('html, body').animate({ scrollTop: 0 }, 600);
+    $('#scroll_bottom').attr('style', 'display:none');
+    $(window).scroll(function() {
+        let scrollTop = $(window).scrollTop();
+        if (scrollTop >= 600) {
+            $('.swap-button__item').attr('style', 'display:flex');
+        }
     });
 
 
+    $('#scroll_top').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 600);
+        $('#scroll_bottom').attr('style', 'display:block');
 
-
-
-
+        $(window).bind('mousewheel', function(event) {
+            if (event.originalEvent.wheelDelta <= 0) {
+                $('#scroll_bottom').attr('style', 'display:none');
+            }
+        });
+    });
 
     $(window).scroll(function() {
 
         const sb = $(window).scrollTop();
 
         $(window).bind('mousewheel', function(event) {
-            if (event.originalEvent.wheelDelta >= 0) {
-
-            } else {
-                const st = sb;
+            if (event.originalEvent.wheelDelta >= 0) {} else {
+                let sc = $(window).height();
+                const st = sb + sc;
 
                 $('#scroll_bottom').click(function() {
                     window.scrollBy(0, st);
+                    $('#scroll_bottom').attr('style', 'display:none');
 
                 });
 
             }
         });
-
-
 
 
         if ($(this).scrollTop() >= 810) {
@@ -209,12 +216,7 @@ $(function() {
             $('.swap-button').removeClass('stickytop');
         }
 
-
-
-
     });
-
-
 
 });
 
