@@ -27,6 +27,7 @@
 
 .section-menu-list .wrapper-inner .menu-list .menu-list-wrapper .menu-list__item {
   width: 160px;
+  margin: 0 2.5px;
   text-align: center;
   color: #bbbdbe;
 }
@@ -94,6 +95,7 @@
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-row-gap: 25px;
+  grid-column-gap: 5px;
   justify-items: center;
 }
 
