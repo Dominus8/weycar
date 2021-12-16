@@ -79,12 +79,12 @@
                 <div class="cat-wrapp">
                     <div class="catalog">
                         <div class="title">Каталог</div>
-                        <a href="#">Тахографы</a>
+                        <a href="/category/9">Тахографы</a>
                         <a href="#">CAN считыватели</a>
                         <a href="#">Автомобили <br> спец назначения</a>
-                        <a href="#">Блоки мониторинга</a>
-                        <a href="#">Видеорегистраторы</a>
-                        <a href="#">Датчики уровня <br> топлива</a>
+                        <a href="/category/10">Блоки мониторинга</a>
+                        <a href="/category/8/4">Видеорегистраторы</a>
+                        <a href="/category/6">Датчики уровня <br> топлива</a>
                         <a href="#">Допог</a>
                     </div>
                     <div class="cataog2">
@@ -99,11 +99,11 @@
                 <div class="ms-wrapp">
                     <div class="menu">
                         <div class="title">Меню</div>
-                        <a href="">О компании</a>
-                        <a href="">Оборудование</a>
-                        <a href="">Наши работы</a>
-                        <a href="">Личный кабинет</a>
-                        <a href="">Статьи</a>
+                        <a href="#">О компании</a>
+                        <a href="#">Оборудование</a>
+                        <a href="#">Наши работы</a>
+                        <a href="#">Личный кабинет</a>
+                        <a href="#">Статьи</a>
                     </div>
                     <div class="service">
                         <div class="title">Услуги</div>

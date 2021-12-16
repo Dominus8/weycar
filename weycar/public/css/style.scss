@@ -901,6 +901,13 @@
                     }
                 }
             }
+            .section-footer {
+                display: flex;
+                justify-content: space-between;
+                .footer {
+                    margin: 0 -15%;
+                }
+            }
         }
         
         @media (max-width: 1024px) {
@@ -1251,10 +1258,10 @@
             //footer 1024
             .footer-bg {}
             .section-footer {
+                height: auto;
                 .wrapper-inner {
-                    width: auto;
-                    padding: 0 40px;
                     .footer {
+                        height: auto;
                         .cat-wrapp {
                             .catalog {
                                 .title {}
@@ -1282,6 +1289,33 @@
         @media (max-width: 890px) {
             body>section.wrapper-outer.section-header>div>div>div.wrapp320>div.header-contact>div.contact-data {
                 display: none;
+            }
+            .section-footer {
+                .wrapper-inner {
+                    .footer {
+                        flex-wrap: wrap;
+                        .cat-wrapp {
+                            .catalog {
+                                .title {}
+                            }
+                            .cataog2 {
+                                .title {}
+                            }
+                        }
+                        .ms-wrapp {
+                            .menu {
+                                .title {}
+                            }
+                            .service {
+                                .title {}
+                            }
+                        }
+                        .social {
+                            margin: 0 auto;
+                            justify-self: center;
+                        }
+                    }
+                }
             }
         }
         
@@ -1574,8 +1608,6 @@
             }
             .section-footer {
                 .wrapper-inner {
-                    margin: 30px 0 0 0;
-                    width: auto;
                     .footer {
                         display: flex;
                         flex-direction: column;
@@ -1618,10 +1650,7 @@
                                 }
                             }
                         }
-                        .social {
-                            align-self: center;
-                            padding-top: 20px;
-                        }
+                        .social {}
                     }
                 }
             }

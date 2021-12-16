@@ -75,7 +75,6 @@
                                           <img src="/storage/product_image/{{$i}}">
                                         
                                       </div>
-
                                       <!-- <script>
                                           $(document).ready(function(){
                                             $('.cards-image-container').zoom();
