@@ -45,6 +45,11 @@ Route::get('/admin/delete-product/{id}', [MainController::class, 'delete_product
 // Создание подкатегории
 Route::post('/admin/create-subcategory', [MainController::class, 'create_subcategory']) ->name('create-subcategory');
 
+// Редактирование подкатегории
+Route::get('/admin/edit-subcategory/{id}', [MainController::class, 'edit_subcategory']) ->name('edit-subcategory');
+//update-subcategory
+Route::post('/admin/update-subcategory/{id}', [MainController::class, 'update_subcategory']) ->name('update-subcategory');
+
 // Создание категории
 Route::post('/admin/create-category', [MainController::class, 'create_category']) ->name('create-category');
 

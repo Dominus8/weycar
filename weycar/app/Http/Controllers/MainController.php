@@ -178,7 +178,7 @@ class MainController extends Controller
         return redirect()->route('admin');
     }
 
-    // Создание категории
+    // Создание подкатегории
     public function create_subcategory(Request $request){
         $subcategory = new Subcategory();
         $subcategory -> image = $request->file('subcategory_image')->store('public','subcategory_image');
@@ -190,6 +190,55 @@ class MainController extends Controller
         $subcategory ->save();
         return redirect()->route('admin');
     }
+
+    // Редактирование подкатегории
+    public function edit_subcategory($id){
+        $category = Category::all();
+        $subcategory = Subcategory::where('id', '=', $id)->first();
+        return view('edit-subcategory',['category'=>$category, 'subcategory'=>$subcategory]);
+    }
+
+    // Обновление пдкатегории
+
+    public function update_subcategory($id, Request $request){
+        $category = Category::all();
+        $product = Product::all();
+        if($request->file('subcategory_image')){
+
+            $image = Subcategory::find($id)->image;
+
+            foreach($image as $img){
+                
+                Storage::disk('subcategory_image')->delete($img);
+
+            }
+
+            $image = $request->file('subcategory_image');
+
+            $arr=array();
+
+            foreach($image as $img){
+                $x=$img->store('public','subcategory_image');
+                array_push($arr,$x);
+            }
+        }else{
+            $arr = Subcategory::find($id)->image;
+        }
+
+
+        $subcategory = Subcategory::find($id);
+        $subcategory -> image = $arr;
+        $subcategory -> category_id = $subcategory->category_id;
+        $subcategory -> subcategory_id = $subcategory->subcategory_id;
+        $subcategory -> title = $request ->input('subcategory_name');
+        $subcategory -> subtitle = $request ->input('subcategory_description');
+
+        $subcategory ->save();
+
+        return view('admin', ['category'=>$category, 'product'=>$product]);
+    }
+
+
 
     public function create_category(Request $request){
         $category = new Category();

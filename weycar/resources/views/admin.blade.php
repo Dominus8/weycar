@@ -21,9 +21,8 @@
                         @foreach($category as $el)
                             <optgroup label="{{$el->category_name}}">
                                 @foreach($el->subcat as $el)
-                                <option value="{{$el->subcategory_id}}">{{$el->title}}</option>
+                                    <option value="{{$el->subcategory_id}}">{{$el->title}}</option>
                                 @endforeach
-                                
                             </optgroup>
                         @endforeach
                     </select> 
@@ -64,59 +63,69 @@
                 @endforeach
             </div> <br> <br> <br>
 
+            <div class="admin-section__form" style="color:black; background-color:white; padding:20px; border-radius:20px" >
+                <form action="/admin/create-subcategory" method="post" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <div class="form-group">
+
+                        <lable for="sсi" class="form-label"> <h6>Изображение категории</h6>  </lable>
+                        <input id="sсi" type="file" class="form-control" name='subcategory_image'> <br> <!---->
+
+                        <lable for="scat" class="form-label"> <h6>id категории</h6> </lable>
+                        <select id="scat" name="category_id" size="1">
+                            @foreach($category as $el)
+                                <option value="{{$el->category_id}}">{{$el->category_name}}</option>
+                            @endforeach
+                        </select> 
+                        <br>
+                        <br>
+
+                        <lable for="sсsi" class="form-label"> <h6>id подкатегории</h6> </lable>
+                        <input id="sсsi" class="form-control" name="subcategory_id" placeholder=""></input> <br>
+
+                        <lable for="sсs" class="form-label"> <h6>название</h6> </lable>
+                        <input id="sсs" class="form-control" name="subcategory_name" placeholder=""></input> <br>
+
+                        <lable for="sсsp" class="form-label"> <h6>описание</h6> </lable>
+                        <input id="sсsp" type="text" class="form-control" name="subcategory_description" placeholder=""></input> <br>
+
+                        <br>
+
+                        <button class="btn btn-primary" type="sucsess"> Создать подкатегорию</button>
+                    </div>
+                </form> <br>
+
             <div class="admin-section__form" style="color:white;">
-            <form action="/admin/create-subcategory" method="post" enctype="multipart/form-data">
-                {{ csrf_field() }}
-                <div class="form-group">
-
-                    <lable for="sсi" class="form-label"> <h6>Изображение категории</h6>  </lable>
-                    <input id="sсi" type="file" class="form-control" name='subcategory_image'> <br> <!---->
-
-                    <lable for="scat" class="form-label"> <h6>id категории</h6> </lable>
-                    <select id="scat" name="category_id" size="1">
+                <form action="/admin/create-category" method="post" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <div class="form-group"> 
+                        <lable for="сt" class="form-label"> <h6>id категории</h6> </lable>
+                        <input id="сt" class="form-control" name='category_id' placeholder=""></input> 
+                        <br>
+                        <lable for="сs" class="form-label"> <h6>название</h6> </lable>
+                        <input id="сs" class="form-control" name="category_name" placeholder=""></input> 
+                        <br>
+                        <br>
+                        <button class="btn btn-primary" type="sucsess"> Создать категорию</button>
+                    </div>
+                </form> <br>
+            </div>
+            <div class="category-edit">
+                <div class="category-edit-wrapper" style="background-color:black; padding:20px; border-radius:20px;">
+                    <div class="category-edit-item" style="color:white; ">
                         @foreach($category as $el)
-                            <option value="{{$el->category_id}}">{{$el->category_name}}</option>
+                        @foreach($el->subcat as $el)
+                                    <!-- <option value="{{$el->subcategory_id}}">{{$el->title}}</option> -->
+                                    <div class="" style="color:white; background-color:#00275f; border-radius:5px; border:1px solid blue; display:flex; justify-content:space-between; margin:0; padding:5px 10px 5px 10px;"> {{$el->title}}&nbsp <div class="" style="margin:0; padding:0;"> <a class="btn btn-warning" href="{{route('edit-subcategory', $el->subcategory_id)}}">edit</a>&nbsp<a style="right:0;" class="btn btn-danger" href="{{route('delete-product', $el->subcategory_id)}}">delet</a></div></div><br>
+                                @endforeach
                         @endforeach
-                    </select> 
-                    <br>
-                    <br>
-
-                    <lable for="sсsi" class="form-label"> <h6>id подкатегории</h6> </lable>
-                    <input id="sсsi" class="form-control" name="subcategory_id" placeholder=""></input> <br>
-                    
-                    <lable for="sсs" class="form-label"> <h6>название</h6> </lable>
-                    <input id="sсs" class="form-control" name="subcategory_name" placeholder=""></input> <br>
-                    
-                    <lable for="sсsp" class="form-label"> <h6>описание</h6> </lable>
-                    <input id="sсsp" type="text" class="form-control" name="subcategory_description" placeholder=""></input> <br>
-                                  
-                    <br>
-                   
-                    <button class="btn btn-primary" type="sucsess"> Создать подкатегорию</button>
+                    </div>
                 </div>
-            </form> <br>
-
-            <div class="admin-section__form" style="color:white;">
-            <form action="/admin/create-category" method="post" enctype="multipart/form-data">
-                {{ csrf_field() }}
-                <div class="form-group"> 
-
-                    <lable for="сt" class="form-label"> <h6>id категории</h6> </lable>
-                    <input id="сt" class="form-control" name='category_id' placeholder=""></input> <br>
-                    
-                    <lable for="сs" class="form-label"> <h6>название</h6> </lable>
-                    <input id="сs" class="form-control" name="category_name" placeholder=""></input> <br>
-                              
-                    <br>
-                   
-                    <button class="btn btn-primary" type="sucsess"> Создать категорию</button>
-                </div>
-            </form> <br>
+            </div>
         </div>
-    </div>
-                </div>
-            </div>                
-        </section>
+        </div>
+        </div>                
+    </section>
 </div>
 
 @endsection
