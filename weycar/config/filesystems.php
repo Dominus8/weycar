@@ -41,6 +41,12 @@ return [
             'url' => env('APP_URL').'/',
             'visibility' => 'public',
         ],
+        'owimage' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/owimage'),
+            'url' => env('APP_URL').'/',
+            'visibility' => 'public',
+        ],
 
         'subcategory_image' => [
             'driver' => 'local',

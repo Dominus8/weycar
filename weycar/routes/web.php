@@ -59,6 +59,9 @@ Route::get('/services', [MainController::class, 'services'] )->name('services');
 //Наши работы
 Route::get('/ourworks', [MainController::class, 'ourworks'] )->name('ourworks');
 
+//Наши работы создать группу слайдов
+Route::post('/admin/create-owslidegroup', [MainController::class, 'create_owslidegroup'] )->name('create-owslidegroup');
+
 //Сопутствующие работы
 Route::get('/relatedproducts', [MainController::class, 'relatedproducts'] )->name('relatedproducts');
 

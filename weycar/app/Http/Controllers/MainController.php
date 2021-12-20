@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Subcategory;
 use App\Models\Category;
+use App\Models\Owslider;
 use Illuminate\Support\Facades\Storage;
 
 class MainController extends Controller
@@ -263,5 +264,31 @@ class MainController extends Controller
 
     public function referentlist(){
         return view('referentlist');
+    }
+
+    // Создание группы слайдов для наших работ
+    public function create_owslidegroup(Request $request){
+
+        $image = $request->file('owimage');
+        
+        $arr=array();
+
+        foreach($image as $img){
+            $x=$img->store('public','owimage');
+            array_push($arr,$x);
+        }
+
+        $owslide = new Owslider();
+
+        $owslide ->owimage = $arr;
+        $owslide ->ow_id = 1;
+        $owslide ->owtitle = $request->input('owtitle');
+        $owslide ->owsubtitle = $request->input('owsubtitle');
+        $owslide ->owimage_alt = $request->input('owimage_alt');
+        $owslide ->owimage_desc = $request->input('owimage_desc');
+
+        $owslide ->save();
+
+        return redirect()->route('admin');
     }
 }//закрывает класс
