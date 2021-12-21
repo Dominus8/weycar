@@ -62,6 +62,15 @@ Route::get('/ourworks', [MainController::class, 'ourworks'] )->name('ourworks');
 //Наши работы создать группу слайдов
 Route::post('/admin/create-owslidegroup', [MainController::class, 'create_owslidegroup'] )->name('create-owslidegroup');
 
+//Наши работы редактировать группу слайдов
+Route::get('/admin/edit-owslidegroup/{id}', [MainController::class, 'edit_owslidegroup'] )->name('edit-owslidegroup');
+
+//Наши работы обновить группу слайдов
+Route::post('/admin/update-owslidegroup/{id}', [MainController::class, 'update_owslidegroup'] )->name('update-owslidegroup');
+
+//Наши работы удалить группу слайдов
+Route::get('/admin/delete-owslidegroup/{id}', [MainController::class, 'delete_owslidegroup'] )->name('delete-owslidegroup');
+
 //Сопутствующие работы
 Route::get('/relatedproducts', [MainController::class, 'relatedproducts'] )->name('relatedproducts');
 

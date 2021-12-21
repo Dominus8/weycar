@@ -32,141 +32,140 @@ var swiper = new Swiper(".swiper1", {
 
 });
 // слайдер наши работы Установка GPS
-const mySwiper1 = new Swiper(".slider-block1", {
-    slidesPerView: 1,
-    loop: true,
-});
-// зум
-const sliderNavItemsOne = document.querySelectorAll('.s1');
+// const mySwiper1 = new Swiper(".slider-block1", {
+//     slidesPerView: 1,
+//     loop: true,
+// });
+// const sliderNavItemsOne = document.querySelectorAll('.s1');
 
-sliderNavItemsOne.forEach((el, index) => {
-    el.setAttribute('data-index', index);
+// sliderNavItemsOne.forEach((el, index) => {
+//     el.setAttribute('data-index', index);
 
-    el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index) + 1;
-        console.log(index);
-        mySwiper1.slideTo(index);
-    })
-});
+//     el.addEventListener('click', (e) => {
+//         const index = parseInt(e.currentTarget.dataset.index) + 1;
+//         console.log(index);
+//         mySwiper1.slideTo(index);
+//     })
+// });
 
 // слайдер наши работы Установка регистратора
-const mySwiper2 = new Swiper(".slider-block2", {
-    slidesPerView: 1,
-    loop: true,
-});
+// const mySwiper2 = new Swiper(".slider-block2", {
+//     slidesPerView: 1,
+//     loop: true,
+// });
 
-const sliderNavItemsTwo = document.querySelectorAll('.s2');
+// const sliderNavItemsTwo = document.querySelectorAll('.s2');
 
-sliderNavItemsTwo.forEach((el, index) => {
-    el.setAttribute('data-index', index);
+// sliderNavItemsTwo.forEach((el, index) => {
+//     el.setAttribute('data-index', index);
 
-    el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index) + 1;
-        mySwiper2.slideTo(index);
-    })
-});
+//     el.addEventListener('click', (e) => {
+//         const index = parseInt(e.currentTarget.dataset.index) + 1;
+//         mySwiper2.slideTo(index);
+//     })
+// });
 
 // слайдер наши работы Рации
-const mySwiper3 = new Swiper(".slider-block3", {
-    slidesPerView: 1,
-    loop: true,
-});
+// const mySwiper3 = new Swiper(".slider-block3", {
+//     slidesPerView: 1,
+//     loop: true,
+// });
 
-const sliderNavItemsthree = document.querySelectorAll('.s3');
+// const sliderNavItemsthree = document.querySelectorAll('.s3');
 
-sliderNavItemsthree.forEach((el, index) => {
-    el.setAttribute('data-index', index);
+// sliderNavItemsthree.forEach((el, index) => {
+//     el.setAttribute('data-index', index);
 
-    el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index) + 1;
-        mySwiper3.slideTo(index);
-    })
-});
-
-// слайдер наши работы
-const mySwiper4 = new Swiper(".slider-block4", {
-    slidesPerView: 1,
-    loop: true,
-});
-
-const sliderNavItemsfour = document.querySelectorAll('.s4');
-
-sliderNavItemsfour.forEach((el, index) => {
-    el.setAttribute('data-index', index);
-
-    el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index) + 1;
-        mySwiper4.slideTo(index);
-    })
-});
+//     el.addEventListener('click', (e) => {
+//         const index = parseInt(e.currentTarget.dataset.index) + 1;
+//         mySwiper3.slideTo(index);
+//     })
+// });
 
 // слайдер наши работы
-const mySwiper5 = new Swiper(".slider-block5", {
-    slidesPerView: 1,
-    loop: true,
-});
+// const mySwiper4 = new Swiper(".slider-block4", {
+//     slidesPerView: 1,
+//     loop: true,
+// });
 
-const sliderNavItemsFive = document.querySelectorAll('.s5');
+// const sliderNavItemsfour = document.querySelectorAll('.s4');
 
-sliderNavItemsFive.forEach((el, index) => {
-    el.setAttribute('data-index', index);
+// sliderNavItemsfour.forEach((el, index) => {
+//     el.setAttribute('data-index', index);
 
-    el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index) + 1;
-        mySwiper5.slideTo(index);
-    })
-});
-
-// слайдер наши работы
-const mySwiper6 = new Swiper(".slider-block6", {
-    slidesPerView: 1,
-    loop: true,
-});
-
-const sliderNavItemsSix = document.querySelectorAll('.s6');
-
-sliderNavItemsSix.forEach((el, index) => {
-    el.setAttribute('data-index', index);
-
-    el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index) + 1;
-        mySwiper6.slideTo(index);
-    })
-});
+//     el.addEventListener('click', (e) => {
+//         const index = parseInt(e.currentTarget.dataset.index) + 1;
+//         mySwiper4.slideTo(index);
+//     })
+// });
 
 // слайдер наши работы
-const mySwiper7 = new Swiper(".slider-block7", {
-    slidesPerView: 1,
-    loop: true,
-});
+// const mySwiper5 = new Swiper(".slider-block5", {
+//     slidesPerView: 1,
+//     loop: true,
+// });
 
-const sliderNavItemsSeven = document.querySelectorAll('.s7');
+// const sliderNavItemsFive = document.querySelectorAll('.s5');
 
-sliderNavItemsSeven.forEach((el, index) => {
-    el.setAttribute('data-index', index);
+// sliderNavItemsFive.forEach((el, index) => {
+//     el.setAttribute('data-index', index);
 
-    el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index) + 1;
-        mySwiper7.slideTo(index);
-    })
-});
+//     el.addEventListener('click', (e) => {
+//         const index = parseInt(e.currentTarget.dataset.index) + 1;
+//         mySwiper5.slideTo(index);
+//     })
+// });
 
 // слайдер наши работы
-const mySwiper8 = new Swiper(".slider-block8", {
-    slidesPerView: 1,
-    loop: true,
-});
+// const mySwiper6 = new Swiper(".slider-block6", {
+//     slidesPerView: 1,
+//     loop: true,
+// });
 
-const sliderNavItemsEight = document.querySelectorAll('.s8');
+// const sliderNavItemsSix = document.querySelectorAll('.s6');
 
-sliderNavItemsEight.forEach((el, index) => {
-    el.setAttribute('data-index', index);
+// sliderNavItemsSix.forEach((el, index) => {
+//     el.setAttribute('data-index', index);
 
-    el.addEventListener('click', (e) => {
-        const index = parseInt(e.currentTarget.dataset.index) + 1;
-        mySwiper8.slideTo(index);
-    })
-});
+//     el.addEventListener('click', (e) => {
+//         const index = parseInt(e.currentTarget.dataset.index) + 1;
+//         mySwiper6.slideTo(index);
+//     })
+// });
+
+// слайдер наши работы
+// const mySwiper7 = new Swiper(".slider-block7", {
+//     slidesPerView: 1,
+//     loop: true,
+// });
+
+// const sliderNavItemsSeven = document.querySelectorAll('.s7');
+
+// sliderNavItemsSeven.forEach((el, index) => {
+//     el.setAttribute('data-index', index);
+
+//     el.addEventListener('click', (e) => {
+//         const index = parseInt(e.currentTarget.dataset.index) + 1;
+//         mySwiper7.slideTo(index);
+//     })
+// });
+
+// слайдер наши работы
+// const mySwiper8 = new Swiper(".slider-block8", {
+//     slidesPerView: 1,
+//     loop: true,
+// });
+
+// const sliderNavItemsEight = document.querySelectorAll('.s8');
+
+// sliderNavItemsEight.forEach((el, index) => {
+//     el.setAttribute('data-index', index);
+
+//     el.addEventListener('click', (e) => {
+//         const index = parseInt(e.currentTarget.dataset.index) + 1;
+//         mySwiper8.slideTo(index);
+//     })
+// });
 
 //кнопка скрола 
 
@@ -203,6 +202,7 @@ $(function() {
                 $('#scroll_bottom').click(function() {
                     window.scrollBy(0, st);
                     $('#scroll_bottom').attr('style', 'display:none');
+
                 });
             }
         });

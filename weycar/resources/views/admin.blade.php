@@ -131,11 +131,12 @@
         <br>
         <br>
         <br>
+
         <div class="admin-section__title">
             <h2>Наши работы: создать группу слайдов</h2>
         </div>
         <div class="admin-section__form" style="color:white;">
-        <form action="/admin/create-owslidegroup" method="post" enctype="multipart/form-data">
+            <form action="/admin/create-owslidegroup" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group"> 
 
@@ -160,7 +161,20 @@
                     <button class="btn btn-primary" type="sucsess"> Создать категорию</button>
                 </div>
             </form> <br> <br> <br>
-        </div>          
+        </div>
+        <div class="category-edit">
+            <div class="category-edit-wrapper" style="background-color:black; padding:20px; border-radius:20px;">
+                <h3 style="color:white;">Обновление группы слайдов</h3>
+                    <div class="category-edit-item" style="color:white;">
+                        @foreach($owslide as $el)
+                        
+                                    <!-- <option value="{{$el->subcategory_id}}">{{$el->title}}</option> -->
+                                    <div class="" style="color:white; background-color:#00275f; border-radius:5px; border:1px solid blue; display:flex; justify-content:space-between; margin:0; padding:5px 10px 5px 10px;"> {{$el->owtitle}}&nbsp <div class="" style="margin:0; padding:0;"> <a class="btn btn-warning" href="{{route('edit-owslidegroup', $el->id)}}">edit</a>&nbsp<a style="right:0;" class="btn btn-danger" href="{{route('delete-owslidegroup', $el->id)}}">delet</a></div></div><br>
+  
+                        @endforeach
+                    </div>
+                </div>
+            </div>          
     </section>
 </div>
 

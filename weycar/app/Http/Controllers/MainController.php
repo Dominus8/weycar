@@ -78,8 +78,9 @@ class MainController extends Controller
         $category = Category::all();
         $subcategory = Subcategory::all();
         $product = Product::all();
+        $owslide = Owslider::all();
         // dd($product);
-        return view('admin',['category'=>$category, 'subcategory'=>$subcategory, 'product'=>$product]);
+        return view('admin',['category'=>$category, 'subcategory'=>$subcategory, 'product'=>$product, 'owslide' =>$owslide]);
         
     }
 
@@ -255,7 +256,8 @@ class MainController extends Controller
     }
 
     public function ourworks(){
-        return view('ourworks');
+        $owslide = Owslider::all();
+        return view('ourworks',["owslide" => $owslide]);
     }
 
     public function relatedproducts(){
@@ -291,4 +293,67 @@ class MainController extends Controller
 
         return redirect()->route('admin');
     }
+
+    // Редактирование подкатегории
+    public function edit_owslidegroup($id){
+        $owslidegroup = Owslider::where('id', '=', $id)->first();
+        return view('edit-owslidegroup',['owslidegroup'=>$owslidegroup]);
+    }
+    
+    // Обновление группы слайдов для наших работ
+    public function update_owslidegroup($id, Request $request){
+
+        if($request->file('owimage')){
+
+            $image = Owslider::find($id)->owimage;
+
+            foreach($image as $img){
+                
+                Storage::disk('owimage')->delete($img);
+
+            }
+
+            $image = $request->file('owimage');
+
+            $arr=array();
+
+            foreach($image as $img){
+                $x=$img->store('public','owimage');
+                array_push($arr,$x);
+            }
+        }else{
+            $arr = Owslider::find($id)->owimage;
+        }
+
+        $owslide = Owslider::find($id);
+
+        $owslide ->owimage = $arr;
+        $owslide ->ow_id = 1;
+        $owslide ->owtitle = $request->input('owtitle');
+        $owslide ->owsubtitle = $request->input('owsubtitle');
+        $owslide ->owimage_alt = $request->input('owimage_alt');
+        $owslide ->owimage_desc = $request->input('owimage_desc');
+
+        $owslide ->save();
+
+        return redirect()->route('admin');
+    }
+
+        //удаление продукта
+        public function delete_owslidegroup($id){
+
+            $image = Owslider::find($id)->owimage;
+    
+            foreach($image as $img){
+                
+                Storage::disk('owimage')->delete($img);
+    
+            }
+    
+            $owslider = Owslider::find($id);
+    
+            $owslider->delete();
+    
+            return redirect()->route('admin');
+        }
 }//закрывает класс

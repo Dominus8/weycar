@@ -26,48 +26,31 @@
         <section class="wrapper-outer section-ourworks-buttons">
             <div class="wrapper-inner">
                 <div class="ourworks-buttons">
-                    <div >   
+                    <div>   
                         <div class="accordion ourworks-buttons-wrapper" id="accordionPanel">
+                            @foreach($owslide as $slide)
                         <div class="ourworks-buttons-item">
                             <div class="accordion-item ">
-                                <h2 class="accordion-header" id="panelsStayOpen-heading1">
-                                  <button class=" collapsed ourworks-buttons-item__btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1" aria-expanded="false" aria-controls="panelsStayOpen-collapse1">
-                                    Установка GPS-Глонасс мониторинга
+                                <h2 class="accordion-header" id="panelsStayOpen-heading{{$slide->id}}">
+                                  <button class=" collapsed ourworks-buttons-item__btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{{$slide->id}}" aria-expanded="false" aria-controls="panelsStayOpen-collapse{{$slide->id}}">
+                                    {{$slide->owtitle}}
                                   </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading1" data-bs-parent="#accordionPanel"> 
+                                <div id="panelsStayOpen-collapse{{$slide->id}}" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading{{$slide->id}}" data-bs-parent="#accordionPanel"> 
                                     <div class="accordion-body">
                                         <div class="ourworks-buttons-item__hidden">
                                             <div class="item-hidden-wrapper">
                                                 <div class="card-slider">
                                                     <div class="cart-slider__nav slider-nav">
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-1.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-2.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-3.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-4.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-5.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-6.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-7.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-8.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-9.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-10.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-11.jpg" class="rounded" alt="..."></div>
-                                                        <div class="slider-nav__item s1"><img src="/image/ors1-12.jpg" class="rounded" alt="..."></div>
+                                                        @foreach($slide -> owimage as $image)
+                                                            <div class="slider-nav__item s{{$slide->id}}"><img src="/storage/owimage/{{$image}}" class="rounded" alt="{{$slide->owalt}}"></div>
+                                                        @endforeach
                                                     </div> 
-                                                    <div class="swiper card-slider__block slider-block1">
+                                                    <div class="swiper card-slider__block slider-block{{$slide->id}}">
                                                         <div class="swiper-wrapper">
-                                                            <div class="swiper-slide"><img src="/image/ors1-1.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-2.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-3.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-4.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-5.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-6.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-7.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-8.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-9.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-10.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-11.jpg" class="rounded" alt="..."></div>
-                                                            <div class="swiper-slide"><img src="/image/ors1-12.jpg" class="rounded" alt="..."></div>
+                                                        @foreach($slide -> owimage as $image)
+                                                            <div class="swiper-slide"><img src="/storage/owimage/{{$image}}" class="rounded" alt="{{$slide->owalt}}"></div>
+                                                        @endforeach
                                                         </div>
                                                     </div>
                                                 </div>
@@ -76,8 +59,30 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>  
-                        <div class="ourworks-buttons-item">
+                            <script>
+                                $( document ).ready(function() {
+                                // слайдер наши работы Установка GPS
+                                    const mySwiper{{$slide->id}} = new Swiper(".slider-block{{$slide->id}}", {
+                                        slidesPerView: 1,
+                                        loop: true,
+                                    });
+                                    const sliderNavItems{{$slide->id}} = document.querySelectorAll('.s{{$slide->id}}');
+                                    sliderNavItems{{$slide->id}}.forEach((el, index) => {
+                                        el.setAttribute('data-index', index);
+                                    
+                                        el.addEventListener('click', (e) => {
+                                            const index = parseInt(e.currentTarget.dataset.index) + 1;
+                                            console.log(index);
+                                            mySwiper{{$slide->id}}.slideTo(index);
+                                        })
+                                    });
+                                });    
+                            </script>
+                        </div>                            
+                            @endforeach
+
+
+                        <!-- <div class="ourworks-buttons-item">
                             <div class="accordion-item ">
                                 <h2 class="accordion-header" id="panelsStayOpen-heading2">
                                   <button class=" collapsed ourworks-buttons-item__btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2" aria-expanded="false" aria-controls="panelsStayOpen-collapse2">
@@ -433,7 +438,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         </div>    
                     </div>
                 </div>

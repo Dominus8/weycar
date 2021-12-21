@@ -15,6 +15,7 @@ class CreateOwslidersTable extends Migration
     {
         Schema::create('owsliders', function (Blueprint $table) {
             $table->id();
+            $table->integer('ow_id');
             $table->string('owtitle');
             $table->text('owsubtitle');
             $table->text('owimage');
