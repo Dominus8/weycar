@@ -283,7 +283,6 @@ class MainController extends Controller
         $owslide = new Owslider();
 
         $owslide ->owimage = $arr;
-        $owslide ->ow_id = 1;
         $owslide ->owtitle = $request->input('owtitle');
         $owslide ->owsubtitle = $request->input('owsubtitle');
         $owslide ->owimage_alt = $request->input('owimage_alt');
@@ -328,7 +327,6 @@ class MainController extends Controller
         $owslide = Owslider::find($id);
 
         $owslide ->owimage = $arr;
-        $owslide ->ow_id = 1;
         $owslide ->owtitle = $request->input('owtitle');
         $owslide ->owsubtitle = $request->input('owsubtitle');
         $owslide ->owimage_alt = $request->input('owimage_alt');
