@@ -158,7 +158,7 @@
                     <textarea rows="5"  wrap="physical" id="pa" type="text" class="form-control" name="owimage_desc"  placeholder=""></textarea> <br>
                     <br>
                    
-                    <button class="btn btn-primary" type="sucsess"> Создать категорию</button>
+                    <button class="btn btn-primary" type="sucsess"> Создать группу слайдов</button>
                 </div>
             </form> <br> <br> <br>
         </div>

@@ -205,6 +205,7 @@ class MainController extends Controller
     public function update_subcategory($id, Request $request){
         $category = Category::all();
         $product = Product::all();
+        $owslide = Owslider::all();
         if($request->file('subcategory_image')){
 
             $image = Subcategory::find($id)->image;
@@ -237,7 +238,7 @@ class MainController extends Controller
 
         $subcategory ->save();
 
-        return view('admin', ['category'=>$category, 'product'=>$product]);
+        return view('admin', ['category'=>$category, 'product'=>$product, 'owslide'=>$owslide]);
     }
 
 
