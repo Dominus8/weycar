@@ -150,6 +150,7 @@
 }
 
 .ourworks-main .section-ourworks-buttons .wrapper-inner .ourworks-buttons .ourworks-buttons-wrapper .ourworks-buttons-item .accordion-item .accordion-collapse .accordion-body .ourworks-buttons-item__hidden .item-hidden-wrapper .card-slider {
+  height: 245px;
   padding: 0 23px;
   display: -webkit-box;
   display: -ms-flexbox;
