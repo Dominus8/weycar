@@ -17,8 +17,12 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js" integrity="sha512-m5kAjE5cCBN5pwlVFi4ABsZgnLuKPEx0fOnzaH5v64Zi3wKnhesNUYq4yKmHQyTa3gmkR6YeSKW1S+siMvgWtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
+<!-- Put this script tag to the <head> of your page -->
+<script
+  type="text/javascript"
+  src="https://vk.com/js/api/share.js?95"
+  charset="windows-1251"
+></script>    
 
     <title>weycar</title>
 </head> 
@@ -78,39 +82,34 @@
             <div class="footer">
                 <div class="cat-wrapp">
                     <div class="catalog">
-                        <div class="title">Каталог</div>
-                        <a href="/category/9">Тахографы</a>
-                        <a href="#">CAN считыватели</a>
-                        <a href="#">Автомобили <br> спец назначения</a>
-                        <a href="/category/10">Блоки мониторинга</a>
-                        <a href="/category/8/4">Видеорегистраторы</a>
-                        <a href="/category/6">Датчики уровня <br> топлива</a>
-                        <a href="#">Допог</a>
+                        <div class="title"></div>
+                        <a href="{{route('index')}}">Главная</a><br>
+                        <a href="{{route('all_category')}}">Каталог</a><br>
+                        <a href="{{route('services')}}">Услуги</a><br>
+                        <a href="{{route('ourworks')}}">Наши работы</a><br>
+                        <a href="{{route('relatedproducts')}}">Сопутствующие работы</a><br>
+                        <a href="{{route('referentlist')}}">Референт лист</a><br>
+                        <a href="{{route('category',10)}}">Приборы спутникового мониторинга</a><br>
                     </div>
-                    <div class="cataog2">
-                        <a href="">Дополнительные <br> датчики</a>
-                        <a href="">Отопители</a>
-                        <a href="">Светодиодные <br> панели</a>
-                        <a href="">Сигнализации</a>
-                        <a href="">Табло</a>
-                        <a href="">Фароносители <br> и освещение</a>
+                    <div class="catalog">
+                        <a href="{{route('category',9)}}">Тахографы</a><br>
+                        <a href="{{route('category',8)}}">Видеорегистраторы</a><br>
+                        <a href="{{route('category',7)}}">Табло Маршрутоуказатели</a><br>
+                        <a href="{{route('category',6)}}">Датчики уровня топлива</a><br>
+                        <a href="{{route('category',5)}}">Сигнализации</a><br>
+                        <a href="{{route('category',4)}}">Отопители</a><br>
+                        
                     </div>
                 </div>
                 <div class="ms-wrapp">
                     <div class="menu">
-                        <div class="title">Меню</div>
-                        <a href="#">О компании</a>
-                        <a href="#">Оборудование</a>
-                        <a href="#">Наши работы</a>
-                        <a href="#">Личный кабинет</a>
-                        <a href="#">Статьи</a>
+                        <div class="title"></div>
+                        <a href="{{route('category',3)}}">Оборудование для автомобилей спц. назначения</a><br>
+                        <a href="{{route('category',2)}}">Система <wbr> нагрузи на ось</a> <br>
+                        <a href="{{route('category',1)}}">Топливо-заправочные модули</a><br>
                     </div>
                     <div class="service">
-                        <div class="title">Услуги</div>
-                        <a href="">Информационное<br>табло</a>
-                        <a href="">Отопители</a>
-                        <a href="">Спутниковый <br> мониторинг</a>
-                        <a href="">Видео мониторинг</a>
+
                     </div>
                 </div>
                 <div class="social">
@@ -121,15 +120,35 @@
                         </div>
                         <div class="social-button-wrapper">
 
-                            <a href="#">
-                                <div class=""><img src="/image/vk-footer.png" alt=""></div>
+                            
+                            
+                        
+                                <div style=" padding: 8px 5px 5px 5px; border: solid 2px #3c96c8; border-radius:5px;" class="">
+                                <script type="text/javascript">
+                                document.write(VK.Share.button(false,{
+                                    type: "custom", text: "<img src='/image/vk-footer.png'>",
+                                    url: 'http://weycar.ru/',
+                                    title: 'weycar.ru',
+                                    image: 'http://212.109.195.83:8989/image/logo.png',
+                                    noparse: true
+                                }));
+                            </script>
+                                </div>
+                            
+
+
+                            <a href="https://www.instagram.com/weycar/">
+                                <div class="">
+                                    <img src="/image/in-footer.png" alt="in">
+                                </div>
                             </a>
-                            <a href="#">
-                                <div class=""><img src="/image/in-footer.png" alt="in"></div>
-                            </a>
+
+                            <!--<img src="/image/in-footer.png" alt="in"> -->
+                            
                             <a href="#">
                                 <div class=""><img src="/image/fb-footer.png" alt="fb"></div>
                             </a>
+
                         </div>
                     </div>
                 </div>
@@ -141,6 +160,7 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
     
     
 
