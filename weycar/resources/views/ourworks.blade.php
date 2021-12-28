@@ -73,7 +73,7 @@
                                 </div>
                             </div>
 
-                                            <!-- Modal с картинками -->
+                            <!-- Modal с картинками -->
                             <div class="modal modal-image-slider fade" data-local="#myCarousel" id="imageModal{{$slide->id}}" style="top:20px" tabindex="-1" aria-labelledby="imageModal{{$slide->id}}Label" aria-hidden="true">
                               <div class="modal-dialog modal-dialog-centered modal-xl ">
                                 <div class="modal-content">
@@ -83,11 +83,10 @@
                                   </div>
                                   <div class="modal-body">
                                     <!-- Slider main container -->
-                                    <div class="swiper slider-init-container swiper{{$slide->id}}" >
+                                    <div class="swiper slider-init-container swipermodal{{$slide->id}}" >
                                       <!-- Additional required wrapper -->
                                       <div class="swiper-wrapper" >
                                         <!-- Slides -->
-            
                                         @if(is_array($slide->owimage))
                                             @foreach($slide->owimage as $i)
             
@@ -133,8 +132,8 @@
 
                                 // Слайдер в модалке
 
-                                const swiperimg{{$slide->id}} = new Swiper('.swiper{{$slide->id}}', {
-
+                                const swiperimg{{$slide->id}} = new Swiper('.swipermodal{{$slide->id}}', {
+                                slidesPerView: 1,
                                   loop: true,
 
                                   pagination: {
