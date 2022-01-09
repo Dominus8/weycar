@@ -1,0 +1,30 @@
+.referent-first {
+    padding-top: 205px;
+    padding-left: 100px;
+}
+
+.section-referent-first {
+    height: 900px;
+    background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/referent_list_bg.png) center right no-repeat;
+    background-size: contain;
+}
+
+.me-3 {
+    height: 340px !important;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+button.button_tab {
+    padding: 10px 90px;
+    color: #bbbdbe !important;
+    border: solid 1px #3c96c8 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+button.active {
+    padding: 10px 90px;
+    color: #bbbdbe !important;
+    border: solid 1px #bbbdbe !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
