@@ -3,6 +3,10 @@
     padding-left: 100px;
 }
 
+.referent-second {
+    display: none;
+}
+
 .section-referent-first {
     height: 900px;
     background: linear-gradient(to right, rgba(14, 31, 39, 1), rgba(14, 31, 39, 0.07)), url(/image/referent_list_bg.png) center right no-repeat;
@@ -27,4 +31,39 @@ button.active {
     color: #bbbdbe !important;
     border: solid 1px #bbbdbe !important;
     background-color: rgba(0, 0, 0, 0) !important;
+}
+
+@media (max-width: 1024px) {
+    .ref-inner {
+        margin: 0 9% !important;
+    }
+    .referent-first {
+        display: none;
+    }
+    .referent-second {
+        display: block;
+    }
+    .accordion-item {
+        margin-bottom: 50px;
+        background-color: rgba(0, 0, 0, 0);
+        text-align: center;
+        .accordion-header {
+            button.collapsed {
+                border: 1px solid #3c96c8;
+            }
+            .accordion-button {
+                color: #bbbdbe !important;
+                background-color: rgba(0, 0, 0, 0);
+                justify-content: space-around;
+                border: 1px solid #bbbdbe;
+                border-radius: 5px;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        .accordion-body {
+            color: #bbbdbe !important;
+        }
+    }
 }
