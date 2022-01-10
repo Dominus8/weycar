@@ -8,10 +8,10 @@
 }
 
 .section-referent-first {
-  height: 900px;
+  height: 1000px;
   background: -webkit-gradient(linear, left top, right top, from(#0e1f27), to(rgba(14, 31, 39, 0.07))), url(/image/referent_list_bg.png) center right no-repeat;
   background: linear-gradient(to right, #0e1f27, rgba(14, 31, 39, 0.07)), url(/image/referent_list_bg.png) center right no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .me-3 {
@@ -44,6 +44,7 @@ button.active {
     display: none;
   }
   .referent-second {
+    padding-top: 50px;
     display: block;
   }
   .accordion-item {
