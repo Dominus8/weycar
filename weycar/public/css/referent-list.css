@@ -38,7 +38,7 @@ button.active {
 
 @media (max-width: 1024px) {
   .ref-inner {
-    margin: 0 9% !important;
+    margin: 0 20% !important;
   }
   .referent-first {
     display: none;
