@@ -76,3 +76,6 @@ Route::get('/relatedproducts', [MainController::class, 'relatedproducts'] )->nam
 
 //Референт лист
 Route::get('/referentlist', [MainController::class, 'referentlist'] )->name('referentlist');
+
+//Референт лист
+Route::get('/sendmail', [MainController::class, 'sendmail'] )->name('sendmail');

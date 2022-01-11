@@ -10,6 +10,7 @@ use App\Models\Product;
 use App\Models\Subcategory;
 use App\Models\Category;
 use App\Models\Owslider;
+use Mail;
 use Illuminate\Support\Facades\Storage;
 
 class MainController extends Controller
@@ -338,21 +339,29 @@ class MainController extends Controller
         return redirect()->route('admin');
     }
 
-        //удаление продукта
-        public function delete_owslidegroup($id){
+    //удаление продукта
+    public function delete_owslidegroup($id){
+        $image = Owslider::find($id)->owimage;
 
-            $image = Owslider::find($id)->owimage;
-    
-            foreach($image as $img){
-                
-                Storage::disk('owimage')->delete($img);
-    
-            }
-    
-            $owslider = Owslider::find($id);
-    
-            $owslider->delete();
-    
-            return redirect()->route('admin');
+        foreach($image as $img){
+            
+            Storage::disk('owimage')->delete($img);
+
         }
+
+        $owslider = Owslider::find($id);
+
+        $owslider->delete();
+
+        return redirect()->route('admin');
+    }
+
+    //Отправка письма
+    public function sendmail(Request $request){
+        Mail::send(['text'=>'feedback'],['name', 'web dev'], function($message){
+            $message->to('ikari162@mail.ru', 'tu test mail')->subject('Test mail');
+            $message->from('ikari162@mail.ru', 'tu test mail');
+        });
+        return redirect()->route('admin');
+    }
 }//закрывает класс
