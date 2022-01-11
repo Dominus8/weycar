@@ -36,11 +36,15 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+            'host' => env('MAIL_HOST', 'smtp.yandex.ru'),
             'port' => env('MAIL_PORT', 587),
+            'from' => [
+                'address' => 'Domins8@yandex.ru',
+                'name' => 'Type What You Want',
+            ],
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+            'username' => env('Domins8@yandex.ru'),
+            'password' => env('-Agent0010'),
             'timeout' => null,
             'auth_mode' => null,
         ],
