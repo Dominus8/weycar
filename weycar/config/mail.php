@@ -44,7 +44,7 @@ return [
             ],
             'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
             'username' => env('Domins8@yandex.ru'),
-            'password' => env('-Agent0010'),
+            'password' => env(''),
             'timeout' => null,
             'auth_mode' => null,
         ],
