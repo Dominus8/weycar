@@ -364,7 +364,8 @@ class MainController extends Controller
         $mess = $request->subject;
         $title = $request->message;
         
-        Mail::to('ikari162@gmail.com')->send(new feedback($name, $email, $mess, $title));
+        Mail::to('ikari162@mail.ru')->send(new feedback($name, $email, $mess, $title));
+
         return redirect()->route('admin');
     }
 }//закрывает класс
