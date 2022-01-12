@@ -37,12 +37,12 @@ return [
         'smtp' => [
             'transport' => 'smtp',
             'host' => env('MAIL_HOST', 'smtp.yandex.ru'),
-            'port' => env('MAIL_PORT', 465),
+            'port' => env('MAIL_PORT', 587),
             'from' => [
                 'address' => 'Domins8@yandex.ru',
                 'name' => 'Type What You Want',
             ],
-            'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
+            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('Domins8@yandex.ru'),
             'password' => env('-Agent0010'),
             'timeout' => null,
