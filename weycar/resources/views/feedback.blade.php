@@ -1,1 +1,5 @@
-test mail
+test mail <br>
+{{$name}} <br>
+{{$email}}<br>
+{{$title}}<br>
+{{$mess}}

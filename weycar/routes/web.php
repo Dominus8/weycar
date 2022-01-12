@@ -78,4 +78,4 @@ Route::get('/relatedproducts', [MainController::class, 'relatedproducts'] )->nam
 Route::get('/referentlist', [MainController::class, 'referentlist'] )->name('referentlist');
 
 //Референт лист
-Route::get('/sendmail', [MainController::class, 'sendmail'] )->name('sendmail');
+Route::post('/sendmail', [MainController::class, 'sendmail'] )->name('sendmail');

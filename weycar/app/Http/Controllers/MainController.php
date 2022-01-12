@@ -10,8 +10,9 @@ use App\Models\Product;
 use App\Models\Subcategory;
 use App\Models\Category;
 use App\Models\Owslider;
-use Mail;
+use App\Mail\feedback;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Mail;
 
 class MainController extends Controller
 {
@@ -67,7 +68,7 @@ class MainController extends Controller
         
         $subcategory = Subcategory::where('category_id','=',$catid)->get()->values()->all();
         $product= Product::where('subcategory_id','=',$subcatid)->get()->values()->all();
-        $subcategory_title= Subcategory::where('subcategory_id','=',$subcatid)->first()->title;
+        $subcategory_title= Subcategory::where('subcategory_id','=',$subcatid)->firstOrFail()->title;
         $subcategory_subtitle= Subcategory::where('subcategory_id','=',$subcatid)->first()->subtitle;
         
 
@@ -358,10 +359,12 @@ class MainController extends Controller
 
     //Отправка письма
     public function sendmail(Request $request){
-        Mail::send(['text'=>'feedback'],['name', 'web dev'], function($message){
-            $message->to('ikari162@mail.ru', 'tu test mail')->subject('Test mail');
-            $message->from('ikari162@mail.ru', 'tu test mail');
-        });
+        $name = $request->name;
+        $email = $request->email;
+        $mess = $request->subject;
+        $title = $request->message;
+        
+        Mail::to('ikari162@gmail.com')->send(new feedback($name, $email, $mess, $title));
         return redirect()->route('admin');
     }
 }//закрывает класс

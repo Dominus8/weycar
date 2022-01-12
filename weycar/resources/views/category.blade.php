@@ -129,7 +129,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <form id="contactform" method="POST" class="validateform">
+                        <form id="contactform" method="POST" action="{{route('sendmail')}}" class="validateform">
                             {{ csrf_field() }}
 
                             <!-- <div id="sendmessage">
