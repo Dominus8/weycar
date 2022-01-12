@@ -42,7 +42,7 @@ return [
                 'address' => 'Domins8@yandex.ru',
                 'name' => 'Type What You Want',
             ],
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
             'username' => env('Domins8@yandex.ru'),
             'password' => env('-Agent0010'),
             'timeout' => null,
