@@ -21,7 +21,8 @@ class MainController extends Controller
         $product= new Product;
         $product=$product->where('code', 1)->get();
         $subcategory=Subcategory::all();
-        return view('home', ['product'=>$product, 'subcategory'=>$subcategory]);
+        $category=Category::all();
+        return view('home', ['product'=>$product, 'subcategory'=>$subcategory, 'category'=>$category]);
     }
 
     // Все категории
@@ -369,4 +370,12 @@ class MainController extends Controller
 
         return redirect()->route('admin');
     }
+
+    // Для слайдера на главной
+    public function foslider($subcatid){
+        $categoryforslider = Subcategory::where("subcategory_id", "=", $subcatid)->first()->category_id;
+        
+        return redirect()->route('category',$categoryforslider);
+    }
+
 }//закрывает класс

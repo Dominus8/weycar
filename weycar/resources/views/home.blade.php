@@ -210,43 +210,14 @@
                             <div class="swiper-wrapper">
                                 @foreach($product as $el)
                                 <div class="swiper-slide">
-                                    <a href="#">
+                                    <a href="{{route('foslider',$el->subcategory_id)}}">
                                         <div class="swiper-slide__image">
                                             <img  src="@if(is_array($el->image))storage/product_image/{{$el->image[0]}}@endif" alt="Слайд">                                   
                                         </div>
                                     </a>
                                 </div>
-
                                 @endforeach
 
-                                <!-- <div class="swiper-slide">
-                                    <a href="#">
-                                        <div class="swiper-slide__image">
-                                            <img src="/image/slideItem.jpg" alt="Слайд">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <div class="swiper-slide__image">
-                                            <img src="/image/slideItem.jpg" alt="Слайд">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <div class="swiper-slide__image">
-                                            <img src="/image/slideItem.jpg" alt="Слайд">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <div class="swiper-slide__image">
-                                            <img src="/image/slideItem.jpg" alt="Слайд">
-                                        </div>
-                                    </a>
-                                </div> -->
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>

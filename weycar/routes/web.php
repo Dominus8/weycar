@@ -79,3 +79,6 @@ Route::get('/referentlist', [MainController::class, 'referentlist'] )->name('ref
 
 //Референт лист
 Route::post('/sendmail', [MainController::class, 'sendmail'] )->name('sendmail');
+
+//Для слайдера
+Route::get('/foslider/{subcatid}', [MainController::class, 'foslider'] )->name('foslider');
