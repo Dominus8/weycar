@@ -19,6 +19,7 @@
                   <div class="singl-page-wrapper">
 
                     @foreach($subcategory as $el)
+                    
                         <a href="{{route('subcategory', ['catid'=>$catid, 'subcatid'=>$el->subcategory_id] )}}">
                             <div class="singl-page__item">
                                 <div class="item-wrapper">
@@ -104,7 +105,11 @@
                         </div>
                         <div class="product-cards__buttons">
                             <div class="product-cards__buttons-top">
-                                <div class="product-cards-price">{{$el->price}}₽</div>
+                              @if(strlen($el->price) > 3)
+                                <div class="product-cards-price product-cards-price--big">{{$el->price}}₽</div>
+                              @else
+                                <div class="product-cards-price  ">{{$el->price}}₽</div>
+                              @endif
                                 <div type="button" class="product-cards-order" data-bs-toggle="modal" data-bs-target="#orderModal{{$el->id}}">Заказать</div>
                             </div>
                             <div type="button" class="product-cards__buttons-bottom">
@@ -114,7 +119,6 @@
                                 </div>
                                 <div type="button" class="product-cards-specifications" data-bs-toggle="modal" data-bs-target="#specificationsModal{{$el->id}}">Характеристики</div>
                                 <div type="button" class="product-cards-accessories" data-bs-toggle="modal" data-bs-target="#accessoriesModal{{$el->id}}">Комплектующие</div>
-                                
                             </div>
                         </div>
                     </div>
