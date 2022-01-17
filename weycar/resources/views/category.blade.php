@@ -106,7 +106,10 @@
                         <div class="product-cards__buttons">
                             <div class="product-cards__buttons-top">
                               @if(strlen($el->price) > 3)
-                                <div class="product-cards-price product-cards-price--big">{{$el->price}}₽</div>
+                                <div id="pr{{$el->id}}" class="product-cards-price product-cards-price--big"> </div>
+                                <script>
+                                  $('#pr{{$el->id}}').text(({{$el->price}}).toLocaleString('ru-RU')+" ₽");
+                                </script>
                               @else
                                 <div class="product-cards-price  ">{{$el->price}}₽</div>
                               @endif
