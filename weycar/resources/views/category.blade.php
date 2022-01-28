@@ -105,14 +105,14 @@
                         </div>
                         <div class="product-cards__buttons">
                             <div class="product-cards__buttons-top">
-                              @if(strlen($el->price) > 3)
+                              <!-- @if(strlen($el->price) > 3)
                                 <div id="pr{{$el->id}}" class="product-cards-price product-cards-price--big"> </div>
                                 <script>
                                   $('#pr{{$el->id}}').text(({{$el->price}}).toLocaleString('ru-RU')+" ₽");
                                 </script>
                               @else
                                 <div class="product-cards-price  ">{{$el->price}}₽</div>
-                              @endif
+                              @endif -->
                                 <div type="button" class="product-cards-order" data-bs-toggle="modal" data-bs-target="#orderModal{{$el->id}}">Заказать</div>
                             </div>
                             <div type="button" class="product-cards__buttons-bottom">
@@ -121,7 +121,7 @@
                                     <div class="ya-share2" data-size="l" data-shape="normal" data-color-scheme="whiteblack" data-limit="0" data-more-button-type="short" data-services="vkontakte,facebook,telegram"></div>
                                 </div>
                                 <div type="button" class="product-cards-specifications" data-bs-toggle="modal" data-bs-target="#specificationsModal{{$el->id}}">Характеристики</div>
-                                <div type="button" class="product-cards-accessories" data-bs-toggle="modal" data-bs-target="#accessoriesModal{{$el->id}}">Комплектующие</div>
+                                <!-- <div type="button" class="product-cards-accessories" data-bs-toggle="modal" data-bs-target="#accessoriesModal{{$el->id}}">Комплектующие</div> -->
                             </div>
                         </div>
                     </div>
